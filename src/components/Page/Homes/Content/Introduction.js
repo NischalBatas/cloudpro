@@ -4,11 +4,10 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
 
-      <div className="bg-cloud1 pb-16">
-        <div>
-          <Image alt='bg-image' width={100} height={100} src="/Image/backgroundimage.svg" style={{width:'100%', height:'120px'}}/>
+      <div className="bg-cloud1 pb-16 relative">
+        <div className="w-full h-24 absolute bg-repeat-x bg-center" style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
         </div>
-        <div className="navbar-main">
+        <div className="navbar-main pt-24">
           <div className="w-80 lg:w-96">
             <p className="text-2xl lg:text-3xl font-bold text-white">
               Data, AI and Software Cloud Services Consultant
@@ -20,7 +19,7 @@ const Introduction = () => {
             Leap.
           </div>
           <div className="flex items-center gap-3 lg:w-96 mt-8">
-            <button className="bg-cloudBtn text-cloudBtnText px-2 py-1 rounded">
+            <button className="bg-cloudBtn text-cloudBtnText px-2 py-1 rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

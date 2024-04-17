@@ -18,16 +18,50 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.navbar-main{
+  padding-left:20rem;
+  padding-right:20rem;
+}
+
+@media only screen and (max-width:1650px){
+  .navbar-main{
+    padding-left:12rem;
+    padding-right:12rem;
+  }
+}
+
+@media only screen and (max-width:1350px){
+  .navbar-main{
+    padding-left:8rem;
+    padding-right:8rem;
+  }
+}
+
+@media only screen and (max-width:1050px){
+  .navbar-main{
+    padding-left:5rem;
+    padding-right:5rem;
+  }
+}
+
+
+@media only screen and (max-width:725px){
+  .navbar-main{
+    padding-left:2rem;
+    padding-right:2rem;
   }
 }

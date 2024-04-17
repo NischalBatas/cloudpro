@@ -14,7 +14,7 @@ const Introduction = () => {
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>
-          <div className="text-cloud2 w-96">
+          <div className="text-cloud2 w-60 md:w-96 pt-2">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological
             Leap.

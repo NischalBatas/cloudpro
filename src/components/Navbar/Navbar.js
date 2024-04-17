@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         {/* Navbar-menu */}
-        <div className="">
+        <div className="hidden md:block">
           <ul className="flex items-center gap-2 text-sm font-medium gap-4">
             <li>
               <Dropdown />

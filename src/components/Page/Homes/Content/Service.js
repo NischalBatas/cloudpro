@@ -173,7 +173,7 @@ const Service = () => {
             <Image
               width={100}
               height={100}
-              src="/Image/process/cloud4.svg"
+              src="/Image/process/cloud5.svg"
               className="absolute"
               alt="cloud"
               style={{

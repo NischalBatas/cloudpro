@@ -12,7 +12,7 @@ const Industries = () => {
         {industries.map((item,index)=>{
             return(
                 <div key={index} style={{width:'190px',height:'190px'}} className="bg-cloud5 flex flex-col justify-center p-2 rounded-md">
-                    <div className="text-9xl">{item.icon}</div>
+                    <div className="text-6xl lg:text-9xl">{item.icon}</div>
                     <div className="flex justify-end text-cloudBtn">{item.title}</div>
                 </div>
             )

@@ -9,8 +9,8 @@ const Introduction = () => {
           <Image alt='bg-image' width={100} height={100} src="/Image/backgroundimage.svg" style={{width:'100%', height:'120px'}}/>
         </div>
         <div className="navbar-main">
-          <div className="w-80">
-            <p className="text-2xl font-bold text-white">
+          <div className="w-80 lg:w-96">
+            <p className="text-2xl lg:text-3xl font-bold text-white">
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>

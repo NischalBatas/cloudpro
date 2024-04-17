@@ -3,7 +3,7 @@ import { features } from "@/db/features";
 import Image from "next/image";
 const Features = () => {
   return (
-    <div className="navbar-main bg-cloudbg2 flex flex-wrap gap-6 pb-4">
+    <div className="navbar-main bg-cloudbg2 flex flex-wrap gap-6 pb-10">
       {features.map((item, index) => {
         return (
           <div key={index} className="bg-white px-2 py-1 rounded-md flex items-center gap-2 border">

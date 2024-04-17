@@ -2,7 +2,7 @@ import React from "react";
 import { industries } from "@/db/industries";
 const Industries = () => {
   return (
-    <div className="navbar-main bg-cloud1 text-white py-10 mt-8">
+    <div className="navbar-main bg-cloud1 text-white py-10">
       <p className="text-2xl font-semibold">Industries</p>
       <p className="text-cloud2 text-sm w-full lg:w-4/12 py-2">
         We bring cloud and data best practices to our customers so they can

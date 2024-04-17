@@ -5,9 +5,9 @@ const Introduction = () => {
   return (
 
       <div className="bg-cloud1 pb-16 relative">
-        <div className="w-full h-24 absolute bg-repeat-x bg-center" style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
+        <div className="w-full h-24 absolute bg-repeat-x bg-center z-10" style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
         </div>
-        <div className="navbar-main pt-24">
+        <div className="navbar-main pt-24 z-40">
           <div className="w-80 lg:w-96">
             <p className="text-2xl lg:text-3xl font-bold text-white">
               Data, AI and Software Cloud Services Consultant

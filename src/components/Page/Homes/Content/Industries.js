@@ -8,7 +8,7 @@ const Industries = () => {
         We bring cloud and data best practices to our customers so they can
         focus on what they do best—not how they get there
       </p>
-      <div className="flex justify-center lg:justify-start flex-wrap gap-4 my-5">
+      <div className="flex justify-between md:justify-start flex-wrap gap-4 my-5">
         {industries.map((item,index)=>{
             return(
                 <div key={index} className="bg-cloud5 flex flex-col justify-center p-2 rounded-md w-36 h-36 lg:w-48 lg:h-48">

@@ -1,12 +1,12 @@
 import React from "react";
 import { Button, DropdownMenu } from "@radix-ui/themes";
 
-const Dropdown = () => {
+const Dropdown = ({title}) => {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         <Button className="windows-group">
-          Services
+          {title}
           <DropdownMenu.TriggerIcon />
         </Button>
       </DropdownMenu.Trigger>

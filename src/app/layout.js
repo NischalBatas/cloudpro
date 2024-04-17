@@ -3,6 +3,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 
 import { Theme } from "@radix-ui/themes";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         
             {children}
+            <Script src="../../static/js/jquery.js"></Script>
+            <Script src="../../static/js/script.js"></Script>
 
       </body>
     </html>

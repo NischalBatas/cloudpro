@@ -19,7 +19,7 @@ const Introduction = () => {
             Business and Infrastructure Readiness for the Ultimate Technological
             Leap.
           </div>
-          <div className="flex items-center gap-3 w-96 mt-8">
+          <div className="flex items-center gap-3 lg:w-96 mt-8">
             <button className="bg-cloudBtn text-cloudBtnText px-2 py-1 rounded">
               Contact Us
             </button>

@@ -7,7 +7,7 @@ const Service = () => {
       <p className="text-2xl font-semibold w-80">
         We Provide Best Cloud Services
       </p>
-      <div className="grid grid-cols-3 mt-10 gap-5 lg:gap-10 place-content-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-5 lg:gap-10 place-content-stretch">
         <div className="bg-white p-4 rounded-md" >
           <div className="relative mb-5">
             <Image
@@ -46,7 +46,7 @@ const Service = () => {
             View More
           </button>
         </div>
-        <div className="col-span-2 bg-white p-4 rounded-md">
+        <div className="lg:col-span-2 bg-white p-4 rounded-md">
           <div>
             <button className="bg-cloudBtn2 border text-sm font-medium px-2 py-1 float-right rounded">
               View More

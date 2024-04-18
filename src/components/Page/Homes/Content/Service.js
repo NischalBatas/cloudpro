@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import '../index.css'
 const Service = () => {
   return (
     <div className="navbar-main bg-cloudbg2 py-8 px-1">
@@ -10,13 +10,9 @@ const Service = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-5 lg:gap-10 place-content-stretch">
         <div className="bg-white p-4 rounded-md" >
           <div className="relative mb-5">
-            <Image
-              width={100}
-              height={100}
-              src="/Image/process/cloudbg.svg"
-              alt="cloud"
-              className="w-full"
-            />
+             <div
+              className="image-dot w-full h-52"
+            ></div>
             <Image
               width={100}
               height={100}
@@ -62,13 +58,9 @@ const Service = () => {
           </div>
 
           <div className="relative mt-5">
-            <Image
-              width={100}
-              height={100}
-              src="/Image/process/cloudbg.svg"
-              alt="cloud"
-              className="w-full h-52"
-            />
+            <div
+              className="image-dot w-full h-52"
+            ></div>
             <Image
               width={100}
               height={100}
@@ -101,13 +93,9 @@ const Service = () => {
           </div>
 
           <div className="relative">
-            <Image
-              width={100}
-              height={100}
-              src="/Image/process/cloudbg.svg"
-              alt="cloud"
-              className="w-full"
-            />
+             <div
+              className="image-dot w-full h-52"
+            ></div>
             <Image
               width={100}
               height={100}
@@ -125,17 +113,15 @@ const Service = () => {
           </div>
         </div>
         <div className="bg-white p-4 rounded-md">
-          <button className="bg-cloudBtn2 border text-sm font-medium px-2 py-1 mb-3 float-right rounded">
+          <div className="flex justify-end">
+          <button className="bg-cloudBtn2 border text-sm font-medium px-2 py-1 mb-3 rounded">
             View More
           </button>
+          </div>
           <div className="relative mb-5">
-            <Image
-              width={100}
-              height={100}
-              src="/Image/process/cloudbg.svg"
-              alt="cloud"
-              className="w-full"
-            />
+             <div
+              className="image-dot w-full h-52"
+            ></div>
             <Image
               width={100}
               height={100}
@@ -163,13 +149,9 @@ const Service = () => {
         </div>
         <div className="bg-white p-4 rounded-md">
           <div className="relative mb-5">
-            <Image
-              width={100}
-              height={100}
-              src="/Image/process/cloudbg.svg"
-              alt="cloud"
-              className="w-full"
-            />
+             <div
+              className="image-dot w-full h-52"
+            ></div>
             <Image
               width={100}
               height={100}

@@ -8,7 +8,7 @@ const Header = () => {
         CloudPro Ai Conference on Cloud Computing, Computer Vision and Image
         Processing.
       </p>
-      <Link href="#" className="underline">
+      <Link href="#" className="underline font-semibold">
         Book Now
       </Link>
     </div>

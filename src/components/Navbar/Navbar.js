@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* Navbar-menu */}
         <div className="navbar-menu-list">
-          <ul className="flex flex-col md:flex-row mt-4 md:mt-0 items-center gap-2 text-sm font-medium gap-4">
+          <ul className="flex flex-col md:flex-row mt-4 md:mt-0 items-center gap-2 text-sm font-medium gap-6">
             <li>
               <Dropdown title="Services" />
             </li>

@@ -3,6 +3,10 @@
 }
 
 
+    .navbar-menu-list{
+        display: block;
+    }
+
 
 @media only screen and (max-width:750px){
     .navbar-menu-list{

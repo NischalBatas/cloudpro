@@ -16,7 +16,8 @@ const Dropdown = ({ title }) => {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content
+        <DropdownMenu.Content variant="soft"
+        color="indigo"
           className="DropdownMenuContent gap-8"
           sideOffset={5}
         >

@@ -33,7 +33,7 @@ const Dropdown = ({ title }) => {
               </div>
             </div>
             <div>
-              <div className="font-semibold text-base py-2">
+              <div className="navbar-menu-title font-semibold text-base py-2">
                 Cloud Engineering
               </div>
               <DropdownMenu.Item className="DropDownItem">
@@ -74,7 +74,7 @@ const Dropdown = ({ title }) => {
               </div>
             </div>
             <div>
-              <div className="font-semibold text-base py-2">
+              <div className="navbar-menu-title font-semibold text-base py-2">
                 Data Engineering
               </div>
               <DropdownMenu.Item className="DropDownItem">
@@ -107,7 +107,7 @@ const Dropdown = ({ title }) => {
               </div>
             </div>
             <div>
-              <div className="font-semibold text-base py-2">
+              <div className="navbar-menu-title font-semibold text-base py-2">
                 Generative AI And ML
               </div>
               <DropdownMenu.Item className="DropDownItem">

@@ -7,7 +7,7 @@ const Features = () => {
       {features.map((item, index) => {
         return (
           <div key={index} className="bg-white px-2 py-1 rounded-md flex items-center gap-2 border">
-            <div>{item.icons}</div>
+            <div><Image width={20} height={20} src={item.icons} alt='feature_index'/></div>
             <div className="font-medium text-sm">{item.title}</div>
           </div>
         );

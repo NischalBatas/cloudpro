@@ -10,6 +10,8 @@
 .DropDownItem:hover{
   background-color: rgb(242, 252, 210) !important;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 

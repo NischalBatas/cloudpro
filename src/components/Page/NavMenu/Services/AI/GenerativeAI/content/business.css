@@ -1,0 +1,23 @@
+@media only screen and (max-width:550px){
+    .business-growth-main{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+@media only screen and (max-width:391px){
+    .testominal{
+        max-width: 100%;
+        
+    }
+}
+.field-content{
+    box-shadow: #141414 0px -90px 22px -2px inset;
+}
+.services-line{
+    width: 0.4px;
+    max-height: 100%;
+    background-color: rgb(226, 226, 226);
+    
+}

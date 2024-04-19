@@ -19,7 +19,7 @@ const Introduction = () => {
             Leap.
           </div>
           <div className="flex items-center gap-3 lg:w-96 mt-8">
-            <button className="bg-cloudBtn text-cloudBtnText px-2 py-1 rounded font-medium">
+            <button className="bg-cloudBtn text-cloud px-2 py-1 rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

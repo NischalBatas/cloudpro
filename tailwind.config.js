@@ -23,7 +23,8 @@ module.exports = {
         cloud5:'#122930',
         cloudBtn:'#edff6c',
         cloudBtnText:'#83911C',
-        cloudBtn2:'#F6F7F5'
+        cloudBtn2:'#F6F7F5',
+        cloud6:'#EDFF6C'
 
       },
     },

@@ -5,7 +5,7 @@ const Impact = () => {
   return (
     <div className="navbar-main bg-cloudBtn2 py-5 md:py-14">
      
-        <div className="w-full md:w-5/12">
+        <div className="w-full md:w-5/12 wow animate__animated animate__fadeInRight animate__slow">
           <div className="text-2xl lg:text-3xl font-semibold ">
             The Transformative Impact of Generative AI in Business
           </div>

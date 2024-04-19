@@ -4,7 +4,7 @@ import React from "react";
 const Solutions = () => {
   return (
     <div className="navbar-main flex flex-wrap md:flex-nowrap gap-4 lg:gap-10 py-14">
-      <div className="relative flex m-auto md:m-none">
+      <div className="relative flex m-auto md:m-none wow animate__animated animate__fadeInLeft animate__slow">
         <Image
           width={356}
           height={356}
@@ -16,7 +16,7 @@ const Solutions = () => {
         
       </div>
 
-      <div className="w-full md:w-8/12 mt-2 md:mt-0 lg:mt-4">
+      <div className="w-full md:w-8/12 mt-2 md:mt-0 lg:mt-4 wow animate__animated animate__fadeInRight animate__slow">
         <div className="text-2xl lg:text-3xl font-semibold w-full md:w-4/6">
         Supercharging Businesses with Customized AI Solutions 
         </div>

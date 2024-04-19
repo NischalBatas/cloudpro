@@ -5,7 +5,14 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import Image from "next/image";
 import "./dropdown.css";
 import { TriggerIcon } from "@radix-ui/themes/dist/cjs/components/dropdown-menu";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 const Dropdown = ({ title }) => {
+  const router=useRouter()
+
+  const onHandleSubmit=(path)=>{
+    router.push(path)
+  }
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
@@ -114,7 +121,7 @@ const Dropdown = ({ title }) => {
                 AI Chatbot Services
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropDownItem">
-                Generative AI Apps
+                <button onClick={()=>onHandleSubmit('/generativeapp')}>Generative AI Apps</button>
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropDownItem">
                 AI Implementation Services

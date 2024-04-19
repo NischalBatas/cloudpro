@@ -21,8 +21,10 @@ const Navbar = () => {
       <div className="navbar-main flex flex-col md:flex-row justify-between items-center text-white bg-cloudNav p-3">
         {/* Logo */}
         <div className="flex items-center justify-between w-full">
-          <div>
+          <div><Link href='/'>
+        
            <Image width={120} height={120} alt="company_logo" src='../../../Image/logo/company.svg'/>
+           </Link>
           </div>
           <div className="navbar-menuBtn block md:hidden text-white navbar-hamburger">
             <RxHamburgerMenu onClick={handleMenu}/>

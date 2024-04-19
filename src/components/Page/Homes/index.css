@@ -16,3 +16,24 @@
       center / var(--dot-space) var(--dot-space),
     var(--dot-color);
 }
+
+/* .cloud-image1{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+
+
+ .settings-image1{
+
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

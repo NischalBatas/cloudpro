@@ -70,3 +70,29 @@ body {
     font-size: 0.4rem;
   }
 }
+
+
+/* .line-svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  offset-path: path("M1 0.5V45.5C1 54.3366 8.16344 61.5 17 61.5H177C185.837 61.5 193 68.6634 193 77.5V93");
+  animation: followpath 8s ease-in-out infinite;
+}
+
+@keyframes followpath{
+  to{
+    offset-distance: 100%;
+  }
+}
+
+.lines-svg:hover{
+  animation:newanimate 5s infinite;
+}
+
+@keyframes newanimate{
+  to{
+    transform: rotate(360deg);
+  }
+} */

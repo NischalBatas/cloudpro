@@ -127,7 +127,7 @@ const Dropdown = ({ title }) => {
                 AI Implementation Services
               </DropdownMenu.Item>
               <DropdownMenu.Item className="DropDownItem">
-                LLM (Large Language Model)
+                LLM (Large Language Models)
               </DropdownMenu.Item>
             </div>
           </DropdownMenu.Group>

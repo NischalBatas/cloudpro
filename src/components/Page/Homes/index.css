@@ -55,7 +55,7 @@
   width: 821px;
 }
 
-@media only screen and (max-width:'1000px'){
+@media only screen and (max-width:1000px){
   .testominial-items{
     max-width: 821px;
     width: 100%;

@@ -51,7 +51,7 @@ $(document).ready(function () {
 
   $(".testominial-main .owl-carousel").owlCarousel({
     loop: true,
-    margin: 400,
+    margin: 690,
     autoplay: true,
     dots: false,
     nav: true,
@@ -66,8 +66,8 @@ $(document).ready(function () {
       680: {
         items: 1,
       },
-      1100: {
-        items: 1,
+      1226: {
+        items: 2,
       },
     },
   });

@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
         <Script src="../../static/resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></Script>
 
         <Script src="../../static/resources/WOW-master/dist/wow.js"></Script>
+     
       </body>
     </html>
   );

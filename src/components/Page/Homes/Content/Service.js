@@ -8,25 +8,38 @@ const Service = () => {
         We Provide Best Cloud Services
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-5 lg:gap-10 place-content-stretch">
-        <div className="bg-white p-4 rounded-md" >
-          <div className="relative mb-5">
+        <div className="bg-white p-4 rounded-md cursor-pointer cloud_container" >
+          <div className="relative mb-5  ">
              <div
-              className="image-dot w-full h-52"
+              className="image-dot w-full h-52 "
             ></div>
+       
             <Image
               width={100}
               height={100}
-              src="/Image/process/cloud1.svg"
-              className="absolute"
+              src="/Image/process/cloud.svg"
+              className="absolute cloud_image"
               alt="cloud"
               style={{
-                width: "175px",
-                height: "113.75px",
+             
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
               }}
             />
+              <Image
+              width={50}
+              height={50}
+              src="/Image/process/setting2.png"
+              className="absolute setting-rotates"
+              alt="cloud"
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            />
+         
           </div>
           <div>
             <p className="text-cloud text-xl font-semibold">

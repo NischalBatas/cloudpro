@@ -3,6 +3,7 @@
   --dot-color: #a5b62b;
   --dot-size: 3px;
   --dot-space: 22px;
+  
   background: linear-gradient(
         90deg,
         var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),

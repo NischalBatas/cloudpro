@@ -72,7 +72,7 @@ body {
 }
 
 
-/* .line-svg{
+.line-svg{
   position: absolute;
   left: 0;
   top: 0;
@@ -87,12 +87,31 @@ body {
   }
 }
 
-.lines-svg:hover{
-  animation:newanimate 5s infinite;
+.cloud_image{
+  width: 175px;
+  height: 113.75px;
+}
+
+.cloud_container:hover  .cloud_image{
+  width: 285px;
+  height: 119.75px;
+}
+
+.cloud_container:hover .setting-rotates{
+  width: 62px;
+  height: 62px;
+  animation:newanimate 1s infinite linear;
+
+  /* Adjust transform-origin as needed */
+  transform-origin: center;
+
 }
 
 @keyframes newanimate{
-  to{
-    transform: rotate(360deg);
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); /* Adjust to center element */
   }
-} */
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

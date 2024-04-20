@@ -1,10 +1,10 @@
 $(document).ready(function () {
   new WOW().init();
 
-  $(".team .owl-carousel").owlCarousel({
+  $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 5,
-    autoplay: false,
+    margin: 1,
+    autoplay: true,
     dots: false,
     nav: false,
     responsiveClass: true,
@@ -19,7 +19,7 @@ $(document).ready(function () {
         items: 6,
       },
       1100: {
-        items: 7,
+        items: 8,
       },
     },
   });

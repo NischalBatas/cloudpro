@@ -1,7 +1,7 @@
 $(document).ready(function () {
   new WOW().init();
 
-  $(".owl-carousel").owlCarousel({
+  $(".partners-main .owl-carousel").owlCarousel({
     loop: true,
     margin: 1,
     autoplay: true,
@@ -20,6 +20,54 @@ $(document).ready(function () {
       },
       1100: {
         items: 8,
+      },
+    },
+  });
+
+
+  $(".industries-main .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 1,
+    autoplay: true,
+    dots: false,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      324: {
+        items: 2,
+      },
+      680: {
+        items: 3,
+      },
+      1100: {
+        items: 5,
+      },
+    },
+  });
+
+
+  $(".testominial-main .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 400,
+    autoplay: true,
+    dots: false,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      324: {
+        items: 1,
+      },
+      680: {
+        items: 1,
+      },
+      1100: {
+        items: 1,
       },
     },
   });

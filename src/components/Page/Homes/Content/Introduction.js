@@ -5,7 +5,7 @@ const Introduction = () => {
   return (
 
       <div className="bg-cloud1 pb-16 relative">
-        <div className="w-full h-24 absolute bg-repeat-x bg-center" style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
+        <div className="w-full h-24 absolute bg-repeat-x bg-center" >
         </div>
         <div className="navbar-main pt-24">
           <div className="md:w-80 lg:w-96">

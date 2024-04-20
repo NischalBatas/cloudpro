@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const Partners = () => {
   return (
-    <div className="navbar-main flex flex-wrap items-center justify-between bg-white py-3 px-2 gap-4 md:gap-2 ">
+    <div className="navbar-main partners-main flex flex-wrap items-center justify-between bg-white py-3 px-2 gap-4 md:gap-2 ">
       <div className="owl-carousel owl-theme">
       {partners.map((item, index) => {
         return (

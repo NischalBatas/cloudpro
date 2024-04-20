@@ -5,11 +5,12 @@ import { GiSatelliteCommunication } from "react-icons/gi";
 import { GiTransportationRings } from "react-icons/gi";
 import { RiGraduationCapLine } from "react-icons/ri";
 export const industries = [
-  { title: "Airlines", icon: <HiOutlineBuildingOffice2 /> },
-  { title: "Automative", icon: <IoCarSportOutline /> },
-  { title: "Banking", icon: <BsBank /> },
-  { title: "Communication", icon: <GiSatelliteCommunication /> },
-  { title: "Transportation", icon:<GiTransportationRings />  },
-  { title: "Education", icon:  <RiGraduationCapLine />},
+  { title: "Airlines", image:'/Image/fields/Rectangle659.jpg' },
+  { title: "Automative", image:'/Image/fields/Rectangle660.jpg'},
+  { title: "Banking",  image:'/Image/fields/Rectangle661.jpg'},
+  { title: "Communication",  image:'/Image/fields/Rectangle662.jpg'},
+  { title: "Transportation",  image:'/Image/fields/Rectangle663.jpg'},
+  { title: "Education", image:'/Image/fields/Rectangle664.jpg'},
 
 ];
+

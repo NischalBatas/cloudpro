@@ -1,0 +1,34 @@
+import { industries } from "@/db/industries";
+import { results } from "@/db/results";
+import React from "react";
+
+const Results = () => {
+  return (
+    <div className="navbar-main bg-cover text-white py-10" style={{backgroundImage:"url('/Image/results/Rectangle686.png')"}}>
+      <p className="text-lg font-medium text-cloudBtn">WHAT WE DO</p>
+      <p className="text-white  w-full lg:w-4/12 py-2 text-2xl font-medium">
+        Our results in numbers
+      </p>
+      <div className="flex justify-between md:justify-start flex-wrap gap-4 my-6 ">
+        {results.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="h-64 w-60 relative  bg-no-repeat bg-cover rounded-lg"
+              style={{
+                backgroundImage: `url(${item.image})`,
+              }}
+            >
+              <div className=" flex flex-col justify-end text-right h-full ">
+              <div className="text-white text-sm px-4"><span className="text-6xl font-semibold">{item.ratio}</span>%</div>
+                <div className="text-white text-sm px-4 pb-5">{item.title}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Results;

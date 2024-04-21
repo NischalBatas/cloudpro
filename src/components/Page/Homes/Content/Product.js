@@ -15,15 +15,15 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="flex justify-between md:justify-start flex-wrap gap-6 my-5">
+      <div className="flex justify-center lg:justify-start flex-wrap gap-6 my-5">
         {product.map((item, index) => {
           return (
             <div key={index}>
               <div
                 style={{ backgroundColor: `${item.color}` }}
-                className="product-content-box  relative flex flex-col justify-between  bg-no-repeat bg-cover rounded-lg"
+                className="product-content-box  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
-                <div className="px-5 pt-5 flex flex-col justify-start">
+                <div className="px-5 pt-2 md:pt-5 flex flex-col justify-start">
                   <div className="flex justify-between items-center w-full">
                     <div className="text-white text-lg  font-semibold w-44">
                       {item.title}

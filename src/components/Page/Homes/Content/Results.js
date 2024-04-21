@@ -9,7 +9,7 @@ const Results = () => {
       <p className="text-white  w-full lg:w-4/12 py-2 text-2xl font-medium">
         Our results in numbers
       </p>
-      <div className="flex justify-between md:justify-start flex-wrap gap-2 md:gap-4 my-6 ">
+      <div className="flex justify-center md:justify-start flex-wrap gap-2 md:gap-4 my-6 ">
         {results.map((item, index) => {
           return (
             <div

@@ -4,7 +4,7 @@ import React from "react";
 const CaseStudy = () => {
   return (
     <div className="navbar-main py-5 md:py-14">
-      <div className="mb-8 w-full md:w-8/12 lg:w-4/12">
+      <div className="mb-8 w-full md:w-8/12 lg:w-4/12 text-center md:text-left">
         <div className="font-semibold text-4xl">Case Study</div>
         <div className="text-cloud3 mt-3 text-sm">
           We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
@@ -14,7 +14,7 @@ const CaseStudy = () => {
       </div>
 
       <div>
-        <div className="flex justify-between md:justify-start flex-wrap gap-6 my-5">
+        <div className="flex justify-center md:justify-start flex-wrap gap-6 my-5">
           {caseStudy.map((item, index) => {
             return (
               <div key={index} className="w-80">

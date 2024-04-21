@@ -82,8 +82,15 @@
 }
 
 .product-content-box{
-  width: 507px;
+  max-width: 507px;
   height: 485px;
+}
+
+@media only screen and (max-width:1296px){
+  .product-content-box{
+    max-width: 407px;
+    height: 485px;
+  }
 }
 
 .product-content-box-image{

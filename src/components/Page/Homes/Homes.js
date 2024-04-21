@@ -7,6 +7,8 @@ import Industries from "./Content/Industries";
 import Image from "next/image";
 import Testominial from "./Content/Testominial";
 import Results from "./Content/Results";
+import CaseStudy from "./Content/CaseStudy";
+import Product from "./Content/Product";
 
 const Homes = () => {
   return (
@@ -16,8 +18,10 @@ const Homes = () => {
       <Service />
       <Features />
       <Industries />
-      <Testominial/>
-      <Results/>
+      <Testominial />
+      <Results />
+      <CaseStudy />
+      <Product/>
       {/* <div className="my-10 relative m-auto w-96">
         <div className="bg-cloud line-svg" style={{width:'20px', height:'20px'}}></div>
         <svg width="194" height="93">
@@ -30,8 +34,6 @@ const Homes = () => {
         <div className="bg-cloud lines-svg" style={{width:'100px', height:'20px'}}></div>
      
       </div> */}
-
-  
     </div>
   );
 };

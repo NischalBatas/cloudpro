@@ -27,7 +27,8 @@ module.exports = {
         cloudBtn2:'#F6F7F5',
         cloud6:'#EDFF6C',
         cloud7:'#F3F4F2',
-        cloud8:'#6465F1'
+        cloud8:'#6465F1',
+        cloud9:'#EAEAEA'
 
       },
     },

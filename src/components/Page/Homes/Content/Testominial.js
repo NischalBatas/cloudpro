@@ -14,7 +14,7 @@ const Testominial = () => {
       </div>
 
       <div className="flex gap-2 mt-8 owl-carousel owl-theme w-full ">
-      <div className="testominial-items flex gap-4 bg-cloud7 p-4 rounded-md w-full">
+        <div className="testominial-items flex gap-4 bg-cloud7 p-4 rounded-md w-full">
           <Image
             width={186}
             height={269}

@@ -9,6 +9,8 @@ import Testominial from "./Content/Testominial";
 import Results from "./Content/Results";
 import CaseStudy from "./Content/CaseStudy";
 import Product from "./Content/Product";
+import Footer from "./Content/Footer/Footer";
+
 
 const Homes = () => {
   return (
@@ -22,6 +24,7 @@ const Homes = () => {
       <Results />
       <CaseStudy />
       <Product/>
+      <Footer/>
       {/* <div className="my-10 relative m-auto w-96">
         <div className="bg-cloud line-svg" style={{width:'20px', height:'20px'}}></div>
         <svg width="194" height="93">

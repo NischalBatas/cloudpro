@@ -1,0 +1,73 @@
+import Link from "next/link";
+import React from "react";
+
+const FooterContent = () => {
+  return (
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-4 py-14">
+      <div className="flex flex-col gap-2">
+        <div className="text-white font-medium text-base uppercase">
+          we are cloudpro ai
+        </div>
+        <div className="flex flex-col gap-2 text-cloud2 text-sm">
+          <Link href="#">About Us</Link>
+          <Link href="#">Career</Link>
+          <Link href="#">Case Study</Link>
+          <Link href="#">Blog</Link>
+          <Link href="#">Events</Link>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <div className="text-white font-medium text-base uppercase">
+          What we do
+        </div>
+        <div className="flex flex-col gap-2 text-cloud2 text-sm">
+          <Link href="#">Cloud Engineering</Link>
+          <Link href="#">Data Engineering</Link>
+          <Link href="#">Generative AL and ML</Link>
+          <Link href="#">BI & Data Analytics</Link>
+          <Link href="#">AI Powered Web/App Development</Link>
+        </div>
+      </div>
+
+      <div className="col-span-2 flex flex-col gap-2">
+        <div className="text-white font-medium text-base uppercase">
+          we are located at
+        </div>
+        <div className="grid grid-cols-2 gap-3 place-content-between">
+          <div className="flex flex-col gap-2">
+            <div className="text-white font-medium text-base uppercase">
+              USA
+            </div>
+
+            <div className="flex flex-col gap-2 text-cloud2 text-sm">
+              <Link href="#" className="w-52">
+                584 Castro St 2165, San Francisco, CA 94114-2512
+              </Link>
+              <Link href="#">contact@cloudpro.ai</Link>
+              <Link href="#">Generative AL and ML</Link>
+              <Link href="#">+1 415-393-2021</Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <div className="text-white font-medium text-base uppercase">
+              Nepal
+            </div>
+
+            <div className="flex flex-col gap-2 text-cloud2 text-sm">
+              <Link href="#" className="w-52">
+                584 Castro St 2165, San Francisco, CA 94114-2512
+              </Link>
+              <Link href="#">contact@cloudpro.ai</Link>
+              <Link href="#">Generative AL and ML</Link>
+              <Link href="#">+1 415-393-2021</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FooterContent;

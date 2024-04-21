@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link href="#">AboutUs</Link>
             </li>
             <li>
-              <button className="bg-cloudBtn text-cloudBtnText px-2 py-1 rounded">
+              <button className="bg-cloudBtn text-cloud px-2 py-1 rounded">
                 ContactUs
               </button>
             </li>

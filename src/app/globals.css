@@ -26,6 +26,18 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+button{
+  padding:8px 16px 8px 16px !important;
+  box-shadow: #83911C 0px -5px 22px -2px inset;
+  border-radius: 8px !important;
+
+}
+
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

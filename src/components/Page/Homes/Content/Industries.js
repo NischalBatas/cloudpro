@@ -13,7 +13,7 @@ const Industries = () => {
           return (
             <div
               key={index}
-              className="h-72 w-52 relative field-content bg-no-repeat bg-cover rounded-lg"
+              className="h-72 w-auto md:w-52 relative field-content bg-no-repeat bg-cover rounded-lg opacity-75 cursor-pointer hover:opacity-100"
               style={{
                 backgroundImage: `url(${item.image})`,
               }}

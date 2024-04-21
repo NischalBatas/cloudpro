@@ -24,9 +24,9 @@ const Testominial = () => {
             className="rounded-md"
           />
 
-          <div className="flex gap-2">
-            <div className=" flex flex-col justify-between gap-4 md:gap-6 md:py-5">
-              <div className=" text-sm text-cloud">
+          <div className="flex flex-wrap lg:flex-nowrap gap-2">
+            <div className=" flex flex-col justify-between gap-2 md:gap-6 md:py-5">
+              <div className="text-xs md:text-sm text-cloud">
                 We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
                 Business and Infrastructure Readiness for the Ultimate
                 Technological Leap.We're Gen AI-Ready and Eager to Collaborate.
@@ -35,28 +35,27 @@ const Testominial = () => {
               </div>
               <div>
                 <div className="font-semibold text-nowrap">Sujan Timilsina</div>
-                <div className="text-cloud3 text-sm text-nowrap">
+                <div className="text-cloud3 text-xs md:text-sm text-nowrap">
                   Founder / Stagezero
                 </div>
               </div>
             </div>
             <div className="services-line hidden md:block"></div>
-            <div className="flex flex-col justify-end items-center gap-4 text-nowrap">
-              <div>
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">20%</div>
-                  <div className="text-sm text-cloud3">Business Growth</div>
+            <div className="hidden md:flex flex-col justify-between lg:justify-end items-center w-full lg:w-auto  gap-4 text-nowrap">
+              <div className="flex flex-row lg:flex-col justify-end gap-4 w-full lg:w-auto">
+                <div className="flex flex-col ">
+                  <div className="text-2xl font-semibold text-right">20%</div>
+                  <div className="text-sm text-cloud3 text-right">Business Growth</div>
                 </div>
 
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">3000K</div>
-                  <div className="text-sm text-cloud3">Daily New sales</div>
+                <div className="flex flex-col">
+                  <div className="text-2xl font-semibold text-right">3000K</div>
+                  <div className="text-sm text-cloud3 text-right">Daily New sales</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div className="testominial-items flex gap-4 bg-cloud7 p-4 rounded-md w-full">
           <Image
             width={186}
@@ -67,9 +66,9 @@ const Testominial = () => {
             className="rounded-md"
           />
 
-          <div className="flex gap-2">
-            <div className=" flex flex-col justify-between gap-4 md:gap-6 md:py-5">
-              <div className=" text-sm text-cloud">
+          <div className="flex flex-wrap lg:flex-nowrap gap-2">
+            <div className=" flex flex-col justify-between gap-2 md:gap-6 md:py-5">
+              <div className="text-xs md:text-sm text-cloud">
                 We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
                 Business and Infrastructure Readiness for the Ultimate
                 Technological Leap.We're Gen AI-Ready and Eager to Collaborate.
@@ -78,22 +77,22 @@ const Testominial = () => {
               </div>
               <div>
                 <div className="font-semibold text-nowrap">Sujan Timilsina</div>
-                <div className="text-cloud3 text-sm text-nowrap">
+                <div className="text-cloud3 text-xs md:text-sm text-nowrap">
                   Founder / Stagezero
                 </div>
               </div>
             </div>
             <div className="services-line hidden md:block"></div>
-            <div className="flex flex-col justify-end items-center gap-4 text-nowrap">
-              <div>
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">20%</div>
-                  <div className="text-sm text-cloud3">Business Growth</div>
+            <div className="hidden md:flex flex-col justify-between lg:justify-end items-center w-full lg:w-auto  gap-4 text-nowrap">
+              <div className="flex flex-row lg:flex-col justify-end gap-4 w-full lg:w-auto">
+                <div className="flex flex-col ">
+                  <div className="text-2xl font-semibold text-right">20%</div>
+                  <div className="text-sm text-cloud3 text-right">Business Growth</div>
                 </div>
 
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">3000K</div>
-                  <div className="text-sm text-cloud3">Daily New sales</div>
+                <div className="flex flex-col">
+                  <div className="text-2xl font-semibold text-right">3000K</div>
+                  <div className="text-sm text-cloud3 text-right">Daily New sales</div>
                 </div>
               </div>
             </div>
@@ -110,9 +109,9 @@ const Testominial = () => {
             className="rounded-md"
           />
 
-          <div className="flex gap-2">
-            <div className=" flex flex-col justify-between gap-4 md:gap-6 md:py-5">
-              <div className=" text-sm text-cloud">
+          <div className="flex flex-wrap lg:flex-nowrap gap-2">
+            <div className=" flex flex-col justify-between gap-2 md:gap-6 md:py-5">
+              <div className="text-xs md:text-sm text-cloud">
                 We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
                 Business and Infrastructure Readiness for the Ultimate
                 Technological Leap.We're Gen AI-Ready and Eager to Collaborate.
@@ -121,22 +120,22 @@ const Testominial = () => {
               </div>
               <div>
                 <div className="font-semibold text-nowrap">Sujan Timilsina</div>
-                <div className="text-cloud3 text-sm text-nowrap">
+                <div className="text-cloud3 text-xs md:text-sm text-nowrap">
                   Founder / Stagezero
                 </div>
               </div>
             </div>
             <div className="services-line hidden md:block"></div>
-            <div className="flex flex-col justify-end items-center gap-4 text-nowrap">
-              <div>
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">20%</div>
-                  <div className="text-sm text-cloud3">Business Growth</div>
+            <div className="hidden md:flex flex-col justify-between lg:justify-end items-center w-full lg:w-auto  gap-4 text-nowrap">
+              <div className="flex flex-row lg:flex-col justify-end gap-4 w-full lg:w-auto">
+                <div className="flex flex-col ">
+                  <div className="text-2xl font-semibold text-right">20%</div>
+                  <div className="text-sm text-cloud3 text-right">Business Growth</div>
                 </div>
 
-                <div className="flex flex-col items-center">
-                  <div className="text-2xl font-semibold">3000K</div>
-                  <div className="text-sm text-cloud3">Daily New sales</div>
+                <div className="flex flex-col">
+                  <div className="text-2xl font-semibold text-right">3000K</div>
+                  <div className="text-sm text-cloud3 text-right">Daily New sales</div>
                 </div>
               </div>
             </div>

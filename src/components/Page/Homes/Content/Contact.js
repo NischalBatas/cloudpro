@@ -5,8 +5,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="h-48 flex flex-col justify-center">
-      <div className="flex justify-between flex-wrap items-center">
+    <div className="h-48 flex flex-col justify-center mb-10 md:mb-0">
+      <div className="flex justify-between gap-6 md:gap-1 flex-wrap items-center">
         <div className="">
           <Link href="/">
             <Image

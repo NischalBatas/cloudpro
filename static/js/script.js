@@ -27,7 +27,7 @@ $(document).ready(function () {
 
   $(".industries-main .owl-carousel").owlCarousel({
     loop: true,
-    margin: 1,
+    margin: 10,
     autoplay: true,
     dots: false,
     nav: false,
@@ -52,7 +52,7 @@ $(document).ready(function () {
   $(".testominial-main .owl-carousel").owlCarousel({
     loop: true,
     margin: 690,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     nav: true,
     responsiveClass: true,

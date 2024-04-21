@@ -4,22 +4,25 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
 
-      <div className="bg-cloud1 pb-16 relative">
-        <div className="w-full h-24 absolute bg-repeat-x bg-center" >
+      <div className="bg-cloud1 pb-28 relative">
+        <div className="w-full h-24 absolute bg-repeat-x bg-center"  style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
         </div>
-        <div className="navbar-main pt-24">
-          <div className="md:w-80 lg:w-96">
-            <p className="text-2xl lg:text-3xl font-bold text-white">
+        <div className="navbar-main pt-24 ">
+          <div className="flex justify-center items-center text-center">
+            <p className="w-9/12 lg:w-5/12 text-2xl lg:text-4xl font-bold text-white">
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>
-          <div className="text-cloud2 w-60 md:w-96 pt-2">
+
+          <div className="flex justify-center items-center text-cloud2 text-center pt-3">
+            <p className="w-9/12 md:w-4/12">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological
             Leap.
+            </p>
           </div>
-          <div className="flex items-center gap-3 lg:w-96 mt-8">
-            <button className="bg-cloudBtn text-cloud px-2 py-1 rounded font-medium">
+          <div className="flex justify-center items-center gap-3  mt-6">
+            <button className="bg-cloudBtn text-cloud rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

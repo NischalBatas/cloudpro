@@ -21,11 +21,11 @@ const Product = () => {
             <div key={index}>
               <div
                 style={{ backgroundColor: `${item.color}` }}
-                className="product-content-box  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
+                className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
-                <div className="px-5 pt-2 md:pt-5 flex flex-col justify-start">
+                <div className="px-5 pt-4 md:pt-5 flex flex-col justify-start">
                   <div className="flex justify-between items-center w-full">
-                    <div className="text-white text-lg  font-semibold w-44">
+                    <div className="text-white text-lg  font-semibold">
                       {item.title}
                     </div>
                     <div>
@@ -38,7 +38,7 @@ const Product = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="hover:scale-125  cursor-pointer">
                   <Image
                     className="product-content-box-image"
                     width={1000}

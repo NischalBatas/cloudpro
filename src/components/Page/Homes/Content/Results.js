@@ -21,7 +21,7 @@ const Results = () => {
             >
               <div className=" flex flex-col justify-end text-right h-full ">
               <div className="text-white px-4"><span className="text-3xl md:text-6xl font-semibold num" data-val={`${item.ratio}`}>{item.ratio}</span>%</div>
-                <div className="text-white text-xs md:text-sm px-4 pt-1 pb-5">{item.title}</div>
+                <div className="text-white text-xs md:text-sm px-4 pt-1 pb-5 opacity-70">{item.title}</div>
               </div>
             </div>
           );

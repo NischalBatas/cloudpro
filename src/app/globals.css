@@ -89,8 +89,36 @@ button:hover{
   left: 0;
   top: 0;
   right: 0;
-  offset-path: path("M1 0.5V45.5C1 54.3366 8.16344 61.5 17 61.5H177C185.837 61.5 193 68.6634 193 77.5V93");
-  animation: followpath 8s ease-in-out infinite;
+  offset-path: path("M55 101.5V146.5C55 155.337 62.1634 162.5 71 162.5H231C239.837 162.5 247 169.663 247 178.5V194");
+  animation: followpath 5s ease-in-out infinite;
+  background-color: #edff6c;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.line-svg2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  offset-path: path("M237.5 194L237.5 101");
+  animation: followpath 5s ease-in-out infinite reverse;
+  background-color: #edff6c;
+  border: 1px solid #000;
+  z-index:50;
+  border-radius: 50%;
+}
+
+.line-svg3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  offset-path: path("M419.5 101.5V146.5C419.5 155.337 412.337 162.5 403.5 162.5H243.5C234.663 162.5 227.5 169.663 227.5 178.5V194");
+  animation: followpath 5s ease-in-out infinite;
+  background-color: #edff6c;
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
 @keyframes followpath{

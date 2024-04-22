@@ -3,10 +3,9 @@ import { industries } from "@/db/industries";
 const Industries = () => {
   return (
     <div className="navbar-main industries-main bg-cloud1 text-white py-10">
-      <p className="text-2xl font-medium text-cloudBtn">Industries</p>
-      <p className="text-cloud2 text-sm w-full lg:w-4/12 py-2">
-        We bring cloud and data best practices to our customers so they can
-        focus on what they do best—not how they get there
+      <p className="text-lg uppercase tracking-widest text-cloudBtn">Industries</p>
+      <p className="text-white font-semibold text-4xl w-full lg:w-4/12 py-2">
+      The wide spectrum of industries we serve
       </p>
       <div className="flex justify-between md:justify-start flex-wrap gap-4 my-5 owl-carousel owl-theme">
         {industries.map((item, index) => {

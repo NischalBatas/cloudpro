@@ -9,13 +9,13 @@ const Introduction = () => {
         </div>
         <div className="navbar-main pt-24 ">
           <div className="flex justify-center items-center text-center">
-            <p className="w-9/12 lg:w-5/12 text-2xl lg:text-4xl font-bold text-white">
+            <p className="w-9/12 lg:w-6/12 text-2xl lg:text-5xl font-bold text-white" style={{lineHeight:'3.5rem'}}>
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>
 
           <div className="flex justify-center items-center text-cloud2 text-center pt-3">
-            <p className="w-9/12 md:w-4/12">
+            <p className="w-9/12 md:w-6/12 text-base">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological
             Leap.

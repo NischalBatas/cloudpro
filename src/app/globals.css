@@ -26,14 +26,13 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-button{
-  padding:8px 16px 8px 16px !important;
-  box-shadow: #83911C 0px -5px 22px -2px inset;
+button {
+  padding: 8px 16px 8px 16px !important;
+  box-shadow: #83911c 0px -5px 22px -2px inset;
   border-radius: 8px !important;
-
 }
 
-button:hover{
+button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -83,71 +82,73 @@ button:hover{
   }
 }
 
-
-.line-svg{
-  position: absolute;
-  left: 0;
-  top: 0;
+.line-svg {
+  position: relative;
+  left: 30px;
+  top: -95px;
   right: 0;
-  offset-path: path("M55 101.5V146.5C55 155.337 62.1634 162.5 71 162.5H231C239.837 162.5 247 169.663 247 178.5V194");
-  animation: followpath 5s ease-in-out infinite;
+  offset-path: path(
+    "M79 101V121.5C79 130.337 86.1634 137.5 95 137.5H241C249.837 137.5 257 144.663 257 153.5V156"
+  );
+  animation: followpath 2s ease-in-out infinite;
   background-color: #edff6c;
   border: 1px solid #000;
   border-radius: 50%;
 }
 
-.line-svg2{
-  position: absolute;
-  left: 0;
-  top: 0;
+.line-svg2 {
+  position: relative;
+  left: 20px;
+  top: -95px;
   right: 0;
-  offset-path: path("M237.5 194L237.5 101");
-  animation: followpath 5s ease-in-out infinite reverse;
+  offset-path: path("M263 156L263 101");
+  animation: followpath 2s ease-in-out infinite reverse;
   background-color: #edff6c;
   border: 1px solid #000;
-  z-index:50;
+  z-index: 50;
   border-radius: 50%;
 }
 
-.line-svg3{
-  position: absolute;
-  left: 0;
-  top: 0;
+.line-svg3 {
+  position: relative;
+  left: 10px;
+  top: -95px;
   right: 0;
-  offset-path: path("M419.5 101.5V146.5C419.5 155.337 412.337 162.5 403.5 162.5H243.5C234.663 162.5 227.5 169.663 227.5 178.5V194");
-  animation: followpath 5s ease-in-out infinite;
+  offset-path: path(
+    "M443 101V121.5C443 130.337 435.837 137.5 427 137.5H285C276.163 137.5 269 144.663 269 153.5V156.5"
+  );
+  animation: followpath 2s ease-in-out infinite;
   background-color: #edff6c;
   border: 1px solid #000;
   border-radius: 50%;
 }
 
-@keyframes followpath{
-  to{
+@keyframes followpath {
+  to {
     offset-distance: 100%;
   }
 }
 
-.cloud_image{
+.cloud_image {
   width: 175px;
   height: 113.75px;
 }
 
-.cloud_container:hover  .cloud_image{
+.cloud_container:hover .cloud_image {
   width: 285px;
   height: 119.75px;
 }
 
-.cloud_container:hover .setting-rotates{
+.cloud_container:hover .setting-rotates {
   width: 62px;
   height: 62px;
-  animation:newanimate 1s infinite linear;
+  animation: newanimate 1s infinite linear;
 
   /* Adjust transform-origin as needed */
   transform-origin: center;
-
 }
 
-@keyframes newanimate{
+@keyframes newanimate {
   from {
     transform: translate(-50%, -50%) rotate(0deg); /* Adjust to center element */
   }

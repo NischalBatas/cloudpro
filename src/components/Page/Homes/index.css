@@ -64,8 +64,9 @@
 
 .testominial-main .owl-nav{
   position: absolute;
-  top: -50px;
+  top: -80px;
     right: 0;
+  
 }
 
 .testominial-main .owl-prev,
@@ -73,7 +74,8 @@
   border: 1px solid #838383 !important;
     /* padding: 1px; */
     border-radius: 50% !important;
-    width: 20px;
+    width: 42px;
+    height: 42px;
 }
 
 .testominial-main .owl-prev span,

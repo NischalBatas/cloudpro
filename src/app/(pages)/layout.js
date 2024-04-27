@@ -4,11 +4,12 @@ import { Theme, ThemePanel } from "@radix-ui/themes";
 import "../globals.css";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Page/Homes/Content/Footer/Footer";
 
 const ProtectedLayout = ({ children }) => {
   return (
     <Theme
-      appearance="light"
+      appearance="dark"
       accentColor=""
       grayColor="sand"
       radius="large"
@@ -17,6 +18,7 @@ const ProtectedLayout = ({ children }) => {
       <Header />
       <Navbar />
       {children}
+      <Footer/>
     </Theme>
   );
 };

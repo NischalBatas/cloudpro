@@ -21,10 +21,10 @@ const Homes = () => {
       {/* <Features /> */}
       <Industries />
       <Testominial />
-      <Results />
+      {/* <Results /> */}
       <CaseStudy />
       <Product/>
-      <Footer/>
+     
       {/* <div className="my-10 relative m-auto w-96">
         <div className="bg-cloud line-svg" style={{width:'20px', height:'20px'}}></div>
         <svg width="194" height="93">

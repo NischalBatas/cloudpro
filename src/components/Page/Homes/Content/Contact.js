@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
        
         <div className="flex items-center gap-3 lg:w-96 ">
-          <button className="bg-cloudBtn text-cloud px-2 py-1 rounded font-medium">
+          <button className="bg-cloudBtn text-white px-2 py-1 rounded font-medium">
           Start working with us
           </button>
           <span className="flex gap-1 text-white">

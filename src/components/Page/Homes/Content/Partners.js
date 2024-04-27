@@ -5,7 +5,8 @@ import React, { useState } from "react";
 
 const Partners = () => {
   return (
-    <div className="navbar-main partners-main flex flex-wrap items-center justify-between bg-white py-3 px-2 gap-4 md:gap-2 ">
+    <div className="navbar-main partners-main flex flex-wrap items-center justify-between  py-3 px-2 gap-4 md:gap-2 ">
+      <p className="text-center uppercase text-cloud w-full text-[12px] mb-2">Trusted by leading brands</p>
       <div className="owl-carousel owl-theme">
       {partners.map((item, index) => {
         return (

@@ -5,7 +5,7 @@ import Contact from '../Contact'
 
 const Footer = () => {
   return (
-    <div className="navbar-main bg-cover flex flex-col gap-4 md:gap-1 text-white py-10" style={{backgroundImage:"url('/Image/results/Rectangle686.png')"}}>
+    <div className="navbar-main bg-cover flex flex-col gap-4 md:gap-1 text-white py-10">
         <Contact/>
         <div className='w-full bg-cloud3' style={{height:'1px'}}></div>
         <FooterContent/>

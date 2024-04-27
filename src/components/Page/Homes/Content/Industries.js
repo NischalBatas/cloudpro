@@ -1,25 +1,31 @@
 import React from "react";
 import { industries } from "@/db/industries";
+import Image from "next/image";
 const Industries = () => {
   return (
-    <div className="navbar-main industries-main bg-cloud1 text-white py-10">
-      <p className="text-lg uppercase tracking-widest text-cloudBtn">Industries</p>
-      <p className="text-white font-semibold text-4xl w-full lg:w-4/12 py-2">
-      The wide spectrum of industries we serve
-      </p>
-      <div className="flex justify-between md:justify-start flex-wrap gap-4 my-5 owl-carousel owl-theme">
+    <div className="navbar-main industries-main text-white py-10">
+      <div className="flex flex-col justify-center items-center w-full">
+        <p className="text-lg uppercase tracking-widest text-cloud">
+          Industries
+        </p>
+        <p className="text-center text-white font-semibold text-4xl w-full md:w-6/12 lg:w-4/12  py-2">
+          Our work spans industries & domains.
+        </p>
+      </div>
+      <div className="flex justify-between md:justify-center flex-wrap gap-6 my-10">
         {industries.map((item, index) => {
           return (
             <div
               key={index}
-              className="h-72 w-auto md:w-52 relative field-content bg-no-repeat bg-cover rounded-lg opacity-75 cursor-pointer hover:opacity-100"
-              style={{
-                backgroundImage: `url(${item.image})`,
-              }}
+              className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75 cursor-pointer hover:opacity-100"
             >
-              <div className=" flex flex-col justify-end text-right h-full ">
-                <div className="text-white text-sm px-4 pb-5">{item.title}</div>
-              </div>
+              <Image
+                width={54}
+                height={54}
+                src={item.image}
+                alt="image_industries"
+              />
+              <p className="text-white text-sm px-4 mt-4">{item.title}</p>
             </div>
           );
         })}

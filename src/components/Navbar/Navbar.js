@@ -18,7 +18,7 @@ const Navbar = () => {
 }
   return (
     <>
-      <div className="navbar-main flex flex-col md:flex-row justify-between items-center text-white bg-cloudNav p-3">
+      <div className="navbar-main flex flex-col md:flex-row justify-between items-center text-white  p-3">
         {/* Logo */}
         <div className="flex items-center justify-between w-full">
           <div><Link href='/'>
@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link href="#">AboutUs</Link>
             </li>
             <li>
-              <button className="bg-cloudBtn text-cloud px-2 py-1 rounded">
+              <button className="bg-cloudBtn text-white px-2 py-1 rounded">
                 ContactUs
               </button>
             </li>

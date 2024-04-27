@@ -1,15 +1,13 @@
-.navbar-hamburge{
-    cursor: pointer;
+.navbar-hamburge {
+  cursor: pointer;
 }
 
+.navbar-menu-list {
+  display: block;
+}
 
-    .navbar-menu-list{
-        display: block;
-    }
-
-
-@media only screen and (max-width:750px){
-    .navbar-menu-list{
-        display: none;
-    }
+@media only screen and (max-width: 750px) {
+  .navbar-menu-list {
+    display: none;
+  }
 }

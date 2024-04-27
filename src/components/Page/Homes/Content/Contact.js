@@ -16,7 +16,7 @@ const Contact = () => {
               src="/Image/logo/company.svg"
             />
           </Link>
-          <div className="text-cloudBtn w-60 md:w-80 pt-2 font-semibold text-2xl">
+          <div className="text-cloudBtn w-80 md:w-80 pt-2 font-semibold text-2xl">
           Together, let's create something wonderful.
         </div>
         </div>

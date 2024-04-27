@@ -43,7 +43,7 @@ const Testominial = () => {
               <Image width={42} height={42} src='/Image/results/profile.png' alt="testominial-image"/>
             </div>
             <div>
-              <p className="font-semibold">Sujan Timilsina</p>
+              <p className="font-semibold">Prashant khanal</p>
               <p className="text-cloud2">Founder / Stagezero</p>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Testominial = () => {
               <Image width={42} height={42} src='/Image/results/profile.png' alt="testominial-image"/>
             </div>
             <div>
-              <p className="font-semibold">Sujan Timilsina</p>
+              <p className="font-semibold">Nischal Batas</p>
               <p className="text-cloud2">Founder / Stagezero</p>
             </div>
           </div>

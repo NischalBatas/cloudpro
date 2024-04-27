@@ -12,7 +12,7 @@ const Industries = () => {
           Our work spans industries & domains.
         </p>
       </div>
-      <div className="flex justify-center flex-wrap gap-6 my-10">
+      <div className="flex justify-center mx-auto flex-wrap gap-6 my-10 max-w-[850px]">
         {industries.map((item, index) => {
           return (
             <div

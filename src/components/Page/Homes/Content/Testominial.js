@@ -10,7 +10,7 @@ const Testominial = () => {
       </div>
 
       <div className="flex gap-2 mt-8 owl-carousel owl-theme ">
-        <div className="max-w-[540px] flex flex-col justify-center items-center">
+        <div className="max-w-[540px] m-auto flex flex-col justify-center items-center">
           <p className="text-base text-center">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological
@@ -29,7 +29,7 @@ const Testominial = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[540px] flex flex-col justify-center items-center">
+        <div className="max-w-[540px] m-auto flex flex-col justify-center items-center">
           <p className="text-base text-center">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological
@@ -49,7 +49,7 @@ const Testominial = () => {
           </div>
         </div>
 
-        <div className="max-w-[540px] flex flex-col justify-center items-center">
+        <div className="max-w-[540px] m-auto flex flex-col justify-center items-center">
           <p className="text-base text-center">
             We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
             Business and Infrastructure Readiness for the Ultimate Technological

@@ -8,20 +8,22 @@ import Footer from "@/components/Page/Homes/Content/Footer/Footer";
 
 const ProtectedLayout = ({ children }) => {
   return (
-    <Theme
-      appearance="dark"
-      accentColor=""
-      grayColor="sand"
-      radius="large"
-      scaling="95%"
-    >
+    // <Theme
+    //   appearance="dark"
+    //   accentColor=""
+    //   grayColor="sand"
+    //   radius="large"
+    //   scaling="95%"
+    // >
+   <>
       <Header />
       <Navbar />
       <div className="main-container">
         {children}
         <Footer />
       </div>
-    </Theme>
+   </>
+    // </Theme>
   );
 };
 

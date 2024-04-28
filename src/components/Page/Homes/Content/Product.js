@@ -15,11 +15,11 @@ const Product = () => {
         </div> */}
       </div>
 
-      <div className="flex justify-center lg:justify-start flex-wrap gap-6 my-5">
+      <div className="grid md:grid-cols-2 items-stretch flex-wrap gap-3 my-5">
         {product.map((item, index) => {
           return (
-            <div key={index}>
-              <div
+        
+              <div key={index}
                 style={{ backgroundColor: `${item.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
@@ -48,7 +48,7 @@ const Product = () => {
                   />
                 </div>
               </div>
-            </div>
+           
           );
         })}
       </div>

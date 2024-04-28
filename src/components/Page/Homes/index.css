@@ -84,13 +84,13 @@
 }
 
 .product-content-box{
-  max-width: 490px;
+  /* max-width: 490px; */
   height: 485px;
 }
 
 @media only screen and (max-width:1296px){
   .product-content-box{
-    max-width: 407px;
+    /* max-width: 407px; */
     height: 485px;
   }
 }

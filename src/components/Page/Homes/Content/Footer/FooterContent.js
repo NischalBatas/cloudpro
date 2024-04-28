@@ -8,7 +8,7 @@ const FooterContent = () => {
         <div className="text-white font-medium text-sm md:text-base uppercase">
           we are cloudpro ai
         </div>
-        <div className="flex flex-col gap-2 text-cloud2 text-xs md:text-sm">
+        <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
           <Link href="#">About Us</Link>
           <Link href="#">Career</Link>
           <Link href="#">Case Study</Link>
@@ -21,7 +21,7 @@ const FooterContent = () => {
         <div className="text-white font-medium text-sm md:text-base uppercase">
           What we do
         </div>
-        <div className="flex flex-col gap-2 text-cloud2 text-xs md:text-sm">
+        <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
           <Link href="#">Cloud Engineering</Link>
           <Link href="#">Data Engineering</Link>
           <Link href="#">Generative AL and ML</Link>
@@ -40,7 +40,7 @@ const FooterContent = () => {
               USA
             </div>
 
-            <div className="flex flex-col gap-2 text-cloud2 text-xs md:text-sm">
+            <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
               <Link href="#" className="text-wrap w-full lg:w-52">
                 584 Castro St 2165, San Francisco, CA 94114-2512
               </Link>
@@ -55,7 +55,7 @@ const FooterContent = () => {
               Nepal
             </div>
 
-            <div className="flex flex-col gap-2 text-cloud2 text-xs md:text-sm">
+            <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
               <Link href="#" className="text-wrap w-full lg:w-52">
                 584 Castro St 2165, San Francisco, CA 94114-2512
               </Link>

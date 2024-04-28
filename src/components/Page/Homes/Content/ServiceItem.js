@@ -4,7 +4,7 @@ import React from "react";
 
 const ServiceItem = () => {
   return (
-    <div className="flex flex-wrap justify-stretch md:justify-between mt-10 gap-5 lg:gap-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-4 gap-y-5">
       {serviceItem.map((item) => {
         return (
           <div className="md:max-w-[330px] bg-[#101218] p-4 rounded-md border border-[#1E2849] flex flex-col items-center">

@@ -5,10 +5,10 @@ const Industries = () => {
   return (
     <div className="navbar-main industries-main text-white py-10 my-8">
       <div className="flex flex-col justify-center items-center w-full">
-        <p className="text-lg uppercase tracking-widest text-cloud">
+        <p className="text-[14px] uppercase tracking-widest text-cloud">
           Industries
         </p>
-        <p className="text-center text-white font-semibold text-4xl w-full md:w-6/12 lg:w-4/12  py-2">
+        <p className="text-center text-white font-semibold text-[32px] w-full md:w-6/12 lg:w-4/12  py-2">
           Our work spans industries & domains.
         </p>
       </div>

@@ -5,9 +5,9 @@ import { serviceItem } from "@/db/serviceItem";
 import ServiceItem from "./ServiceItem";
 const Service = () => {
   return (
-    <div className="navbar-main  py-8 px-1 mt-6">
+    <div className="navbar-main  py-9 px-1 mt-6">
       <p className="text-cloud text-center md:text-left text-[14px] tracking-widest">SERVICES</p>
-      <p className="text-2xl font-semibold md:w-80 text-center md:text-left tracking-wild">What we build </p>
+      <p className="text-[32px] font-semibold md:w-80 text-center md:text-left tracking-wild">What we build </p>
       <ServiceItem/>
     </div>
   );

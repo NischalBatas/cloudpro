@@ -9,14 +9,15 @@ const Contact = () => {
       <div className="flex justify-between gap-6 md:gap-1 flex-wrap items-center">
         <div className="">
           <Link href="/">
-            <Image
+            {/* <Image
               width={120}
               height={120}
               alt="company_logo"
               src="/Image/logo/company.svg"
-            />
+            /> */}
+            <span className="text-cloud font-semibold">CLOUDPro</span>.ai
           </Link>
-          <div className="text-cloudBtn w-80 md:w-80 pt-2 font-semibold text-2xl">
+          <div className="max-w-[468px] pt-2 font-semibold text-2xl">
           Together, let's create something wonderful.
         </div>
         </div>

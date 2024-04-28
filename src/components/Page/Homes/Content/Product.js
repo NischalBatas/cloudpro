@@ -6,13 +6,13 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Product = () => {
   return (
     <div className="navbar-main cloud py-5 md:py-14">
-      <div className="m-auto mb-8 w-full md:w-6/12 lg:w-4/12 text-center">
-        <div className="font-semibold text-3xl">Our Product</div>
-        <div className="text-cloud3 mt-2 text-sm">
+      <div className="mb-8">
+        <div className="font-semibold text-[32px]">Our Product</div>
+        {/* <div className="text-cloud3 mt-2 text-sm">
           We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
           Business and Infrastructure Readiness for the Ultimate Technological
           Leap.
-        </div>
+        </div> */}
       </div>
 
       <div className="flex justify-center lg:justify-start flex-wrap gap-6 my-5">

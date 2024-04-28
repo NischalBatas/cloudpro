@@ -17,8 +17,10 @@ const ProtectedLayout = ({ children }) => {
     >
       <Header />
       <Navbar />
-      {children}
-      <Footer/>
+      <div className="main-container">
+        {children}
+        <Footer />
+      </div>
     </Theme>
   );
 };

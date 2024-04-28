@@ -4,8 +4,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
 
-      <div className="pb-44 relative">
-        <div className="w-full h-24 absolute bg-no-repeat bg-center"  style={{backgroundImage:"url('/Image/backgroundimage.svg')"}}>
+      <div className="pb-52 relative">
+        <div className="intro-image w-full h-[742px] absolute bg-no-repeat bg-center"  style={{backgroundImage:"url('/Image/background.svg')"}}>
         </div>
         <div className="navbar-main pt-24 ">
           <div className="flex justify-center items-center text-center">

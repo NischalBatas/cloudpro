@@ -20,9 +20,10 @@ const Navbar = () => {
   //     }
   // }
   return (
-    <div className="navbar-main px-8 py-2">
+    <div className="navbar-main px-8 py-2 backdrop-blur-xl">
       <NavigationMenu.Root className="NavigationMenuRoot  ">
-        <div className="NavigationMenuList w-full">
+        
+        <div className="NavigationMenuList w-full container m-auto">
           <div>
             <Link href="/">
               <Image

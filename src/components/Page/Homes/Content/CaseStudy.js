@@ -24,7 +24,7 @@ const CaseStudy = () => {
                     backgroundImage: `url(${item.image})`,
                   }}
                 >
-                  <div className=" flex flex-col justify-start text-left h-full ">
+                  <div className="flex flex-col justify-start text-left h-full ">
                     <div className="text-white text-base px-4 pt-5 font-medium w-44">
                       {item.sector}
                     </div>
@@ -32,7 +32,7 @@ const CaseStudy = () => {
                 </div>
 
                 <div className="flex gap-2 items-center text-xs mt-2 text-white">
-                  <div className="bg-cloud px-2 rounded-md py-1">{item.category}</div>
+                  <div className="bg-cloud px-2 rounded-full py-1">{item.category}</div>
                   <div>{item.published}</div>
                 </div>
 

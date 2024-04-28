@@ -41,7 +41,7 @@
 
 
 .field-content{
-  box-shadow: #141414 0px -30px 22px -2px inset;
+  box-shadow: #12141e 0px -30px 22px -2px inset;
 }
 
 .services-line{
@@ -98,4 +98,8 @@
 .product-content-box-image{
  width: 100%;
   height: 303px;
+}
+
+.intro-image{
+  top: -80px;
 }

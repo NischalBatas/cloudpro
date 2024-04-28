@@ -12,7 +12,7 @@ const ServiceItem = () => {
               <p className="text-white mb-1 text-[16px] font-semibold max-w-[265px] text-left">
                 {item.title}
               </p>
-              <p className="text-cloud3">{item.description}</p>
+              <p className="text-[#B8BEBF] text-[14px] ">{item.description}</p>
             </div>
             <Image
               width={250}

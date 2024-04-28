@@ -22,8 +22,8 @@ body {
 
 button {
   padding: 8px 16px 8px 16px !important;
-  box-shadow: #83911c 0px -5px 22px -2px inset;
-  border-radius: 8px !important;
+  box-shadow: #3851ad 0px -5px 22px -2px inset;
+  border-radius: 8px;
 }
 
 button:hover {

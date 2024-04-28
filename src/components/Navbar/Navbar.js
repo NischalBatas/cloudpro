@@ -5,57 +5,55 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./Navbar.css";
 import Image from "next/image";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import Menu from "./Menu";
+
 const Navbar = () => {
-  const handleMenu = () => {
-    const elements = document.getElementsByClassName('navbar-menu-list');
-    for (let i = 0; i < elements.length; i++) {
-        if (elements[i].style.display === "none" || elements[i].style.display === "") {
-            elements[i].style.display = "flex";
-        } else {
-            elements[i].style.display = "none";
-        }
-    }
-}
+  //   const handleMenu = () => {
+  //     const elements = document.getElementsByClassName('navbar-menu-list');
+  //     for (let i = 0; i < elements.length; i++) {
+  //         if (elements[i].style.display === "none" || elements[i].style.display === "") {
+  //             elements[i].style.display = "flex";
+  //         } else {
+  //             elements[i].style.display = "none";
+  //         }
+  //     }
+  // }
   return (
-    <>
-      <div className="navbar-main flex flex-col md:flex-row justify-between items-center text-white  p-3">
-        {/* Logo */}
-        <div className="flex items-center justify-between w-full">
-          <div><Link href='/'>
-        
-           <Image width={120} height={120} alt="company_logo" src='../../../Image/logo/company.svg'/>
-           </Link>
+    <div className="navbar-main">
+      <NavigationMenu.Root className="NavigationMenuRoot  ">
+        <div className="NavigationMenuList w-full">
+          <div>
+            <Link href="/">
+              <Image
+                width={120}
+                height={120}
+                alt="company_logo"
+                src="../../../Image/logo/company.svg"
+              />
+            </Link>
           </div>
-          <div className="navbar-menuBtn block md:hidden text-white navbar-hamburger">
-            <RxHamburgerMenu onClick={handleMenu}/>
+
+          <div className="flex items-center gap-4">
+            <Menu title="Services" />
+            <Menu title="Product" />
+            <Link className="NavigationMenuTrigger rounded-[8px]" href="">
+              Case Study
+            </Link>
+            <Link className="NavigationMenuTrigger rounded-[8px]" href="">
+              About Us
+            </Link>
+            <button className="bg-cloudBtn text-white px-2 py-1 rounded">
+              ContactUs
+            </button>
           </div>
         </div>
 
-        {/* Navbar-menu */}
-        <div className="navbar-menu-list">
-          <ul className="flex flex-col md:flex-row mt-4 md:mt-0 items-center gap-2 text-sm font-medium gap-6">
-            <li>
-              <Dropdown title="Services" />
-            </li>
-            <li>
-              <Dropdown title="Product" />
-            </li>
-            <li>
-              <Dropdown title="CaseStudy" />
-            </li>
-            <li>
-              <Link href="#">AboutUs</Link>
-            </li>
-            <li>
-              <button className="bg-cloudBtn text-white px-2 py-1 rounded">
-                ContactUs
-              </button>
-            </li>
-          </ul>
+        <div className="ViewportPosition">
+          <NavigationMenu.Viewport className="NavigationMenuViewport" />
         </div>
-
-      </div>
-    </>
+      </NavigationMenu.Root>
+    </div>
   );
 };
 

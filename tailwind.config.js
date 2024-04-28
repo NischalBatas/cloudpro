@@ -28,8 +28,8 @@ module.exports = {
         cloud7:'#F3F4F2',
         cloud8:'#6465F1',
         cloud9:'#EAEAEA',
-        cloudText:'#fffff'
-        
+        cloudText:'#fffff',
+        cloud10:'#333333'
 
       },
     },

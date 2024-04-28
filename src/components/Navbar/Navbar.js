@@ -20,7 +20,7 @@ const Navbar = () => {
   //     }
   // }
   return (
-    <div className="navbar-main px-8 py-2 backdrop-blur-xl">
+    <div className="navbar-main px-8 py-2">
       <NavigationMenu.Root className="NavigationMenuRoot  ">
         
         <div className="NavigationMenuList w-full container m-auto">

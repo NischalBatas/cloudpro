@@ -7,7 +7,7 @@ const Journey = () => {
     <div className="navbar-main py-10 md:py-20 bg-cloudbg2">
       <div className="business-growth-main flex flex-wrap md:flex-nowrap justify-between gap-2">
         <div className="w-full md:w-6/12">
-          <div className="text-black text-lg md:text-[32px] font-bold max-w-[404px] leading-10">
+          <div className="text-black text-[32px] font-bold max-w-[404px] leading-10">
             Embark on Your AI Journey with Cloud ProAI
           </div>
           <div className="text-black text-sm py-3  max-w-[464px] leading-7 mt-3">

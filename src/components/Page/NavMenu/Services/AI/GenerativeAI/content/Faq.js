@@ -8,7 +8,7 @@ import { faqApp } from "@/db/faq";
 
 const Faq = () => {
   return (
-    <div className="navbar-main py-20 flex justify-between gap-2">
+    <div className="navbar-main py-20 flex justify-between flex-wrap gap-2">
       <div className="w-[219px]">
         <p className="font-bold text-[36px] w-[219px]">FAQ</p>
         <p className="text-[16px] text=[#BCBCBC] w-[219px]">Generative AI & Applications</p>

@@ -14,7 +14,7 @@ const Faq = () => {
         <p className="text-[16px] text=[#BCBCBC] w-[219px]">Generative AI & Applications</p>
       </div>
 
-      <Accordion.Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
+      <Accordion.Root className="AccordionRoot mt-[1.5rem] md:mt-0" type="single" defaultValue="item-1" collapsible>
   {faqApp.map((item,index)=>{
     return(
       <Accordion.Item key={index} className="AccordionItem" value={`item-${item.number}`}>

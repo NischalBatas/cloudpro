@@ -73,6 +73,7 @@ h3 {
   overflow: hidden;
   font-size: 15px;
   /* padding:0 0.5rem; */
+  border-radius: 6px;
   color: var(--mauve-11);
   background-color: var(--mauve-2);
 }

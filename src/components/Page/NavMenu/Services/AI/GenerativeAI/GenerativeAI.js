@@ -10,6 +10,7 @@ import ContactUs from './content/ContactUs'
 import Products from './content/Products'
 import Industries from './content/Industries'
 import Faq from './content/Faq'
+import Enterprises from './content/Enterprises'
 
 const GenerativeAI = () => {
   return (
@@ -17,6 +18,7 @@ const GenerativeAI = () => {
         <Introduction/>
         {/* <BusinessGrowth/> */}
         <Impact/>
+        <Enterprises/>
         <Products/>
         <Industries/>
         <Faq/>

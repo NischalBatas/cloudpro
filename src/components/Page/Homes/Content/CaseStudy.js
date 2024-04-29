@@ -3,7 +3,7 @@ import React from "react";
 
 const CaseStudy = () => {
   return (
-    <div className="navbar-main py-5 md:py-14">
+    <div className="py-5 md:py-14">
       <div className="mb-8 w-full md:w-8/12 lg:w-4/12 text-center md:text-left">
         <div className="font-semibold text-[32px]">Case Study</div>
         {/* <div className="text-cloud3 mt-3 text-sm">

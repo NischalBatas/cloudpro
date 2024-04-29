@@ -3,7 +3,7 @@ import React from "react";
 
 const Testominial = () => {
   return (
-    <div className="navbar-main py-14 testominial-main mb-10">
+    <div className="py-14 testominial-main mb-10">
       <div className="flex flex-col justify-center items-center">
         <p className="text-[14px] uppercase tracking-widest text-cloud">Testominial</p>
         <p className="text-[32px] font-semibold md:w-80 text-center md:text-left tracking-wild mb-6">What our client say</p>

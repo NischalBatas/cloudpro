@@ -43,7 +43,7 @@ button:hover {
   margin: 0 auto;
 }
 
-/* .navbar-main {
+.navbar-main {
   padding-left: 20rem;
   padding-right: 20rem;
 }
@@ -67,7 +67,7 @@ button:hover {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-} */
+}
 
 @media only screen and (max-width: 725px) {
   .navbar-main {

@@ -7,16 +7,24 @@ import Empower from './content/Empower'
 import Journey from './content/Journey'
 import Services from './content/Services'
 import ContactUs from './content/ContactUs'
+import Products from './content/Products'
+import Industries from './content/Industries'
+import Faq from './content/Faq'
 
 const GenerativeAI = () => {
   return (
     <div>
         <Introduction/>
-        <BusinessGrowth/>
+        {/* <BusinessGrowth/> */}
         <Impact/>
-        <Solutions/>
-        <Empower/>
+        <Products/>
+        <Industries/>
+        <Faq/>
+        {/* <Solutions/> */}
+        {/* <Empower/> */}
+        
         <Journey/>
+        <Services/>
         <ContactUs/>
 
        

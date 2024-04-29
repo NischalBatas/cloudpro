@@ -4,7 +4,7 @@ import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const ContactUs = () => {
   return (
-    <div className="bg-cloud1 pb-16 relative h-96">
+    <div className="bg-[#6083F3] pb-16 relative h-96">
       <div
         className="w-full absolute bg-no-repeat bg-center overflow-visible"
         style={{
@@ -17,7 +17,7 @@ const ContactUs = () => {
         Discover more ways our team can help.
         </div>
         <div className="flex items-center gap-3 lg:w-96 mt-4">
-            <button className="bg-cloudBtn text-black shadow-2xl px-2 py-1 rounded font-medium">
+            <button className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

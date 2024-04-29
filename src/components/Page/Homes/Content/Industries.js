@@ -3,7 +3,7 @@ import { industries } from "@/db/industries";
 import Image from "next/image";
 const Industries = () => {
   return (
-    <div className="navbar-main industries-main text-white py-10 my-8">
+    <div className="industries-main text-white py-10 my-8">
       <div className="flex flex-col justify-center items-center w-full">
         <p className="text-[14px] uppercase tracking-widest text-cloud">
           Industries

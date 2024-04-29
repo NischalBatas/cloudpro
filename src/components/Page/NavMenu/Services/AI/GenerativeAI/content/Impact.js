@@ -3,25 +3,19 @@ import Testimonial from "./Testimonial";
 
 const Impact = () => {
   return (
-    <div className="navbar-main bg-cloudBtn2 py-5 md:py-14">
-     
-        <div className="w-full md:w-5/12 wow animate__animated animate__fadeInRight animate__slow">
-          <div className="text-2xl lg:text-3xl font-semibold ">
-            The Transformative Impact of Generative AI in Business
-          </div>
-          <div className="text-cloud3 text-sm py-3 leading-6 ">
-            Generative AI apps are revolutionizing the way businesses operate,
-            offering a myriad of possibilities from crafting personalized
-            marketing content to innovating product designs swiftly and
-            cost-effectively. These technological marvels significantly enhance
-            operational efficiencies, foster customer engagement, and drive a
-            dramatic upsurge in growth and competitiveness. By leveraging
-            generative AI, businesses can achieve:
-          </div>
+    <div className="navbar-main bg-cloudBtn2 py-5 md:py-16 text-black">
+      <div className="wow animate__animated animate__fadeInRight animate__slow">
+        <div className="text-[20px] md:text-[24px] ">
+          <span className="font-semibold ">Why</span> Generative AI &
+          Applications
         </div>
-     
-      <div className="w-full bg-cloud4 my-5 md:my-14" style={{height:'1px'}}></div>
-      <Testimonial/>
+      </div>
+
+      <div
+        className="w-full bg-cloud4 my-2 md:my-9"
+        style={{ height: "1px" }}
+      ></div>
+      <Testimonial />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Product = () => {
   return (
-    <div className="navbar-main cloud py-5 md:py-14">
+    <div className="cloud py-5 md:py-14">
       <div className="mb-8">
         <div className="font-semibold text-[32px]">Our Product</div>
         {/* <div className="text-cloud3 mt-2 text-sm">

@@ -6,10 +6,10 @@ const Testimonial = () => {
       {testimonial.map((item, index) => {
         return (
           <div key={index} className="testominal max-w-44 md:max-w-64 py-2 md:p-1">
-            <div className="text-2xl md:text-4xl font-medium flex gap-1 items-end"><div className="text-4xl md:text-6xl"><span className="num" data-val={`${item.ratio}`}> {item.ratio}</span></div>%</div>
-            <div className="mt-2 md:mt-4">
-              <span className="font-semibold capitalize mr-1">{item.status}</span>
-              {item.description}
+            <div className="text-2xl md:text-4xl font-semibold flex gap-1 items-end"><div className="text-[40px]"><span className="num text-[32px]  md:text-[64px]" data-val={`${item.ratio}`}> {item.ratio}</span></div>%</div>
+            <div className="mt-2 md:mt-4 text-[14px]">
+              <span className="font-medium capitalize mr-1">{item.status}</span>
+              <span className="text-[#5B5B5B]">{item.description}</span>
             </div>
           </div>
         );

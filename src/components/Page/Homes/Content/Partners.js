@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const Partners = () => {
   return (
-    <div className="navbar-main partners-main flex flex-wrap items-center justify-between  py-5 px-2 gap-4 md:gap-2 ">
+    <div className="partners-main flex flex-wrap items-center justify-between  py-5 px-2 gap-4 md:gap-2 ">
       <p className="text-center uppercase text-cloud w-full text-[12px] mb-2 tracking-widest">
         Global Partners
       </p>

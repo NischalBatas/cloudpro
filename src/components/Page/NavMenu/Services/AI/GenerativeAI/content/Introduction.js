@@ -38,7 +38,7 @@ const Introduction = () => {
         </div>
 
         <div>
-        <button className="bg-black w-auto text-[14px]">Speak to an AI export</button>
+        <button className="bg-cloud px-2 py-3 w-auto text-[14px]">Speak to an AI export</button>
         </div>
       </div>
     </div>

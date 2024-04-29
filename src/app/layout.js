@@ -17,9 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-
-      <body className={inter.className}>
+    <html lang="en">  
+    <body className={inter.className}>
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>

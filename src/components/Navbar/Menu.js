@@ -11,8 +11,8 @@ const Menu = ({title}) => {
     <NavigationMenu.Trigger className="NavigationMenuTrigger">
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
-    <NavigationMenu.Content className="NavigationMenuContent">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4  px-6 py-16 gap-2">
+    <NavigationMenu.Content className="NavigationMenuContent navbar-main">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4  px-0 py-6 gap-2">
         <div className="flex">
           <div className="rounded-md p-2">
             <Image

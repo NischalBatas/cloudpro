@@ -11,7 +11,7 @@ const Faq = () => {
     <div className="navbar-main py-20 flex justify-between flex-wrap gap-2">
       <div className="w-[219px]">
         <p className="font-bold text-[36px] w-[219px]">FAQ</p>
-        <p className="text-[16px] text=[#BCBCBC] w-[219px]">Generative AI & Applications</p>
+        <p className="text-[16px] text-[#BCBCBC] max-w-[219px] tracking-normal">Generative AI & Applications</p>
       </div>
 
       <Accordion.Root className="AccordionRoot mt-[1.5rem] md:mt-0" type="single" defaultValue="item-1" collapsible>

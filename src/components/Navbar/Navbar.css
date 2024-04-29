@@ -27,8 +27,8 @@
 .NavigationMenuRoot {
   position: relative;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  /* justify-content: center; */
+  /* width: 100%; */
   z-index: 1;
   
 }
@@ -55,6 +55,7 @@
   border-radius: 8px;
   font-size: 15px;
   color: #fff;
+  border-bottom: 2px solid transparent;
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
@@ -62,12 +63,14 @@
   border-bottom:2px solid #4862b7 ;
   border-radius:0px ;
   /* padding: 8px 8px; */
+
 }
 .NavigationMenuTrigger:hover,
 .NavigationMenuLink:hover {
   /* background-color: #4862b7; */
   /* box-shadow: 0 0 0 2px #4862b7; */
   border-radius:0px ;
+
   border-bottom:2px solid #4862b7 ;
  
 
@@ -97,7 +100,7 @@
 
 .NavigationMenuContent {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 100%;
   animation-duration: 250ms;
@@ -248,7 +251,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  top: 100%;
+  top: 82%;
   left: 0;
   perspective: 2000px;
 }
@@ -356,4 +359,24 @@
   to {
     opacity: 0;
   }
+}
+
+.navbar-main-group:hover {
+  background-color: white;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.navbar-main-group:hover .NavigationMenuTrigger,
+.navbar-main-group:hover .CaretDown{
+    color: #000;
+}
+.blacklogo{
+  display: none;
+}
+.navbar-main-group:hover .blacklogo{
+  display: block;
+}
+
+.navbar-main-group:hover .whitelogo{
+  display: none;
 }

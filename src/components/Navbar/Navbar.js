@@ -20,17 +20,23 @@ const Navbar = () => {
   //     }
   // }
   return (
-    <div className="navbar-main px-8 py-2">
-      <NavigationMenu.Root className="NavigationMenuRoot  ">
+    <div className="navbar-mains navbar-main-group">
+      <NavigationMenu.Root className="NavigationMenuRoot navbar-main">
         
-        <div className="NavigationMenuList w-full container m-auto">
-          <div>
+        <div className="NavigationMenuList w-full">
+          <div className="logo-main">
             <Link href="/">
-              <Image
+              <Image className="whitelogo"
                 width={120}
                 height={120}
                 alt="company_logo"
                 src="../../../Image/logo/company.svg"
+              />
+              <Image className="blacklogo"
+                width={120}
+                height={120}
+                alt="company_logo"
+                src="../../../Image/logo/blacklogo.svg"
               />
             </Link>
           </div>
@@ -45,8 +51,8 @@ const Navbar = () => {
             <Link className="NavigationMenuTrigger rounded-[8px]" href="">
               About Us
             </Link>
-            <button className="bg-cloudBtn text-white px-2 py-1 rounded">
-              ContactUs
+            <button className="bg-cloudBtn text-white px-2 py-1 rounded text-[14px]">
+              Contact Us
             </button>
           </div>
         </div>

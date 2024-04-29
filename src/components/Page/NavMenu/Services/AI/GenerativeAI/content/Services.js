@@ -5,8 +5,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Services = () => {
   return (
     <div className="navbar-main flex flex-wrap justify-between bg-[#EDF6FF] rounded gap-2 py-10">
-      <div className="max-w-72 py-2 md:py-5">
-        <div className="flex flex-col gap-5">
+      <div className="max-w-72 py-2 md:py-5 m-auto md:m-0">
+        <div className="flex flex-col gap-5 ">
           <Image
             width={259}
             height={259}

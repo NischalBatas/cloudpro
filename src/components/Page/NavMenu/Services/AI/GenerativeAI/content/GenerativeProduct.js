@@ -7,7 +7,7 @@ const GenerativeProduct = () => {
     <>
       {generativeProduct.map((item, index) => {
         return (
-          <div key={index} className="max-w-[331px] border border-[#DFDFDF] rounded-md">
+          <div key={index} className="md:max-w-[331px] border border-[#DFDFDF] rounded-md">
             <Image
               width={1000}
               height={1000}

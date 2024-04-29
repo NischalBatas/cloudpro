@@ -13,9 +13,11 @@ h3 {
   height: 1px;
   margin: 0.2rem 0;
 }
+
+
 .AccordionRoot {
   border-radius: 6px;
-  width: 720px;
+  width: 750px;
   /* background-color: var(--mauve-6); */
   box-shadow: 0 2px 10px var(--black-a4);
 }
@@ -71,7 +73,7 @@ h3 {
   overflow: hidden;
   font-size: 15px;
   /* padding:0 0.5rem; */
-  /* color: var(--mauve-11); */
+  color: var(--mauve-11);
   background-color: var(--mauve-2);
 }
 .AccordionContent[data-state='open'] {

@@ -80,6 +80,14 @@
   gap: 2px;
 }
 
+
+@media only screen and (max-width:600px){
+  .NavigationMenuTrigger {
+    display:none;
+    
+  }
+}
+
 .NavigationMenuLink {
   display: block;
   text-decoration: none;

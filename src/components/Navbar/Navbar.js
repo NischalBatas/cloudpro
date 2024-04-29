@@ -38,6 +38,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <Menu title="Services" />
             <Menu title="Product" />
+            
             <Link className="NavigationMenuTrigger rounded-[8px]" href="">
               Case Study
             </Link>

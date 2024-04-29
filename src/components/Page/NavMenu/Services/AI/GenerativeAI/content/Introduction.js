@@ -5,13 +5,13 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
     <div
-      className="bg-cloud1 pb-16 relative w-full bg-no-repeat bg-center bg-cover z-10 h-[680px]"
+      className="bg-cloud1 pb-16 relative w-full bg-no-repeat bg-center bg-cover h-[680px]"
       style={{
         backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
       }}
     >
       <div
-        className="w-full relative bg-no-repeat bg-center bg-cover z-20"
+        className="w-full relative bg-no-repeat bg-center bg-cover"
         style={{
           backgroundImage: "url('/Image/process/generativeapp/cloud6.svg')",
         }}
@@ -38,7 +38,7 @@ const Introduction = () => {
         </div>
 
         <div>
-        <button className="bg-cloud rounded-md px-2 py-3 w-auto text-[14px]">Speak to an AI export</button>
+        <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">Speak to an AI export</button>
         </div>
       </div>
     </div>

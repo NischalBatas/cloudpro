@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 py-2">
             <Menu title="Services" />
             <Menu title="Product" />
             

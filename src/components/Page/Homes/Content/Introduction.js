@@ -22,7 +22,7 @@ const Introduction = () => {
             </p>
           </div>
           <div className="flex justify-center items-center gap-3  mt-6">
-            <button className="bg-cloudBtn text-cloudText rounded font-medium">
+            <button className="bg-cloudBtn px-3 py-2 text-cloudText rounded font-medium">
               Contact Us
             </button>
             <span className="flex items-center gap-1 text-white">

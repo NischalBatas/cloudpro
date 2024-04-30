@@ -14,7 +14,7 @@ const Results = () => {
           return (
             <div
               key={index}
-              className="h-56 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
+              className="h-52 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
               style={{
                 backgroundImage: `url(${item.image})`,
               }}

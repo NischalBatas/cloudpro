@@ -83,7 +83,7 @@ const ContactUs = () => {
         
         <Form.Label className="FormLabel">What is your phone number?</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Please enter your phone number
+          Phone Number
         </Form.Message>
         <Form.Message className="FormMessage" match="typeMismatch">
           Please provide a valid number
@@ -157,7 +157,7 @@ const ContactUs = () => {
         
         <Form.Label className="FormLabel">What is your phone number?</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Please enter your phone number
+          Phone Number
         </Form.Message>
         <Form.Message className="FormMessage" match="typeMismatch">
           Please provide a valid number

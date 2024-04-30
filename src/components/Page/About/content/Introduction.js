@@ -6,7 +6,7 @@ const Introduction = () => {
       <div
         className="w-full absolute bg-no-repeat bg-center bg-cover  h-[400px] lg:h-[705px] z-10"
         style={{
-          filter: "blur(2px)",
+          // filter: "blur(2px)",
           zIndex: "-1",
           backgroundImage: "url('/Image/about.svg')",
         }}

@@ -81,9 +81,9 @@ const ContactUs = () => {
 <Form.Field className="FormField" name="phonenumber">
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
         
-        <Form.Label className="FormLabel">What is your phone number?</Form.Label>
+        <Form.Label className="FormLabel"> Phone Number</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Phone Number
+          Enter the Phone Number
         </Form.Message>
         <Form.Message className="FormMessage" match="typeMismatch">
           Please provide a valid number
@@ -155,7 +155,7 @@ const ContactUs = () => {
 <Form.Field className="FormField" name="phonenumber">
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
         
-        <Form.Label className="FormLabel">What is your phone number?</Form.Label>
+        <Form.Label className="FormLabel"> Phone Number</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
           Phone Number
         </Form.Message>

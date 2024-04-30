@@ -57,7 +57,7 @@ const FooterContent = () => {
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
               <Link href="#" className="text-wrap w-full lg:w-52">
-                584 Castro St 2165, San Francisco, CA 94114-2512
+                Maharajgunj, Basundhara- 3 Kathmandu, Nepal
               </Link>
               <Link href="#">contact@cloudpro.ai</Link>
               <Link href="#">Generative AL and ML</Link>

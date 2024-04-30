@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">  
     <body className={inter.className}>
+
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         <Script src="../../static/resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></Script>
 
         <Script src="../../static/resources/WOW-master/dist/wow.js"></Script>
-     
+        
       </body>
     </html>
   );

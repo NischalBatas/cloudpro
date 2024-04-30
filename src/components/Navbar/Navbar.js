@@ -20,7 +20,7 @@ const Navbar = () => {
   //     }
   // }
   return (
-    <div className="navbar-mains navbar-main-group">
+    <div className="navbar-main-group fixed w-full">
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main">
         
         <div className="NavigationMenuList w-full">

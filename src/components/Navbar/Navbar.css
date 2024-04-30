@@ -21,8 +21,73 @@
 
 /* reset */
 
+.navbar-main-group{
+  /* background-color: #01010B; */
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar-main-group2 {
+  background-color: #e6e6e6;
+  top: 0;
+}
 
 
+.navbar-main-group2 .NavigationMenuTrigger,
+
+.navbar-main-group2 .CaretDown {
+  color: #000;
+}
+
+.navbar-main-group2 .NavigationMenuContent{
+  color: rgb(51 51 51 );
+}
+
+.menu-item-list:hover{
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar-main-group:hover{
+  background-color: white;
+  transition: background-color 0.1s ease-in-out;
+}
+
+
+.NavigationMenuRoot:hover .NavigationMenuList{
+  border-bottom: 1px solid #d8d8d8;
+}
+
+
+.navbar-main-group:hover .NavigationMenuTrigger,
+.navbar-main-group:hover .CaretDown{
+    color: #000;
+}
+
+.blacklogo{
+  display: none;
+}
+
+.blacklogo2{
+  display: block;
+}
+
+
+.navbar-main-group:hover .blacklogo{
+  display: block;
+}
+
+.navbar-main-group:hover .whitelogo{
+  display: none;
+}
+
+.whitelogo2{
+  display: none;
+}
 
 .NavigationMenuRoot {
   position: relative;
@@ -70,7 +135,7 @@
   /* background-color: #4862b7; */
   /* box-shadow: 0 0 0 2px #4862b7; */
   border-radius:0px ;
-
+  color: #000;
   border-bottom:2px solid #4862b7 ;
  
 
@@ -149,7 +214,7 @@
   background-color: white;
   /* border-radius: 6px; */
   overflow: hidden;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  /* box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px; */
   height: var(--radix-navigation-menu-viewport-height);
   transition: width, height, 300ms ease;
 }
@@ -359,24 +424,4 @@
   to {
     opacity: 0;
   }
-}
-
-.navbar-main-group:hover {
-  background-color: white;
-  transition: background-color 0.1s ease-in-out;
-}
-
-.navbar-main-group:hover .NavigationMenuTrigger,
-.navbar-main-group:hover .CaretDown{
-    color: #000;
-}
-.blacklogo{
-  display: none;
-}
-.navbar-main-group:hover .blacklogo{
-  display: block;
-}
-
-.navbar-main-group:hover .whitelogo{
-  display: none;
 }

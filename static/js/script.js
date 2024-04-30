@@ -24,7 +24,6 @@ $(document).ready(function () {
     },
   });
 
-
   $(".industries-main .owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -47,7 +46,6 @@ $(document).ready(function () {
       },
     },
   });
-
 
   $(".testominial-main .owl-carousel").owlCarousel({
     loop: true,
@@ -86,4 +84,21 @@ valueDisplays.forEach((valueDisplay) => {
       clearInterval(counter);
     }
   }, 250);
+});
+
+// Navbar background
+$(document).ready(function () {
+  $(window).scroll(function () {
+    let pos = $(window).scrollTop();
+    if (pos >= 100) {
+      $(".navbar-main-group").addClass("navbar-main-group2");
+      $(".blacklogo").addClass("blacklogo2");
+      $(".whitelogo").addClass("whitelogo2");
+    } else {
+      $(".navbar-main-group").removeClass("navbar-main-group2");
+      $(".blacklogo").removeClass("blacklogo2");
+      $(".whitelogo").removeClass("whitelogo2");
+    }
+  
+  });
 });

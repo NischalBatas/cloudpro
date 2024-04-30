@@ -5,18 +5,18 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
     <div
-      className="bg-cloud1 pb-16 relative w-full bg-no-repeat bg-center bg-cover h-[680px]"
+      className="pb-16 relative w-full bg-no-repeat bg-center bg-cover h-[680px]"
       style={{
-        backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
+        // backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
       }}
     >
       <div
-        className="w-full relative bg-no-repeat bg-center bg-cover"
-        style={{
-          backgroundImage: "url('/Image/process/generativeapp/cloud6.svg')",
+        className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
+        style={{ filter:'blur(5px)', zIndex:'-1',
+          backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
         }}
       ></div>
-      <div className="navbar-main pt-24 flex flex-col justify-end h-full pb-4">
+      <div className="navbar-main pt-24 flex flex-col justify-end h-full pb-4 " style={{zIndex:'11'}}>
         <div className="text-cloud uppercase text-[12px] tracking-wildest mb-6">
           <Link href="/" className="mr-1">
             Services

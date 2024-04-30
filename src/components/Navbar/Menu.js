@@ -28,9 +28,9 @@ const Menu = ({title}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link href="/">LLM Powered Applications</Link>
-              <Link href="/">Generative AI</Link>
-              <Link href="/">AI Consulting</Link>
+              <Link className="menu-item-list" href="/">LLM Powered Applications</Link>
+              <Link className="menu-item-list" href="/">Generative AI</Link>
+              <Link className="menu-item-list" href="/">AI Consulting</Link>
             
             </ul>
           </div>
@@ -51,11 +51,11 @@ const Menu = ({title}) => {
             Cloud Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link href="/">Architecture Consulting</Link>
-              <Link href="/">Cloud Ops</Link>
-              <Link href="/">Infrastructure migration and upgrades</Link>
-              <Link href="/">Security & Governancce</Link>
-              <Link href="/">Big Data Consulting</Link>
+              <Link className="menu-item-list" href="/">Architecture Consulting</Link>
+              <Link className="menu-item-list" href="/">Cloud Ops</Link>
+              <Link className="menu-item-list" href="/">Infrastructure migration and upgrades</Link>
+              <Link className="menu-item-list" href="/">Security & Governancce</Link>
+              <Link className="menu-item-list" href="/">Big Data Consulting</Link>
             </ul>
           </div>
         </div>
@@ -76,11 +76,11 @@ const Menu = ({title}) => {
             Data Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link href="/">ETL Services</Link>
-              <Link href="/">Data Analytics</Link>
-              <Link href="/">Data Lakes and Warehouses</Link>
-              <Link href="/">Data Mining Solutions</Link>
-              <Link href="/">Data Security and Goverance</Link>
+              <Link className="menu-item-list" href="/">ETL Services</Link>
+              <Link className="menu-item-list" href="/">Data Analytics</Link>
+              <Link className="menu-item-list" href="/">Data Lakes and Warehouses</Link>
+              <Link className="menu-item-list" href="/">Data Mining Solutions</Link>
+              <Link className="menu-item-list" href="/">Data Security and Goverance</Link>
             </ul>
           </div>
         </div>
@@ -101,11 +101,11 @@ const Menu = ({title}) => {
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link href="/">BI Report and Dashboard</Link>
-              <Link href="/">Ad-Hoc Reporting Solutions</Link>
-              <Link href="/">Data Visualization Solution</Link>
-              <Link href="/"></Link>
-              <Link href="/"></Link>
+              <Link className="menu-item-list" href="/">BI Report and Dashboard</Link>
+              <Link className="menu-item-list" href="/">Ad-Hoc Reporting Solutions</Link>
+              <Link className="menu-item-list" href="/">Data Visualization Solution</Link>
+              <Link className="menu-item-list" href="/"></Link>
+              <Link className="menu-item-list" href="/"></Link>
             </ul>
           </div>
         </div>

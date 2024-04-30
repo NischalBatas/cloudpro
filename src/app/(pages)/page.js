@@ -5,7 +5,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="main-container">
+    <div className="main-container px-1 md:px-2">
       <Homes/>
     </div>
   );

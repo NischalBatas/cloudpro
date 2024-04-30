@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link className="NavigationMenuTrigger rounded-[8px]" href="">
               Case Study
             </Link>
-            <Link className="NavigationMenuTrigger rounded-[8px]" href="">
+            <Link className="NavigationMenuTrigger rounded-[8px]" href="/aboutus">
               About Us
             </Link>
             <button onClick={()=>{onHandleSubmit('/contactus')}} className="bg-cloudBtn text-white px-2 py-1 rounded text-[14px]">

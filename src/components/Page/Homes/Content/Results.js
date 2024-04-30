@@ -4,17 +4,17 @@ import React from "react";
 
 const Results = () => {
   return (
-    <div className="navbar-main bg-cover text-white py-10" style={{backgroundImage:"url('/Image/results/Rectangle686.png')"}}>
-      <p className="text-lg font-medium text-cloudBtn">WHAT WE DO</p>
-      <p className="text-white  w-full lg:w-4/12 py-2 text-2xl font-medium">
+    <div className="navbar-main bg-cover text-white py-10 ">
+      <p className="text-[14px] tracking-widest text-cloudBtn">WHAT WE DO</p>
+      <p className="text-white max-w-[427px] py-2 text-[32px] font-bold">
         Our results in numbers
       </p>
-      <div className="flex justify-center md:justify-start flex-wrap gap-2 md:gap-4 my-6 ">
+      <div className="grid grid-cols-2 md:flex md:justify-start flex-wrap gap-2 md:gap-4 my-6 ">
         {results.map((item, index) => {
           return (
             <div
               key={index}
-              className="h-44 w-44 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
+              className="h-56 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
               style={{
                 backgroundImage: `url(${item.image})`,
               }}

@@ -33,7 +33,7 @@ const ProfifleMessage = () => {
             In leading our team, I emphasize creativity and technical
             excellence, constantly pushing the boundaries in AI and software
             development. This approach fosters a culture where breakthroughs are
-            not just possible, but expected
+            not just possible, but expected.
           </p>
           <div className="mt-4">
             <p className="font-semibold text-[14px]">Nimesh Kuinkel</p>

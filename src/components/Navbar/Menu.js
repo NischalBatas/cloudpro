@@ -24,7 +24,7 @@ const Menu = ({title}) => {
           </div>
 
           <div>
-            <div className="navbar-menu-title font-semibold text-base py-2">
+            <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
@@ -47,7 +47,7 @@ const Menu = ({title}) => {
           </div>
 
           <div>
-            <div className="navbar-menu-title font-semibold text-base py-2">
+            <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
             Cloud Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
@@ -72,7 +72,7 @@ const Menu = ({title}) => {
           </div>
 
           <div>
-            <div className="navbar-menu-title font-semibold text-base py-2">
+            <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
             Data Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
@@ -97,7 +97,7 @@ const Menu = ({title}) => {
           </div>
 
           <div>
-            <div className="navbar-menu-title font-semibold text-base py-2">
+            <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">

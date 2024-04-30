@@ -90,7 +90,7 @@ valueDisplays.forEach((valueDisplay) => {
 $(document).ready(function () {
   $(window).scroll(function () {
     let pos = $(window).scrollTop();
-    if (pos >= 100) {
+    if (pos >= 50) {
       $(".navbar-main-group").addClass("navbar-main-group2");
       $(".blacklogo").addClass("blacklogo2");
       $(".whitelogo").addClass("whitelogo2");

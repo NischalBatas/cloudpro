@@ -28,7 +28,7 @@ const Menu = ({title}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className="menu-item-list" href="/">LLM Powered Applications</Link>
+              <Link className="menu-item-list" href="/generativeapp">LLM Powered Applications</Link>
               <Link className="menu-item-list" href="/">Generative AI</Link>
               <Link className="menu-item-list" href="/">AI Consulting</Link>
             

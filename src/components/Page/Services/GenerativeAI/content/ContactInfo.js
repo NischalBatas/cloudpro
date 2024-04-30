@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 
-const ContactUs = () => {
+const ContactInfo = () => {
   return (
     <div className="bg-[#6083F3] pb-16 relative h-96">
       <div
@@ -29,4 +29,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default ContactInfo

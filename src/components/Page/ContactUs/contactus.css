@@ -1,0 +1,181 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
+
+/* reset */
+button,
+fieldset,
+input {
+  all: unset;
+}
+
+.TabsRoot {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  width: 100%;
+  /* box-shadow: 0 2px 10px var(--black-a4); */
+}
+
+.TabsList {
+  /* flex-shrink: 0;
+  display: flex; */
+  /* border-bottom: 1px solid #6083f3; */
+}
+
+.TabsTrigger {
+  font-family: inherit;
+  /* background-color: white; */
+  /* padding: 0 10px; */
+  height: 75px;
+  flex: 1;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* font-size: 32px; */
+  line-height: 1;
+  color: #535353;
+  user-select: none;
+  font-weight: 600;
+
+}
+.TabsTrigger:first-child {
+  border-top-left-radius: 6px;
+  margin-right: 1rem;
+}
+.TabsTrigger:last-child {
+  border-top-right-radius: 6px;
+  margin-left: 1rem;
+}
+.TabsTrigger:hover {
+  color: #6083f3;
+}
+.TabsTrigger[data-state='active'] {
+  color: #6083f3;
+  box-shadow: inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor;
+}
+.TabsTrigger:focus {
+  position: relative;
+  /* box-shadow: 0 0 0 2px black; */
+}
+
+.TabsContent {
+  flex-grow: 1;
+  padding: 20px 0;
+  /* background-color: white; */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+  margin-top: 1.5rem;
+}
+.TabsContent:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/violet.css';
+@import '@radix-ui/colors/mauve.css';
+
+
+/* reset */
+input,
+textarea,
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.FormRoot {
+    width: 100%;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.FormField {
+  display: grid;
+  margin-bottom: 8px;
+}
+
+.FormLabel {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+  color: white;
+}
+
+.FormMessage {
+  font-size: 13px;
+  color: white;
+  opacity: 0.8;
+}
+
+.Input,
+.Textarea {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 4px; */
+
+  font-size: 15px;
+  color: white;
+  border-bottom: 1px solid #2a2a2c;
+  /* background-color: var(--black-a5); */
+  /* box-shadow: 0 0 0 1px white; */
+}
+.Input:hover,
+.Textarea:hover {
+    border-bottom: 1px solid #fff;
+  /* box-shadow: 0 0 0 1px white; */
+}
+.Input:focus,
+.Textarea:focus {
+  /* box-shadow: 0 0 0 2px white; */
+  border-bottom: 1px solid #fff;
+}
+
+
+.Input::selection,
+.Textarea::selection {
+  background-color: var(--black-a9);
+  color: white;
+}
+
+.Input {
+  padding: 0 10px;
+  height: 35px;
+  line-height: 1;
+}
+
+.Textarea {
+  resize: none;
+  padding: 10px;
+}
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 39px;
+  width: 146px;
+  border: 1px solid transparent;
+
+  /* box-shadow: 0 2px 10px var(--black-a7); */
+}
+.Button:hover {
+  border: 1px solid #6083f3;
+  background-color: #fff;
+  color: #6083f3;
+}
+.Button:focus {
+  box-shadow: 0 0 0 2px white;
+}

@@ -6,11 +6,11 @@ import Solutions from './content/Solutions'
 import Empower from './content/Empower'
 import Journey from './content/Journey'
 import Services from './content/Services'
-import ContactUs from './content/ContactUs'
 import Products from './content/Products'
 import Industries from './content/Industries'
 import Faq from './content/Faq'
 import Enterprises from './content/Enterprises'
+import ContactInfo from './content/ContactInfo'
 
 const GenerativeAI = () => {
   return (
@@ -27,7 +27,7 @@ const GenerativeAI = () => {
         
         <Journey/>
         <Services/>
-        <ContactUs/>
+        <ContactInfo/>
 
        
     </div>

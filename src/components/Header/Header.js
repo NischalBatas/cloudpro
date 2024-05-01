@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="text-cloud4 text-xs flex gap-2 text-center  justify-center  p-1">
+    <div className="text-cloud4 bg-black text-[12px] flex gap-2 text-center  justify-center  p-1">
       <p>
         CloudPro Ai Conference on Cloud Computing, Computer Vision and Image
         Processing.

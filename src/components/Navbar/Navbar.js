@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4 py-1">
-          <Link className={`NavigationMenuTrigger rounded-[8px] ${pathname==='/' ? 'active-menu' :''}`} href="">
+          <Link className={`NavigationMenuTrigger rounded-[8px] ${pathname==='/' ? 'active-menu' :''}`} href="/">
               Home
             </Link>
 

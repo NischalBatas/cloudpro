@@ -11,7 +11,7 @@ const Introduction = () => {
           backgroundImage: "url('/Image/about.svg')",
         }}
       >   </div>
-        <div className="hidden lg:flex  bg-[#080808] p-8 w-[90%] lg:w-[74%] mx-4 rounded-md gap-6"
+        <div className="main-container hidden lg:flex  bg-[#080808] p-8 w-full mx-4 rounded-md gap-6"
         style={{position: "absolute",
             top: "100%",
             // bottom:'-10%',

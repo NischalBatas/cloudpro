@@ -12,7 +12,8 @@ const ContactInfo = () => {
           height: "342.5px"
         }}
       ></div>
-      <div className="navbar-main pt-24 flex flex-col justify-center h-full pb-4">
+      <div className="navbar-main pt-24 h-full pb-4">
+      <div className="main-container flex flex-col justify-center h-full">
         <div className="max-w-96 text-white text-2xl font-medium">
         Discover more ways our team can help.
         </div>
@@ -24,6 +25,7 @@ const ContactInfo = () => {
               Book a Free Call <MdOutlineArrowOutward />
             </span>
           </div>
+      </div>
       </div>
     </div>
   )

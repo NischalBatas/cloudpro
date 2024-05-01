@@ -5,7 +5,7 @@ import Services from "./Services";
 const Journey = () => {
   return (
     <div className="navbar-main py-10 md:py-20 bg-cloudbg2">
-      <div className="business-growth-main flex  md:flex-nowrap justify-between gap-2">
+      <div className="main-container business-growth-main flex  md:flex-nowrap justify-between gap-2">
         <div className="w-full md:w-6/12">
           <div className="text-black text-[32px] font-bold max-w-[404px] leading-10">
             Embark on Your AI Journey with Cloud ProAI

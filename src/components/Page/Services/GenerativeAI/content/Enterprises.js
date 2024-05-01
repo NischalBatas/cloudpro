@@ -3,7 +3,8 @@ import React from "react";
 
 const Enterprises = () => {
   return (
-    <div className="navbar-main py-16 flex justify-between flex-wrap gap-6 lg:gap-4 overflow-hidden">
+    <div className="navbar-main py-16 ">
+       <div className="main-container flex justify-between flex-wrap gap-6 lg:gap-4 overflow-hidden">
       <div>
       <p className="font-medium text-[16px] max-w-[376px]">
         Give your enterprise an advantage with our comprehensive data science
@@ -47,6 +48,7 @@ const Enterprises = () => {
               quality, and consistency of LLM outputs with GuardRails.</li>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   );

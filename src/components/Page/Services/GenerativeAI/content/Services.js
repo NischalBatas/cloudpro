@@ -4,9 +4,10 @@ import { services } from "@/db/services";
 import { MdOutlineArrowOutward } from "react-icons/md";
 const Services = () => {
   return (
-    <div className="navbar-main flex flex-wrap justify-between bg-[#EDF6FF] rounded gap-2 py-10">
-      <div className="max-w-72 py-2 md:py-5 m-auto md:m-0">
-        <div className="flex flex-col gap-5 ">
+    <div className="navbar-main bg-[#EDF6FF] rounded  py-10">
+       <div className="main-container flex flex-wrap md:flex-nowrap items-center justify-between gap-2">
+     <div className="md:w-4/12 py-2 md:py-5 m-auto md:m-0 flex flex-col gap-5 items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Image
             width={259}
             height={259}
@@ -20,7 +21,7 @@ const Services = () => {
       </div>
 
       {/* <div className="services-line hidden md:block"></div> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2 md:py-5 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-2 md:py-5 ">
         {services.map((item, index) => {
           return (
             <div key={index} className="max-w-96">
@@ -31,6 +32,7 @@ const Services = () => {
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );

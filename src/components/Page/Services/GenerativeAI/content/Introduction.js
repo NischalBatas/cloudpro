@@ -21,9 +21,10 @@ const Introduction = () => {
         }}
       ></div>
       <div
-        className="navbar-main pt-24 flex flex-col justify-end h-full pb-4 "
+        className="navbar-main pt-24 h-full pb-4 "
         style={{ zIndex: "11" }}
       >
+        <div className="main-container flex flex-col justify-end h-full">
         <div className="text-cloud uppercase text-[12px] tracking-wildest mb-6">
           <Link href="/" className="mr-1">
             Services
@@ -48,6 +49,7 @@ const Introduction = () => {
           <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
             Speak to an AI export
           </button>
+        </div>
         </div>
       </div>
     </div>

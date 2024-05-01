@@ -8,9 +8,10 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <div className="navbar-main mt-28 grid lg:grid-cols-2 gap-4 mb-24">
+    <div className="navbar-main mt-28 mb-24">
+        <div className="main-container flex justify-between gap-8 ">
         <div className="relative">
-        <Image className="absolute top-0" style={{zIndex:'-1'}} width={978} height={628} src='/Image/Ellipse.svg' alt="image_shade"/>
+        <Image className="absolute top-0" style={{zIndex:'-1'}} width={978} height={628} src='/Image/ellipse88.svg' alt="image_shade"/>
 
           <p className="max-w-[423px] font-semibold text-[40px] md:text-[42px]">
             Let's start a project together.
@@ -177,6 +178,7 @@ const ContactUs = () => {
   </Form.Root>
         </Tabs.Content>
       </Tabs.Root>
+      </div>
       
     </div>
   );

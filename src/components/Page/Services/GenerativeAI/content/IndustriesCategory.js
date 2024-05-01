@@ -4,7 +4,7 @@ import React from 'react'
 
 const IndustriesCategory = () => {
   return (
-    <div className="grid grid-cols-3 md:grid-cols-4 lg:mx-auto flex-wrap gap-6 my-10 max-w-[850px]">
+    <div className="grid grid-cols-3 md:grid-cols-4 place-content-end lg:mx-auto flex-wrap gap-4 my-10">
     {industries.map((item, index) => {
       return (
         <div

@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 const ProfifleMessage = () => {
   return (
     <div className="navbar-main my-20 mb-28">
-      <div className="bg-[#0E0E1A] p-8 flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap gap-8  rounded-md  m-auto">
+      <div className="main-container bg-[#0E0E1A] p-8 flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap gap-8  rounded-md  m-auto">
         <div className="relative min-w-[210px] lg:min-w-[232px] h-[240px] lg:h-[260px]">
           <div
             className=" absolute top-2 left-2 min-w-[210px] lg:w-[232px] h-[240px] lg:h-[260px] bg-cloud rounded"

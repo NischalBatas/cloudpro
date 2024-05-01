@@ -28,8 +28,8 @@ const Menu = ({title,pathname}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/generativeapp' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link>
-              <Link className={`menu-item-list ${pathname==='/alconsulting' ? 'active-menu' :''}`} href="/services/generativeapp">Generative AI</Link>
+              <Link className={`menu-item-list ${pathname==='/generativeapplication' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link>
+              <Link className={`menu-item-list ${pathname==='/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>
               <Link className={`menu-item-list ${pathname==='/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link>
             
             </ul>

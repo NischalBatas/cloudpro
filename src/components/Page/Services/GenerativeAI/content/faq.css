@@ -3,10 +3,10 @@
 @import '@radix-ui/colors/violet.css';
 
 /* reset */
-/* button,
+button,
 h3 {
   all: unset;
-} */
+}
 .line-faq{
   background-color: rgb(54, 54, 54);
   width: 100%;

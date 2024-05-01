@@ -25,7 +25,7 @@ const Navbar = () => {
                 width={120}
                 height={120}
                 alt="company_logo"
-                src="../../../Image/logo/company.svg"
+                src="../../../Image/logo/logo.svg"
               />
               <Image className="blacklogo"
                 width={120}

@@ -4,13 +4,13 @@
 @import '@radix-ui/colors/violet.css';
 
 /* reset */
-button,
+/* button,
 fieldset,
 input {
   all: unset;
-}
+} */
 
-.TabsRoot {
+.TabsRoot2 {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -20,7 +20,7 @@ input {
   /* box-shadow: 0 2px 10px var(--black-a4); */
 }
 
-.TabsList {
+.TabsList2 {
   /* flex-shrink: 0;
   display: flex; */
   /* border-bottom: 1px solid #6083f3; */
@@ -31,7 +31,7 @@ input {
   margin-top: 1.5rem;
 }
 
-.TabsTrigger {
+.TabsTrigger2 {
   font-family: inherit;
   /* background-color: white; */
   /* padding: 0 10px; */
@@ -47,28 +47,28 @@ input {
   
 
 }
-.TabsTrigger:first-child {
+.TabsTrigger2:first-child {
 
 }
-.TabsTrigger:last-child {
+.TabsTrigger2:last-child {
  
 }
-.TabsTrigger:hover {
+.TabsTrigger2:hover {
   color: #6083f3;
 }
-.TabsTrigger[data-state='active'] {
+.TabsTrigger2[data-state='active'] {
   color: #6083f3;
   padding: 1rem;
   background-color: #161616;
   border-left: 2px solid #6083f3;
   font-weight: 600;
 }
-.TabsTrigger:focus {
+.TabsTrigger2:focus {
   position: relative;
   /* box-shadow: 0 0 0 2px black; */
 }
 
-.TabsContent {
+.TabsContent2 {
   /* flex-grow: 1; */
   /* padding: 20px 0; */
   /* background-color: white; */
@@ -77,7 +77,7 @@ input {
   outline: none;
   /* margin-top: 1.5rem; */
 }
-.TabsContent:focus {
+.TabsContent2:focus {
   box-shadow: 0 0 0 2px black;
 }
 

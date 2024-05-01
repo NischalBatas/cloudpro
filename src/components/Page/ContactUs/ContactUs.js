@@ -23,16 +23,16 @@ const ContactUs = () => {
        
       </div>
 
-      <Tabs.Root className="TabsRoot mt-8 md:mt-0" defaultValue="tab1">
-        <Tabs.List className="TabsList text-[20px] md:text-[32px]" aria-label="Manage your account">
-          <Tabs.Trigger className="TabsTrigger " value="tab1">
+      <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab1">
+        <Tabs.List className="TabsList1 text-[20px] md:text-[32px]" aria-label="Manage your account">
+          <Tabs.Trigger className="TabsTrigger1 " value="tab1">
             Message
           </Tabs.Trigger>
-          <Tabs.Trigger className="TabsTrigger" value="tab2">
+          <Tabs.Trigger className="TabsTrigger1" value="tab2">
             Schedule a Call
           </Tabs.Trigger>
         </Tabs.List>
-        <Tabs.Content className="TabsContent" value="tab1">
+        <Tabs.Content className="TabsContent1" value="tab1">
             
         <Form.Root className="FormRoot">
     <Form.Field className="FormField" name="Your full name">
@@ -115,7 +115,7 @@ const ContactUs = () => {
   </Form.Root>
         </Tabs.Content>
 
-        <Tabs.Content className="TabsContent" value="tab2">
+        <Tabs.Content className="TabsContent1" value="tab2">
           <Image className="mb-10" width={500} height={500} src='/Image/phone.jpg' alt="phone_image"/>
           <Form.Root className="FormRoot">
     <Form.Field className="FormField" name="Your full name">

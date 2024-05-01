@@ -3,7 +3,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="navbar-main bg-white pt-[2rem] lg:pt-[14rem] pb-16 flex justify-between gap-4 flex-wrap lg:flex-nowrap">
+    <div className="navbar-main bg-white pt-[2rem] lg:pt-[14rem] pb-16 flex justify-between gap-6 lg:gap-8 flex-wrap lg:flex-nowrap">
       <div>
         <p className="text-cloud uppercase text-[14px]">Our Mission</p>
         <p className="text-[32px] font-bold leading-9 text-[#080808] mt-2 mb-3 max-w-[376px]">Your success is our mission</p>
@@ -27,24 +27,24 @@ const Mission = () => {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 justif gap-4">
-        <div className="p-4 max-w-[210px] max-h-[210px] bg-cloud rounded flex flex-col items-center">
+        <div className="p-4 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">
             <Image width={120} height={120} src='/Image/inno.svg' alt="mission_image"/>
             <p className="text-[14px] mt-3">Innovative Solutions</p>
         </div>
 
-        <div className="p-5 max-w-[210px] max-h-[210px] bg-cloud rounded flex flex-col items-center">
+        <div className="p-5 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">
             <Image width={120} height={120} src='/Image/target.svg' alt="mission_image" 
             style={{maxWidth:'100px',maxHeight:'100px'}}
             />
             <p className="text-[14px] mt-3">Client-Centric Approach</p>
         </div>
 
-        <div className="p-5 max-w-[210px] max-h-[210px] bg-cloud rounded flex flex-col items-center">
-            <Image width={120} height={120} src='/Image/inno.svg' alt="mission_image"/>
+        <div className="p-5 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">
+            <Image width={120} height={120} src='/Image/target.svg' alt="mission_image"/>
             <p className="text-[14px] mt-3">Innovative Solutions</p>
         </div>
 
-        <div className="p-5 max-w-[210px] max-h-[210px] bg-cloud rounded flex flex-col items-center">
+        <div className="p-5 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">
             <Image width={120} height={120} src='/Image/inno.svg' alt="mission_image"/>
             <p className="text-[14px] mt-3">Innovative Solutions</p>
         </div>

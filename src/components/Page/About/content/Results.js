@@ -4,7 +4,7 @@ import React from "react";
 
 const Results = () => {
   return (
-    <div className="navbar-main bg-cover text-white py-10 ">
+    <div className="navbar-main bg-cover text-white py-14 ">
       <p className="text-[14px] tracking-widest text-cloudBtn">WHAT WE DO</p>
       <p className="text-white max-w-[427px] py-2 text-[32px] font-bold">
         Our results in numbers

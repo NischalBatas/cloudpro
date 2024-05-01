@@ -11,21 +11,21 @@ const Introduction = () => {
           backgroundImage: "url('/Image/about.svg')",
         }}
       >   </div>
-        <div className="hidden lg:flex gap-4 bg-[#080808] p-4 w-[90%] lg:w-[60%] mx-4 rounded-md"
+        <div className="hidden lg:flex  bg-[#080808] p-8 w-[90%] lg:w-[74%] mx-4 rounded-md gap-6"
         style={{position: "absolute",
             top: "100%",
             // bottom:'-10%',
             left: "50%",
             transform: "translate(-50%, -50%)"}}
         >
-          <div>
+          <div className="">
             <p className="uppercase text-cloud text-[14px]">About Us</p>
-            <p className="text-[40px] font-semibold">Innovation is in our DNA.</p>
+            <p className="text-[48px] font-bold w-[316px] leading-[3.3rem] my-2 mb-4">Innovation is in our DNA.</p>
             <p className="text-[14px]">Get in Touch</p>
           </div>
 
           <div>
-            <p className="text-[14px] max-w-[790px]">
+            <p className="text-[14px]">
               At Cloud Pro AI, we are driven by a passion for innovation and a
               commitment to empowering businesses through cutting-edge cloud
               solutions. Our journey began with a vision to redefine the

@@ -1,5 +1,5 @@
 import React from 'react'
-import Results from '../Homes/Content/Results'
+import Results from './content/Results'
 import Introduction from './content/Introduction'
 import Mission from './content/Mission'
 import ProfifleMessage from './content/ProfifleMessage'

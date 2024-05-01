@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Menu = ({title,pathname}) => {
   return (
     <NavigationMenu.Item>
-    <NavigationMenu.Trigger className={`NavigationMenuTrigger NavigationMenuTrigger2 ${pathname==='/generativeapp' ? 'active-menu' :''}`}>
+    <NavigationMenu.Trigger className={`NavigationMenuTrigger NavigationMenuTrigger2 ${pathname==='/services/generativeapp' ? 'active-menu' :''}`}>
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
     <NavigationMenu.Content className="NavigationMenuContent navbar-main">
@@ -28,7 +28,7 @@ const Menu = ({title,pathname}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/generativeapp' ? 'active-menu' :''}`} href="/generativeapp">LLM Powered Applications</Link>
+              <Link className={`menu-item-list ${pathname==='/generativeapp' ? 'active-menu' :''}`} href="/services/generativeapp">LLM Powered Applications</Link>
               <Link className="menu-item-list" href="/">Generative AI</Link>
               <Link className="menu-item-list" href="/">AI Consulting</Link>
             

@@ -90,7 +90,7 @@ const ContactUs = () => {
         </Form.Message>
       </div>
       <Form.Control asChild>
-        <input className="Input" type="number" required  placeholder="Enter your Number"/>
+        <input className="Input" type="number" required  placeholder="eg.+977-9812345678"/>
       </Form.Control>
     </Form.Field>
 
@@ -164,7 +164,7 @@ const ContactUs = () => {
         </Form.Message>
       </div>
       <Form.Control asChild>
-        <input className="Input" type="number" required  placeholder="Enter your Number"/>
+        <input className="Input" type="number" required  placeholder="eg.+977-9812345678"/>
       </Form.Control>
     </Form.Field>
 

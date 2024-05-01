@@ -5,7 +5,7 @@ import "./Navbar.css";
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Menu = ({title}) => {
+const Menu = ({title,pathname}) => {
   return (
     <NavigationMenu.Item>
     <NavigationMenu.Trigger className="NavigationMenuTrigger NavigationMenuTrigger2">
@@ -28,7 +28,7 @@ const Menu = ({title}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className="menu-item-list" href="/generativeapp">LLM Powered Applications</Link>
+              <Link className={`menu-item-list ${pathname==='/generativeapp' ? 'active-menu' :''}`} href="/generativeapp">LLM Powered Applications</Link>
               <Link className="menu-item-list" href="/">Generative AI</Link>
               <Link className="menu-item-list" href="/">AI Consulting</Link>
             

@@ -7,13 +7,15 @@ import "./Navbar.css";
 import Image from "next/image";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Menu from "./Menu";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const router=useRouter()
   const onHandleSubmit=(path)=>{
     router.push(path)
   }
+  const pathname=usePathname()
+
   return (
     <div className="navbar-main-group fixed w-full">
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main">
@@ -37,13 +39,17 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4 py-1">
-            <Menu title="Services" />
+          <Link className={`NavigationMenuTrigger rounded-[8px] ${pathname==='/' ? 'active-menu' :''}`} href="">
+              Home
+            </Link>
+
+            <Menu pathname={pathname} title="Services" />
             {/* <Menu title="Product" /> */}
             
-            <Link className="NavigationMenuTrigger rounded-[8px]" href="">
+            <Link className={`NavigationMenuTrigger rounded-[8px] ${pathname==='/casestudy' ? 'active-menu' :''}`} href="">
               Case Study
             </Link>
-            <Link className="NavigationMenuTrigger rounded-[8px]" href="/aboutus">
+            <Link className={`NavigationMenuTrigger rounded-[8px] ${pathname==='/aboutus' ? 'active-menu' :''}`} href="/aboutus">
               About Us
             </Link>
             <button onClick={()=>{onHandleSubmit('/contactus')}} className="bg-cloudBtn text-white px-2 py-1 rounded text-[14px]">

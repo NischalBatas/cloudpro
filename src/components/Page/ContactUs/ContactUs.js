@@ -70,9 +70,9 @@ const ContactUs = () => {
     <Form.Field  className="FormField" name="Services">
   <Form.Label className="FormLabel">Select all services you may need.</Form.Label>
   <Form.Control asChild>
-    <select className="p-2  font-semibold rounded-md bg-gray-600">
+    <select className="p-2  font-semibold rounded-md bg-[#252525]">
       <option value="AI">Artificial Intelligence </option>
-      <option value="AI">Artificial Intelligence </option>
+      <option value="AI">Machine Learning </option>
 
     </select>
   </Form.Control>

@@ -37,7 +37,6 @@
 
 
 .navbar-main-group2 .NavigationMenuTrigger,
-
 .navbar-main-group2 .CaretDown {
   color: #000;
 }
@@ -208,7 +207,7 @@
 .NavigationMenuViewport {
   position: relative;
   transform-origin: top center;
-  margin-top: 10px;
+  margin-top: 8px;
   min-width: 100%;
   background-color: white;
   /* border-radius: 6px; */

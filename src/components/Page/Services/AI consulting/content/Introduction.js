@@ -31,9 +31,9 @@ const Introduction = () => {
           </Link>
           <span className="">/ Generative AI And ML</span>
         </div>
-        <div className="py-1 font-semibold text-white text-xl md:text-2xl lg:text-[40px] mb-3">
+        <p className="py-1 font-semibold text-white text-xl md:text-2xl lg:text-[40px] mb-3 leading-[2.5rem]">
         Empower Your Business with Expert AI Consulting Services
-        </div>
+        </p>
         <div className="text-[14px] max-w-[691px] mb-8">
           In today's competitive and rapidly evolving digital landscape,
           businesses of all sizes are on a quest for innovative solutions that

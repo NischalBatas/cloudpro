@@ -15,7 +15,7 @@ export const enterprises = [
     list: [
       "Monitor and refine AI systems to maximize performance and ROI. ",
       "Identify potential risks associated with AI implementation and develop mitigation strategies. ",
-      "",
+     
     ],
   },
 

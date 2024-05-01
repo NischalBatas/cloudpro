@@ -3,7 +3,7 @@ import React from "react";
 
 const CaseStudy = () => {
   return (
-    <div className="py-5 md:py-14">
+    <div className="main-container py-5 md:py-14">
       <div className="mb-8 w-full md:w-8/12 lg:w-4/12 text-center md:text-left">
         <div className="font-semibold text-[32px]">Case Study</div>
         {/* <div className="text-cloud3 mt-3 text-sm">
@@ -38,7 +38,7 @@ const CaseStudy = () => {
 
                 <div className="my-4">
                   <div className="font-semibold text-[16px]">{item.title}</div>
-                  <div className="mt-2 text-[14px] text-cloud3 leading-6">{item.description}</div>
+                  <div className="mt-2 text-[14px] text-[#B8BEBF] leading-6">{item.description}</div>
                 </div>
               </div>
             );

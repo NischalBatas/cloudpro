@@ -103,3 +103,8 @@
 .intro-image{
   /* top: -80px; */
 }
+
+
+.partners-home .splide__arrows{
+  display: none;
+}

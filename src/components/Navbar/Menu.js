@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Menu = ({title}) => {
   return (
     <NavigationMenu.Item>
-    <NavigationMenu.Trigger className="NavigationMenuTrigger">
+    <NavigationMenu.Trigger className="NavigationMenuTrigger NavigationMenuTrigger2">
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
     <NavigationMenu.Content className="NavigationMenuContent navbar-main">

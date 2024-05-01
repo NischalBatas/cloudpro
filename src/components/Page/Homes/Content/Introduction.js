@@ -4,10 +4,10 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 const Introduction = () => {
   return (
 
-      <div className="pb-52 relative">
-        <div className="intro-image w-full h-[742px] absolute bg-no-repeat bg-center"  style={{backgroundImage:"url('/Image/background.svg')"}}>
+      <div className="main-container pb-40 relative">
+        <div className="intro-image w-full h-[742px] absolute bg-no-repeat bg-center"  style={{backgroundImage:"url('/Image/background.svg')",zIndex:'-1'}}>
         </div>
-        <div className="pt-24 ">
+        <div className="pt-44 mt- z-20">
           <div className="flex justify-center items-center text-center">
             <p className="w-9/12 lg:w-8/12 text-4xl lg:text-[40px] font-bold text-white" style={{lineHeight:'3.5rem'}}>
               Data, AI and Software Cloud Services Consultant

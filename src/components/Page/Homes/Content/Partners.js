@@ -1,11 +1,11 @@
 "use client";
-import { partners } from "@/db/partners";
+import PartnerSlider from "@/components/SplideSlider/PartnerSlider";
 import Image from "next/image";
 import React, { useState } from "react";
 
 const Partners = () => {
   return (
-    <div className="partners-main flex flex-wrap items-center justify-between  py-5 px-2 gap-4 md:gap-2 ">
+    <div className="main-container partners-main flex flex-wrap items-center justify-between  pt-5 pb-20 px-2 gap-4 md:gap-2 ">
       <p className="text-center uppercase text-cloud w-full text-[12px] mb-2 tracking-widest">
         Global Partners
       </p>
@@ -15,23 +15,8 @@ const Partners = () => {
         and Infrastructure Readiness for the Ultimate Technological Leap.
       </p>
 
-      <div className="owl-carousel owl-theme">
-        {partners.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-center items-center"
-              style={{ width: "55px", height: "55px" }}
-            >
-              <Image
-                width={50}
-                height={50}
-                src={item.image}
-                alt={`Partner ${index}`}
-              />
-            </div>
-          );
-        })}
+      <div className="partners-home">
+       <PartnerSlider/>
       </div>
     </div>
   );

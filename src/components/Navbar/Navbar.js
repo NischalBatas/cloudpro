@@ -31,7 +31,7 @@ const Navbar = () => {
                 width={120}
                 height={120}
                 alt="company_logo"
-                src="../../../Image/logo/blacklogo.svg"
+                src="../../../Image/logo/logoblack.svg"
               />
             </Link>
           </div>

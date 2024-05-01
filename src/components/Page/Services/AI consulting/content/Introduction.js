@@ -42,7 +42,7 @@ const Introduction = () => {
           offers unparalleled creativity and efficiency. Cloud ProAI stands as a
           beacon in this journey, enabling businesses to harness the power of
           generative AI apps to foster originality, automate processes, and
-          personalize customer experiences at an unprecedented scale. 
+          personalize customer experiences at an unprecedented scale.
         </div>
 
         <div>

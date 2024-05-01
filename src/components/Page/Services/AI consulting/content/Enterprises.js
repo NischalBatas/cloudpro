@@ -10,7 +10,7 @@ const Enterprises = () => {
     <div className="navbar-main py-16 ">
       <div className="main-container ">
         <Tabs.Root
-          className="TabsRoot gap-6 lg:gap-4 flex-wrap lg:flex-nowrap overflow-hidden"
+          className="TabsRoot2 gap-6 lg:gap-4 flex-wrap lg:flex-nowrap overflow-hidden"
           defaultValue="tab1"
         >
           <div>
@@ -19,11 +19,11 @@ const Enterprises = () => {
               science tools, featuring Generative AI and Machine Learning.
             </p>
 
-            <Tabs.List className="TabsList" aria-label="Manage your account">
+            <Tabs.List className="TabsList2" aria-label="Manage your account">
               {enterprises.map((item, index) => {
                 return (
                   <>
-                    <Tabs.Trigger  key={index} className="TabsTrigger" value={`tab${item.id}`}>
+                    <Tabs.Trigger  key={index} className="TabsTrigger2" value={`tab${item.id}`}>
                       {item.title}
                     </Tabs.Trigger>
                     <div className="hr-line"></div>
@@ -33,7 +33,7 @@ const Enterprises = () => {
             </Tabs.List>
           </div>
 
-          <Tabs.Content className="TabsContent" value="tab1">
+          <Tabs.Content className="TabsContent2" value="tab1">
             <div className="relative">
               <div
                 className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"
@@ -70,7 +70,7 @@ const Enterprises = () => {
               </div>
             </div>
           </Tabs.Content>
-          <Tabs.Content className="TabsContent" value="tab2">
+          <Tabs.Content className="TabsContent2" value="tab2">
             <div className="relative">
               <div
                 className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"

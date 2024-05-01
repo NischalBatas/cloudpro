@@ -1,5 +1,5 @@
+import { testimonial } from "@/db/genapplication/testimonial";
 import React from "react";
-import { testimonial } from "@/db/testimonial";
 const Testimonial = () => {
   return (
     <div className="flex gap-2 flex-wrap lg:flex-nowrap justify-between">

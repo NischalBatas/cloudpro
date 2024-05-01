@@ -29,10 +29,10 @@ const Introduction = () => {
           <Link href="/" className="mr-1">
             Services
           </Link>
-          <span className="">/ Generative AI And ML</span>
+          <span className="">/ Generative AI</span>
         </div>
         <div className="py-1 font-semibold text-white text-xl md:text-2xl lg:text-[40px] mb-3">
-          Generative AI Applications
+          Generative AI
         </div>
         <div className="text-[14px] max-w-[691px] mb-8">
           In today's competitive and rapidly evolving digital landscape,

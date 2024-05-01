@@ -15,8 +15,9 @@ const Enterprises = () => {
         >
           <div>
             <p className="font-medium text-[16px] max-w-[376px]">
-              Give your enterprise an advantage with our comprehensive data
-              science tools, featuring Generative AI and Machine Learning.
+              Detailed Explanation: Sub-services and Their Processes/Details
+              Tagline: Transform your business landscape with our strategic AI
+              consulting and management services.{" "}
             </p>
 
             <Tabs.List className="TabsList2" aria-label="Manage your account">
@@ -38,26 +39,32 @@ const Enterprises = () => {
           </div>
           {enterprises.map((item, index) => {
             return (
-            
-                <Tabs.Content key={index}  className="TabsContent2" value={`tab${item.id}`}>
-                  <div className="relative">
-                    <div
-                      className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"
-                      style={{ zIndex: "-1" }}
-                    ></div>
-                    <div className="max-w-[400px] lg:max-w-[535px] min-h-[383px] bg-white rounded text-black p-4">
-                      <p className="max-w-[381px] text-[16px] font-medium">
-                        {item.title}
-                      </p>
-                      <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
-                        {item.list.map((item, index) => {
-                          return <li key={index} className="">{item}</li>;
-                        })}
-                      </ul>
-                    </div>
+              <Tabs.Content
+                key={index}
+                className="TabsContent2"
+                value={`tab${item.id}`}
+              >
+                <div className="relative">
+                  <div
+                    className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"
+                    style={{ zIndex: "-1" }}
+                  ></div>
+                  <div className="max-w-[400px] lg:max-w-[535px] min-h-[383px] bg-white rounded text-black p-4">
+                    <p className="max-w-[381px] text-[16px] font-medium">
+                      {item.title}
+                    </p>
+                    <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
+                      {item.list.map((item, index) => {
+                        return (
+                          <li key={index} className="">
+                            {item}
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </div>
-                </Tabs.Content>
-            
+                </div>
+              </Tabs.Content>
             );
           })}
         </Tabs.Root>

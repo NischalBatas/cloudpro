@@ -31,7 +31,7 @@ const Introduction = () => {
           </Link>
           <span className="">/ Generative AI And ML</span>
         </div>
-        <p className="py-1 font-semibold text-white text-xl md:text-2xl lg:text-[40px] mb-3 leading-[2.5rem]">
+        <p className="py-1 max-w-[691px]  font-semibold text-white text-xl md:text-2xl lg:text-4xl mb-3">
         Empower Your Business with Expert AI Consulting Services
         </p>
         <div className="text-[14px] max-w-[691px] mb-8">

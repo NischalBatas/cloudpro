@@ -20,36 +20,31 @@ const Introduction = () => {
           backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
         }}
       ></div>
-      <div
-        className="navbar-main pt-24 h-full pb-4 "
-        style={{ zIndex: "11" }}
-      >
+      <div className="navbar-main pt-24 h-full pb-4 " style={{ zIndex: "11" }}>
         <div className="main-container flex flex-col justify-end h-full">
-        <div className="text-cloud uppercase text-[12px] tracking-wildest mb-6">
-          <Link href="/" className="mr-1">
-            Services
-          </Link>
-          <span className="">/ Generative AI And ML</span>
-        </div>
-        <div className="py-1 font-semibold text-white text-xl md:text-2xl lg:text-[40px] mb-3">
-          Generative AI Applications
-        </div>
-        <div className="text-[14px] max-w-[691px] mb-8">
-          In today's competitive and rapidly evolving digital landscape,
-          businesses of all sizes are on a quest for innovative solutions that
-          can propel them ahead of the curve. At the heart of this quest is
-          generative AI, a transformative force in artificial intelligence that
-          offers unparalleled creativity and efficiency. Cloud ProAI stands as a
-          beacon in this journey, enabling businesses to harness the power of
-          generative AI apps to foster originality, automate processes, and
-          personalize customer experiences at an unprecedented scale. 
-        </div>
+          <div className="text-cloud uppercase text-[12px] tracking-wildest mb-6">
+            <Link href="/" className="mr-1">
+              Services
+            </Link>
+            <span className="">/ ETL</span>
+          </div>
+          <p className="py-1 max-w-[691px]  font-semibold text-white text-xl md:text-2xl lg:text-4xl mb-3">
+            Streamline Your Data Operations with Advanced ETL Services
+          </p>
+          <div className="text-[14px] max-w-[691px] mb-8">
+            Master your data landscape with Cloudproai’s ETL services, designed
+            to efficiently extract, transform, and load your data, ensuring it's
+            ready for analysis and decision-making. Optimize your data workflows
+            to support real-time intelligence and operational efficiency.
+            Enhance your data management, increase accessibility, and drive
+            better business outcomes with Cloudproai’s expert ETL services.
+          </div>
 
-        <div>
-          <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
-            Speak to an AI export
-          </button>
-        </div>
+          <div>
+            <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
+            Call to Action Text: Transform Your Data Today 
+            </button>
+          </div>
         </div>
       </div>
     </div>

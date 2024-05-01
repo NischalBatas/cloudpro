@@ -1,9 +1,9 @@
+import { testimonialArchitecture } from "@/db/architectureConsulting/testimonial";
 import React from "react";
-import { testimonial } from "@/db/testimonial";
 const Testimonial = () => {
   return (
     <div className="flex gap-2 flex-wrap lg:flex-nowrap justify-between">
-      {testimonial.map((item, index) => {
+      {testimonialArchitecture.map((item, index) => {
         return (
           <div key={index} className="testominal max-w-44 md:max-w-64 py-2 md:p-1">
             <div className="text-2xl md:text-4xl font-semibold flex gap-1 items-end"><div className="text-[40px]"><span className="num text-[32px]  md:text-[64px]" data-val={`${item.ratio}`}> {item.ratio}</span></div>%</div>

@@ -33,7 +33,7 @@ const CaseStudy = () => {
 
                 <div className="flex gap-2 items-center text-xs mt-2 text-white">
                   <div className="bg-cloud px-2 rounded-full py-1">{item.category}</div>
-                  <div>{item.published}</div>
+                  <div className="text-[10px] text-[#909090]">{item.published}</div>
                 </div>
 
                 <div className="my-4">

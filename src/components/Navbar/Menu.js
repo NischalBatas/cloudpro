@@ -77,10 +77,10 @@ const Menu = ({title,pathname}) => {
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
               <Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
-              <Link className="menu-item-list" href="/">Data Analytics</Link>
-              <Link className="menu-item-list" href="/">Data Lakes and Warehouses</Link>
-              <Link className="menu-item-list" href="/">Data Mining Solutions</Link>
-              <Link className="menu-item-list" href="/">Data Security and Goverance</Link>
+              <Link className="menu-item-list" href="#">Data Analytics</Link>
+              <Link className="menu-item-list" href="#">Data Lakes and Warehouses</Link>
+              <Link className="menu-item-list" href="#">Data Mining Solutions</Link>
+              <Link className="menu-item-list" href="#">Data Security and Goverance</Link>
             </ul>
           </div>
         </div>
@@ -101,11 +101,11 @@ const Menu = ({title,pathname}) => {
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className="menu-item-list" href="/">BI Report and Dashboard</Link>
-              <Link className="menu-item-list" href="/">Ad-Hoc Reporting Solutions</Link>
-              <Link className="menu-item-list" href="/">Data Visualization Solution</Link>
-              <Link className="menu-item-list" href="/"></Link>
-              <Link className="menu-item-list" href="/"></Link>
+              <Link className="menu-item-list" href="#">BI Report and Dashboard</Link>
+              <Link className="menu-item-list" href="#">Ad-Hoc Reporting Solutions</Link>
+              <Link className="menu-item-list" href="#">Data Visualization Solution</Link>
+              <Link className="menu-item-list" href="#"></Link>
+              <Link className="menu-item-list" href="#"></Link>
             </ul>
           </div>
         </div>

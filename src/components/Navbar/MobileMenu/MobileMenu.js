@@ -26,8 +26,8 @@ const MobileMenu = ({title,pathname}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
+                <Link className="mobile_menu_features" href='/services/generativeai'>Generative AI & Applications</Link>
+                <Link className="mobile_menu_features" href='/services/alconsulting'>AI Consulting</Link>
           </div>
         </div>
 
@@ -35,21 +35,21 @@ const MobileMenu = ({title,pathname}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Cloud Engineering</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Architecture Consulting</Link>
-                <Link className="mobile_menu_features" href='#'>Infrastructure migration and upgrades</Link>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>Big Data Consulting</Link>
+                <Link className="mobile_menu_features" href='/services/architecture'>Architecture Consulting</Link>
+                <Link className="mobile_menu_features" href='/services/infrastructure'>Infrastructure migration and upgrades</Link>
+                <Link className="mobile_menu_features" href='/services/generativeapplication'>Generative AI & Applications</Link>
+                <Link className="mobile_menu_features" href='/services/bigdata'>Big Data Consulting</Link>
           </div>
         </div>
 
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Data Engineering</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>ETL Services</Link>
-                <Link className="mobile_menu_features" href='#'>Data Analytics</Link>
-                <Link className="mobile_menu_features" href='#'>Data Lakes and Warehouses</Link>
-                <Link className="mobile_menu_features" href='#'>Data Mining Solutions</Link>
-                <Link className="mobile_menu_features" href='#'>Data Security and Goverance</Link>
+                <Link className="mobile_menu_features" href='/services/etl'>ETL Services</Link>
+                <Link className="mobile_menu_features" href=''>Data Analytics</Link>
+                <Link className="mobile_menu_features" href=''>Data Lakes and Warehouses</Link>
+                <Link className="mobile_menu_features" href=''>Data Mining Solutions</Link>
+                <Link className="mobile_menu_features" href=''>Data Security and Goverance</Link>
           </div>
         </div>
 

@@ -104,8 +104,6 @@ const Menu = ({title,pathname}) => {
               <Link className="menu-item-list" href="#">BI Report and Dashboard</Link>
               <Link className="menu-item-list" href="#">Ad-Hoc Reporting Solutions</Link>
               <Link className="menu-item-list" href="#">Data Visualization Solution</Link>
-              <Link className="menu-item-list" href="#"></Link>
-              <Link className="menu-item-list" href="#"></Link>
             </ul>
           </div>
         </div>

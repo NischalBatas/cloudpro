@@ -36,7 +36,7 @@ const MobileNavigation = () => {
      {hamburger ? 
             <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2">
                     <Link className="mobile_menu_link" href='#'>Case Study</Link>
-                    <Link className="mobile_menu_link" href='#'>About Us</Link>
+                    <Link className="mobile_menu_link" href='/aboutus'>About Us</Link>
                     <MobileMenu pathname={pathname} title="Services" />
             </div>
       :''}

@@ -28,7 +28,7 @@ const Menu = ({title,pathname}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/services/generativeapplication' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link>
+              {/* <Link className={`menu-item-list ${pathname==='/services/generativeapplication' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link> */}
               <Link className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>
               <Link className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link>
             

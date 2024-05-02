@@ -32,14 +32,14 @@ const MobileNavigation = () => {
   
     
         </div>
-        {navbarStatus ? 
-     hamburger ? 
+        {navbarStatus &&  hamburger  ? 
+    
             <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2">
                     <Link className="mobile_menu_link" href='#'>Case Study</Link>
                     <Link className="mobile_menu_link" href='/aboutus'>About Us</Link>
                     <MobileMenu setHamburger={setHamburger} setNavbarStatus={setNavbarStatus} pathname={pathname} title="Services" />
             </div>
-      :''
+   
       
       :''}
 

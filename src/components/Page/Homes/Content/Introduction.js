@@ -1,9 +1,15 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Introduction = () => {
+  const router=useRouter()
+
+  const handleClick=(path)=>{
+    router.push(path)
+  }
   return (
     <>
       <div className="main-container pb-40 relative">
@@ -34,7 +40,7 @@ const Introduction = () => {
             </p>
           </div>
           <div className="flex justify-center items-center gap-3  mt-6">
-            <button className="bg-cloudBtn px-3 py-2 text-cloudText rounded font-medium">
+            <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn px-3 py-2 text-cloudText rounded font-medium">
               Contact Us
             </button>
             <span className="flex items-center gap-1 text-white">

@@ -6,7 +6,7 @@ import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Page/Homes/Content/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa";
 
 const ProtectedLayout = ({ children }) => {
   return (

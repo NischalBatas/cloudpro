@@ -6,10 +6,15 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { IoIosArrowDown } from "react-icons/io";
 import * as Collapsible from '@radix-ui/react-collapsible';
 import { IoIosArrowUp } from "react-icons/io";
+import { useRouter } from 'next/navigation';
 
 const MobileMenu = ({title,pathname}) => {
   const [open, setOpen] = useState(false);
-  
+  const router=useRouter()
+
+  const handleClick=(path)=>{
+    router.push(path)
+  }
   return (
     <Collapsible.Root className="height_content_main" open={open} onOpenChange={setOpen}>
     <div className='mobile_menu_link flex justify-between items-center'>
@@ -26,7 +31,7 @@ const MobileMenu = ({title,pathname}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='/services/generativeai'>Generative AI & Applications</Link>
+                <button className="mobile_menu_features" onClick={()=>{handleClick('/services/generativeai')}}>Generative AI & Applications</button>
                 <Link className="mobile_menu_features" href='/services/alconsulting'>AI Consulting</Link>
           </div>
         </div>

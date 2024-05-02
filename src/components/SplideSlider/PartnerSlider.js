@@ -29,12 +29,13 @@ const PartnerSlider = () => {
         breakpoints: {
        
           725: {
-            perPage: 1,
+            perPage: 4,
             padding:0,
          
           },
           576: {
-            perPage: 1,
+            perPage: 3,
+            gap: "0.2rem",
           },
         },
       };
@@ -49,8 +50,8 @@ const PartnerSlider = () => {
             >
            
               <Image
-                width={75}
-                height={75}
+                width={item.width}
+                height={item.height}
                 src={item.image}
                 alt={`Partner ${index}`}
               />

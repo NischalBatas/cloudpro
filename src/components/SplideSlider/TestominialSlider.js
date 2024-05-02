@@ -9,7 +9,7 @@ const TestominialSlider = () => {
     perPage: 2,
     perMove: 1,
     rewind: true,
-    autoplay: true, // Whether to enable autoplay
+    autoplay: false, // Whether to enable autoplay
     interval: 3000, // Autoplay interval in milliseconds
     pauseOnHover: true, // Whether to pause autoplay on hover
     drag: true, // Whether to enable drag/swipe interaction
@@ -49,7 +49,7 @@ const TestominialSlider = () => {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <p className="text-base text-center max-w-[540px]">{item.description}</p>
+              <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item.description}</p>
 
               <div className="flex gap-2 mt-6">
                 <div>
@@ -61,8 +61,8 @@ const TestominialSlider = () => {
                   />
                 </div>
                 <div>
-                  <p className="font-semibold">{item.name}</p>
-                  <p className="text-cloud2">{item.position}</p>
+                  <p className="font-semibold text-[14px]">{item.name}</p>
+                  <p className="text-[#B8BEBF] text-[14px]">{item.position}</p>
                 </div>
               </div>
             </SplideSlide>

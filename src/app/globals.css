@@ -183,27 +183,3 @@ button:hover {
   }
 }
 
-.testominial-home .splide .is-prev{
-  opacity: 0.2;
-}
-
-.testominial-home .splide .is-active{
-  background-image: url('/Image/ellipse2.svg');
-  
-  width: 100%;
-  height: 290px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  position: relative;
-  /* border-bottom: 1px solid #292929; */
-  border-top: 1px solid #181818;
-}
-
-.testominial-home .splide .is-next{
-  opacity: 0.2;
-}
-
-.tsparticles{
-  max-width:500px !important ;
-}

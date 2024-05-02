@@ -1,8 +1,15 @@
+"use client";
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const ContactInfo = () => {
+  const router=useRouter()
+
+  const handleClick=(path)=>{
+    router.push(path)
+  }
   return (
     <div className="bg-[#6083F3] pb-16 relative h-96">
       <div
@@ -18,7 +25,7 @@ const ContactInfo = () => {
         Discover more ways our team can help.
         </div>
         <div className="flex items-center gap-3 lg:w-96 mt-4">
-            <button className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
+            <button onClick={()=>{handleClick('/contactus')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

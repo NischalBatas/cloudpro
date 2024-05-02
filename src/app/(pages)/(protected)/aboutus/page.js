@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <About />
-      <ContactInfo />
+   
      
     </div>
   );

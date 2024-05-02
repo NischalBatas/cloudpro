@@ -11,10 +11,10 @@ const ContactInfo = () => {
     router.push(path)
   }
   return (
-    <div className="bg-[#6083F3] pb-16 relative h-96">
+    <div className="bg-[#6083F3] pb-16 relative h-96"  style={{ zIndex:'-2'}}>
       <div
-        className="w-full absolute bg-no-repeat bg-center overflow-visible"
-        style={{
+        className="w-full absolute bg-no-repeat bg-center overflow-visible "
+        style={{ zIndex:'-1',
           backgroundImage: "url('/Image/process/generativeapp/cloud14.svg')",
           height: "342.5px"
         }}
@@ -24,8 +24,8 @@ const ContactInfo = () => {
         <div className="max-w-96 text-white text-2xl font-medium">
         Discover more ways our team can help.
         </div>
-        <div className="flex items-center gap-3 lg:w-96 mt-4">
-            <button className="cursor-pointer bg-black text-white shadow-2xl px-2 py-1 rounded font-medium" onClick={()=>{handleClick('/contactus')}}>
+        <div className="flex items-center gap-3 lg:w-96 mt-4" style={{ zIndex:'2'}}>
+            <button onClick={()=>{handleClick('/contactus')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
             <span className="flex gap-1 text-white">

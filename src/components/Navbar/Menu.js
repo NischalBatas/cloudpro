@@ -76,7 +76,7 @@ const Menu = ({title,pathname}) => {
             Data Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
+              <Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
               <Link className="menu-item-list" href="/">Data Analytics</Link>
               <Link className="menu-item-list" href="/">Data Lakes and Warehouses</Link>
               <Link className="menu-item-list" href="/">Data Mining Solutions</Link>

@@ -179,3 +179,13 @@
 .partners-home .splide__arrows{
   display: none;
 }
+.product-arrow{
+  
+  transition: transform 2s;
+}
+
+.product-content-box:hover .product-arrow{
+  cursor: pointer;
+  transform: rotate(180deg);
+  scale: 1.4;
+}

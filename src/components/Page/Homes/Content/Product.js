@@ -29,7 +29,7 @@ const Product = () => {
                       {item.title}
                     </div>
                     <div>
-                      <MdOutlineArrowOutward className="bg-white rounded-full text-cloud w-6 h-6 text-xs p-1" />
+                      <MdOutlineArrowOutward className="product-arrow bg-white rounded-full text-cloud w-6 h-6 text-xs p-1" />
                     </div>
                   </div>
 

@@ -28,9 +28,9 @@ const Menu = ({title,pathname}) => {
               Artificail Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/generativeapplication' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link>
-              <Link className={`menu-item-list ${pathname==='/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>
-              <Link className={`menu-item-list ${pathname==='/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link>
+              <Link className={`menu-item-list ${pathname==='/services/generativeapplication' ? 'active-menu' :''}`} href="/services/generativeapplication">LLM Powered Applications</Link>
+              <Link className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>
+              <Link className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link>
             
             </ul>
           </div>
@@ -51,11 +51,11 @@ const Menu = ({title,pathname}) => {
             Cloud Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</Link>
-              <Link className={`menu-item-list ${pathname==='/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</Link>
-              <Link className={`menu-item-list ${pathname==='/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</Link>
-              <Link className={`menu-item-list ${pathname==='/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">Security & Governancce</Link>
-              <Link className={`menu-item-list ${pathname==='/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</Link>
+              <Link className={`menu-item-list ${pathname==='/services/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</Link>
+              <Link className={`menu-item-list ${pathname==='/services/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</Link>
+              <Link className={`menu-item-list ${pathname==='/services/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</Link>
+              <Link className={`menu-item-list ${pathname==='/services/security' ? 'active-menu' :''}`} href="/services/alconsulting">Security & Governancce</Link>
+              <Link className={`menu-item-list ${pathname==='/services/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</Link>
             </ul>
           </div>
         </div>

@@ -154,9 +154,14 @@
 }
 
 
-@media only screen and (max-width:600px){
-  .NavigationMenuTrigger {
+@media only screen and (max-width:750px){
+  .navbar-main-group3 {
     display:none;
+    
+  }
+
+  .navbar-main-group4 {
+    display:block;
     
   }
 }

@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Page/Homes/Content/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
+import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
 
 const ProtectedLayout = ({ children }) => {
   return (
@@ -20,6 +21,7 @@ const ProtectedLayout = ({ children }) => {
    <>
       <Header />
       <Navbar />
+      <MobileNavigation/>
      
         {children}
         <Footer />

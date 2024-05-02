@@ -1,0 +1,315 @@
+.mobile_menu_link{
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #1d1d26;
+    padding: 1rem 0;
+}
+
+.mobile_menu_features{
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
+}
+
+.navbar-main-group4{
+    background-color: #010101 !important;
+    -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+}
+
+.height_content_main{
+    height: calc(100vh - 20px)
+  }
+
+.height_content{
+    height: calc(100vh - 220px)
+  }
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px rgb(253, 253, 253);  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4f91ff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+.NavigationMenuRoot4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* width: 100%; */
+    z-index: 1;
+    
+  }
+  
+  .NavigationMenuList4 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(114, 114, 114); */
+    padding: 4px;
+    /* border-radius: 6px; */
+    list-style: none;
+    /* box-shadow: 0 4px 10px var(--black-a7); */
+    margin: 0;
+    align-items: center;
+  }
+  
+  .NavigationMenuTrigger4,
+  .NavigationMenuLink4 {
+    padding: 8px 12px;
+    outline: none;
+    user-select: none;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    list-style-type: none;
+  }
+  .NavigationMenuTrigger4:focus,
+  .NavigationMenuLink4:focus {
+    /* box-shadow: 0 0 0 2px #4862b7; */
+    /* border-bottom:2px solid #4862b7 ;
+    border-radius:0px ; */
+    /* padding: 8px 8px; */
+  
+  }
+  
+  .NavigationMenuTrigger4:hover,
+  .NavigationMenuLink4:hover {
+    /* background-color: #4862b7; */
+    /* box-shadow: 0 0 0 2px #4862b7; */
+    border-radius:0px ;
+    /* color: #000; */
+    border-bottom:2px solid #4862b7 ;
+   
+  
+  }
+  
+  .active-menu4{
+    border-radius:0px ;
+    width: fit-content;
+    border-bottom:2px solid #4862b7 ;
+  }
+  
+  .NavigationMenuTrigger4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  
+  
+  
+  .NavigationMenuLink4 {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  .NavigationMenuContent4 {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+  }
+  .NavigationMenuContent4[data-motion='from-start'] {
+    animation-name: enterFromLeft4;
+  }
+  .NavigationMenuContent4[data-motion='from-end'] {
+    animation-name: enterFromRight4;
+  }
+  .NavigationMenuContent4[data-motion='to-start'] {
+    animation-name: exitToLeft4;
+  }
+  .NavigationMenuContent4[data-motion='to-end'] {
+    animation-name: exitToRight4;
+  }
+  @media only screen and (min-width: 600px) {
+    .NavigationMenuContent4 {
+      width: 100%;
+    }
+  }
+  
+  .NavigationMenuIndicator44 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10px;
+    top: 100%;
+    overflow: hidden;
+    z-index: 1;
+    transition: width, transform 250ms ease;
+  }
+  .NavigationMenuIndicator4[data-state='visible'] {
+    animation: fadeIn4 200ms ease;
+  }
+  .NavigationMenuIndicator4[data-state='hidden'] {
+    animation: fadeOut4 200ms ease;
+  }
+  
+  .NavigationMenuViewport4 {
+    position: relative;
+    transform-origin: top center;
+    margin-top: 8px;
+    min-width: 100%;
+    background-color: white;
+    /* border-radius: 6px; */
+    overflow: hidden;
+    /* box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px; */
+    height: var(--radix-navigation-menu-viewport-height);
+    transition: width, height, 300ms ease;
+  }
+  .NavigationMenuViewport4[data-state='open'] {
+    animation: scaleIn4 200ms ease;
+  }
+  .NavigationMenuViewport4[data-state='closed'] {
+    animation: scaleOut4 200ms ease;
+  }
+  @media only screen and (min-width: 600px) {
+    .NavigationMenuViewport4 {
+      width: var(--radix-navigation-menu-viewport-width);
+    }
+  }
+  
+
+
+  .ViewportPosition4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 82%;
+    left: 0;
+    perspective: 2000px;
+  }
+  
+  .CaretDown4 {
+    position: relative;
+    color: #fff;
+    margin-left: 2.5px;
+    top: 1px;
+    transition: transform 250ms ease;
+  }
+  [data-state='open'] > .CaretDown {
+    transform: rotate(-180deg);
+  }
+  
+  
+  
+  .Arrow4 {
+    position: relative;
+    top: 70%;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top-left-radius: 2px;
+  }
+  
+  @keyframes enterFromRight4 {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes enterFromLeft4 {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes exitToRight4 {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  }
+  
+  @keyframes exitToLeft4 {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+  }
+  
+  @keyframes scaleIn4 {
+    from {
+      opacity: 0;
+      transform: rotateX(-30deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+  }
+  
+  @keyframes scaleOut4 {
+    from {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.95);
+    }
+  }
+  
+  @keyframes fadeIn4 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut4 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+
+
+  

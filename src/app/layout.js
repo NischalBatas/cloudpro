@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import {Plus_Jakarta_Sans} from 'next/font/google'
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 
@@ -9,7 +10,7 @@ import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 export const metadata = {
   title: "CloudPro.AI",
   description: "CloudPro.AI",
@@ -18,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">  
-    <body className={inter.className}>
+    <body className={jakarta.className}>
 
         {children}
         <Script src="../../static/js/jquery.js"></Script>

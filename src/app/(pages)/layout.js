@@ -5,6 +5,8 @@ import "../globals.css";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Page/Homes/Content/Footer/Footer";
+import ScrollToTop from "react-scroll-to-top";
+import { FaArrowUp } from "react-icons/fa6";
 
 const ProtectedLayout = ({ children }) => {
   return (
@@ -21,7 +23,8 @@ const ProtectedLayout = ({ children }) => {
      
         {children}
         <Footer />
-  
+        <ScrollToTop top='40' component={<FaArrowUp />} className='scroll_top' smooth width='15' height="15"/>
+        
    </>
     // </Theme>
   );

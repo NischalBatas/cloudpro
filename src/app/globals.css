@@ -204,3 +204,6 @@ button:hover {
   opacity: 0.2;
 }
 
+.tsparticles{
+  max-width:500px !important ;
+}

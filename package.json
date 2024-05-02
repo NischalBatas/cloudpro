@@ -16,6 +16,8 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/themes": "^3.0.2",
     "@splidejs/react-splide": "^0.7.12",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "classnames": "^2.5.1",
     "next": "14.2.1",
     "preline": "^2.1.0",

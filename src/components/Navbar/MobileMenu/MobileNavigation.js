@@ -9,10 +9,10 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 const MobileNavigation = () => {
   const pathname = usePathname();
-  const [hamburger, setHamburger] = useState(false);
-
+  const [hamburger,setHamburger]=useState(false)
+ 
   return (
-    <div className="hidden navbar-main-group navbar-main-group4 fixed w-full">
+    <div className="hidden navbar-main-group navbar-main-group4 fixed w-full py-2">
       <div className="NavigationMenuRoot4 navbar-main relative">
         <div className="NavigationMenuList4 w-full">
           <div className="">
@@ -27,34 +27,21 @@ const MobileNavigation = () => {
             </Link>
           </div>
 
-          {hamburger ? (
-            <IoClose
-              onClick={() => {
-                setHamburger(false);
-              }}
-            />
-          ) : (
-            <FaBarsStaggered
-              onClick={() => {
-                setHamburger(true);
-              }}
-            />
-          )}
+          
+       {hamburger ?    <IoClose className="text-[20px] cursor-pointer" onClick={()=>{setHamburger(false)}}/> :    <FaBarsStaggered className="text-[20px] cursor-pointer" onClick={()=>{setHamburger(true)}}/>}
+  
+    
         </div>
+        
+     {hamburger ? 
+            <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2">
+                    <Link className="mobile_menu_link" href='#'>Case Study</Link>
+                    <Link className="mobile_menu_link" href='#'>About Us</Link>
+                    <MobileMenu pathname={pathname} title="Services" />
+            </div>
+      :''}
 
-        {hamburger ? (
-          <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2">
-            <Link className="mobile_menu_link" href="#">
-              Case Study
-            </Link>
-            <Link className="mobile_menu_link" href="#">
-              About Us
-            </Link>
-            <MobileMenu pathname={pathname} title="Services" />
-          </div>
-        ) : (
-          ""
-        )}
+     
       </div>
     </div>
   );

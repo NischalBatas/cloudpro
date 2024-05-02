@@ -22,39 +22,7 @@ const MobileMenu = ({title,pathname}) => {
     </div>
 
     <Collapsible.Content className='overflow-y-scroll height_content'>
-      <div className="">
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
-
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
-
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
-
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
-
+      <div className="text-[#D7D7D7] text-[14px]">
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
           <div className='py-2 flex flex-col'>
@@ -65,54 +33,39 @@ const MobileMenu = ({title,pathname}) => {
 
 
         <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
+          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Cloud Engineering</p>
           <div className='py-2 flex flex-col'>
+                <Link className="mobile_menu_features" href='#'>Architecture Consulting</Link>
+                <Link className="mobile_menu_features" href='#'>Infrastructure migration and upgrades</Link>
                 <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
+                <Link className="mobile_menu_features" href='#'>Big Data Consulting</Link>
           </div>
         </div>
 
         <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
+          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Data Engineering</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
+                <Link className="mobile_menu_features" href='#'>ETL Services</Link>
+                <Link className="mobile_menu_features" href='#'>Data Analytics</Link>
+                <Link className="mobile_menu_features" href='#'>Data Lakes and Warehouses</Link>
+                <Link className="mobile_menu_features" href='#'>Data Mining Solutions</Link>
+                <Link className="mobile_menu_features" href='#'>Data Security and Goverance</Link>
           </div>
         </div>
 
         <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
+          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>BI & Data Analytics</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
-
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
+                <Link className="mobile_menu_features" href='#'>BI Report and Dashboard</Link>
+                <Link className="mobile_menu_features" href='#'>Ad-Hoc Reporting Solutions</Link>
+                <Link className="mobile_menu_features" href='#'>Data Visualization Solution</Link>
           </div>
         </div>
 
 
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
 
 
-        <div className='py-3 pb-1'>
-          <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
-          <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" href='#'>AI Consulting</Link>
-          </div>
-        </div>
+        
 
       
         

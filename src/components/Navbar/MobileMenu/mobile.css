@@ -39,13 +39,13 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #4f91ff; 
+    background: #ababab; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    opacity: 0.5; 
   }
 .NavigationMenuRoot4 {
     position: relative;

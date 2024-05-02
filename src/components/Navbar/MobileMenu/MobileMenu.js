@@ -8,7 +8,7 @@ import * as Collapsible from '@radix-ui/react-collapsible';
 import { IoIosArrowUp } from "react-icons/io";
 import { useRouter } from 'next/navigation';
 
-const MobileMenu = ({title,pathname}) => {
+const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
   const [open, setOpen] = useState(false);
   const router=useRouter()
 
@@ -31,8 +31,8 @@ const MobileMenu = ({title,pathname}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
           <div className='py-2 flex flex-col'>
-                <button className="mobile_menu_features" onClick={()=>{handleClick('/services/generativeai')}}>Generative AI & Applications</button>
-                <Link className="mobile_menu_features" href='/services/alconsulting'>AI Consulting</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/generativeai'>Generative AI & Applications</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/alconsulting'>AI Consulting</Link>
           </div>
         </div>
 

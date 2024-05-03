@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import { industries } from "@/db/industries";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+
 const Industries = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.4
+      }
+    }
+  };
+  
+  const items = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+  
   return (
     <div className="main-container industries-main text-white py-10 my-8">
       <div className="flex flex-col justify-center items-center w-full">
@@ -12,9 +37,17 @@ const Industries = () => {
           Our work spans industries & domains.
         </p>
       </div>
-      <div className=" grid grid-cols-2 md:flex md:justify-center mx-auto flex-wrap gap-6 my-10 max-w-[850px]">
+
+
+      <motion.ul ref={ref} 
+    className="grid grid-cols-2 md:flex md:justify-center mx-auto flex-wrap gap-6 my-10 max-w-[850px]"
+    variants={container}
+    initial="hidden"
+    animate={isInView ? "visible" : "hidden"}>
+
         {industries.map((item, index) => {
           return (
+            <motion.li key={index} variants={items} >
             <div
               key={index}
               className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75 cursor-pointer hover:opacity-100"
@@ -27,10 +60,11 @@ const Industries = () => {
               />
               <p className="text-white text-sm px-4 mt-4">{item.title}</p>
             </div>
-          );
-        })}
-      </div>
-    </div>
+        </motion.li>
+      );
+    })}
+  </motion.ul>
+   </div>
   );
 };
 

@@ -9,7 +9,7 @@ const TestominialSlider = () => {
     perPage: 2,
     perMove: 1,
     rewind: true,
-    autoplay: false, // Whether to enable autoplay
+    autoplay: true, // Whether to enable autoplay
     interval: 3000, // Autoplay interval in milliseconds
     pauseOnHover: true, // Whether to pause autoplay on hover
     drag: true, // Whether to enable drag/swipe interaction

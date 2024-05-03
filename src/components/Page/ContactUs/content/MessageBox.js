@@ -54,8 +54,11 @@ const MessageBox = () => {
 <Form.Control asChild>
 <select className="p-2  font-semibold rounded-md bg-[#252525]">
   <option value="AI">Artificial Intelligence </option>
-  <option value="AI">Machine Learning </option>
-
+  <option value="AI">BI & Data Analytics </option>
+  <option value="AI">Cloud Engineering </option>
+  <option value="AI">Data Engineering </option>
+  <option value="AI">Web Development </option>
+  <option value="AI">App Development </option>
 </select>
 </Form.Control>
 </Form.Field>
@@ -72,7 +75,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="number" required  placeholder="eg.+977-9812345678"/>
+    <input className="Input" type="number" required  placeholder="Enter your phone number"/>
   </Form.Control>
 </Form.Field>
 
@@ -146,7 +149,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="number" required  placeholder="eg.+977-9812345678"/>
+    <input className="Input" type="number" required  placeholder="Enter your phone number"/>
   </Form.Control>
 </Form.Field>
 

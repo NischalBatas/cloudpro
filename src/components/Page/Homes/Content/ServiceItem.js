@@ -11,7 +11,7 @@ const ServiceItem = () => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.5
+        staggerChildren: 0.4
       }
     }
   };

@@ -18,7 +18,7 @@ const Introduction = () => {
         style={{
           // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/service-bg/9.webp')",
+          backgroundImage: "url('/Image/service-bg/7.webp')",
         }}
       ></div>
       <div className="navbar-main pt-24 h-full pb-4 " style={{ zIndex: "11" }}>

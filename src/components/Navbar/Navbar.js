@@ -48,7 +48,7 @@ const Navbar = () => {
               className={`NavigationMenuTrigger rounded-[8px] ${
                 pathname === "/casestudy" ? "active-menu" : ""
               }`}
-              href=""
+              href="/casestudy"
             >
               Case Study
             </Link>
@@ -60,9 +60,9 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <button
+            <button 
               onClick={() => {
-                onHandleSubmit("/contactus");
+                onHandleSubmit("/contactus"),setNavbarStatus(false),setHamburger(false)
               }}
               className="bg-cloudBtn navbar_contactus_btn text-white px-2 py-1 rounded text-[14px]"
             >

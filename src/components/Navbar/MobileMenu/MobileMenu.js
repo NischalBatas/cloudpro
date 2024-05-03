@@ -15,6 +15,7 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
   const handleClick=(path)=>{
     router.push(path)
   }
+
   return (
     <Collapsible.Root className="height_content_main" open={open} onOpenChange={setOpen}>
     <div className='mobile_menu_link flex justify-between items-center'>
@@ -41,8 +42,8 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Cloud Engineering</p>
           <div className='py-2 flex flex-col'>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/architecture'>Architecture Consulting</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/cloudops'>Cloud Ops</Link>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/infrastructure'>Infrastructure migration and upgrades</Link>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/generativeapplication'>Generative AI & Applications</Link>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/bigdata'>Big Data Consulting</Link>
           </div>
         </div>
@@ -51,19 +52,18 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Data Engineering</p>
           <div className='py-2 flex flex-col'>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/etl'>ETL Services</Link>
-                <Link className="mobile_menu_features"  href='#'>Data Analytics</Link>
-                <Link className="mobile_menu_features"  href='#'>Data Lakes and Warehouses</Link>
-                <Link className="mobile_menu_features"  href='#'>Data Mining Solutions</Link>
-                <Link className="mobile_menu_features"  href='#'>Data Security and Goverance</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/dataanalytics'>Data Analytics</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/datawarehouse'>Data Lakes and Warehouses</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/datasolutions'>Data Pipeline Solutions</Link>
           </div>
         </div>
 
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>BI & Data Analytics</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" href='#'>BI Report and Dashboard</Link>
-                <Link className="mobile_menu_features" href='#'>Ad-Hoc Reporting Solutions</Link>
-                <Link className="mobile_menu_features" href='#'>Data Visualization Solution</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/bireport'>BI Report and Dashboard</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/adhoc'>Ad-Hoc Reporting Solutions</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/datavisual'>Data Visualization Solution</Link>
           </div>
         </div>
 

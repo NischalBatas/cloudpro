@@ -76,9 +76,9 @@ const Menu = ({title,pathname}) => {
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
               <Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
-              <Link className="menu-item-list" href="#">Data Analytics</Link>
-              <Link className="menu-item-list" href="#">Data Lakes and Warehouses</Link>
-              <Link className="menu-item-list" href="#">Data Pipeline Solutions</Link>
+              <Link className={`menu-item-list ${pathname==='/services/dataanalytics' ? 'active-menu' :''}`} href="/services/dataanalytics">Data Analytics</Link>
+              <Link className={`menu-item-list ${pathname==='/services/datawarehouse' ? 'active-menu' :''}`} href="/services/datawarehouse">Data Lakes and Warehouses</Link>
+              <Link className={`menu-item-list ${pathname==='/services/datasolutions' ? 'active-menu' :''}`} href="/services/datasolutions">Data Pipeline Solutions</Link>
             </ul>
           </div>
         </div>
@@ -99,9 +99,9 @@ const Menu = ({title,pathname}) => {
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className="menu-item-list" href="#">BI Report and Dashboard</Link>
-              <Link className="menu-item-list" href="#">Ad-Hoc Reporting Solutions</Link>
-              <Link className="menu-item-list" href="#">Data Visualization Solution</Link>
+              <Link className={`menu-item-list ${pathname==='/services/bireport' ? 'active-menu' :''}`} href="/services/bireport">BI Report and Dashboard</Link>
+              <Link className={`menu-item-list ${pathname==='/services/adhoc' ? 'active-menu' :''}`} href="/services/adhoc">Ad-Hoc Reporting Solutions</Link>
+              <Link className={`menu-item-list ${pathname==='/services/datavisual' ? 'active-menu' :''}`} href="/services/datavisual">Data Visualization Solution</Link>
             </ul>
           </div>
 
@@ -114,8 +114,8 @@ const Menu = ({title,pathname}) => {
             Products
             </div>
             <ul className="flex gap-3 text-cloud10 text-sm justify-between">
-          <Link href='/'> <Image width={200} height={200} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
-          <Link href='/'> <Image width={200} height={100} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
+          <Link href='/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
+          <Link href='/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
 
             </ul>
           </div>

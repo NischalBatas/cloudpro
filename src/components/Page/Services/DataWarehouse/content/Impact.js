@@ -7,7 +7,7 @@ const Impact = () => {
       <div className="main-container">
         <div className="wow animate__animated animate__fadeInRight animate__slow">
           <div className="text-[20px] md:text-[24px] ">
-            <span className="font-semibold ">Why</span> Data Analytics
+            <span className="font-semibold ">Why</span> leverage Data Lakes and Warehouses for your data
           </div>
         </div>
 

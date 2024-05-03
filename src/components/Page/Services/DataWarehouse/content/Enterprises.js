@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import "./enterprises.css";
 import * as Tabs from "@radix-ui/react-tabs";
-import { enterprises } from "@/db/dataanalytics/enterprises";
+import { enterprises } from "@/db/datawarehouse/enterprises";
 
 const Enterprises = () => {
   return (
@@ -16,9 +16,8 @@ const Enterprises = () => {
           <div>
             <p className="font-medium text-[16px] max-w-[376px]">
               Detailed Explanation: Sub-services and Their Processes/Details
-              Tagline: Revolutionize your cloud operations with our
-              comprehensive CloudOps solutions, tailored to meet dynamic market
-              demands.
+              Tagline: Elevate your business with robust, scalable, and secure
+              data storage solutions from Cloudproai.
             </p>
 
             <Tabs.List className="TabsList2" aria-label="Manage your account">

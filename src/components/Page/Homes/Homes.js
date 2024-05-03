@@ -15,6 +15,7 @@ import Footer from "./Content/Footer/Footer";
 const Homes = () => {
   return (
     <div>
+      
       <Introduction />
       <Partners />
       <Service />

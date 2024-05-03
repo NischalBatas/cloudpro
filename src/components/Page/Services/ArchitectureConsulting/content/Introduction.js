@@ -15,9 +15,9 @@ const Introduction = () => {
       <div
         className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
         style={{
-          filter: "blur(5px)",
+          // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
+          backgroundImage: "url('/Image/service-bg/3.webp')",
         }}
       ></div>
       <div className="navbar-main pt-24 h-full pb-4 " style={{ zIndex: "11" }}>
@@ -43,7 +43,7 @@ const Introduction = () => {
 
           <div>
             <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
-            Call to Action Text: Consult with Us 
+            Consult with Us 
             </button>
           </div>
         </div>

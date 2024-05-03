@@ -17,7 +17,7 @@ const Introduction = () => {
         style={{
           // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/process/generativeapp/robot.webp')",
+          backgroundImage: "url('/Image/service-bg/2.webp')",
         }}
       ></div>
       <div
@@ -46,7 +46,7 @@ const Introduction = () => {
         </div>
 
         <div>
-          <button className="bg-black rounded-md px-6 py-3 w-auto text-[14px]">
+          <button className="bg-white text-black font-semibold rounded-md px-6 py-3 w-auto text-[14px]">
           Partner with Us 
           </button>
         </div>

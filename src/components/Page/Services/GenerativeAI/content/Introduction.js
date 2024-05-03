@@ -15,9 +15,9 @@ const Introduction = () => {
       <div
         className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
         style={{
-          filter: "blur(5px)",
+          // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
+          backgroundImage: "url('/Image/service-bg/1.webp')",
         }}
       ></div>
       <div

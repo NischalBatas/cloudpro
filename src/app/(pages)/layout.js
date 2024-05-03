@@ -8,6 +8,7 @@ import Footer from "@/components/Page/Homes/Content/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
+import ProgressBar from "@/components/Animation/ProgressBar";
 
 const ProtectedLayout = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ const ProtectedLayout = ({ children }) => {
     //   scaling="95%"
     // >
    <>
+   <ProgressBar/>
       <Header />
       <Navbar />
       <MobileNavigation/>

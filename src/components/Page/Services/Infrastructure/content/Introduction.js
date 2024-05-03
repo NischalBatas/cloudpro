@@ -17,7 +17,7 @@ const Introduction = () => {
         style={{
           filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
+          backgroundImage: "url('/Image/service-bg/9.webp')",
         }}
       ></div>
       <div className="navbar-main pt-24 h-full pb-4 " style={{ zIndex: "11" }}>
@@ -43,7 +43,7 @@ const Introduction = () => {
 
           <div>
             <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
-            Call to Action Text: Start Your Cloud Journey 
+            Start Your Cloud Journey 
             </button>
           </div>
         </div>

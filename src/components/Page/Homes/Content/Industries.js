@@ -13,8 +13,8 @@ const Industries = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.4
+        delayChildren: 0.3,
+        staggerChildren: 0.2
       }
     }
   };

@@ -11,12 +11,13 @@ const Partners = () => {
       </p>
 
       <p className="m-auto text-center max-w-[602px] text-gray-700 text-[12px] mb-4">
-        We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your Business
-        and Infrastructure Readiness for the Ultimate Technological Leap.
+        Our developers and Partners has experience in delivering projects to top
+        tier companies like AWS, Google, Apple, Meta and many more fortune 500
+        companies:
       </p>
 
       <div className="partners-home">
-       <PartnerSlider/>
+        <PartnerSlider />
       </div>
     </div>
   );

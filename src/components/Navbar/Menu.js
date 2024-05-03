@@ -12,7 +12,7 @@ const Menu = ({title,pathname}) => {
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
     <NavigationMenu.Content className="NavigationMenuContent navbar-main">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4  px-0 py-6 gap-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5  px-0 py-6 gap-2">
         <div className="flex">
           <div className="rounded-md p-2">
             <Image
@@ -104,7 +104,21 @@ const Menu = ({title,pathname}) => {
               <Link className="menu-item-list" href="#">Data Visualization Solution</Link>
             </ul>
           </div>
+
+          
+
         </div>
+
+        <div>
+            <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
+            Products
+            </div>
+            <ul className="flex gap-3 text-cloud10 text-sm justify-between">
+          <Link href='/'> <Image width={200} height={200} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
+          <Link href='/'> <Image width={200} height={100} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
+
+            </ul>
+          </div>
         </div>
     </NavigationMenu.Content>
   </NavigationMenu.Item>

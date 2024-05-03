@@ -30,7 +30,7 @@ const Introduction = () => {
           <Link href="/" className="mr-1">
             Services
           </Link>
-          <span className="">/ Generative AI And ML</span>
+          <span className="">/ AI Consulting</span>
         </div>
         <p className="text-xl md:text-2xl lg:text-4xl service_main_title">
         Empower Your Business with Expert AI Consulting Services

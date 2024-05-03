@@ -27,7 +27,7 @@ const Introduction = () => {
             <Link href="/" className="mr-1">
               Services
             </Link>
-            <span className="">/ ETL</span>
+            <span className="">/ CloudOps</span>
           </div>
           <p className="text-xl md:text-2xl lg:text-4xl service_main_title">
             Streamline Your Data Operations with Advanced ETL Services

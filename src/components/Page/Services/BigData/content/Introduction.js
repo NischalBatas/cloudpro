@@ -27,7 +27,7 @@ const Introduction = () => {
             <Link href="/" className="mr-1">
               Services
             </Link>
-            <span className="">/ Generative AI And ML</span>
+            <span className="">/ Big Data Consulting</span>
           </div>
           <p className="text-xl md:text-2xl lg:text-4xl service_main_title">
             Unlock the Power of Big Data with Expert Consulting

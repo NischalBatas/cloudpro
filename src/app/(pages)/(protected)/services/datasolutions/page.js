@@ -1,10 +1,10 @@
-import DataWarehouse from '@/components/Page/Services/DataWarehouse/DataWarehouse'
+import DataSolutions from '@/components/Page/Services/DataSolutions/DataSolutions'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <DataWarehouse/>
+        <DataSolutions/>
     </div>
   )
 }

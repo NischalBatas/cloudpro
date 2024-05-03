@@ -19,7 +19,7 @@ const Faq = () => {
   {faqApp.map((item,index)=>{
     return(
       <Accordion.Item key={index} className="AccordionItem" value={`item-${item.number}`}>
-      <Accordion.Trigger className="AccordionTrigger text-[14px]">{item.question}<FaAngleDown className="ml-2 FaAngleDown"/> </Accordion.Trigger>
+      <Accordion.Trigger className="AccordionTrigger">{item.question}<FaAngleDown className="ml-2 FaAngleDown"/> </Accordion.Trigger>
       <div className="line-faq"></div >
       <Accordion.Content className="AccordionContent"> 
       <div className="AccordionContentText">

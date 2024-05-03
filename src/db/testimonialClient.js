@@ -1,25 +1,33 @@
 export const testimonialClient = [
   {
-    name: "Nischal Batas",
-    position: "Founder/Stagezero",
+    name: "Andrew D. Bricker",
+    position: "Cloud DevOps Engineer",
     description:
-      "We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your Business and Infrastructure Readiness for the UltimateTechnological Leap.We're Gen AI-Ready and Eager to Collaborate.Let's Assess Your Business and Infrastructure Readiness for theUltimate Technological Leap.",
-    image: "/Image/results/profile.png",
+      "Accelerate software development cycles by implementing a cloud-based DevOps strategy. Enable continuous integration, deployment, and delivery, fostering collaboration between development and operations teams for faster time-to-market.",
+    image: "/Image/results/1.png",
   },
 
   {
-    name: "Sujan Timilsina",
-    position: "Founder/Stagezero",
+    name: "Suman Aryal",
+    position: "Cloud Security Specialist",
     description:
-      "We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your Business and Infrastructure Readiness for the UltimateTechnological Leap.We're Gen AI-Ready and Eager to Collaborate.Let's Assess Your Business and Infrastructure Readiness for theUltimate Technological Leap.",
-    image: "/Image/results/profile.png",
+      "Empower businesses to gain actionable insights from their data. Offer cloud-based data analytics solutions for real-time reporting, predictive analytics, and business intelligence, enabling informed decision-making.",
+    image: "/Image/results/2.png",
   },
 
   {
-    name: "Prashant khanal",
-    position: "Founder/Stagezero",
+    name: "Jay Sloan",
+    position: "Data Engineer",
     description:
-      "We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your Business and Infrastructure Readiness for the UltimateTechnological Leap.We're Gen AI-Ready and Eager to Collaborate.Let's Assess Your Business and Infrastructure Readiness for theUltimate Technological Leap.",
-    image: "/Image/results/profile.png",
+      "Address the cybersecurity needs of small businesses by offering cloud-based security solutions. Provide threat detection, data encryption, and secure access controls to safeguard sensitive business information.",
+    image: "/Image/results/3.png",
+  },
+
+  {
+    name: "Leslie Parker",
+    position: "Predictive Maintenance ML Specialist",
+    description:
+      "Implement machine learning algorithms on the cloud to predict equipment failures and schedule proactive maintenance. Help industries such as manufacturing optimize their operations, reduce downtime, and extend the lifespan of machinery.",
+    image: "/Image/results/4.png",
   },
 ];

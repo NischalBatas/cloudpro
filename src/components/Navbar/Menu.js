@@ -54,7 +54,6 @@ const Menu = ({title,pathname}) => {
               <Link className={`menu-item-list ${pathname==='/services/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</Link>
               <Link className={`menu-item-list ${pathname==='/services/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</Link>
               <Link className={`menu-item-list ${pathname==='/services/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</Link>
-              <Link className={`menu-item-list ${pathname==='/services/security' ? 'active-menu' :''}`} href="/services/alconsulting">Security & Governancce</Link>
               <Link className={`menu-item-list ${pathname==='/services/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</Link>
             </ul>
           </div>
@@ -79,8 +78,7 @@ const Menu = ({title,pathname}) => {
               <Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
               <Link className="menu-item-list" href="#">Data Analytics</Link>
               <Link className="menu-item-list" href="#">Data Lakes and Warehouses</Link>
-              <Link className="menu-item-list" href="#">Data Mining Solutions</Link>
-              <Link className="menu-item-list" href="#">Data Security and Goverance</Link>
+              <Link className="menu-item-list" href="#">Data Pipeline Solutions</Link>
             </ul>
           </div>
         </div>

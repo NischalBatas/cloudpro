@@ -24,7 +24,7 @@ const Contact = () => {
             />
             {/* <span className="text-cloud font-semibold">CLOUDPro</span>.ai */}
           </Link>
-          <div className="max-w-[468px] pt-6 font-semibold text-2xl">
+          <div className="max-w-[468px] pt-6 py-3 lg:py-0 font-semibold text-2xl">
           Together, let's create something wonderful.
         </div>
         </div>

@@ -12,7 +12,7 @@ const Introduction = () => {
   }
   return (
     <>
-      <div className="main-container pb-40 relative">
+      <div className="main-container pb-24 md:pb-40 relative">
 
         
         <div
@@ -22,28 +22,28 @@ const Introduction = () => {
             zIndex: "-1",
           }}
         ></div>
-        <div className="pt-44 mt- z-20">
-          <div className="flex justify-center items-center text-center">
+        <div className="pt-44 z-20 px-3">
+          <div className="flex md:justify-center items-center md:text-center">
             <p
-              className="w-9/12 lg:w-8/12 text-4xl lg:text-[40px] font-bold text-white"
-              style={{ lineHeight: "3.5rem" }}
+              className="w-[327px] md:w-8/12 text-[24px] md:text-[40px] font-bold text-white"
+            
             >
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>
 
-          <div className="flex justify-center items-center text-cloud2 text-center pt-3">
-            <p className="w-9/12 md:w-[480px] text-base">
+          <div className="flex md:justify-center items-center text-cloud2 md:text-center pt-3">
+            <p className="w-full md:w-[480px] text-[14px] md:text-base">
               We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
               Business and Infrastructure Readiness for the Ultimate
               Technological Leap.
             </p>
           </div>
-          <div className="flex justify-center items-center gap-3  mt-6">
+          <div className="flex md:justify-center items-center gap-3  mt-6">
             <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn px-3 py-2 text-cloudText rounded font-medium">
               Contact Us
             </button>
-            <span className="flex items-center gap-1 text-white">
+            <span className="flex items-center gap-1 text-[16px] text-white">
               Book a Free Call <MdOutlineArrowOutward />
             </span>
           </div>

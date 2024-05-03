@@ -11,6 +11,11 @@ const MobileNavigation = () => {
   const pathname = usePathname();
   const [hamburger,setHamburger]=useState(false)
   const [navbarStatus,setNavbarStatus]=useState(true)
+  const router = useRouter();
+  const onHandleSubmit = (path) => {
+    router.push(path);
+  };
+
   return (
     <div className="hidden navbar-main-group navbar-main-group4 fixed w-full py-2">
       <div className="NavigationMenuRoot4 navbar-main relative">
@@ -34,10 +39,19 @@ const MobileNavigation = () => {
         </div>
         {navbarStatus &&  hamburger  ? 
     
-            <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2">
+            <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
                     <Link className="mobile_menu_link" href='#'>Case Study</Link>
-                    <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/aboutus'>About Us</Link>
+                    <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/aboutus'>About Us</Link>                 
                     <MobileMenu setHamburger={setHamburger} setNavbarStatus={setNavbarStatus} pathname={pathname} title="Services" />
+                    <button
+              onClick={() => {
+                onHandleSubmit("/contactus");
+              }}
+              className="bg-cloudBtn text-center navbar_contactus_btn text-white my-2 px-2 py-2 rounded text-[14px]"
+            >
+              Contact Us
+            </button>
+                   
             </div>
    
       

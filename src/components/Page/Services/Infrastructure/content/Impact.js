@@ -7,7 +7,7 @@ const Impact = () => {
       <div className="main-container">
         <div className="wow animate__animated animate__fadeInRight animate__slow">
           <div className="text-[20px] md:text-[24px] ">
-            <span className="font-semibold ">Why</span> Infrastructure maigration and upgrades 
+            <span className="font-semibold ">Why</span> Infrastructure migration and upgrades 
           </div>
         </div>
 

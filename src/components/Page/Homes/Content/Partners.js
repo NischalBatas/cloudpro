@@ -10,7 +10,7 @@ const Partners = () => {
         Global Partners
       </p>
 
-      <p className="m-auto text-center max-w-[602px] text-gray-700 text-[12px] mb-4">
+      <p className="m-auto text-center max-w-[602px] text-gray-600 text-[12px] mb-4">
         Our developers and Partners has experience in delivering projects to top
         tier companies like AWS, Google, Apple, Meta and many more fortune 500
         companies:

@@ -25,7 +25,7 @@ const Menu = ({title,pathname}) => {
 
           <div>
             <div className="navbar-menu-title font-semibold text-base py-2 pb-3">
-              Artificail Intelligence
+              Artificial Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
               <Link className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>

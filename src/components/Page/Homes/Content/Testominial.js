@@ -7,7 +7,7 @@ const Testominial = () => {
     <div className="py-14 testominial-main testominial-home mb-10">
       <div className="flex flex-col justify-center items-center">
         <p className="text-[14px] uppercase tracking-widest text-cloud">
-          Testominial
+          Testominials
         </p>
         <p className="text-[32px] font-semibold md:w-80 text-center md:text-left tracking-wild mb-6">
           What our client say

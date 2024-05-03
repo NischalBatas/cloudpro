@@ -62,7 +62,7 @@ const Navbar = () => {
             </Link>
             <button 
               onClick={() => {
-                onHandleSubmit("/contactus"),setNavbarStatus(false),setHamburger(false)
+                onHandleSubmit("/contactus")
               }}
               className="bg-cloudBtn navbar_contactus_btn text-white px-2 py-1 rounded text-[14px]"
             >

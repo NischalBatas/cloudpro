@@ -22,7 +22,7 @@ const FooterContent = () => {
           What we do
         </div>
         <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-          <Link href="#">Artificail Intelligence</Link>
+          <Link href="#">Artificial Intelligence</Link>
           <Link href="#">BI & Data Analytics</Link>
           <Link href="#">Cloud Engineering</Link>
           <Link href="#">Data Engineering</Link>

@@ -45,7 +45,7 @@ const ProfifleMessage = () => {
             </div>
 
             <div className="bg-[#171b33] p-2 rounded-full">
-            <FaLinkedin className=" "/>
+            <Link href='https://www.linkedin.com/in/nimesh-kuinkel-78a622120/'><FaLinkedin className=" "/></Link>
             </div>
           </div>
         </div>

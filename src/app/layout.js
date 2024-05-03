@@ -19,7 +19,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">  
-    <link rel="icon" href="./fav.svg" type="image/png" sizes="32x32" />
     <body className={jakarta.className}>
 
         {children}

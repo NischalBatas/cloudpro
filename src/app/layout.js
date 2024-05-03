@@ -13,12 +13,13 @@ const inter = Inter({ subsets: ["latin"] });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 export const metadata = {
   title: "CloudPro.AI",
-  description: "CloudPro.AI",
+  description: "Data, AI and Software Cloud Services Consultant",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">  
+    <link rel="icon" href="./fav.svg" type="image/png" sizes="32x32" />
     <body className={jakarta.className}>
 
         {children}

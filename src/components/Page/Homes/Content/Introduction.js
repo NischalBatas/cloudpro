@@ -29,11 +29,9 @@ const Introduction = () => {
 
           <div className="flex md:justify-center items-center text-cloud2 md:text-center pt-3">
             <p className="w-full md:w-[480px] text-[14px] md:text-base">
-              we're passionate about helping businesses leverage Data, AI,
-              Software, and Cloud Services to achieve extraordinary results.
-              We're Gen AI-Ready, and we're eager to collaborate with you to
-              assess your readiness and craft a customized strategy that
-              delivers real, measurable impact.
+              We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
+              Business and Infrastructure Readiness for the Ultimate
+              Technological Leap.
             </p>
           </div>
           <div className="flex md:justify-center items-center gap-3  mt-6">

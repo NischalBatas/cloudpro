@@ -11,10 +11,10 @@ const About = () => {
     <div className="">
       <Introduction />
       
-{/* <motion.div
+<motion.div
 animate={{ rotate: [0, 200, 200, 0], x: [0, 200, 200,0]}}
 transition={{ repeat: Infinity, duration: 1 }}
-><div className="example-container h-screen w-20 bg-blue-800"></div> </motion.div> */}
+><div className="example-container h-screen w-20 bg-blue-800"></div> </motion.div>
 
       <Mission />
       <Results />

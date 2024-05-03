@@ -15,9 +15,9 @@ const Introduction = () => {
       <div
         className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
         style={{
-          filter: "blur(5px)",
+          // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/process/generativeapp/robot.svg')",
+          backgroundImage: "url('/Image/process/generativeapp/robot.webp')",
         }}
       ></div>
       <div
@@ -34,7 +34,7 @@ const Introduction = () => {
         <p className="py-1 max-w-[691px]  font-semibold text-white text-xl md:text-2xl lg:text-4xl mb-3">
         Empower Your Business with Expert AI Consulting Services
         </p>
-        <div className="text-[14px] max-w-[691px] mb-8">
+        <div className="text-[14px] font-normal max-w-[691px] mb-8 leading-6">
           In today's competitive and rapidly evolving digital landscape,
           businesses of all sizes are on a quest for innovative solutions that
           can propel them ahead of the curve. At the heart of this quest is
@@ -46,8 +46,8 @@ const Introduction = () => {
         </div>
 
         <div>
-          <button className="bg-cloud rounded px-2 py-3 w-auto text-[14px]">
-          Call to Action Text: Partner with Us 
+          <button className="bg-black rounded-md px-6 py-3 w-auto text-[14px]">
+          Partner with Us 
           </button>
         </div>
         </div>

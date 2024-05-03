@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">  
-    <body className={jakarta.className}>
+    <body className={inter.className}>
 
         {children}
         <Script src="../../static/js/jquery.js"></Script>

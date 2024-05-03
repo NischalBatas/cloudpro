@@ -1,8 +1,14 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import '../../services.css'
+import { useRouter } from "next/navigation";
 const Introduction = () => {
+  const router = useRouter();
+  const onHandleSubmit = (path) => {
+    router.push(path);
+  };
   return (
     <div className="pb-16 relative w-full h-[680px]">
       {/* <div
@@ -42,7 +48,7 @@ const Introduction = () => {
           </div>
 
           <div>
-            <button className="service_main_button">
+            <button onClick={()=>{onHandleSubmit('/contactus')}} className="service_main_button">
             Consult with Us 
             </button>
           </div>

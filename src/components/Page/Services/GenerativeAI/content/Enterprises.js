@@ -32,9 +32,11 @@ const Enterprises = () => {
                 Business insights from data
               </Tabs.Trigger>
               <div className="hr-line"></div>
-              <Tabs.Trigger className="TabsTrigge2r" value="tab4">
-                Model creation and scaling
+        
+              <Tabs.Trigger className="TabsTrigger2" value="tab4">
+              Model creation and scaling
               </Tabs.Trigger>
+              
             </Tabs.List>
           </div>
 
@@ -84,6 +86,81 @@ const Enterprises = () => {
               <div className="lg:w-[535px] lg:h-[383px] bg-white rounded text-black p-4">
                 <p className="max-w-[381px] text-[16px] font-medium">
                   Craft bespoke prompts to produce creative and insightful text:
+                </p>
+                <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
+                  <li className="">
+                    Streamline business operations like customer interactions,
+                    call centers, and report creation with LLMs.
+                  </li>
+                  <li>Expand the use of generative AI with LLMOps. </li>
+                  <li>
+                    Tackle industry-specific challenges using LLMs, employing
+                    tools such as LangChain.
+                  </li>
+                  <li>
+                    Tailor and enhance LLMs for specific sector requirements
+                    through Reinforcement Learning with Human Feedback (RLHF).
+                  </li>
+                  <li>
+                    Craft bespoke prompts to produce creative and insightful
+                    text.
+                  </li>
+                  <li>
+                    Maintain the integrity, quality, and consistency of LLM
+                    outputs with GuardRails.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </Tabs.Content>
+
+          <Tabs.Content className="TabsContent2" value="tab3">
+            <div className="relative">
+              <div
+                className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"
+                style={{ zIndex: "-1" }}
+              ></div>
+              <div className="lg:w-[535px] lg:h-[383px] bg-white rounded text-black p-4">
+                <p className="max-w-[381px] text-[16px] font-medium">
+                Business insights from data
+                </p>
+                <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
+                  <li className="">
+                    Streamline business operations like customer interactions,
+                    call centers, and report creation with LLMs.
+                  </li>
+                  <li>Expand the use of generative AI with LLMOps. </li>
+                  <li>
+                    Tackle industry-specific challenges using LLMs, employing
+                    tools such as LangChain.
+                  </li>
+                  <li>
+                    Tailor and enhance LLMs for specific sector requirements
+                    through Reinforcement Learning with Human Feedback (RLHF).
+                  </li>
+                  <li>
+                    Craft bespoke prompts to produce creative and insightful
+                    text.
+                  </li>
+                  <li>
+                    Maintain the integrity, quality, and consistency of LLM
+                    outputs with GuardRails.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </Tabs.Content>
+
+
+          <Tabs.Content className="TabsContent2" value="tab4">
+            <div className="relative">
+              <div
+                className="absolute top-15 left-15 lg:w-[535px] lg:h-[383px] bg-cloud rounded"
+                style={{ zIndex: "-1" }}
+              ></div>
+              <div className="lg:w-[535px] lg:h-[383px] bg-white rounded text-black p-4">
+                <p className="max-w-[381px] text-[16px] font-medium">
+                Model creation and scaling
                 </p>
                 <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
                   <li className="">

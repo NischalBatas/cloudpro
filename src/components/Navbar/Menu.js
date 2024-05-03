@@ -15,7 +15,7 @@ const Menu = ({title,pathname}) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5  px-0 py-6 gap-2">
         <div className="flex">
           <div className="rounded-md p-2">
-            <Image
+            <Image className='min-w-[20px] '
               width={20}
               height={20}
               src="/Image/navbar_icon/ai.svg"
@@ -38,7 +38,7 @@ const Menu = ({title,pathname}) => {
 
         <div className="flex">
           <div className="rounded-md p-2">
-            <Image
+            <Image className='min-w-[20px] '
               width={20}
               height={20}
               src="/Image/navbar_icon/cloud.svg"
@@ -62,7 +62,7 @@ const Menu = ({title,pathname}) => {
 
         <div className="flex">
           <div className="rounded-md p-2">
-            <Image
+            <Image className='min-w-[20px] '
               width={20}
               height={20}
               src="/Image/navbar_icon/database.svg"
@@ -86,7 +86,7 @@ const Menu = ({title,pathname}) => {
 
         <div className="flex">
           <div className="rounded-md p-2">
-            <Image
+            <Image className='min-w-[20px] '
               width={20}
               height={20}
               src="/Image/navbar_icon/cloud.svg"

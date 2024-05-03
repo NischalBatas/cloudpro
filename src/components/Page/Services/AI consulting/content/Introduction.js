@@ -24,7 +24,7 @@ const Introduction = () => {
         style={{
           // filter: "blur(5px)",
           zIndex: "-1",
-          backgroundImage: "url('/Image/service-bg/2.webp')",
+          backgroundImage: "url('/Image/service-bg/16.webp')",
         }}
       ></div>
       <div

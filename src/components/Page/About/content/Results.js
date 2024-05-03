@@ -28,7 +28,7 @@ const Results = () => {
                     >
                       {item.ratio}
                     </span>
-                    %
+                    <span className="pl-1 font-semibold text-[28px]">{item.symbol}</span>
                   </div>
                   <div className="text-white text-xs md:text-sm px-4 pt-1 pb-5 opacity-70">
                     {item.title}

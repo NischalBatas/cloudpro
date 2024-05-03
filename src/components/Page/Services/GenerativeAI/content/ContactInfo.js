@@ -11,7 +11,7 @@ const ContactInfo = () => {
     router.push(path)
   }
   return (
-    <div className="bg-[#6083F3] pb-16 relative h-96">
+    <div className="bg-[#6083F3] pb-16 relative h-64 md:h-96">
       <div
         className="w-full absolute bg-no-repeat bg-center overflow-visible"
         style={{

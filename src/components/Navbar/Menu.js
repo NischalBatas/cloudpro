@@ -113,8 +113,8 @@ const Menu = ({title,pathname}) => {
             Products
             </div>
             <ul className="flex gap-3 text-cloud10 text-sm justify-between">
-          <Link href='/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
-          <Link href='/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
+          <Link href='https://docchat.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
+          <Link href='https://zales.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
 
             </ul>
           </div>

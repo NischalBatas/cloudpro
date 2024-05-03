@@ -1,5 +1,6 @@
 import { product } from "@/db/product";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -19,7 +20,8 @@ const Product = () => {
         {product.map((item, index) => {
           return (
         
-              <div key={index}
+            <Link key={index} href={item.link}>
+              <div 
                 style={{ backgroundColor: `${item.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
@@ -48,6 +50,7 @@ const Product = () => {
                   />
                 </div>
               </div>
+              </Link>
            
           );
         })}

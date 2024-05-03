@@ -1,11 +1,11 @@
-import { generativeProduct } from "@/db/generativeProduct";
+import { products } from "@/db/adhoc/products";
 import Image from "next/image";
 import React from "react";
 
 const GenerativeProduct = () => {
   return (
     <>
-      {generativeProduct.map((item, index) => {
+      {products.map((item, index) => {
         return (
           <div key={index} className="md:max-w-[331px] border border-[#DFDFDF] rounded-md">
             <Image

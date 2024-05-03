@@ -2,27 +2,27 @@ export const products = [
   {
     image: "/Image/process/generativeapp/product.svg",
 
-    title: "Automated Customer Service",
+    title: "Fraud Detection in Banking",
 
     description:
-      "Implemented AI chatbots to handle customer inquiries, reducing response times by up to 70% and significantly increasing customer satisfaction.",
+      "Developed real-time machine learning models that detect fraudulent transactions, reducing fraud losses by up to 25%.",
   },
 
   {
     image: "/Image/process/generativeapp/product.svg",
 
-    title: "Streamlined Document Processing",
+    title: "Advanced Healthcare Diagnostics",
 
     description:
-      "Utilized AI to automatically extract and process information from legal and financial documents, improving accuracy and reducing manual labor by 50%.",
+      "Integrated AI tools to assist in diagnosing diseases from medical images with greater accuracy and speed, enhancing patient outcomes.",
   },
 
   {
     image: "/Image/process/generativeapp/product.svg",
 
-    title: "Enhanced E-commerce Experience",
+    title: "AI-Driven Supply Chain Optimization",
 
     description:
-      "Deployed AI to analyze customer behavior and preferences, offering personalized product recommendations and boosting e-commerce conversion rates by 30%.",
+      "Utilized AI to forecast demand and optimize inventory management, reducing supply chain costs by 15% and improving service levels.",
   },
 ];

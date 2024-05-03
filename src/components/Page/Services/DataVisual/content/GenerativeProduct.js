@@ -1,3 +1,4 @@
+import { products } from "@/db/dataVisual/products";
 import { generativeProduct } from "@/db/generativeProduct";
 import Image from "next/image";
 import React from "react";
@@ -5,7 +6,7 @@ import React from "react";
 const GenerativeProduct = () => {
   return (
     <>
-      {generativeProduct.map((item, index) => {
+      {products.map((item, index) => {
         return (
           <div key={index} className="md:max-w-[331px] border border-[#DFDFDF] rounded-md">
             <Image

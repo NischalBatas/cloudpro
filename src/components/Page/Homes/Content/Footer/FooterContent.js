@@ -9,7 +9,7 @@ const FooterContent = () => {
           we are cloudpro ai
         </div>
         <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-          <Link href="#">About Us</Link>
+          <Link href="/aboutus">About Us</Link>
           <Link href="#">Career</Link>
           <Link href="#">Case Study</Link>
           <Link href="#">Blog</Link>
@@ -22,10 +22,10 @@ const FooterContent = () => {
           What we do
         </div>
         <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-          <Link href="#">Artificial Intelligence</Link>
-          <Link href="#">BI & Data Analytics</Link>
-          <Link href="#">Cloud Engineering</Link>
-          <Link href="#">Data Engineering</Link>
+          <Link href="/services/architecture">Artificial Intelligence</Link>
+          <Link href="/services/dataanalytics">BI & Data Analytics</Link>
+          <Link href="/services/architecture">Cloud Engineering</Link>
+          <Link href="/services/bigdata">Data Engineering</Link>
         </div>
       </div>
 

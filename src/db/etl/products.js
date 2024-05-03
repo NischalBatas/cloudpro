@@ -2,7 +2,7 @@ export const products = [
 
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/7a.svg", 
   
       title: "Data Consolidation Post-Merger", 
   
@@ -12,7 +12,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/7b.svg", 
   
       title: "Modernization of Legacy Systems", 
   
@@ -22,7 +22,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/7c.svg", 
   
       title: "Real-Time Data Synchronization", 
   

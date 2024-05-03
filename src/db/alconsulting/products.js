@@ -1,6 +1,6 @@
 export const products = [
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/2a.svg",
 
     title: "Fraud Detection in Banking",
 
@@ -9,7 +9,7 @@ export const products = [
   },
 
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/2b.svg",
 
     title: "Advanced Healthcare Diagnostics",
 
@@ -18,7 +18,7 @@ export const products = [
   },
 
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/2c.svg",
 
     title: "AI-Driven Supply Chain Optimization",
 

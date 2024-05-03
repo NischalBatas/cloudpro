@@ -2,7 +2,7 @@ export const products = [
 
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/11a.svg", 
   
       title: "Financial Performance Dashboards", 
   
@@ -12,7 +12,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/11b.svg", 
   
       title: "Human Resources Analytics", 
   
@@ -22,7 +22,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/11c.svg", 
   
       title: "Production Quality Reports", 
   

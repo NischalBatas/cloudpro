@@ -2,7 +2,7 @@ export const products = [
 
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/8a.svg", 
   
       title: "Retail Sales Optimization", 
   
@@ -12,7 +12,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/8b.svg", 
   
       title: "Clinical Data Analysis", 
   
@@ -22,7 +22,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/8c.svg", 
   
       title: "Operational Efficiency in Manufacturing", 
   

@@ -2,7 +2,7 @@ export const products = [
 
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/9a.svg", 
   
       title: "Financial Data Aggregation", 
   
@@ -12,7 +12,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/9b.svg", 
   
       title: "Media Content Repository", 
   
@@ -22,7 +22,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/9c.svg", 
   
       title: "Research Data Archiving", 
   

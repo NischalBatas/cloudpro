@@ -2,7 +2,7 @@ export const products = [
 
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/4a.svg", 
   
       title: "Multi-cloud Management", 
   
@@ -12,7 +12,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/4b.svg", 
   
       title: "Cloud Security Orchestration", 
   
@@ -22,7 +22,7 @@ export const products = [
   
     { 
   
-      image: "/Image/process/generativeapp/product.svg", 
+      image: "/Image/process/generativeapp/4c.svg", 
   
       title: "Dynamic Performance Optimization", 
   

@@ -1,6 +1,6 @@
 export const products = [
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/1a.svg",
 
     title: "Automated Customer Service",
 
@@ -9,7 +9,7 @@ export const products = [
   },
 
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/1b.svg",
 
     title: "Streamlined Document Processing",
 
@@ -18,7 +18,7 @@ export const products = [
   },
 
   {
-    image: "/Image/process/generativeapp/product.svg",
+    image: "/Image/process/generativeapp/1c.svg",
 
     title: "Enhanced E-commerce Experience",
 

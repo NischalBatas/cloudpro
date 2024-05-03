@@ -9,8 +9,8 @@ const GenerativeProduct = () => {
         return (
           <div key={index} className="md:max-w-[331px] border border-[#DFDFDF] rounded-md">
             <Image
-              width={1000}
-              height={1000}
+              width={48}
+              height={48}
               src={item.image}
               alt="product_solution"
             />

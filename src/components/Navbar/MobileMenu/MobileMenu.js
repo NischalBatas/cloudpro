@@ -18,14 +18,16 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
 
   return (
     <Collapsible.Root className="height_content_main" open={open} onOpenChange={setOpen}>
-    <div className='mobile_menu_link flex justify-between items-center'>
+    
+      <Collapsible.Trigger asChild>
+      <div className='mobile_menu_link flex justify-between items-center'>
       <span className="">
        Services
       </span>
-      <Collapsible.Trigger asChild>
         <button className="">{open ? <IoIosArrowUp /> : <IoIosArrowDown />}</button>
+        </div>
       </Collapsible.Trigger>
-    </div>
+ 
 
     <Collapsible.Content className='overflow-y-scroll height_content'>
       <div className="text-[#D7D7D7] text-[14px]">

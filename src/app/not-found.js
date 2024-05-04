@@ -20,9 +20,7 @@ const notfound = () => {
             We apologize for the inconvenience, but our page is currently
             undergoing maintenance to enhance your browsing experience. Please
             bear with us as we work diligently to bring you a better, smoother,
-            and more efficient online platform. During this period of
-            maintenance, you may experience temporary disruptions in accessing
-            our page and its services. Rest assured, our team is working
+            and more efficient online platform. Rest assured, our team is working
             tirelessly behind the scenes to resolve any issues and implement
             necessary updates. Thank you for your patience.
           </p>

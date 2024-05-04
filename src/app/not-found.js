@@ -28,7 +28,7 @@ const notfound = () => {
           </p>
           <Link
             href="/"
-            className="bg-[#6083f3] rounded-md py-2 px-6 mt-6 hover:opacity-80"
+            className="bg-[#6083f3] rounded-md py-2 px-6 mt-6 hover:opacity-80 tracking-wider"
           >
             Go To Home Page
           </Link>

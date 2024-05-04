@@ -10,13 +10,13 @@ const notfound = () => {
     <>
       <Navbar />
       <MobileNavigation />
-      <div className="navbar-main flex justify-between flex-wrap md:flex-nowrap items-center h-screen">
-        <div>
-          <span className="text-[42px] font-semibold tracking-wider leading-[3.2rem] max-w-[220px]">
+      <div className="navbar-main pt-24 md:pt-0 flex-wrap-reverse flex md:justify-between md:flex-nowrap md:items-center md:h-screen">
+        <div className="pt-6 md:pt-0">
+          <span className=" text-3xl md:text-[42px] font-semibold tracking-wider md:leading-[3.2rem] max-w-[220px]">
             Page Under <p className="text-[#6083f3]">Maintenance</p>
           </span>
 
-          <p className="max-w-[550px] my-6 text-[15px] text-[#aeb4b4]">
+          <p className="pb-3 max-w-[550px] my-4 md:my-5 text-[14px] md:text-[15px] text-[#aeb4b4]">
             We apologize for the inconvenience, but our page is currently
             undergoing maintenance to enhance your browsing experience. Please
             bear with us as we work diligently to bring you a better, smoother,
@@ -28,12 +28,12 @@ const notfound = () => {
           </p>
           <Link
             href="/"
-            className="bg-[#6083f3] rounded-md py-2 px-6 mt-6 hover:opacity-80 tracking-wider"
+            className="bg-[#6083f3] rounded-md py-2 px-6 my-6 hover:opacity-80 tracking-wider"
           >
             Go To Home Page
           </Link>
         </div>
-        <Image width={400} height={400} src="/404.svg" alt="404 page" />
+        <Image className="mx-auto max-w-[290px] max-h-[290px] md:max-w-[400px]" width={400} height={400} src="/404.svg" alt="404 page" />
       </div>
     </>
   );

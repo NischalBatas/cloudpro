@@ -40,7 +40,7 @@ const MobileNavigation = () => {
         {navbarStatus &&  hamburger  ? 
     
             <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
-                    <Link className="mobile_menu_link" href='#'>Case Study</Link>
+                    <Link className="mobile_menu_link" href='/casestudy'>Case Study</Link>
                     <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/aboutus'>About Us</Link>                 
                     <MobileMenu setHamburger={setHamburger} setNavbarStatus={setNavbarStatus} pathname={pathname} title="Services" />
                     <button

@@ -28,9 +28,9 @@ const ContactInfo = () => {
             <button onClick={()=>{handleClick('/contactus')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
-            <span className="flex gap-1 text-white">
+            <Link href='/contactus' className="flex gap-1 text-white">
               Book a Free Call <MdOutlineArrowOutward />
-            </span>
+            </Link>
           </div>
       </div>
       </div>

@@ -10,7 +10,7 @@ import Products from './content/Products'
 import Industries from './content/Industries'
 import Faq from './content/Faq'
 import Enterprises from './content/Enterprises'
-import ContactInfo from './content/ContactInfo'
+import ContactInfo from '../AdHoc/content/ContactInfo'
 
 const DataWarehouse = () => {
   return (

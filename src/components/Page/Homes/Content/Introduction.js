@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -43,9 +44,9 @@ const Introduction = () => {
             >
               Contact Us
             </button>
-            <span className="flex items-center gap-1 text-[16px] text-white">
+            <Link href='/contactus' className="flex items-center gap-1 text-[16px] text-white">
               Book a Free Call <MdOutlineArrowOutward />
-            </span>
+            </Link>
           </div>
         </div>
       </div>

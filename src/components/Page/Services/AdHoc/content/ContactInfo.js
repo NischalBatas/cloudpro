@@ -11,15 +11,15 @@ const ContactInfo = () => {
     router.push(path)
   }
   return (
-    <div className="bg-[#6083F3] pb-16 relative h-64 md:h-96">
+    <div className="bg-[#6083F3] pb-16 relative h-64 md:h-96" style={{zIndex:'-4'}}>
       <div
         className="w-full absolute bg-no-repeat bg-center overflow-visible"
-        style={{
+        style={{zIndex:'-3',
           backgroundImage: "url('/Image/process/generativeapp/cloud14.svg')",
           height: "342.5px"
         }}
       ></div>
-      <div className="navbar-main pt-24 h-full pb-4">
+      <div className="navbar-main pt-24 h-full pb-4" style={{zIndex:'10'}}>
       <div className="main-container flex flex-col justify-center h-full">
         <div className="max-w-96 text-white text-2xl font-medium">
         Discover more ways our team can help.
@@ -28,9 +28,9 @@ const ContactInfo = () => {
             <button onClick={()=>{handleClick('/contactus')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
-            <span className="flex gap-1 text-white">
+            <Link href='/contactus' className="flex gap-1 text-white">
               Book a Free Call <MdOutlineArrowOutward />
-            </span>
+            </Link>
           </div>
       </div>
       </div>

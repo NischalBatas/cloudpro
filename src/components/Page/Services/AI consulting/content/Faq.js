@@ -5,6 +5,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import "./faq.css";
 import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { faqApp } from "@/db/faq";
+import FaqMain from "../../FaqMain";
 
 const Faq = () => {
   return (
@@ -15,25 +16,7 @@ const Faq = () => {
         <p className="text-[16px] text-[#BCBCBC] max-w-[219px] tracking-normal">Generative AI & Applications</p>
       </div>
 
-      <Accordion.Root className="AccordionRoot mt-[1.5rem] md:mt-0" type="single" defaultValue="item-1" collapsible>
-  {faqApp.map((item,index)=>{
-    return(
-      <Accordion.Item key={index} className="AccordionItem" value={`item-${item.number}`}>
-      <Accordion.Trigger className="AccordionTrigger">{item.question}<FaAngleDown className="ml-2 FaAngleDown"/> </Accordion.Trigger>
-      <div className="line-faq"></div >
-      <Accordion.Content className="AccordionContent"> 
-      <div className="AccordionContentText">
-         {item.answer}
-        </div>
-        </Accordion.Content>
-  
-    </Accordion.Item>
-    )
-  })}
- 
-
-  
-</Accordion.Root>
+      <FaqMain faqApp={faqApp}/>
 </div>
     </div>
   );

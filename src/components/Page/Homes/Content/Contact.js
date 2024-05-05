@@ -30,10 +30,10 @@ const Contact = () => {
         </div>
        
         <div className="flex items-center gap-3 lg:w-96 ">
-          <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn text-white px-2 py-1 rounded font-medium">
+          <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn text-white px-6 py-2 rounded font-medium">
           Start working with us
           </button>
-          <Link href='/contactus' className="flex gap-1 text-white">
+          <Link href='/contactus' className="flex gap-1 text-white hover:opacity-80">
             Book a Free Call <MdOutlineArrowOutward />
           </Link>
         </div>

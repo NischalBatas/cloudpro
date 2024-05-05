@@ -1,5 +1,5 @@
 import ContactUs from '@/components/Page/ContactUs/ContactUs'
-import ContactInfo from '@/components/Page/Services/GenerativeAI/content/ContactInfo'
+import ContactInfo from '@/components/Page/Services/AdHoc/content/ContactInfo'
 import React from 'react'
 
 const page = () => {

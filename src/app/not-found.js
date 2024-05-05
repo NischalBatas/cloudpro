@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/Header/Header";
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
 import Navbar from "@/components/Navbar/Navbar";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import React from "react";
 const notfound = () => {
   return (
     <>
+    <Header/>
       <Navbar />
       <MobileNavigation />
     <div className="navbar-main">

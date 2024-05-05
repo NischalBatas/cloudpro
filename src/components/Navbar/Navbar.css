@@ -55,15 +55,7 @@
 }
 
 
-/* .NavigationMenuRoot:hover .NavigationMenuList{
-  border-bottom: 1px solid #d8d8d8;
-} */
 
-/* 
-.navbar-main-group:hover .NavigationMenuTrigger,
-.navbar-main-group:hover .CaretDown{
-    color: #000;
-} */
 
 .blacklogo{
   display: none;
@@ -436,12 +428,3 @@
   }
 }
 
-
-/* 
-.NavigationMenuTrigger2:hover .NavigationMenuLink,
-.NavigationMenuTrigger2:hover .NavigationMenuTrigger,
-.NavigationMenuTrigger2:hover .CaretDown,
-.ViewportPosition:hover .NavigationMenuTrigger2,
-.NavigationMenuTrigger2:hover{
-  color: #000;
-} */

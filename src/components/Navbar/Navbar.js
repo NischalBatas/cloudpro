@@ -16,7 +16,7 @@ const Navbar = () => {
     router.push(path);
   };
   const pathname = usePathname();
-
+  // const [navbar,setNavbar]=useState(false)
   return (
     <div className="navbar-main-group navbar-main-group3 fixed w-full">
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative">
@@ -41,8 +41,9 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4 py-1">
+           
             <Menu pathname={pathname} title="Services" />
-            {/* <Menu title="Product" /> */}
+          
 
             <Link
               className={`NavigationMenuTrigger rounded-[8px] ${
@@ -60,28 +61,21 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <button 
+            <button
               onClick={() => {
-                onHandleSubmit("/contactus")
+                onHandleSubmit("/contactus");
               }}
               className="bg-cloudBtn navbar_contactus_btn text-white px-2 py-1 rounded text-[14px]"
             >
               Contact Us
             </button>
           </div>
-
-      
         </div>
-       
 
         <div className="ViewportPosition">
           <NavigationMenu.Viewport className="NavigationMenuViewport" />
         </div>
-      
       </NavigationMenu.Root>
-  
-         
-        
     </div>
   );
 };

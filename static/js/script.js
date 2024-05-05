@@ -104,36 +104,36 @@ $(document).ready(function () {
 });
 
 
-$('.NavigationMenuTrigger2').mouseenter('click', function() {
-  $('.navbar-main-group').css('background', 'white');
-  $('.NavigationMenuTrigger').css('color', 'black');
-  $('.CaretDown').css('color', 'black');
-  $('.blacklogo').css('display', 'block');
-  $('.whitelogo').css('display', 'none');
-});
+// $('.NavigationMenuTrigger2').mouseenter('click', function() {
+//   $('.navbar-main-group').css('background', 'white');
+//   $('.NavigationMenuTrigger').css('color', 'black');
+//   $('.CaretDown').css('color', 'black');
+//   $('.blacklogo').css('display', 'block');
+//   $('.whitelogo').css('display', 'none');
+// });
 
-$('.NavigationMenuTrigger2').mouseleave('click', function() {
-  $('.navbar-main-group').css('background', 'rgba(37, 37, 37, 0.4)');
-  $('.NavigationMenuTrigger').css('color', 'white');
-  $('.CaretDown').css('color', 'white');
-  $('.blacklogo').css('display', 'none');
-  $('.whitelogo').css('display', 'block');
-});
+// $('.NavigationMenuTrigger2').mouseleave('click', function() {
+//   $('.navbar-main-group').css('background', 'rgba(37, 37, 37, 0.4)');
+//   $('.NavigationMenuTrigger').css('color', 'white');
+//   $('.CaretDown').css('color', 'white');
+//   $('.blacklogo').css('display', 'none');
+//   $('.whitelogo').css('display', 'block');
+// });
 
-$('.ViewportPosition').mouseenter('click', function() {
-  $('.navbar-main-group').css('background', 'white');
-  $('.NavigationMenuTrigger').css('color', 'black');
-  $('.CaretDown').css('color', 'black');
-  $('.blacklogo').css('display', 'block');
-  $('.whitelogo').css('display', 'none');
-});
+// $('.ViewportPosition').mouseenter('click', function() {
+//   $('.navbar-main-group').css('background', 'white');
+//   $('.NavigationMenuTrigger').css('color', 'black');
+//   $('.CaretDown').css('color', 'black');
+//   $('.blacklogo').css('display', 'block');
+//   $('.whitelogo').css('display', 'none');
+// });
 
-$('.ViewportPosition').mouseleave('click', function() {
-  $('.navbar-main-group').css('background', 'rgba(37, 37, 37, 0.4)');
-  $('.NavigationMenuTrigger').css('color', 'white');
-  $('.CaretDown').css('color', 'white');
-  $('.blacklogo').css('display', 'none');
-  $('.whitelogo').css('display', 'block');
-});
+// $('.ViewportPosition').mouseleave('click', function() {
+//   $('.navbar-main-group').css('background', 'rgba(37, 37, 37, 0.4)');
+//   $('.NavigationMenuTrigger').css('color', 'white');
+//   $('.CaretDown').css('color', 'white');
+//   $('.blacklogo').css('display', 'none');
+//   $('.whitelogo').css('display', 'block');
+// });
 
 

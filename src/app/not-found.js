@@ -10,7 +10,8 @@ const notfound = () => {
     <>
       <Navbar />
       <MobileNavigation />
-      <div className="navbar-main py-24 py:2 md:pt-0 flex-wrap-reverse flex md:justify-between md:flex-nowrap md:items-center md:h-screen">
+    <div className="navbar-main">
+    <div className="main-container py-24 py:2 md:pt-0 flex-wrap-reverse flex md:justify-between md:flex-nowrap md:items-center md:h-screen">
         <div className="pt-6 md:pt-0">
           <span className=" text-3xl md:text-[42px] font-semibold tracking-wider md:leading-[3.2rem] max-w-[220px]">
             Page Under <p className="text-[#6083f3]">Maintenance</p>
@@ -33,6 +34,7 @@ const notfound = () => {
         </div>
         <Image className="mx-auto md:mx-0 max-w-[290px] max-h-[290px] md:max-w-[400px] md:max-h-[400px]" width={400} height={400} src="/404.svg" alt="404 page" />
       </div>
+    </div>
     </>
   );
 };

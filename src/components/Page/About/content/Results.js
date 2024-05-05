@@ -15,7 +15,7 @@ const Results = () => {
             return (
               <div
                 key={index}
-                className="h-52 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
+                className="results_main h-48 md:h-64 md:w-60 relative  bg-no-repeat bg-cover rounded-lg"
                 style={{
                   backgroundImage: `url(${item.image})`,
                 }}
@@ -23,12 +23,12 @@ const Results = () => {
                 <div className=" flex flex-col justify-end text-right h-full ">
                   <div className="text-white px-4">
                     <span
-                      className="text-3xl md:text-6xl font-semibold num"
+                      className="text-2xl md:text-5xl font-semibold num"
                       data-val={`${item.ratio}`}
                     >
                       {item.ratio}
                     </span>
-                    <span className="pl-1 font-semibold text-[28px]">{item.symbol}</span>
+                    <span className="pl-1 font-semibold text-[20px] md:text-[28px]">{item.symbol}</span>
                   </div>
                   <div className="text-white text-xs md:text-sm px-4 pt-1 pb-5 opacity-70">
                     {item.title}

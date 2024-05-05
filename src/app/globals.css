@@ -123,6 +123,10 @@ button:hover {
   }
 }
 
+.results_main{
+  height: 11rem;
+}
+
 .line-svg {
   position: relative;
   left: 30px;

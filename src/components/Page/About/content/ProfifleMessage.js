@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 const ProfifleMessage = () => {
   return (
     <div className="navbar-main my-20 mb-28">
-      <div className="main-container bg-[#0E0E1A] p-8 flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap gap-8  rounded-md  m-auto">
+      <div className="main-container bg-[#0E0E1A] p-4  md:p-8 flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap gap-8  rounded-md  m-auto">
         <div className="relative min-w-[210px] lg:min-w-[232px] h-[240px] lg:h-[260px]">
           <div
             className=" absolute top-2 left-2 min-w-[210px] lg:w-[232px] h-[240px] lg:h-[260px] bg-cloud rounded"
@@ -24,7 +24,7 @@ const ProfifleMessage = () => {
         </div>
 
         <div className="col-span-2">
-          <p className="font-bold text-[32px]">Message From CEO</p>
+          <p className="font-bold text-[20px] md:text-[32px]">Message From CEO</p>
           <p className="text-[12px] lg:text-[14px] text-[#AFAFB5] mt-2 ">
             With over a decade of experience in the IT industry, I bring a
             wealth of knowledge in diverse domains to my role. My focus is on

@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import "./Dropdown/dropdown.css";
-import Dropdown from "./Dropdown/Dropdown";
-import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
 import "./Navbar.css";
 import Image from "next/image";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
@@ -22,7 +18,7 @@ const Navbar = () => {
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative">
         <div className="NavigationMenuList w-full">
           <div className="logo-main">
-            <Link href="/">
+            <NavigationMenu.Link href="/">
               <Image
                 className="whitelogo"
                 width={120}
@@ -37,29 +33,29 @@ const Navbar = () => {
                 alt="company_logo"
                 src="/Image/logo/logoblack.svg"
               />
-            </Link>
+            </NavigationMenu.Link>
           </div>
 
           <div className="flex items-center gap-4 py-1">
             <Menu pathname={pathname} title="Services" />
             {/* <Menu title="Product" /> */}
 
-            <Link
+            <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${
                 pathname === "/casestudy" ? "active-menu" : ""
               }`}
               href="/casestudy"
             >
               Case Study
-            </Link>
-            <Link
+            </NavigationMenu.Link>
+            <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${
                 pathname === "/aboutus" ? "active-menu" : ""
               }`}
               href="/aboutus"
             >
               About Us
-            </Link>
+            </NavigationMenu.Link>
             <button
               onClick={() => {
                 onHandleSubmit("/contactus");

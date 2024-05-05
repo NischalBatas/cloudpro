@@ -2,7 +2,6 @@ import React from 'react'
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { IoIosArrowDown } from "react-icons/io";
 import "./Navbar.css";
-import Link from 'next/link';
 import Image from 'next/image';
 
 const Menu = ({title,pathname}) => {
@@ -28,8 +27,8 @@ const Menu = ({title,pathname}) => {
               Artificial Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link  className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link >
-              <Link  className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link >
+              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</NavigationMenu.Link >
+              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</NavigationMenu.Link >
             
             </ul>
           </div>
@@ -50,10 +49,10 @@ const Menu = ({title,pathname}) => {
             Cloud Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/services/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</Link>
-              <Link className={`menu-item-list ${pathname==='/services/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</Link>
-              <Link className={`menu-item-list ${pathname==='/services/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</Link>
-              <Link className={`menu-item-list ${pathname==='/services/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</NavigationMenu.Link>
             </ul>
           </div>
         </div>
@@ -74,10 +73,10 @@ const Menu = ({title,pathname}) => {
             Data Engineering
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</Link>
-              <Link className={`menu-item-list ${pathname==='/services/dataanalytics' ? 'active-menu' :''}`} href="/services/dataanalytics">Data Analytics</Link>
-              <Link className={`menu-item-list ${pathname==='/services/datawarehouse' ? 'active-menu' :''}`} href="/services/datawarehouse">Data Lakes and Warehouses</Link>
-              <Link className={`menu-item-list ${pathname==='/services/datasolutions' ? 'active-menu' :''}`} href="/services/datasolutions">Data Pipeline Solutions</Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/dataanalytics' ? 'active-menu' :''}`} href="/services/dataanalytics">Data Analytics</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datawarehouse' ? 'active-menu' :''}`} href="/services/datawarehouse">Data Lakes and Warehouses</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datasolutions' ? 'active-menu' :''}`} href="/services/datasolutions">Data Pipeline Solutions</NavigationMenu.Link>
             </ul>
           </div>
         </div>
@@ -98,9 +97,9 @@ const Menu = ({title,pathname}) => {
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/services/bireport' ? 'active-menu' :''}`} href="/services/bireport">BI Report and Dashboard</Link>
-              <Link className={`menu-item-list ${pathname==='/services/adhoc' ? 'active-menu' :''}`} href="/services/adhoc">Ad-Hoc Reporting Solutions</Link>
-              <Link className={`menu-item-list ${pathname==='/services/datavisual' ? 'active-menu' :''}`} href="/services/datavisual">Data Visualization Solution</Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bireport' ? 'active-menu' :''}`} href="/services/bireport">BI Report and Dashboard</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/adhoc' ? 'active-menu' :''}`} href="/services/adhoc">Ad-Hoc Reporting Solutions</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datavisual' ? 'active-menu' :''}`} href="/services/datavisual">Data Visualization Solution</NavigationMenu.Link>
             </ul>
           </div>
 
@@ -113,8 +112,8 @@ const Menu = ({title,pathname}) => {
             Products
             </div>
             <ul className="flex gap-3 text-cloud10 text-sm justify-between">
-          <Link href='https://docchat.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></Link>
-          <Link href='https://zales.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></Link>
+          <NavigationMenu.Link href='https://docchat.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></NavigationMenu.Link>
+          <NavigationMenu.Link href='https://zales.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></NavigationMenu.Link>
 
             </ul>
           </div>

@@ -33,9 +33,9 @@ const Contact = () => {
           <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn text-white px-2 py-1 rounded font-medium">
           Start working with us
           </button>
-          <span className="flex gap-1 text-white">
+          <Link href='/contactus' className="flex gap-1 text-white">
             Book a Free Call <MdOutlineArrowOutward />
-          </span>
+          </Link>
         </div>
       </div>
     </div>

@@ -11,14 +11,10 @@ const ContactInfo = () => {
     router.push(path)
   }
   return (
-    <div className="bg-[#6083F3] pb-16 relative h-64 md:h-96" style={{zIndex:'-4'}}>
-      <div
-        className="w-full absolute bg-no-repeat bg-center overflow-visible"
-        style={{zIndex:'-3',
-          backgroundImage: "url('/Image/process/generativeapp/cloud14.svg')",
-          height: "342.5px"
-        }}
-      ></div>
+    <div className="bg-[#6083F3] pb-16  w-full bg-no-repeat bg-center"    style={{zIndex:'-3',
+    backgroundImage: "url('/Image/process/generativeapp/cloud14.svg')",
+    height: "372.5px"
+  }}>
       <div className="navbar-main pt-24 h-full pb-4" style={{zIndex:'10'}}>
       <div className="main-container flex flex-col justify-center h-full">
         <div className="max-w-96 text-white text-2xl font-medium">

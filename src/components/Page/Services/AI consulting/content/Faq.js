@@ -2,7 +2,6 @@
 import React from "react";
 import * as Accordion from '@radix-ui/react-accordion';
 import { FaAngleDown } from "react-icons/fa6";
-import "./faq.css";
 import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { faqApp } from "@/db/faq";
 import FaqMain from "../../FaqMain";

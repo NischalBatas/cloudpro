@@ -20,7 +20,7 @@ const ContactInfo = () => {
         <div className="max-w-96 text-white text-2xl font-medium">
         Discover more ways our team can help.
         </div>
-        <div className="flex items-center gap-3 lg:w-96 mt-4">
+        <div className="flex items-center flex-wrap gap-3 lg:w-96 mt-4">
             <button onClick={()=>{handleClick('/contactus')}} className="bg-black text-white shadow-2xl px-6 py-2 rounded font-medium">
               Contact Us
             </button>

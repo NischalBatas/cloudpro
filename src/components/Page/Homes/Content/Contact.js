@@ -29,8 +29,8 @@ const Contact = () => {
         </div>
         </div>
        
-        <div className="flex items-center gap-3 lg:w-96 ">
-          <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn text-white px-6 py-2 rounded font-medium">
+        <div className="flex items-center flex-wrap gap-3 lg:w-96 ">
+          <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn text-white px-2 md:px-6 py-2 rounded font-medium">
           Start working with us
           </button>
           <Link href='/contactus' className="flex gap-1 text-white hover:opacity-80">

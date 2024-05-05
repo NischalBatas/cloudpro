@@ -16,7 +16,7 @@ const Navbar = () => {
     router.push(path);
   };
   const pathname = usePathname();
-  const [navbar,setNavbar]=useState(true)
+
   return (
     <div className="navbar-main-group navbar-main-group3 fixed w-full">
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative">
@@ -41,9 +41,8 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4 py-1">
-   
-            <Menu onHandleSubmit={onHandleSubmit} setNavbar={setNavbar} navbar={navbar} pathname={pathname} title="Services" />
-          
+            <Menu pathname={pathname} title="Services" />
+            {/* <Menu title="Product" /> */}
 
             <Link
               className={`NavigationMenuTrigger rounded-[8px] ${
@@ -75,7 +74,6 @@ const Navbar = () => {
         <div className="ViewportPosition">
           <NavigationMenu.Viewport className="NavigationMenuViewport" />
         </div>
- 
       </NavigationMenu.Root>
     </div>
   );

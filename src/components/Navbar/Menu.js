@@ -7,14 +7,10 @@ import Image from 'next/image';
 
 const Menu = ({title,pathname}) => {
   return (
- <>
- 
     <NavigationMenu.Item>
     <NavigationMenu.Trigger className={`NavigationMenuTrigger NavigationMenuTrigger2 ${pathname==='/services/generativeapp' ? 'active-menu' :''}`}>
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
-    
-
     <NavigationMenu.Content className="NavigationMenuContent navbar-main">
         <div className="grid md:grid-cols-2 lg:grid-cols-5  px-0 py-6 gap-2">
         <div className="flex">
@@ -32,8 +28,8 @@ const Menu = ({title,pathname}) => {
               Artificial Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-cloud10 text-sm">
-              <Link className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link>
-              <Link className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link>
+              <Link  className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</Link >
+              <Link  className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</Link >
             
             </ul>
           </div>
@@ -124,10 +120,7 @@ const Menu = ({title,pathname}) => {
           </div>
         </div>
     </NavigationMenu.Content>
-
   </NavigationMenu.Item>
-
- </>
   )
 }
 

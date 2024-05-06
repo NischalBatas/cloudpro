@@ -10,10 +10,10 @@ const FooterContent = () => {
         </div>
         <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
           <Link href="/aboutus">About Us</Link>
-          <Link href="#">Career</Link>
-          <Link href="#">Case Study</Link>
-          <Link href="#">Blog</Link>
-          <Link href="#">Events</Link>
+          <Link href="/career">Career</Link>
+          <Link href="/casestudy">Case Study</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/events">Events</Link>
         </div>
       </div>
 

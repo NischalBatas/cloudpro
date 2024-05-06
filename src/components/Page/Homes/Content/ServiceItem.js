@@ -12,7 +12,7 @@ const ServiceItem = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0,
+        delayChildren: 0.2,
         staggerChildren: 0.2
       }
     }
@@ -28,7 +28,7 @@ const ServiceItem = () => {
   
   return (
     <motion.ul ref={ref} 
-    className="grid grid-cols-2 md:grid-cols-3 mt-10 gap-4 gap-y-5"
+    className="grid grid-cols-2 md:grid-cols-3 pt-10 gap-4 gap-y-5"
     variants={container}
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}>

@@ -1,11 +1,11 @@
 import React from "react";
 import ImpactMain from "../../containers/Impact/ImpactMain";
-import { impactadhoc } from "@/db/services/impacts";
+import { impactinfrastructure } from "@/db/services/impacts";
 
 const Impact = () => {
   return (
    <div>
-    <ImpactMain content={impactadhoc}/>
+    <ImpactMain content={impactinfrastructure}/>
     </div>
   );
 };

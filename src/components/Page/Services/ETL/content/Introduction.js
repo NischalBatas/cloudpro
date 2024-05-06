@@ -2,12 +2,12 @@
 import React from "react";
 import "../../services.css";
 import IntroductionMain from "../../containers/Introduction/IntroductionMain";
-import { introductionAdhoc } from "@/db/services/introduction";
+import { introductionetl } from "@/db/services/introduction";
 const Introduction = () => {
 
   return (
     <div>
-      <IntroductionMain content={introductionAdhoc}/>
+      <IntroductionMain content={introductionetl}/>
     </div>
   );
 };

@@ -6,9 +6,9 @@ import './casestudy.css'
 const CaseStudy = () => {
   return (
     <div className="">
-      <div className="h-[553px]  mt-12 text-center  flex flex-col justify-center items-center">
-        <p className="text-[48px] font-bold">Case Studies</p>
-        <p className="text-[14px] leading-6 max-w-[514px]">
+      <div className="h-[420px] md:h-[553px]  mt-12 text-center  flex flex-col justify-center items-center">
+        <p className="text-[32px] md:text-[48px] font-bold">Case Studies</p>
+        <p className="py-2 md:p-0 text-[12px] md:text-[14px] md:leading-6 max-w-[514px] text-[#bebebe]">
           We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your
           Business and Infrastructure Readiness for the Ultimate Technological
           Leap.
@@ -20,9 +20,9 @@ const CaseStudy = () => {
           {caseStudy.map((item, index) => {
             return (
               <Link href='/casestudy' className="">
-                <div key={index} className="md:w-80 casestudy_product_container">
+                <div key={index} className="md:w-[324px] casestudy_product_container">
                   <div
-                    className="h-52 md:w-80 relative  bg-no-repeat bg-cover rounded-lg"
+                    className="h-[202px] md:w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
                     style={{
                       backgroundImage: `url(${item.image})`,
                     }}

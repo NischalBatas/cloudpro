@@ -83,7 +83,7 @@ valueDisplays.forEach((valueDisplay) => {
     if (startValue == endValue) {
       clearInterval(counter);
     }
-  }, 150);
+  }, 88);
 });
 
 // Navbar background

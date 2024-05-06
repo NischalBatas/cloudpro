@@ -2,12 +2,11 @@ import ContactInfoMain from "@/components/Page/Services/containers/ContactInfo/C
 
 const ProtectedLayout = ({ children }) => {
   return (
-  <>
-        {children}
+    <>
+      {children}
 
-        <ContactInfoMain/>
-   </>
- 
+      <ContactInfoMain />
+    </>
   );
 };
 

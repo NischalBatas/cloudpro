@@ -1,4 +1,4 @@
-import { impactadhoc } from "@/db/services/impacts";
+
 import React from "react";
 import ImpactContent from "./ImpactContent";
 

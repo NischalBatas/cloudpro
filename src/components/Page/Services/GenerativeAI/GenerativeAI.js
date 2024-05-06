@@ -11,22 +11,18 @@ import Enterprises from "./content/Enterprises";
 const GenerativeAI = () => {
   return (
     <div>
-        <Introduction/>
+      <Introduction />
 
-        <Impact/>
-        <Enterprises/>
-        <Products/>
-        <Industries/>
-        <Faq/>
+      <Impact />
+      <Enterprises />
+      <Products />
+      <Industries />
+      <Faq />
 
-        
-        <Journey/>
-        <Services/>
-   
-
-       
+      <Journey />
+      <Services />
     </div>
-  )
-}
+  );
+};
 
-export default GenerativeAI
+export default GenerativeAI;

@@ -16,13 +16,13 @@ const CaseStudy = () => {
       </div>
 
       <div className="navbar-main bg-white ">
-        <div className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
+        <div className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-6">
           {caseStudy.map((item, index) => {
             return (
               <Link href='/casestudy' className="">
-                <div key={index} className="md:w-[324px] casestudy_product_container">
+                <div key={index} className="md:max-w-[324px] casestudy_product_container">
                   <div
-                    className="h-[202px] md:w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
+                    className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
                     style={{
                       backgroundImage: `url(${item.image})`,
                     }}

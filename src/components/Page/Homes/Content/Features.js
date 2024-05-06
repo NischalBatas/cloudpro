@@ -1,5 +1,5 @@
 import React from "react";
-import { features } from "@/db/features";
+import { features } from "@/db/home/features";
 import Image from "next/image";
 const Features = () => {
   return (

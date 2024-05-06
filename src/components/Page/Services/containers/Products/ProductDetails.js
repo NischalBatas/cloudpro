@@ -4,7 +4,7 @@ import React from "react";
 const ProductDetails = ({content}) => {
   return (
     <>
-      {content.map((item, index) => {
+      {content.data.map((item, index) => {
         return (
           <div
             key={index}

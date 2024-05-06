@@ -2,7 +2,7 @@ import React from 'react'
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
-import { partners } from '@/db/partners';
+import { partners } from '@/db/home/partners';
 
 
 const PartnerSlider = () => {

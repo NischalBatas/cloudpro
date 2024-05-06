@@ -1,4 +1,4 @@
-import { caseStudy } from "@/db/caseStudy";
+import { caseStudy } from "@/db/home/caseStudy";
 import React from "react";
 
 const CaseStudy = () => {

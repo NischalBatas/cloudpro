@@ -1,4 +1,4 @@
-import { product } from "@/db/product";
+import { product } from "@/db/home/product";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

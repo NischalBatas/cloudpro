@@ -1,4 +1,4 @@
-import { serviceItem } from "@/db/serviceItem";
+import { serviceItem } from "@/db/home/serviceItem";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";

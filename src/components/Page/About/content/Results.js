@@ -1,5 +1,5 @@
-import { industries } from "@/db/industries";
-import { results } from "@/db/results";
+import { industries } from "@/db/home/industries";
+import { results } from "@/db/home/results";
 import React from "react";
 
 const Results = () => {

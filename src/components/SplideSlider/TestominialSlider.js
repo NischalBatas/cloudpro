@@ -2,7 +2,7 @@ import React from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
-import { testimonialClient } from "@/db/testimonialClient";
+import { testimonialClient } from "@/db/home/testimonialClient";
 const TestominialSlider = () => {
   const splideOptions = {
     type: "loop",

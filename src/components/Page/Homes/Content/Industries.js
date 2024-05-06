@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { industries } from "@/db/industries";
+import { industries } from "@/db/home/industries";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";

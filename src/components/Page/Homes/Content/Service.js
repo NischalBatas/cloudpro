@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import "../index.css";
-import { serviceItem } from "@/db/serviceItem";
+import { serviceItem } from "@/db/home/serviceItem";
 import ServiceItem from "./ServiceItem";
 const Service = () => {
   return (

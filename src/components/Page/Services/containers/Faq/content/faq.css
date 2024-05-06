@@ -1,0 +1,153 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
+
+/* reset */
+button,
+h3 {
+  all: unset;
+}
+
+.line-faq{
+  background-color: rgb(54, 54, 54);
+  width: 100%;
+  height: 1px;
+  margin: 0.2rem 0;
+}
+
+
+.AccordionRoot {
+  border-radius: 6px;
+  width: 750px;
+  /* background-color: var(--mauve-6); */
+  box-shadow: 0 2px 10px var(--black-a4);
+}
+
+.AccordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+  padding: 0 0.8rem;
+  border-radius: 4px;
+}
+
+
+.AccordionItem:first-child {
+  margin-top: 0;
+  /* border-top-left-radius: 4px;
+  border-top-right-radius: 4px; */
+}
+
+.AccordionItem:last-child {
+  /* border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; */
+}
+
+.AccordionItem:focus-within {
+  position: relative;
+  z-index: 1;
+  /* box-shadow: 0 0 0 2px var(--mauve-12); */
+}
+
+.AccordionHeader {
+  display: flex;
+}
+
+.AccordionTrigger {
+  font-family: inherit;
+  background-color: transparent;
+  /* padding: 0 20px; */
+  width: 100%;
+  height: 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  /* line-height: 1; */
+  color:#fff;
+  /* box-shadow: 0 1px 0 var(--mauve-6); */
+  /* background-color: rgb(56, 144, 196); */
+}
+
+.AccordionTrigger:hover {
+  /* background-color: var(--mauve-2); */
+}
+
+
+
+
+
+.AccordionContent {
+  overflow: hidden;
+ 
+  /* padding:0 0.5rem; */
+  /* border-radius: 6px; */
+  color: #aeaeae;
+  /* background-color: var(--mauve-2); */
+  /* border-bottom: 1px solid #363636; */
+}
+
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionContentText {
+  padding: 0.4rem 0.8rem;
+}
+
+.FaAngleDown {
+  /* color: var(--violet-10); */
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.AccordionTrigger[data-state='open'] > .FaAngleDown {
+  transform: rotate(180deg);
+}
+
+
+.AccordionItem[data-state='open'] {
+  background-color: #1b1b1b;
+
+  padding: 0.8rem 0.8rem;
+  border-radius: 4px;
+  
+}
+
+
+.AccordionItem[data-state='open'] .AccordionTrigger {
+  color: #fff;
+  font-weight: 600;
+  height: auto;
+  /* padding: 0.4rem 0; */
+}
+
+.AccordionItem[data-state='open'] .line-faq{
+  background-color: transparent;
+}
+
+.AccordionItem[data-state='open'] .AccordionContentText {
+  padding: 0 0.2rem;
+}
+
+
+
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}

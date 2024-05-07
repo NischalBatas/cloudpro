@@ -2,8 +2,8 @@ import React from "react";
 
 const Solution = ({ content }) => {
   return (
-    <div className="px-2 md:px-0 lg:navbar-main4 py-10 md:py-20">
-      <div className="main-container2">
+    <div className="navbar-main py-10 md:py-20">
+      <div className="main-container">
         <div>
           <p className="text-[24px] font-semibold">Solution</p>
           <p className="text-[14px] leading-6">Process Flow</p>

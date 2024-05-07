@@ -19,10 +19,10 @@ export const solution1 = [
       step: 5,
       title: "Structured data is stored in a centralized database for easy access and retrieval."
     },
-    {
-      step: 6,
-      title: "Data integrity checks are performed to ensure accuracy and completeness of extracted information."
-    },
+    // {
+    //   step: 6,
+    //   title: "Data integrity checks are performed to ensure accuracy and completeness of extracted information."
+    // },
     // {
     //   step: 7,
     //   title: "Automated notifications are sent to stakeholders upon completion of data processing."

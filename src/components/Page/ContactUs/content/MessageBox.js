@@ -2,6 +2,7 @@ import React from 'react'
 import * as Tabs from "@radix-ui/react-tabs";
 import * as Form from '@radix-ui/react-form';
 import Image from "next/image";
+import Calendar from './Calendar';
 const MessageBox = () => {
   return (
     <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab1">
@@ -100,8 +101,9 @@ const MessageBox = () => {
     </Tabs.Content>
 
     <Tabs.Content className="TabsContent1" value="tab2">
-      <Image className="mb-10" width={500} height={500} src='/Image/phone.jpg' alt="phone_image"/>
-      <Form.Root className="FormRoot">
+      <Calendar/>
+      {/* <Image className="mb-10" width={500} height={500} src='/Image/phone.jpg' alt="phone_image"/> */}
+      <Form.Root className="FormRoot mt-6">
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     

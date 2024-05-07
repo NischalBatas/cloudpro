@@ -1,6 +1,14 @@
 .casestudy_product_arrow{
     opacity: 0;
     transition: opacity 0.4s ease;
+    
+}
+
+.casestudy_product_arrow_icon{
+
+    background-color: rgba(231, 231, 231, 0.806);
+    font-weight: 600;
+    color: #fff;
 }
 
 .casestudy_product_container:hover .casestudy_product_arrow{

@@ -32,7 +32,7 @@ const CaseStudy = () => {
                         {item.sector}
                       </div>
                       <div className="casestudy_product_arrow">
-                      <MdOutlineArrowOutward className=" bg-white rounded-full text-black w-6 h-6 text-xs p-1" />
+                      <MdOutlineArrowOutward className="casestudy_product_arrow_icon rounded-full  w-6 h-6 text-xs p-1" />
                     </div>
                     </div>
                   </div>

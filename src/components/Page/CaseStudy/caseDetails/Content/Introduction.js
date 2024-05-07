@@ -24,7 +24,7 @@ const Introduction = () => {
             width={510}
             height={308}
             src="/Image/caseStudy/bg2.webp"
-            alt="Case details"
+            alt="Case_details"
           />
         </div>
       </div>

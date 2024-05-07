@@ -2,11 +2,11 @@ import React from 'react'
 import TechnologyHeading from './Content/TechnologyHeading'
 import TechnologyContent from './Content/TechnologyContent'
 
-const Technology = () => {
+const Technology = ({content}) => {
   return (
     <div>
       <TechnologyHeading/>
-      <TechnologyContent/>
+      <TechnologyContent content={content}/>
     </div>
   )
 }

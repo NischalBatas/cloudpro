@@ -5,7 +5,7 @@ const Conclusion = () => {
     <div className="navbar-main bg-white text-black py-10">
       <div className="main-container">
         <span className="font-semibold text-[36px]">Conclusion</span>
-        <p className="mt-2 text-[#414551] max-w-[579px] leading-8">
+        <p className="mt-2 text-[#414551] md:max-w-[579px] leading-8">
           By partnering with Cloud Pro AI and leveraging Amazon Web Services,
           the healthcare services provider revolutionized its approach to
           billing compliance and audit requests management. This case study

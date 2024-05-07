@@ -210,3 +210,6 @@ button:hover {
 }
 
 
+#__next::-webkit-scrollbar-track {
+  background: #d90505 !important;
+}

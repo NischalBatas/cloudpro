@@ -133,7 +133,7 @@ button:hover {
   top: -95px;
   right: 0;
   offset-path: path(
-    "M79 101V121.5C79 130.337 86.1634 137.5 95 137.5H241C249.837 137.5 257 144.663 257 153.5V156"
+    "M585 0H501V478H585V0Z"
   );
   animation: followpath 2s ease-in-out infinite;
   background-color: #edff6c;

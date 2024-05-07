@@ -18,7 +18,7 @@ const Introduction = () => {
             response accuracy.
           </p>
         </div>
-        <div>
+       
           <Image
             className="min-w-[350px] rounded-md"
             width={510}
@@ -26,7 +26,7 @@ const Introduction = () => {
             src="/Image/caseStudy/intro.png"
             alt="Case_details"
           />
-        </div>
+       
       </div>
     </div>
   );

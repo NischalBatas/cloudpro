@@ -12,7 +12,7 @@ const BreadCrumb = () => {
         zIndex: "-1",
         backgroundImage: "url('/Image/casestudy/bg1.webp')"}}
       >
-   <div className="navbar-main">
+   <div className="navbar-main4">
   <div className="main-container2">
   <div className="pt-12">
       <p className="text-[14px] text-[#6083F3] font-semibold uppercase tracking-wider">CaseStudy</p>

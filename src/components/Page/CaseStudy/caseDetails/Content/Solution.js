@@ -1,5 +1,6 @@
+import SolutionSlider from "@/components/SplideSlider/SolutionSlider";
 import React from "react";
-
+import '../../casestudy.css'
 const Solution = ({ content }) => {
   return (
     <div className="navbar-main py-10 md:py-20">
@@ -8,7 +9,7 @@ const Solution = ({ content }) => {
           <p className="text-[24px] font-semibold">Solution</p>
           <p className="text-[14px] leading-6">Process Flow</p>
         </div>
-        <div className="grid grid-cols-2 md:flex md:justify-start gap-2 md:gap-4 flex-wrap">
+        {/* <div className="grid grid-cols-2 md:flex md:justify-start gap-2 md:gap-4 flex-wrap">
           {content.map((item, index) => {
             return (
              
@@ -23,7 +24,8 @@ const Solution = ({ content }) => {
          
             );
           })}
-        </div>
+        </div> */}
+         <SolutionSlider content={content}/>
       </div>
     </div>
   );

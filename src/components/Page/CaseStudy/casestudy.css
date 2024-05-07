@@ -35,3 +35,39 @@
     text-overflow: ellipsis;
     white-space: normal;
 }
+
+.splide__arrow svg {
+    fill: #ffff !important;
+    height: 1.2em;
+    width: 1.2em;
+    display: none !important;
+  }
+/*   
+  .splide__arrow--prev {
+    left: 0 !important;
+  }
+  
+  .splide__arrow--next {
+    right: 0 !important;
+  }
+  
+  
+  @media only screen and (max-width:850px){
+    .splide__arrow--prev {
+      left: 0 !important;
+    }
+    
+    .splide__arrow--next {
+      right: 0 !important;
+    }
+  }
+  
+  @media only screen and (max-width:400px){
+    .splide__arrow--prev {
+      left: 0 !important;
+    }
+    
+    .splide__arrow--next {
+      right: 0 !important;
+    }
+  } */

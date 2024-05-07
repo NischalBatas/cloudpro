@@ -23,7 +23,7 @@ const Introduction = () => {
             className="min-w-[350px] rounded-md"
             width={510}
             height={308}
-            src="/Image/caseStudy/4.jpg"
+            src="/Image/casestudy/bg2.webp"
             alt="Case_details"
           />
        

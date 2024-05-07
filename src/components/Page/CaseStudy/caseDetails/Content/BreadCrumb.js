@@ -16,7 +16,7 @@ const BreadCrumb = () => {
   <div className="main-container">
   <div className="pt-12">
       <p className="text-[14px] text-[#6083F3] font-semibold uppercase tracking-wider">CaseStudy</p>
-      <p className="text-[24px] md:text-[32px] font-semibold max-w-[615px]">
+      <p className="mt-2 text-[24px] md:text-[32px] font-semibold max-w-[615px]">
         Transforming Healthcare Operations with Amazon Web Services
       </p>
     </div>

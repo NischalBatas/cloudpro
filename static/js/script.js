@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // new WOW().init();
+  new WOW().init();
 
   // $(".partners-main .owl-carousel").owlCarousel({
   //   loop: true,
@@ -83,7 +83,7 @@ valueDisplays.forEach((valueDisplay) => {
     if (startValue == endValue) {
       clearInterval(counter);
     }
-  }, 20);
+  }, 10);
 });
 
 // Navbar background

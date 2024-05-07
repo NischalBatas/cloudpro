@@ -1,5 +1,5 @@
 export const productAdhoc = {
-  heading: "Ad-hoc Reporting Solutions ",
+  heading: "Some Applications of Ad-hoc Reporting Solutions ",
   data: [
     {
       image: "/Image/process/generativeapp/12a.svg",
@@ -31,7 +31,7 @@ export const productAdhoc = {
 };
 
 export const productAIConsulting = {
-  heading: "AI Consulting ",
+  heading: "Example solutions powered by AI",
   data: [
     {
       image: "/Image/process/generativeapp/2a.svg",
@@ -63,7 +63,7 @@ export const productAIConsulting = {
 };
 
 export const productArchitecture = {
-  heading: "Architecture Consulting ",
+  heading: "Cloud architecture application scenarios",
   data: [
     {
       image: "/Image/process/generativeapp/3a.svg",
@@ -95,7 +95,7 @@ export const productArchitecture = {
 };
 
 export const productBigData = {
-  heading: "Big Data Consulting ",
+  heading: "Some applications of Big Data",
   data: [
     {
       image: "/Image/process/generativeapp/6a.svg",
@@ -127,7 +127,7 @@ export const productBigData = {
 };
 
 export const productBiReport = {
-  heading: "BI Report and Dashboard ",
+  heading: "Examples of BI Report and Dashboard",
   data: [
     {
       image: "/Image/process/generativeapp/11a.svg",
@@ -159,7 +159,7 @@ export const productBiReport = {
 };
 
 export const productCloudops = {
-  heading: "CloudOps ",
+  heading: "CloudOps Solution ",
   data: [
     {
       image: "/Image/process/generativeapp/4a.svg",
@@ -191,7 +191,7 @@ export const productCloudops = {
 };
 
 export const productDataAnalytics = {
-  heading: "Data Analytics ",
+  heading: "Some use cases of Data Analytics ",
   data: [
     {
       image: "/Image/process/generativeapp/8a.svg",
@@ -223,39 +223,31 @@ export const productDataAnalytics = {
 };
 
 export const productDataSolutions = {
-  heading: "Data Pipeline Solutions ",
+  heading: "Examples of Data Pipeline Solutions ",
   data: [
     {
       image: "/Image/process/generativeapp/10a.svg",
-
-      title: "Supply Chain Visualization",
-
+      title: "Marketing Data Streams",
       description:
-        "Implemented dashboards that visually map out entire supply chains, identifying bottlenecks and predicting points of failure to improve logistics and distribution strategies.",
+        "Developed real-time data pipelines that aggregate customer interaction data across multiple channels for immediate marketing insights.",
     },
-
     {
       image: "/Image/process/generativeapp/10b.svg",
-
-      title: "Social Media Engagement Graphs",
-
+      title: "IoT Device Management",
       description:
-        "Created dynamic visualizations that track engagement and trends across social media platforms, helping marketing teams to adjust campaigns in real time based on user interaction data.",
+        "Created data pipelines to manage and analyze data from thousands of IoT devices, enhancing operational awareness and responsiveness.",
     },
-
     {
       image: "/Image/process/generativeapp/10c.svg",
-
-      title: "Healthcare Epidemiology Tracking",
-
+      title: "Logistics Tracking System",
       description:
-        "Designed visual tools that track disease spread and epidemiological data, providing healthcare authorities and researchers with clear visuals that support quick and effective public health responses.",
+        "Implemented pipelines that process GPS and sensor data from logistics networks to optimize routes and delivery times.",
     },
   ],
 };
 
 export const productDataVisual = {
-  heading: "Data Visualization Solutions ",
+  heading: "Some applications of Data Visualization Solutions ",
   data: [
     {
       image: "/Image/process/generativeapp/13a.svg",
@@ -287,7 +279,7 @@ export const productDataVisual = {
 };
 
 export const productDataWarehouse = {
-  heading: "Data Lakes and Warehouses ",
+  heading: "What can be done with Data Lakes and Warehouses ",
   data: [
     {
       image: "/Image/process/generativeapp/9a.svg",
@@ -319,7 +311,7 @@ export const productDataWarehouse = {
 };
 
 export const productETL = {
-  heading: "ETL Services ",
+  heading: "Some use cases of ETL services",
   data: [
     {
       image: "/Image/process/generativeapp/7a.svg",
@@ -351,7 +343,7 @@ export const productETL = {
 };
 
 export const productGenerativeAI = {
-  heading: "Generative AI and Applications",
+  heading: "Some applications of Generative AI",
   data: [
     {
       image: "/Image/process/generativeapp/1a.svg",
@@ -383,7 +375,7 @@ export const productGenerativeAI = {
 };
 
 export const productInfrastructure = {
-  heading: "Infrastructure Migration and Upgrades ",
+  heading: "Example scenarios where cloud Migration shines",
   data: [
     {
       image: "/Image/process/generativeapp/5a.svg",

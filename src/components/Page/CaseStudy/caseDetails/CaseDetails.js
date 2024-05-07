@@ -9,6 +9,7 @@ import CaseStudyContent from "./Content/CaseStudyContent";
 import { caseStudy } from "@/db/casestudy/casestudy";
 import Conclusion from "./Content/Conclusion";
 import BannerTwo from "./Content/BannerTwo";
+import Technology from "./Content/Technology/Technology";
 
 const CaseDetails = () => {
   return (
@@ -17,6 +18,7 @@ const CaseDetails = () => {
       <Introduction />
       <BannerOne />
       <Solution content={solution1} />
+      <Technology/>
       <BannerTwo />
       <Conclusion />
       <div className="line-between-content w-full h-[1px] bg-[#F2F2F2]"></div>

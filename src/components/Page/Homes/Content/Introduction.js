@@ -15,9 +15,9 @@ const Introduction = () => {
     <>
       <div className="main-container pb-24 md:pb-40 relative">
         <div
-          className="intro-image w-full h-[742px] absolute bg-no-repeat bg-center"
+          className="intro-image top-[-60px] w-full h-[794px] absolute bg-no-repeat bg-center"
           style={{
-            backgroundImage: "url('/Image/background.svg')",
+            backgroundImage: "url('/Image/background3.svg')",
             zIndex: "-1",
           }}
         ></div>
@@ -40,7 +40,7 @@ const Introduction = () => {
               onClick={() => {
                 handleClick("/contactus");
               }}
-              className="bg-cloudBtn px-3 py-2 text-cloudText rounded font-medium"
+              className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium"
             >
               Contact Us
             </button>

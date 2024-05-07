@@ -23,7 +23,7 @@
 
 .navbar-main-group{
   /* background-color: #01010B; */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #00000080;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 999;
@@ -35,6 +35,9 @@
   top: 0;
 }
 
+.main_button{
+  box-shadow: #839BE9 0px -4px 0px inset;
+}
 
 .navbar-main-group2 .NavigationMenuTrigger,
 .navbar-main-group2 .CaretDown {

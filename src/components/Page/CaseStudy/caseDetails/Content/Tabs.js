@@ -4,7 +4,7 @@ import React from 'react'
 const Tabs = (props) => {
     console.log("Hello")
   return (
-    <div className='navbar-main bg-white text-[#737373] py-5 border-b-[1px] font-normal'>
+    <div className='navbar-main bg-white text-[#6A6A6A] py-5 border-b-[1px] font-normal'>
         <div className='main-container flex justify-start gap-[8rem] flex-wrap'>
         <Link href='#introduction_section'>Introduction</Link>
         <Link href='#solution_section'>Solution</Link>

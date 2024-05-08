@@ -22,10 +22,10 @@ const FooterContent = () => {
           What we do
         </div>
         <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-          <Link href="/services/architecture">Artificial Intelligence</Link>
-          <Link href="/services/dataanalytics">BI & Data Analytics</Link>
-          <Link href="/services/architecture">Cloud Engineering</Link>
-          <Link href="/services/bigdata">Data Engineering</Link>
+          <Link href="/services/alconsulting">AI Consulting</Link>
+          <Link href="/services/bigdata">Big Data Consulting</Link>
+          <Link href="/services/dataanalytics">Data Analytics</Link>
+          <Link href="/services/datavisual">Data Visualization Solution</Link>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const FooterContent = () => {
             </div>
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-              <Link href="#" className="text-wrap w-full lg:w-52">
+              <Link target="_blank" href="https://maps.app.goo.gl/jmxv2xgnnD46vQZL7" className="text-wrap w-full lg:w-52">
                 584 Castro St 2165, San Francisco, CA 94114-2512
               </Link>
               <Link href="#">contact@cloudpro.ai</Link>
@@ -54,7 +54,7 @@ const FooterContent = () => {
             </div>
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-              <Link href="#" className="text-wrap w-full lg:w-52">
+              <Link target="_blank" href="#" className="text-wrap w-full lg:w-52">
                 Maharajgunj, Basundhara- 3 Kathmandu, Nepal
               </Link>
               <Link href="#">contact@cloudpro.ai</Link>

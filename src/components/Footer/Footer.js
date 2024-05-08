@@ -1,7 +1,7 @@
 import React from "react";
 import FooterContent from "./FooterContent";
 import FooterCopyRight from "./FooterCopyRight";
-import Contact from "../Contact";
+import Contact from "../Page/Homes/Content/Contact";
 
 const Footer = () => {
   return (

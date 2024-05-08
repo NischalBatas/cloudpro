@@ -3,7 +3,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from "@radix-ui/themes";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Page/Homes/Content/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";

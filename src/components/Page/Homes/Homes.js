@@ -9,7 +9,7 @@ import Testominial from "./Content/Testominial";
 import Results from "../About/content/Results";
 import CaseStudy from "./Content/CaseStudy";
 import Product from "./Content/Product";
-import Footer from "./Content/Footer/Footer";
+import Footer from "../../Footer/Footer";
 
 
 const Homes = () => {

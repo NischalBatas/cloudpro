@@ -29,7 +29,12 @@
   z-index: 9999;
 }
 
-
+.tabs_main_service a:focus{
+  color: #000000;
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+ 
+}
 
 body {
   font-family:"Plus Jakarta Sans", sans-serif ;

@@ -8,19 +8,19 @@ const JourneyMain = () => {
       <div className="main-container business-growth-main flex flex-wrap-reverse lg:flex-nowrap justify-between gap-2">
         <div className="w-full lg:w-6/12">
           <div className="text-black text-[32px] font-bold max-w-[404px] leading-10">
-            Embark on Your AI Journey with Cloud ProAI
+            Embark on Your AI Journey with CloudProAI
           </div>
           <div className="text-black text-sm py-3  lg:max-w-[464px] leading-7 mt-3">
             The future of business innovation and growth is inextricably linked
-            to the capabilities of generative AI. With Cloud Pro AI, your
+            to the capabilities of generative AI. With CloudProAI, your
             business is poised to navigate this new frontier with confidence,
             leveraging the full spectrum of AI's capabilities to revolutionize
             operations, engage customers, and outpace competition. <br />
             <br />
-            Cloud Pro AI is not just a service provider but a partner committed
+            CloudProAI is not just a service provider but a partner committed
             to ensuring that the generative AI solutions evolve with your
             business, addressing new challenges and seizing opportunities.
-            Contact Cloud Pro AI today to discover how generative AI can
+            Contact CloudProAI today to discover how generative AI can
             transform your business, driving unprecedented growth and success in
             the digital era.
           </div>

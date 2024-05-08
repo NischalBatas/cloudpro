@@ -3,8 +3,8 @@ import React from "react";
 
 const Introduction = () => {
   return (
-    <div className="navbar-main bg-white">
-      <div className="main-container flex justify-between items-center flex-wrap md:flex-nowrap py-8 md:py-12 gap-x-2 gap-y-4">
+    <div className="navbar-main bg-white py-10 md:py-14" id='introduction_section'>
+      <div className="main-container flex justify-between items-center flex-wrap md:flex-nowrap  gap-x-2 gap-y-4">
         <div className="md:max-w-[444px]">
           <p className="text-black text-[24px] font-semibold">Introduction</p>
           <p className="text-[16px] text-black leading-8 mt-2">
@@ -20,7 +20,7 @@ const Introduction = () => {
         </div>
        
           <Image
-            className="min-w-[350px] rounded-md"
+            className="md:min-w-[350px] rounded-md"
             width={510}
             height={308}
             src="/Image/casestudy/bg2.webp"

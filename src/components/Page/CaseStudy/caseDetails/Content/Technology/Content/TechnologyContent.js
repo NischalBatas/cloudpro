@@ -2,7 +2,7 @@ import React from "react";
 import "./table.css";
 const TechnologyContent = ({ content }) => {
   return (
-    <div className="navbar-main bg-[#EDF5FB] text-black pt-5 pb-10">
+    <div className="navbar-main bg-[#EDF5FB] text-black pt-5 pb-16">
       <div className="main-container">
         <table>
           <tbody>

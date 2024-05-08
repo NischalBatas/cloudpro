@@ -20,12 +20,12 @@ const BreadCrumb = () => {
         Transforming Healthcare Operations with Amazon Web Services
       </p>
     </div>
-    <div className="flex items-center justify-between mt-28 pb-5">
+    <div className="flex items-center justify-between gap-5 flex-wrap mt-28 pb-5">
       <div className="flex gap-6 text-[14px] text-[#BDBDBD]">
           <span>May 6, 2023</span>
           <span className="flex items-center gap-1"><FaRegClock /> 5 min Read</span>
       </div>
-      <div className="flex gap-5 text-[22px]">
+      <div className="flex gap-5 text-[18px] md:text-[22px]">
     <Link href='/' className="hover:bg-white hover:text-[#0073ae] rounded-md"><CiLinkedin /></Link>
     <Link href='/' className="hover:bg-white hover:text-[#0469de] rounded-full"><RiFacebookCircleLine /></Link>
     <Link href='/' className="hover:text-[black] "><RiTwitterXLine /></Link>

@@ -3,7 +3,7 @@ import React from "react";
 import '../../casestudy.css'
 const Solution = ({ content }) => {
   return (
-    <div className="navbar-main py-10 md:py-20">
+    <div className="navbar-main py-10 md:py-20" id="solution_section">
       <div className="main-container">
         <div>
           <p className="text-[24px] font-semibold">Solution</p>

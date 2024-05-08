@@ -87,21 +87,21 @@ valueDisplays.forEach((valueDisplay) => {
 });
 
 // Navbar background
-$(document).ready(function () {
-  $(window).scroll(function () {
-    let pos = $(window).scrollTop();
-    if (pos >= 28) {
-      $(".navbar-main-group").addClass("navbar-main-group2");
-      // $(".blacklogo").addClass("blacklogo2");
-      // $(".whitelogo").addClass("whitelogo2");
-    } else {
-      $(".navbar-main-group").removeClass("navbar-main-group2");
-      // $(".blacklogo").removeClass("blacklogo2");
-      // $(".whitelogo").removeClass("whitelogo2");
-    }
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     let pos = $(window).scrollTop();
+//     if (pos >= 28) {
+//       $(".navbar-main-group").addClass("navbar-main-group2");
+//       // $(".blacklogo").addClass("blacklogo2");
+//       // $(".whitelogo").addClass("whitelogo2");
+//     } else {
+//       $(".navbar-main-group").removeClass("navbar-main-group2");
+//       // $(".blacklogo").removeClass("blacklogo2");
+//       // $(".whitelogo").removeClass("whitelogo2");
+//     }
   
-  });
-});
+//   });
+// });
 
 
 $('.NavigationMenuTrigger2').mouseenter('click', function() {

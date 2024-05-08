@@ -20,7 +20,7 @@ const ProtectedLayout = ({ children }) => {
     // >
    <>
    <ProgressBar/>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
       <MobileNavigation/>
      

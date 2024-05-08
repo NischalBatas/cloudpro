@@ -36,11 +36,11 @@ const ImpactAndResultSlider = ({ content }) => {
   };
 
   return (
-    <Splide options={splideOptions} className="mx-auto overflow-hidden mt-2 md:mt-4">
+    <Splide options={splideOptions} className="mx-auto overflow-hidden mt-2 md:mt-4 pb-5">
       {content.map((item, index) => (
         <SplideSlide
           key={index}
-          className="flex flex-col justify-center items-center font-bold pb-6 text-[24px] md:text-[32px] md:leading-[48px]"
+          className="flex flex-col justify-center items-center font-bold text-[24px] md:text-[32px] md:leading-[48px]"
         >
          <p className="max-w-[589px]">{item.title}</p> 
         </SplideSlide>

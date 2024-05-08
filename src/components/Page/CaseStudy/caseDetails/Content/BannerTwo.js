@@ -3,8 +3,8 @@ import ImpactAndResultSlider from "@/components/SplideSlider/ImpactAndResultSlid
 
 const BannerTwo = ({ content }) => {
   return (
-    <div
-      className="flex flex-col items-center justify-center text-center h-[250px] md:h-[315px]  bg-no-repeat bg-center bg-cover"
+    <div id="impactandResults_section"
+      className="flex flex-col items-center justify-center text-center h-[250px] md:h-[375px]  bg-no-repeat bg-center bg-cover"
       style={{
         // filter: "blur(2px)",
         zIndex: "-1",

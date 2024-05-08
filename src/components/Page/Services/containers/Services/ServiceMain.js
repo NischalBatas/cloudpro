@@ -16,7 +16,7 @@ const ServiceMain = () => {
          alt="process_image"
          className="flex justify-center m-auto h-full"
        />
-       <p className="text-black font-bold text-[24px]">Generative AI And ML</p>
+       {/* <p className="text-black font-bold text-[24px]">Generative AI And ML</p> */}
      </div>
 
    </div>

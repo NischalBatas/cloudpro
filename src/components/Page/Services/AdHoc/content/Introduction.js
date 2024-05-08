@@ -7,7 +7,7 @@ const Introduction = () => {
 
   return (
     <div>
-      <IntroductionMain content={introductionAdhoc}/>
+      <IntroductionMain content={introductionAdhoc} />
     </div>
   );
 };

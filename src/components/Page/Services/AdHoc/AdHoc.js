@@ -7,6 +7,7 @@ import Products from "./content/Products";
 import Industries from "./content/Industries";
 import Faq from "./content/Faq";
 import Enterprises from "./content/Enterprises";
+import Newsletter from "../../CaseStudy/caseDetails/Content/Newsletter";
 
 const AdHoc = () => {
   return (
@@ -19,6 +20,7 @@ const AdHoc = () => {
       <Faq />
       <Journey />
       <Services />
+     
     </div>
   );
 };

@@ -5,7 +5,7 @@ import '../../casestudy.css'
 const CaseStudyContent = ({content}) => {
     const contents=content.slice(0,3)
   return (
-    <div className="navbar-main bg-white py-20">
+    <div className="navbar-main bg-white py-14">
     <div className='main-container'>
     <div><p className='font-semibold text-[24px] text-black'>You may also like</p></div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-6">

@@ -36,6 +36,18 @@
  
 }
 
+
+
+/* Hide scrollbar background */
+.tabs_main_service::-webkit-scrollbar {
+  background-color: transparent; /* For Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar background for Firefox */
+.tabs_main_service {
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
 body {
   font-family:"Plus Jakarta Sans", sans-serif ;
   color: #fff;

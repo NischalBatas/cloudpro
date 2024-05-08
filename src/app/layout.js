@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">  
     <body className={inter.className}>
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.svg" />
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>

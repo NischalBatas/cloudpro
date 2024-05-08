@@ -630,39 +630,39 @@ export const enterprisesgenAI = {
   data: [
     {
     id: 1,
-    title: "ETL Service ",
+    title: "Generative AI Applications",
     subheading:
-      "Extract, collect and gather valuable insight on your data , grow your business and identify pain points. ",
+      "LLM powered solutions for automation ",
     list: [
-      "Extract data from various sources, including databases, cloud services, and third-party APIs. ",
-      "Implement real-time data extraction to support operational reporting and analytics. ",
-      "Clean, de-duplicate, and standardize data to ensure quality and consistency. ",
-      "Apply complex business logic to transform data into a valuable format for analysis. ",
-      "Enhance data by integrating additional information from external sources. ",
+      "Utilize LLMs to automate business processes including customer interactions, managing contact centers, generating reports, and overseeing infrastructure. ",
+      "Develop and enhance AI applications on a larger scale through the use of Machine Learning Operations (MLOps) tailored for generative AI technologies. ",
+      "Use frameworks like LangChain to apply LLMs in solving a range of business issues across different sectors. ",
+      "Custom train and refine LLMs for specific industry requirements using Reinforcement Learning with Human Feedback to improve their effectiveness. ",
+      "Design tailored prompts that enable LLMs to produce both creative and precise textual content. ",
     ],
   },
 
   {
     id: 2,
-    title: "Cloud-Based ETL Solutions ",
+    title: "Enterprise Chatbot Solution ",
     subheading:
-      "Make use of scalable data management and ETL solutions by utilizing cloud based solutions and infrastructures. Increase performance and availability and decrease cost. ",
+      "Automate most of the repetitive tasks of customer-service with the help of LLM Chatbot ",
     list: [
-      "Utilize cloud services to scale ETL processes as per demand. ",
-      "Offer fully managed cloud-based ETL services, reducing the operational overhead for clients. ",
-      "Ensure the highest levels of data security and meet compliance standards in cloud-based ETL operations. ",
+      "Revolutionize customer interaction with LLM based chatbots  ",
+      "Automate mundane yet important tasks such as responding to customer queries, creating tickets and so on. ",
+      "Pair state-of the art LLM with your enterprise data without having to train a model ",
     ],
   },
 
   {
     id: 3,
-    title: "Data Governance and Quality",
+    title: "Data Analytics solution ",
     subheading:
-      "Unlock the Value of Your Data: Achieve Data Governance & Quality Excellence. ",
+      "Gather insights from your data leveraging LLMs ",
     list: [
-      "Governance Frameworks: Implement governance frameworks to manage data access, quality, and compliance. ",
-      "Quality Assurance: Continuous monitoring and testing to ensure data meet strict quality standards. ",
-      "Metadata Management: Manage metadata effectively to improve data discoverability and usability. ",
+      "Leveraging data to drive transformative business decisions and discover valuable insights. ",
+      "Proposing new data-driven use cases and generating insights via intuitive dashboards with tools like Python, Power BI, and Tableau. ",
+      "Fostering proactive business decisions based on analytical insights. ",
     ],
     },
   ],

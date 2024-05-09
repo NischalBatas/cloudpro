@@ -4,6 +4,10 @@
     width: 100%;
   }
   
+.footer_content td:first-child{
+    width: 105px;
+} 
+
 .footer_content  td,
 .footer_content th {
    

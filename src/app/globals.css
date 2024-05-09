@@ -228,6 +228,11 @@ button:hover {
 }
 
 
+.footer_width{
+  max-width: 1259px;
+  margin: 0 auto;
+}
+
 #__next::-webkit-scrollbar-track {
   background: #d90505 !important;
 }

@@ -1,11 +1,34 @@
 
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import '../../CaseStudy/casestudy.css'
 import { caseStudy } from "@/db/casestudy/casestudy";
+import { motion, useInView } from "framer-motion";
 const CaseStudy = () => {
   const contents=caseStudy.slice(2,5)
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.3
+      }
+    }
+  };
+  
+  const items = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+  
   return (
     <div className="main-container py-5 md:py-14">
       <div className="mb-8 w-full md:w-8/12 lg:w-4/12 text-left">
@@ -18,11 +41,14 @@ const CaseStudy = () => {
       </div>
 
    
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
+        <motion.div ref={ref} variants={container}
+    initial="hidden"
+    animate={isInView ? "visible" : "hidden"} className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
           
 {contents.map((item, index) => {
             return (
-              <Link href='/casestudy/1' className="">
+            <motion.div variants={items}>
+                <Link href='/casestudy/1' className="">
                 <div key={index} className="md:max-w-[324px] casestudy_product_container">
                   <div
                     className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
@@ -59,10 +85,11 @@ const CaseStudy = () => {
                   </div>
                 </div>
               </Link>
+            </motion.div>
             );
           })}
 
-        </div>
+        </motion.div>
     
     </div>
   );

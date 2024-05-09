@@ -1,12 +1,35 @@
 import { product } from "@/db/home/product";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
+import { motion, useInView } from "framer-motion";
 const Product = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.4
+      }
+    }
+  };
+  
+  const items = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
   return (
-    <div className="main-container cloud py-5 md:py-14">
+    <motion.div ref={ref} variants={container}
+    initial="hidden"
+    animate={isInView ? "visible" : "hidden"} className="main-container cloud py-5 md:py-14">
       <div className="mb-8">
         <div className="font-semibold text-[32px]">Our Products</div>
         {/* <div className="text-cloud3 mt-2 text-sm">
@@ -20,7 +43,8 @@ const Product = () => {
         {product.map((item, index) => {
           return (
         
-            <Link key={index} href={item.link}>
+            <motion.div variants={items}>
+              <Link key={index} href={item.link}>
               <div 
                 style={{ backgroundColor: `${item.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
@@ -51,11 +75,12 @@ const Product = () => {
                 </div>
               </div>
               </Link>
+            </motion.div>
            
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

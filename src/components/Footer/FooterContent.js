@@ -56,8 +56,8 @@ const FooterContent = () => {
             </div>
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-           <div>
-           <div className="text-white tracking-wider font-medium text-sm md:text-base uppercase">
+           <div className="text-[12px] md:text-[14px]">
+           <div className="text-white tracking-wider font-medium  uppercase">
               Nepal
             </div>
               <Link target="_blank" href="#" className="text-[12px] md:text-[14px] text-wrap w-full lg:w-52">
@@ -65,8 +65,8 @@ const FooterContent = () => {
               </Link>
            </div>
 
-           <div className="py-1">
-           <div className="text-white tracking-wider font-medium text-sm md:text-base uppercase">
+           <div className="py-1 text-[12px] md:text-[14px]">
+           <div className="text-white tracking-wider font-medium  uppercase">
            Colombia
             </div>
               <Link target="_blank" href="#" className="text-[12px] md:text-[14px] text-wrap w-full lg:w-52">
@@ -74,8 +74,8 @@ const FooterContent = () => {
               </Link>
            </div>
 
-           <div>
-           <div className="text-white tracking-wider font-medium text-sm md:text-base uppercase">
+           <div className="text-[12px] md:text-[14px]">
+           <div className="text-white tracking-wider font-medium  uppercase">
            Australia
             </div>
               <Link target="_blank" href="#" className="text-[12px] md:text-[14px] text-wrap w-full lg:w-52">

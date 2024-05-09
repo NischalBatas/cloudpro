@@ -1,0 +1,13 @@
+.footer_content table {
+
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.footer_content  td,
+.footer_content th {
+   
+    text-align: left;
+    padding: 8px;
+  }
+  

@@ -40,8 +40,8 @@ const FooterContent = () => {
             </div>
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
-              <Link target="_blank" href="https://maps.app.goo.gl/jmxv2xgnnD46vQZL7" className="text-wrap w-full lg:w-52">
-                584 Castro St 2165, San Francisco, CA 94114-2512
+              <Link target="_blank" href="https://maps.app.goo.gl/uDdmdeYSmZj1xvNr8" className="text-wrap w-full lg:w-52">
+              584 Castro St 2165, San Francisco, CA 94114-2512
               </Link>
               <Link href="#">contact@cloudpro.ai</Link>
               <Link href="#">+1 415-393-2021</Link>
@@ -55,7 +55,7 @@ const FooterContent = () => {
 
             <div className="flex flex-col gap-2 text-cloud2 text-[12px] md:text-[14px]">
               <Link target="_blank" href="#" className="text-wrap w-full lg:w-52">
-                Maharajgunj, Basundhara- 3 Kathmandu, Nepal
+              Maharajgunj, Basundhara- 3 Kathmandu, Nepal
               </Link>
               <Link href="#">contact@cloudpro.ai</Link>
               <Link href="#">+1 415-393-2021</Link>

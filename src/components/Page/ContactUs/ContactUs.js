@@ -7,7 +7,7 @@ import MessageBox from "./content/MessageBox";
 
 const ContactUs = () => {
   return (
-    <div className="navbar-main mt-28 mb-24">
+    <div className="navbar-main mb-24 pt-24 md:pt-32">
         <div className="main-container flex justify-between flex-wrap lg:flex-nowrap gap-4 lg:gap-8 ">
         <div className="relative">
         <Image className="absolute top-0" style={{zIndex:'-1'}} width={978} height={628} src='/Image/ellipse88.svg' alt="image_shade"/>

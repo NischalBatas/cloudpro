@@ -31,24 +31,7 @@
 
 
 
-.tabs_main_service a:focus{
-  color: #000000;
-  border-bottom: 2px solid #000;
-  font-weight: 600;
- 
-}
 
-
-
-/* Hide scrollbar background */
-.tabs_main_service::-webkit-scrollbar {
-  background-color: transparent; /* For Chrome, Safari, and Opera */
-}
-
-/* Hide scrollbar background for Firefox */
-.tabs_main_service {
-  scrollbar-color: transparent transparent; /* For Firefox */
-}
 
 body {
   font-family:"Plus Jakarta Sans", sans-serif ;

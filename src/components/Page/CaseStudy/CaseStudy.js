@@ -1,9 +1,30 @@
+"use client"
 import { caseStudy } from "@/db/casestudy/casestudy";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import "./casestudy.css";
+import { motion,useInView } from "framer-motion";
 const CaseStudy = () => {
+  const ref=useRef(null)
+  const isInView=useInView(ref,{once:true})
+
+  const container={
+    hidden:{opacity:0},
+    visible:{
+      opacity:1,
+      scale:1,
+      transition:{
+        delayChildren:0.3,
+        staggerChildren:0.3
+      }
+    }
+  }
+
+  const items={
+    hidden:{opacity:0},
+    visible:{opacity:1}
+  }
   return (
     <div className="">
       <div className="h-[420px] md:h-[504px]  pt-12 pb-12 text-center  flex flex-col justify-center items-center">
@@ -16,12 +37,13 @@ const CaseStudy = () => {
       </div>
 
       <div className="navbar-main bg-white ">
-        <div className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-6">
+        <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" : "hidden"} className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-6">
           {caseStudy.map((item, index) => {
             return (
-              <Link href="/casestudy/1" className="">
+           <motion.div  key={index} variants={items}>
+               <Link href="/casestudy/1" className="">
                 <div
-                  key={index}
+                 
                   className="md:max-w-[324px] casestudy_product_container"
                 >
                   <div
@@ -59,9 +81,10 @@ const CaseStudy = () => {
                   </div>
                 </div>
               </Link>
+           </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
 
 

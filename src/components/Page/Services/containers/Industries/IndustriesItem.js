@@ -10,7 +10,7 @@ const IndustriesItem = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const container = {
-      hidden: { opacity: 1, scale: 0 },
+      hidden: { opacity: 0 },
       visible: {
         opacity: 1,
         scale: 1,

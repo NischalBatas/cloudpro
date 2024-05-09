@@ -12,7 +12,7 @@ const PartnerSlider = () => {
         perMove: 1,
         rewind: true,
         autoplay: true, // Whether to enable autoplay
-        interval: 2000, // Autoplay interval in milliseconds
+        interval: 1000, // Autoplay interval in milliseconds
         pauseOnHover: true, // Whether to pause autoplay on hover
         drag: true, // Whether to enable drag/swipe interaction
         keyboard: true, // Whether to enable keyboard navigation

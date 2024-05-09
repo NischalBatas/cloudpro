@@ -26,13 +26,13 @@ const Navbar = () => {
                 alt="company_logo"
                 src="/Image/logo/logo-white.svg"
               />
-              {/* <Image
+              <Image
                 className="blacklogo"
                 width={120}
                 height={120}
                 alt="company_logo"
                 src="/Image/logo/logoblack.svg"
-              /> */}
+              />
             </NavigationMenu.Link>
           </div>
 

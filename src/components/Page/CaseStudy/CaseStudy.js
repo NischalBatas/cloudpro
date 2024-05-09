@@ -6,7 +6,7 @@ import "./casestudy.css";
 const CaseStudy = () => {
   return (
     <div className="">
-      <div className="h-[420px] md:h-[504px]  mt-12 pb-12 text-center  flex flex-col justify-center items-center">
+      <div className="h-[420px] md:h-[504px]  pt-12 pb-12 text-center  flex flex-col justify-center items-center">
         <p className="text-[32px] md:text-[48px] font-bold">Case Studies</p>
         <p className="py-2 md:p-0 text-[12px] md:text-[14px] md:leading-6 max-w-[514px] text-[#bebebe]">
           We're Gen AI-Ready and Eager to Collaborate. Let's Assess Your

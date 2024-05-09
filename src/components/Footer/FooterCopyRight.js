@@ -13,7 +13,7 @@ const FooterCopyRight = () => {
         <Link href="#">Terms of Sevices</Link>
       </div>
 
-      <div className="flex  gap-2 text-cloud2 text-[16px]">
+      <div className="flex  gap-4 text-cloud2 text-[16px]">
         <Link href="#"><FaXTwitter /></Link>
         <Link href="#"><FaLinkedin /></Link>
         <Link href="#"><FaInstagram /></Link>

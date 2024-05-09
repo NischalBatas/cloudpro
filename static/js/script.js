@@ -72,7 +72,8 @@ $(document).ready(function () {
 });
 
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 1;
+let interval = 1000;
+
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
@@ -83,7 +84,7 @@ valueDisplays.forEach((valueDisplay) => {
     if (startValue == endValue) {
       clearInterval(counter);
     }
-  }, 10);
+  }, duration);
 });
 
 // Navbar background
@@ -137,18 +138,18 @@ $('.ViewportPosition').mouseleave('click', function() {
 });
 
 
-document.querySelectorAll('.tabs_main_service a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+// document.querySelectorAll('.tabs_main_service a').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//       e.preventDefault();
 
-      const targetId = this.getAttribute('href').substring(1); // Remove the '#'
-      const targetElement = document.getElementById(targetId);
+//       const targetId = this.getAttribute('href').substring(1); // Remove the '#'
+//       const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-          window.scrollTo({
-              top: targetElement.offsetTop,
-              behavior: 'smooth'
-          });
-      }
-  });
-});
+//       if (targetElement) {
+//           window.scrollTo({
+//               top: targetElement.offsetTop,
+//               behavior: 'smooth'
+//           });
+//       }
+//   });
+// });

@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 
 import BreadCrumb from "./Content/BreadCrumb";
 import Introduction from "./Content/Introduction";
@@ -17,6 +18,33 @@ import Tabs from "./Content/Tabs";
       
 
 const CaseDetails = () => {
+  useEffect(() => {
+    const handleClick = (e) => {
+      e.preventDefault();
+
+      const targetId = e.target.getAttribute('href').substring(1); // Remove the '#'
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const anchors = document.querySelectorAll('.tabs_main_service a');
+    anchors.forEach(anchor => {
+      anchor.addEventListener('click', handleClick);
+    });
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      anchors.forEach(anchor => {
+        anchor.removeEventListener('click', handleClick);
+      });
+    };
+  }, []); //
   return (
     <div>
       <BreadCrumb />

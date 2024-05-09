@@ -5,7 +5,7 @@ import { FaViber } from "react-icons/fa";
 import './footer.css'
 const FooterContent = () => {
   return (
-    <div className="footer_content grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-10 lg:gap-4 py-12">
+    <div className="footer_width footer_content grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-10 lg:gap-4 py-12">
       <div className="flex flex-col gap-3">
         <div className="text-white tracking-widest font-medium text-sm md:text-base uppercase">
           we are cloudpro ai
@@ -60,7 +60,7 @@ const FooterContent = () => {
      
       </div>
 
-      <div className="flex flex-col gap-3 text-[12px] md:text-[14px]">
+      <div className="grid gap-3 text-[12px] md:text-[14px] lg:place-content-end lg:content-start">
         <div className="text-white tracking-widest font-medium text-sm md:text-base uppercase">
           Contact us
         </div>

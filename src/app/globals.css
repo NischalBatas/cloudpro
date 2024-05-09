@@ -97,6 +97,7 @@ button:hover {
 .main-container{
   max-width: 1036px;
   margin: 0 auto;
+  width: 100%;
 }
 
 
@@ -225,12 +226,14 @@ button:hover {
 .main-container2{
   max-width: 1390px;
   margin: 0 auto;
+  width: 100%;
 }
 
 
 .footer_width{
   max-width: 1259px;
   margin: 0 auto;
+  width: 100%;
 }
 
 #__next::-webkit-scrollbar-track {

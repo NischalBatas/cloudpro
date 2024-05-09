@@ -10,7 +10,7 @@ const Footer = () => {
         <Contact />
         {/* <div className="w-full bg-cloud3" style={{ height: "1px" }}></div> */}
         <FooterContent />
-        <div className="w-full bg-cloud3" style={{ height: "1px" }}></div>
+        {/* <div className="w-full bg-cloud3" style={{ height: "1px" }}></div> */}
 
         <FooterCopyRight />
       </div>

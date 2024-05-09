@@ -23,7 +23,7 @@ const Contact = () => {
               src="/Image/logo/logo-white.svg"
             />
           </Link> */}
-          <div className="max-w-[468px]  pt-6 py-3 lg:py-0 font-semibold text-2xl">
+          <div className=" pt-6 py-3 lg:py-0 font-semibold text-2xl">
           Together, let's create something wonderful.
         </div>
         </div>

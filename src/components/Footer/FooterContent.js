@@ -64,14 +64,16 @@ const FooterContent = () => {
               Maharajgunj, Kathmandu, Nepal
               </Link>
            </div>
-           <div>
+
+           <div className="py-1">
            <div className="text-white tracking-wider font-medium text-sm md:text-base uppercase">
            Colombia
             </div>
               <Link target="_blank" href="#" className="text-[12px] md:text-[14px] text-wrap w-full lg:w-52">
-              050030. Medellín, Colombia
+              050030, Medellín, Colombia
               </Link>
            </div>
+
            <div>
            <div className="text-white tracking-wider font-medium text-sm md:text-base uppercase">
            Australia

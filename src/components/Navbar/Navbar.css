@@ -84,6 +84,7 @@
 .NavigationMenuRoot {
   position: relative;
   display: flex;
+  align-items: center;
   /* justify-content: center; */
   /* width: 100%; */
   z-index: 1;
@@ -246,6 +247,7 @@
   top: 82%;
   left: 0;
   perspective: 2000px;
+
 }
 
 .CaretDown {

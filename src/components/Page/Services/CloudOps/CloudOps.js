@@ -20,7 +20,7 @@ const CloudOps = () => {
  
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
  
 
        

@@ -21,7 +21,7 @@ const DataWarehouse = () => {
   
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
   
 
        

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Calendar from './Calendar';
 const MessageBox = () => {
   return (
-    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab1">
+    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab2">
     <Tabs.List className="TabsList1 text-[20px] md:text-[32px]" aria-label="Manage your account">
       <Tabs.Trigger className="TabsTrigger1 " value="tab1">
         Message
@@ -20,7 +20,7 @@ const MessageBox = () => {
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     
-    <Form.Label className="FormLabel">Your full name</Form.Label>
+    <Form.Label className="FormLabel">Your Full Name</Form.Label>
     <Form.Message className="FormMessage" match="valueMissing">
       Please enter your full name
     </Form.Message>
@@ -107,7 +107,7 @@ const MessageBox = () => {
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     
-    <Form.Label className="FormLabel">Your full name</Form.Label>
+    <Form.Label className="FormLabel">Your Full Name</Form.Label>
     <Form.Message className="FormMessage" match="valueMissing">
       Please enter your full name
     </Form.Message>

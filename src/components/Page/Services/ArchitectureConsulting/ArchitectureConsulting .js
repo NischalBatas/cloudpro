@@ -19,7 +19,7 @@ const ArchitectureConsulting = () => {
         <Faq/>
 
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
 
 
        

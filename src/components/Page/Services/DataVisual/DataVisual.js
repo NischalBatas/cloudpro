@@ -21,7 +21,7 @@ const DataVisual = () => {
    
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
  
 
        

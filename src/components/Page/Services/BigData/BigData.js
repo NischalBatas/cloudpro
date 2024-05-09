@@ -20,7 +20,7 @@ const BigData = () => {
 
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
 
 
        

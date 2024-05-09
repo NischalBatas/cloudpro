@@ -21,7 +21,7 @@ const BiReport = () => {
 
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
  
 
        

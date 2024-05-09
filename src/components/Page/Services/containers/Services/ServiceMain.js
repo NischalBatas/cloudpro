@@ -27,7 +27,7 @@ const ServiceMain = () => {
        return (
          <div key={index} className="max-w-96">
            <div className="text-[#071518] font-bold flex items-center text-[16px] gap-1">
-             {item.title} <MdOutlineArrowOutward />
+             {item.title} 
            </div>
            <div className="text-cloud3 text-[14px] my-1">{item.description}</div>
          </div>

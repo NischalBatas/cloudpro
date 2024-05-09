@@ -20,7 +20,7 @@ const Dataanalytics = () => {
    
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
 
 
        

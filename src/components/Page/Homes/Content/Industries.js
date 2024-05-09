@@ -50,7 +50,7 @@ const Industries = () => {
             <motion.li key={index} variants={items} >
             <div
               key={index}
-              className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75 cursor-pointer hover:opacity-100"
+              className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75  hover:opacity-100"
             >
               <Image
                 width={54}

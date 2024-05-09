@@ -19,7 +19,7 @@ const Generativeapplication = () => {
 
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
     
 
        

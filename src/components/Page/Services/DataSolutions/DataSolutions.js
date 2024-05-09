@@ -20,7 +20,7 @@ const DataSolutions = () => {
   
         
         <Journey/>
-        <Services/>
+        {/* <Services/> */}
     
 
        

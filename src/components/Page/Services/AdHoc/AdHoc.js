@@ -19,7 +19,7 @@ const AdHoc = () => {
       <Industries />
       <Faq />
       <Journey />
-      <Services />
+      {/* <Services /> */}
      
     </div>
   );

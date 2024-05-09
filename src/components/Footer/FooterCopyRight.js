@@ -8,7 +8,7 @@ const FooterCopyRight = () => {
   return (
     <div className="footer_width flex justify-between items-center gap-2 flex-wrap pt-4">
       <div className="flex  gap-4 text-cloud2 text-[10px] md:text-sm">
-        <Link href="#" className="font-semibold">2024 CloudProAI. LLC.</Link>
+        <Link href="#" className="font-semibold">2024 CloudPro.AI</Link>
         <Link href="#">Privacy Policy</Link>
         <Link href="#">Terms of Sevices</Link>
       </div>

@@ -154,6 +154,7 @@ button {
 .Textarea {
   resize: none;
   padding: 10px;
+  text-wrap: wrap;
 }
 
 .Button {

@@ -53,9 +53,9 @@ const MessageBox = () => {
 <Form.Field  className="FormField" name="Services">
 <Form.Label className="FormLabel">Select all services you may need.</Form.Label>
 <Form.Control asChild>
-<select className="p-2  font-semibold rounded-md bg-[#252525]">
+<select className="p-2 font-semibold rounded-md bg-[#252525]">
   <option value="AI">Artificial Intelligence </option>
-  <option value="AI">BI & Data Analytics </option>
+  <option value="BI">BI & Data Analytics </option>
   <option value="AI">Cloud Engineering </option>
   <option value="AI">Data Engineering </option>
   <option value="AI">Web Development </option>
@@ -84,7 +84,7 @@ const MessageBox = () => {
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     <Form.Label className="FormLabel">Tell us something about your project</Form.Label>
     <Form.Message className="FormMessage" match="valueMissing">
-      Please enter a answer
+      Please enter a message
     </Form.Message>
   </div>
   <Form.Control asChild>
@@ -152,6 +152,22 @@ const MessageBox = () => {
   </div>
   <Form.Control asChild>
     <input className="Input" type="number" required  placeholder="Enter your phone number"/>
+  </Form.Control>
+</Form.Field>
+
+<Form.Field className="FormField" name="phonenumber">
+  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+    
+    <Form.Label className="FormLabel">Message</Form.Label>
+    <Form.Message className="FormMessage" match="valueMissing">
+    Message
+    </Form.Message>
+    <Form.Message className="FormMessage" match="typeMismatch">
+      Enter a message
+    </Form.Message>
+  </div>
+  <Form.Control asChild>
+    <textarea className="Textarea" required  />
   </Form.Control>
 </Form.Field>
 

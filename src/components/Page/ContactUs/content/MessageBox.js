@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as Tabs from "@radix-ui/react-tabs";
 import * as Form from '@radix-ui/react-form';
 import Image from "next/image";
 import Calendar from './Calendar';
 const MessageBox = () => {
+  const [form,setForm]=useState({
+    fullName:'',
+    email:'',
+    phoneNumber:'',
+    message:''
+  })
+
+  const handleChange=(e)=>{
+    const {name,value}=e.target
+    setForm({...form,[name]:value})
+  }
+
   return (
     <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab2">
     <Tabs.List className="TabsList1 text-[20px] md:text-[32px]" aria-label="Manage your account">
@@ -29,7 +41,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="text" required  placeholder="eg.John Smith"/>
+    <input value={form.fullName} name='fullname' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.John Smith"/>
   </Form.Control>
 </Form.Field>
 
@@ -45,7 +57,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="email" required placeholder="eg.you@example.com"/>
+    <input value={form.email} name='email' onChange={handleChange} className="Input" type="email" required placeholder="eg.you@example.com"/>
   </Form.Control>
 </Form.Field>
 
@@ -76,7 +88,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="number" required  placeholder="Enter your phone number"/>
+    <input value={form.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your phone number"/>
   </Form.Control>
 </Form.Field>
 
@@ -88,7 +100,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <textarea className="Textarea" required />
+    <textarea value={form.message} name='message' onChange={handleChange} className="Textarea" required />
   </Form.Control>
 </Form.Field>
 
@@ -99,6 +111,13 @@ const MessageBox = () => {
 </Form.Submit>
 </Form.Root>
     </Tabs.Content>
+
+
+
+
+
+
+
 
     <Tabs.Content className="TabsContent1" value="tab2">
       <Calendar/>

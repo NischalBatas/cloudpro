@@ -53,7 +53,7 @@ const TestominialSlider = () => {
 
               <div className="flex gap-2 mt-6">
                 <div>
-                  <Image
+                  <Image className="rounded-full"
                     width={42}
                     height={42}
                     src={item.image}

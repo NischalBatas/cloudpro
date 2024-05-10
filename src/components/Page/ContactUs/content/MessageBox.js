@@ -3,6 +3,10 @@ import * as Tabs from "@radix-ui/react-tabs";
 import * as Form from '@radix-ui/react-form';
 import Image from "next/image";
 import Calendar from './Calendar';
+import emailjs from 'emailjs-com';
+
+
+
 const MessageBox = () => {
   const [formData,setFormData]=useState({
     fullName:'',
@@ -21,12 +25,12 @@ const MessageBox = () => {
   
     try {
       const res = await emailjs.send(
-        service_0o2pexp,
-        template_dvlr07n,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
-        x3ekMbtD_O9TeGs5y
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
       );
-  
+      console.log("EmailJS response:", res);
       if (res.status === 200) {
         alert("Sent Successfully, We will get back to you soon.");
   

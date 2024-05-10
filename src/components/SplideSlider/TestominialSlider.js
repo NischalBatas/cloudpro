@@ -53,12 +53,12 @@ const TestominialSlider = () => {
             >
               <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item.description}</p>
               <Link href={item.link}>
-              <div className="flex items-center gap-2 mt-6">
+              <div className="flex items-center gap-3 mt-6">
            
                 <div >
                   <Image className="rounded-full"
-                    width={42}
-                    height={42}
+                    width={44}
+                    height={44}
                     src={item.image}
                     alt="testominial-image"
                   />

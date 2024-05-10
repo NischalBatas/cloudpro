@@ -3,6 +3,8 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 import { testimonialClient } from "@/db/home/testimonialClient";
+import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
 const TestominialSlider = () => {
   const splideOptions = {
     type: "loop",
@@ -10,7 +12,7 @@ const TestominialSlider = () => {
     perMove: 1,
     rewind: true,
     autoplay: true, // Whether to enable autoplay
-    interval: 2000, // Autoplay interval in milliseconds
+    interval: 2400, // Autoplay interval in milliseconds
     pauseOnHover: true, // Whether to pause autoplay on hover
     drag: true, // Whether to enable drag/swipe interaction
     keyboard: true, // Whether to enable keyboard navigation
@@ -50,22 +52,31 @@ const TestominialSlider = () => {
               className="flex flex-col justify-center items-center"
             >
               <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item.description}</p>
-
+              <Link href={item.link}>
               <div className="flex items-center gap-2 mt-6">
-                <div>
+           
+                <div >
                   <Image className="rounded-full"
                     width={42}
                     height={42}
                     src={item.image}
                     alt="testominial-image"
                   />
+                 
                 </div>
                 <div>
+           
                   <p className="font-semibold text-[14px]">{item.name}</p>
+               
                   <p className="text-[#B8BEBF] text-[14px]">{item.position}</p>
-                  <p className="text-[#4863bb] font-semibold text-[14px] max-w-[220px] md:max-w-[350px]">{item.company}</p>
+                  <div className="flex items-center justify-between">
+                  <p className="text-[#4863bb] font-semibold text-[14px] max-w-[220px] md:max-w-full">{item.company}</p>
+                  <FaLinkedin className="ml-4"/>
+                  </div>
                 </div>
+           
               </div>
+              </Link>
             </SplideSlide>
           );
         })}

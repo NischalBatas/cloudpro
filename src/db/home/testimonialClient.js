@@ -44,7 +44,7 @@ export const testimonialClient = [
     position: "Business Process Manager",
     description:
       "As Project Solution Manager, I worked with Nimesh on a challenging application implementation for several months. The success of this new application was totally dependent on providing interfaced, accurate and timely data. Nimesh accepted the challenge of working on the data architecture, data file generation and internal communication, including complex and frequently changing data requirements. Despite project deadline changes, Nimesh maintained a positive attitude, and was instrumental in the adoption of additional new technologies. From our brief experience together I believe Nimesh and team will provide solid data management and related development support. ",
-    image: "/Image/results/4.png",
+    image: "/Image/testimonial/profile.png",
     company:"Trinchero Family Estates",
     link:"https://www.linkedin.com/in/cheryl-mitchell-b5aa48b/"
   },

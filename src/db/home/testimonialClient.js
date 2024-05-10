@@ -23,7 +23,7 @@ export const testimonialClient = [
     name: "Roshan Dhakal",
     position: "IT/Ecommerce Manager",
     description:
-      "Using Cloud Pro AI's predictive analytics solution transformed our e-commerce business. It optimized inventory and personalized recommendations, boosting sales by 30% and enhancing customer satisfaction. Their expertise made them more than a provider; they were essential partners in our success.",
+      "Using Cloud Pro AI's predictives analytics solution transformed our e-commerce business. It optimized inventory and personalized recommendations, boosting sales by 30% and enhancing customer satisfaction. Their expertise made them more than a provider; they were essential partners in our success.",
     image: "/Image/testimonial/3.jpg",
     company:"Fixez",
     link:"https://www.linkedin.com/in/roshan-dhakal977/overlay/photo/"

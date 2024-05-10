@@ -37,7 +37,7 @@ const FooterContent = () => {
           <tbody className="">
           <tr className="">
             <td className="text-white tracking-widest font-medium uppercase">USA</td>
-            <td>84 Castro St 2165, San Francisco, CA 94114-2512</td>
+            <td>584 Castro St 2165, San Francisco, CA 94114-2512</td>
           </tr>
 
           <tr>

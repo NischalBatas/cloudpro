@@ -10,7 +10,7 @@ const TestominialSlider = () => {
     perMove: 1,
     rewind: true,
     autoplay: true, // Whether to enable autoplay
-    interval: 3000, // Autoplay interval in milliseconds
+    interval: 1000, // Autoplay interval in milliseconds
     pauseOnHover: true, // Whether to pause autoplay on hover
     drag: true, // Whether to enable drag/swipe interaction
     keyboard: true, // Whether to enable keyboard navigation
@@ -51,7 +51,7 @@ const TestominialSlider = () => {
             >
               <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item.description}</p>
 
-              <div className="flex gap-2 mt-6">
+              <div className="flex items-center gap-2 mt-6">
                 <div>
                   <Image className="rounded-full"
                     width={42}
@@ -63,6 +63,7 @@ const TestominialSlider = () => {
                 <div>
                   <p className="font-semibold text-[14px]">{item.name}</p>
                   <p className="text-[#B8BEBF] text-[14px]">{item.position}</p>
+                  <p className="text-[#4863bb] font-semibold text-[14px] max-w-[220px] md:max-w-[350px]">{item.company}</p>
                 </div>
               </div>
             </SplideSlide>

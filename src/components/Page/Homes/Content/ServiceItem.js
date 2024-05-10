@@ -35,7 +35,7 @@ const ServiceItem = () => {
       {serviceItem.map((item,index) => {
         return (
       <motion.li key={index} variants={items} >
-         <div className="group3_premium md:max-w-[330px] bg-[#0e0e1a] p-4 rounded-md border border-[#1E2849] flex flex-col items-center">
+         <div className="service_main_item md:max-w-[330px] bg-[#0e0e1a] p-4 rounded-md border border-[#1E2849] flex flex-col items-center">
            <div className="mb-5 z-20">
              <p className="text-white mb-1 text-[16px] font-semibold max-w-[265px] text-left">
                {item.title}

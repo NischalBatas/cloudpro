@@ -39,7 +39,7 @@
   }
 } */
 
-.group3_premium{
+.service_main_item{
   position: relative;
   /* display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@
 }
 
 
-.group3_premium::before{
+.service_main_item::before{
   content: '';
   width: 200%;
   margin-left: -50%;
@@ -71,10 +71,10 @@
   }
 }
 
-.group3_premium::after{
+.service_main_item::after{
   content: '';
   position: absolute;
-  background: #111923;
+  background: #0e0e1a;
   inset:2px;
   border-radius: 0.5rem;
 }

@@ -152,7 +152,7 @@ const MessageBox = () => {
 
 
 
-    {/* <Tabs.Content className="TabsContent1" value="tab2">
+    <Tabs.Content className="TabsContent1" value="tab2">
       <Calendar/>
             <Form.Root className="FormRoot mt-6">
 <Form.Field className="FormField" name="Your full name">
@@ -229,7 +229,7 @@ const MessageBox = () => {
   </button>
 </Form.Submit>
 </Form.Root>
-    </Tabs.Content> */}
+    </Tabs.Content>
   </Tabs.Root>
   )
 }

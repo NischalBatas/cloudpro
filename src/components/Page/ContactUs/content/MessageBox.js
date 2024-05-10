@@ -22,7 +22,7 @@ const MessageBox = () => {
     try {
       const res = await emailjs.send(
         service_0o2pexp,
-        template_vf4lvgo,
+        template_dvlr07n,
         formData,
         x3ekMbtD_O9TeGs5y
       );

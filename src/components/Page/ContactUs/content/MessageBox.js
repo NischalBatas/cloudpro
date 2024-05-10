@@ -154,7 +154,7 @@ const MessageBox = () => {
 
     <Tabs.Content className="TabsContent1" value="tab2">
       <Calendar/>
-            <Form.Root className="FormRoot mt-6">
+      <Form.Root className="FormRoot mt-6" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     
@@ -167,7 +167,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="text" required  placeholder="eg.John Smith"/>
+    <input value={formData.fullName} name='fullName' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.John Smith"/>
   </Form.Control>
 </Form.Field>
 
@@ -183,7 +183,7 @@ const MessageBox = () => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="email" required placeholder="eg.you@example.com"/>
+    <input value={formData.email} name='email' onChange={handleChange} className="Input" type="email" required placeholder="eg.you@example.com"/>
   </Form.Control>
 </Form.Field>
 
@@ -195,37 +195,32 @@ const MessageBox = () => {
     
     <Form.Label className="FormLabel"> Phone Number</Form.Label>
     <Form.Message className="FormMessage" match="valueMissing">
-      Phone Number
+      Enter the Phone Number
     </Form.Message>
     <Form.Message className="FormMessage" match="typeMismatch">
       Please provide a valid number
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input className="Input" type="number" required  placeholder="Enter your phone number"/>
+    <input value={formData.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your phone number"/>
   </Form.Control>
 </Form.Field>
 
-<Form.Field className="FormField" name="phonenumber">
+<Form.Field className="FormField" name="question">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-    
     <Form.Label className="FormLabel">Message</Form.Label>
     <Form.Message className="FormMessage" match="valueMissing">
-    Message
-    </Form.Message>
-    <Form.Message className="FormMessage" match="typeMismatch">
-      Enter a message
+      Please enter a message
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <textarea className="Textarea" required  />
+    <textarea value={formData.message} name='message' onChange={handleChange} className="Textarea" required />
   </Form.Control>
 </Form.Field>
 
-
 <Form.Submit asChild>
-  <button className="Button bg-cloud" style={{ marginTop: 10 }}>
-    Send Message
+  <button type='submit' className="Button bg-cloud" style={{ marginTop: 10 }}>
+  Send Message
   </button>
 </Form.Submit>
 </Form.Root>

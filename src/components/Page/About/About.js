@@ -4,6 +4,7 @@ import Introduction from "./content/Introduction";
 import Mission from "./content/Mission";
 import ProfifleMessage from "./content/ProfifleMessage";
 import ContactInfo from "./content/ContactInfo";
+import Testominial from "../Homes/Content/Testominial";
 
 const About = () => {
 
@@ -13,6 +14,7 @@ const About = () => {
       <Introduction />
       <Mission />
       <Results />
+      <Testominial/>
       <ProfifleMessage />
       <ContactInfo/>
    

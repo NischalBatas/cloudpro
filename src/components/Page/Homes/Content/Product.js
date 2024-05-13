@@ -43,7 +43,7 @@ const Product = () => {
         {product.map((item, index) => {
           return (
         
-            <motion.div variants={items}>
+            <motion.div key={index} variants={items}>
               <Link key={index} href={item.link}>
               <div 
                 style={{ backgroundColor: `${item.color}` }}

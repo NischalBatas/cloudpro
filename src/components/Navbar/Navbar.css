@@ -1,39 +1,27 @@
-/* .navbar-hamburge {
-  cursor: pointer;
-}
-
-.navbar-menu-list {
-  display: block;
-}
-
-@media only screen and (max-width: 750px) {
-  .navbar-menu-list {
-    display: none;
-  }
-} */
-
-
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/indigo.css';
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/purple.css';
 @import '@radix-ui/colors/violet.css';
 
-/* reset */
 
 .navbar-main-group{
-  /* background-color: #01010B; */
-  background-color: #00000080;
+  background-color: #01010B;
+  /* background-color: #00000080;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
   z-index: 999;
   width: 100%;
 }
 
-.navbar-main-group2 {
+/* .navbar-main-group2 {
   background-color: rgba(0, 0, 0, 0.4);
   top: 0;
 }
+
+.navbar-main-group2:hover {
+  transition: background-color 0.4s ease;
+} */
 
 .main_button{
   box-shadow: #839BE9 0px -4px 0px inset;
@@ -49,37 +37,35 @@
 }
 
 .menu-item-list:hover{
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
 }
 
-.navbar-main-group:hover{
-  transition: background-color 0.1s ease-in-out;
-}
 
 
 
 
+/* 
 .blacklogo{
   display: none;
 }
 
 .blacklogo2{
   display: block;
-}
+} */
 
 
-.NavigationMenuTrigger2:hover .blacklogo{
+/* .NavigationMenuTrigger2:hover .blacklogo{
   display: block;
 }
 
 .NavigationMenuTrigger2:hover .whitelogo{
   display: none;
-}
-
+} */
+/* 
 .whitelogo2{
   display: none;
-}
+} */
 
 .NavigationMenuRoot {
   position: relative;
@@ -213,29 +199,33 @@
 .NavigationMenuViewport {
   position: relative;
   transform-origin: top center;
-  margin-top: 8px;
+  margin-top: 4px;
   min-width: 100%;
-  background-color: white;
-  /* border-radius: 6px; */
+  background-color: #01010B;
+  /* -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(5px);  */
+  /* border-radius: 6px;
   overflow: hidden;
+
   /* box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px; */
   height: var(--radix-navigation-menu-viewport-height);
-  transition: width, height, 300ms ease;
+  transition: width 300ms ease, height 300ms ease, background-color 300ms ease, transform 300ms ease;
 }
 .NavigationMenuViewport[data-state='open'] {
-  animation: scaleIn 200ms ease;
+  animation: scaleIn 300ms ease;
 }
 .NavigationMenuViewport[data-state='closed'] {
-  animation: scaleOut 200ms ease;
+  animation: scaleOut 300ms ease;
 }
 @media only screen and (min-width: 600px) {
   .NavigationMenuViewport {
     width: var(--radix-navigation-menu-viewport-width);
   }
 }
-
 .navbar-menu-title{
-  color: #000;
+  color: #ffffff;
 }
 
 

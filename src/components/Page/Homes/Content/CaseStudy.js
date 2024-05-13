@@ -41,13 +41,13 @@ const CaseStudy = () => {
       </div>
 
    
-        <motion.div ref={ref} variants={container}
+        <motion.div  ref={ref} variants={container}
     initial="hidden"
     animate={isInView ? "visible" : "hidden"} className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
           
 {contents.map((item, index) => {
             return (
-            <motion.div variants={items}>
+            <motion.div key={index} variants={items}>
                 <Link href='/casestudy/1' className="">
                 <div key={index} className="md:max-w-[324px] casestudy_product_container">
                   <div

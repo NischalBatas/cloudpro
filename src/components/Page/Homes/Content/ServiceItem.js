@@ -34,20 +34,22 @@ const ServiceItem = () => {
     animate={isInView ? "visible" : "hidden"}>
       {serviceItem.map((item,index) => {
         return (
-      <motion.li key={index} variants={items} >
-         <div className="service_main_item md:max-w-[330px] bg-[#0e0e1a] p-4 rounded-md border border-[#1E2849] flex flex-col items-center">
+      <motion.li key={index} variants={items} className="service_main_item p-4 bg-[#0e0e1a] rounded-md border border-[#1E2849]">
+         <div className=" md:max-w-[330px]     h-full flex flex-col items-center justify-between">
            <div className="mb-5 z-20">
-             <p className="text-white mb-1 text-[16px] font-semibold max-w-[265px] text-left">
+             <p className="text-white mb-1 text-[14px] md:text-[16px] font-semibold max-w-[265px] text-left">
                {item.title}
              </p>
-             <p className="text-[#B8BEBF] text-[14px] ">{item.description}</p>
+             <p className="text-[#B8BEBF] text-[12px] md:text-[14px] ">{item.description}</p>
            </div>
-           <Image className="z-20"
+          <div className="z-20">
+          <Image 
              width={250}
              height={250}
              src={item.image}
              alt="Image_product"
            />
+          </div>
          </div>
     </motion.li>
         );

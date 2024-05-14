@@ -12,8 +12,8 @@ const Contact = () => {
     router.push(path)
   }
   return (
-    <div className="h-[125px] bg-[#121212] flex flex-col justify-center mb-10 md:mb-0">
-      <div className="footer_width flex justify-between gap-6 md:gap-1 flex-wrap items-center ">
+    <div className="min-h-[125px] bg-[#121212] flex flex-col justify-center mb-10 md:mb-0">
+      <div className="footer_width flex justify-between gap-4 md:gap-1 flex-wrap items-center ">
  
           {/* <Link href="/">
             <Image className="mb-2"
@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
     
        
-        <div className="flex justify-end items-end flex-wrap gap-3 lg:w-96 ">
+        <div className="flex lg:justify-end items-center flex-wrap gap-3 max-lg:w-96 pb-8 md:pb-0">
           <button onClick={()=>{handleClick('/contactus')}} className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium">
           Start working with us
           </button>

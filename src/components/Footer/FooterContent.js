@@ -12,7 +12,7 @@ const FooterContent = () => {
         <div className="text-[#FFFFFF] tracking-widest text-[14px] text-sm md:text-base uppercase">
           we are cloudpro ai
         </div>
-        <div className="cloudpro_1 flex flex-col gap-[16px] text-cloud2 text-[12px] md:text-[14px]">
+        <div className="cloudpro_1 flex flex-col gap-[16px] text-cloud2 text-[14px]">
           <Link href="/aboutus">About Us</Link>
           <Link href="/casestudy">Case Study</Link>
           <Link href="/blog">Blog</Link>
@@ -23,7 +23,7 @@ const FooterContent = () => {
         <div className="text-[#FFFFFF] tracking-widest text-[14px] text-sm md:text-base uppercase">
           What we do
         </div>
-        <div className="flex flex-col gap-[16px] text-cloud2 text-[12px] md:text-[14px]">
+        <div className="flex flex-col gap-[16px] text-cloud2 text-[14px]">
           <Link href="/services/alconsulting">AI Consulting</Link>
           <Link href="/services/bigdata">Big Data Consulting</Link>
           <Link href="/services/dataanalytics">Data Analytics</Link>
@@ -80,7 +80,7 @@ const FooterContent = () => {
         <div className="text-[#FFFFFF] tracking-widest text-[14px] text-sm md:text-base uppercase">
           Our Locations
         </div>
-        <table className="text-cloud2 text-[12px] md:text-[14px]">
+        <table className="text-cloud2 text-[14px]">
           <tbody className="">
           <tr className="">
             <td className="text-[#FFFFFF] tracking-widest text-[14px] uppercase">USA</td>
@@ -107,11 +107,11 @@ const FooterContent = () => {
      
       </div> */}
 
-      <div className="grid gap-[16px] text-[12px] md:text-[14px] lg:place-content-end lg:content-start">
+      <div className="grid gap-[16px] text-[14px] lg:place-content-end lg:content-start">
         <div className="text-white tracking-widest text-[14px] text-sm md:text-base uppercase">
           Contact us
         </div>
-        <div className="flex flex-col gap-[16px] text-cloud2 text-[12px] md:text-[14px]">
+        <div className="flex flex-col gap-[16px] text-cloud2 text-[14px]">
           <Link href="#" className="flex gap-2 items-center"><MdOutlinePhoneInTalk /> +1 415-393-2021</Link>
           <Link href='mailto:contact@cloudpro.ai' className="flex gap-2 items-center">  <MdOutlineMailOutline /> contact@cloudpro.ai</Link>
           <Link

@@ -37,7 +37,7 @@ const FooterContent = () => {
           <tbody className="">
           <tr className="">
             <td className="text-white tracking-widest font-medium uppercase">USA</td>
-            <td>584 Castro St 2165, San Francisco, CA 94114-2512</td>
+            <td> <Link target="_blank" href='https://maps.app.goo.gl/Z8G9DuJLHGfypwM86'>584 Castro St 2165, San Francisco, CA 94114-2512</Link></td>
           </tr>
 
           <tr>
@@ -66,7 +66,7 @@ const FooterContent = () => {
         </div>
         <div className="flex flex-col gap-3 text-cloud2 text-[12px] md:text-[14px]">
           <Link href="#">+1 415-393-2021</Link>
-          <Link href="#">contact@cloudpro.ai</Link>
+          <Link href='mailto:contact@cloudpro.ai'>Send us an email</Link>
           <Link
             className="flex items-center gap-3 border rounded-full py-[0.3rem] px-4 max-w-max border-[#494949]"
             href="#"

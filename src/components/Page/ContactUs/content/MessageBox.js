@@ -4,6 +4,8 @@ import * as Form from '@radix-ui/react-form';
 import Image from "next/image";
 import Calendar from './Calendar';
 import emailjs from 'emailjs-com';
+import { MdOutlineLocationOn, MdOutlineMailOutline, MdOutlinePhoneInTalk } from 'react-icons/md';
+import Link from 'next/link';
 
 
 
@@ -50,7 +52,7 @@ const MessageBox = () => {
   
 
   return (
-    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab2">
+    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab1">
     <Tabs.List className="TabsList1 text-[20px] md:text-[32px]" aria-label="Manage your account">
       <Tabs.Trigger className="TabsTrigger1 " value="tab1">
         Message
@@ -59,8 +61,7 @@ const MessageBox = () => {
         Schedule a Call
       </Tabs.Trigger>
     </Tabs.List>
-    <Tabs.Content className="TabsContent1" value="tab1">
-        
+    <Tabs.Content className="TabsContent1 flex justify-between" value="tab1">
     <Form.Root className="FormRoot" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
@@ -143,6 +144,34 @@ const MessageBox = () => {
   </button>
 </Form.Submit>
 </Form.Root>
+   <div>
+      <div className='my-5'>
+         <span className='text-[20px] font-semibold'>Chat with us</span>
+         <p className='text-[#888888] text-[14px]'>Speak to our friendly team via email</p>
+         <div className='flex items-center gap-2 mt-2 underline'>
+         <MdOutlineMailOutline />
+         <Link href='mailto:contact@cloudpro.ai'>Send us an email</Link>
+         </div>
+      </div>
+
+      <div className='my-8'>
+         <span className='text-[20px] font-semibold'>Call us</span>
+         <p className='text-[#888888] text-[14px]'>Call our team Mon-Fri from 8am to 5pm</p>
+         <div className='flex items-center gap-2 mt-2'>
+         <MdOutlinePhoneInTalk />
+         <p>+1 415-393-2021</p>
+         </div>
+      </div>
+
+      <div className='my-5'>
+         <span className='text-[20px] font-semibold'>Visit us</span>
+         <p className='text-[#888888] text-[14px]'>Chat to us in person at our headquarter</p>
+         <div className='flex items-center gap-2 mt-2 underline'>
+         <MdOutlineLocationOn />
+         <Link className='max-w-[290px]' target="_blank" href='https://maps.app.goo.gl/Z8G9DuJLHGfypwM86'>584 Castro St 2165, San Francisco, CA 94114-2512</Link>
+         </div>
+      </div>
+   </div>
     </Tabs.Content>
 
 
@@ -152,9 +181,9 @@ const MessageBox = () => {
 
 
 
-    <Tabs.Content className="TabsContent1" value="tab2">
+    <Tabs.Content className="TabsContent2" value="tab2">
       <Calendar/>
-      <Form.Root className="FormRoot mt-6" onSubmit={handleSubmit}>
+      {/* <Form.Root className="FormRoot mt-6" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
     
@@ -223,7 +252,7 @@ const MessageBox = () => {
   Send Message
   </button>
 </Form.Submit>
-</Form.Root>
+</Form.Root> */}
     </Tabs.Content>
   </Tabs.Root>
   )

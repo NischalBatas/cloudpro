@@ -7,7 +7,7 @@ const Calendar = () => {
 	useEffect(()=>{
         (async function () {
           const cal = await getCalApi({});
-          cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+          cal("ui", {theme: "dark","styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
         })();
       }, [])
 
@@ -16,7 +16,7 @@ const Calendar = () => {
     <>
      <Cal 
     calLink="cloudproai-contact/15min"
-    style={{width:"75%",height:"320px",overflow:"scroll"}}
+    style={{width:"900px",height:"490px",overflow:"auto"}}
     config={{layout: 'month_view'}}
   
     

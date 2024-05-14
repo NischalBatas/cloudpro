@@ -26,8 +26,9 @@ const CaseDetails = () => {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
+        const margin = 50; // Adjust this value as needed
         window.scrollTo({
-          top: targetElement.offsetTop,
+          top: targetElement.offsetTop - margin,
           behavior: 'smooth'
         });
       }

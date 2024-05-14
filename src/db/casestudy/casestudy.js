@@ -1,6 +1,7 @@
 export const caseStudy = [
   // Existing items...
   {
+      id:1,
       sector: "Healthcare Operations.",
       category: "Web Service",
       published: "2 Min Read",
@@ -10,6 +11,8 @@ export const caseStudy = [
       image: "/Image/casestudy/1.jpg",
   },
   {
+    
+      id:2,
       sector: "AI Chatbots",
       category: "AI Chatbots",
       published: "2 Min Read",
@@ -19,6 +22,7 @@ export const caseStudy = [
       image: "/Image/casestudy/2.jpg",
   },
   {
+      id:3,
       sector: "Billing and Compliance with CloudProAI",
       category: "Web Service",
       published: "2 Min Read",
@@ -29,6 +33,7 @@ export const caseStudy = [
   },
   // New items...
   {
+      id:4,
       sector: "E-Commerce Solutions",
       category: "E-Commerce",
       published: "3 Min Read",
@@ -38,6 +43,7 @@ export const caseStudy = [
       image: "/Image/casestudy/4.jpg",
   },
   {
+      id:5,
       sector: "Financial Analytics",
       category: "Finance",
       published: "4 Min Read",
@@ -47,6 +53,7 @@ export const caseStudy = [
       image: "/Image/casestudy/5.jpg",
   },
   {
+      id:6,
       sector: "Supply Chain Management",
       category: "Logistics",
       published: "5 Min Read",
@@ -57,6 +64,7 @@ export const caseStudy = [
   },
   // Add 3 more items...
   {
+      id:7,
       sector: "Data Security Solutions",
       category: "Cybersecurity",
       published: "3 Min Read",
@@ -66,6 +74,7 @@ export const caseStudy = [
       image: "/Image/casestudy/7.jpg",
   },
   {
+      id:8,
       sector: "Smart Manufacturing",
       category: "Manufacturing",
       published: "4 Min Read",
@@ -75,6 +84,7 @@ export const caseStudy = [
       image: "/Image/casestudy/8.jpg",
   },
   {
+      id:9,
       sector: "Education Technology",
       category: "EdTech",
       published: "3 Min Read",

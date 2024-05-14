@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Tabs = (props) => {
-    console.log("Hello")
+    console.log("Hello",props)
   return (
     <div className='navbar-main tabs_main_service bg-white text-[#6A6A6A] text-[14px] md:text-[16px]  border-b-[1px]'>
         <div className='main-container flex justify-between gap-6 text-nowrap overflow-x-auto'>

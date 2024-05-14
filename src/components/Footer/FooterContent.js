@@ -38,7 +38,7 @@ const FooterContent = () => {
         </div>
         <div className="flex flex-col gap-[8px]">
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
-            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/1.svg'/></div>
+            <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/1.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
               <span className="text-[#fff] font-semibold">USA</span>
               <p className="text-[#CED0D1]">San Francisco, CA</p>
@@ -46,7 +46,7 @@ const FooterContent = () => {
           </div>
 
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
-            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/2.svg'/></div>
+            <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/2.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
               <span className="text-[#fff] font-semibold">Nepal</span>
               <p className="text-[#CED0D1]">Maharajgunj, Kathmandu</p>
@@ -55,7 +55,7 @@ const FooterContent = () => {
 
 
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
-            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/3.svg'/></div>
+            <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/3.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
               <span className="text-[#fff] font-semibold">AUSTRALIA</span>
               <p className="text-[#CED0D1]">Ashfield, NSW 2131</p>
@@ -64,7 +64,7 @@ const FooterContent = () => {
 
 
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
-            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/4.svg'/></div>
+            <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/4.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
               <span className="text-[#fff] font-semibold">COLOMBIA</span>
               <p className="text-[#CED0D1]">050030, Medellín</p>

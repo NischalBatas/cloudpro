@@ -3,6 +3,8 @@ import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaViber } from "react-icons/fa";
 import './footer.css'
+import Image from "next/image";
+import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
 const FooterContent = () => {
   return (
     <div className="footer_width footer_content grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-10 lg:gap-4 py-12">
@@ -29,7 +31,52 @@ const FooterContent = () => {
         </div>
       </div>
 
+
       <div className="flex flex-col gap-[16px]">
+        <div className="text-[#FFFFFF] tracking-widest text-[14px] text-sm md:text-base uppercase">
+          Our Locations
+        </div>
+        <div className="flex flex-col gap-[8px]">
+          <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
+            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/1.svg'/></div>
+            <div className="text-[14px] pl-[21px] flex flex-col justify-center">
+              <span className="text-[#fff] font-semibold">USA</span>
+              <p className="text-[#CED0D1]">San Francisco, CA</p>
+            </div>
+          </div>
+
+          <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
+            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/2.svg'/></div>
+            <div className="text-[14px] pl-[21px] flex flex-col justify-center">
+              <span className="text-[#fff] font-semibold">Nepal</span>
+              <p className="text-[#CED0D1]">Maharajgunj, Kathmandu</p>
+            </div>
+          </div>
+
+
+          <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
+            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/3.svg'/></div>
+            <div className="text-[14px] pl-[21px] flex flex-col justify-center">
+              <span className="text-[#fff] font-semibold">AUSTRALIA</span>
+              <p className="text-[#CED0D1]">Ashfield, NSW 2131</p>
+            </div>
+          </div>
+
+
+          <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
+            <div className="flex items-end"><Image width={52} height={52} src='/Image/footerIcon/4.svg'/></div>
+            <div className="text-[14px] pl-[21px] flex flex-col justify-center">
+              <span className="text-[#fff] font-semibold">COLOMBIA</span>
+              <p className="text-[#CED0D1]">050030, Medellín</p>
+            </div>
+          </div>
+
+
+        </div>
+     
+      </div>
+
+      {/* <div className="flex flex-col gap-[16px]">
         <div className="text-[#FFFFFF] tracking-widest text-[14px] text-sm md:text-base uppercase">
           Our Locations
         </div>
@@ -58,15 +105,15 @@ const FooterContent = () => {
           </tbody>
         </table>
      
-      </div>
+      </div> */}
 
       <div className="grid gap-[16px] text-[12px] md:text-[14px] lg:place-content-end lg:content-start">
         <div className="text-white tracking-widest text-[14px] text-sm md:text-base uppercase">
           Contact us
         </div>
         <div className="flex flex-col gap-[16px] text-cloud2 text-[12px] md:text-[14px]">
-          <Link href="#">+1 415-393-2021</Link>
-          <Link href='mailto:contact@cloudpro.ai'>contact@cloudpro.ai</Link>
+          <Link href="#" className="flex gap-2 items-center"><MdOutlinePhoneInTalk /> +1 415-393-2021</Link>
+          <Link href='mailto:contact@cloudpro.ai' className="flex gap-2 items-center">  <MdOutlineMailOutline /> contact@cloudpro.ai</Link>
           <Link
             className="flex items-center gap-[16px] border rounded-full py-[0.3rem] px-4 max-w-max border-[#494949]"
             href="#"

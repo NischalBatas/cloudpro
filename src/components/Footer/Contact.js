@@ -12,7 +12,7 @@ const Contact = () => {
     router.push(path)
   }
   return (
-    <div className="min-h-[125px] bg-[#121212] flex flex-col justify-center mb-10 md:mb-0">
+    <div className="min-h-[125px] bg-[#121212] flex flex-col justify-center mb-5 md:mb-0 p-4">
       <div className="footer_width flex justify-between gap-4 md:gap-1 flex-wrap items-center ">
  
           {/* <Link href="/">

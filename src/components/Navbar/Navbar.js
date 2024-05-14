@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import Image from "next/image";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Menu from "./Menu";
 import { usePathname, useRouter } from "next/navigation";
-import { FaBarsStaggered } from "react-icons/fa6";
+
 
 const Navbar = () => {
   const router = useRouter();

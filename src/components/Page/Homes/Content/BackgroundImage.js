@@ -11,7 +11,7 @@ const BackgroundImage = () => {
       zIndex: "-1",
     }}
   >
-     {/* <div className="bg-cloud  line-svg_main" ></div> */}
+     <div className="line-svg_main" ></div>
      <div className="bg-cloud  line-svg1" ></div>
      {/* <div className="bg-cloud  line-svg2" ></div> */}
      <div className="bg-cloud  line-svg3" ></div>

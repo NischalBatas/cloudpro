@@ -17,6 +17,7 @@ const Testominial = () => {
       <div className="flex mt-8 ">
         <TestominialSlider />
       </div>
+      
     </div>
   );
 };

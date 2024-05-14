@@ -16,7 +16,7 @@ const Introduction = () => {
   return (
     <>
     <ParticleBackground/>
-      <div className="main-container pb-20 md:pb-40 relative">
+      <div className="main-container pb-24 md:pb-36 relative">
       {/* <div
           className="intro-image top-[-60px] w-full h-[794px] absolute bg-no-repeat bg-center"
           style={{
@@ -53,6 +53,7 @@ const Introduction = () => {
             </Link>
           </div>
         </div>
+        
       </div>
     </>
   );

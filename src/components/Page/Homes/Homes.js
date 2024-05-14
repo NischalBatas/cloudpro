@@ -12,6 +12,7 @@ import Product from "./Content/Product";
 import Footer from "../../Footer/Footer";
 import './Content/animation.css'
 import ParticleBackground from "@/components/particles/particleBackground";
+import ParticleConfig from "@/components/particles/particleConfig";
 
 const Homes = () => {
   return (
@@ -20,6 +21,7 @@ const Homes = () => {
 
       <Introduction />
       <Partners />
+      
       <Service />
       {/* <Features /> */}
       <Industries />

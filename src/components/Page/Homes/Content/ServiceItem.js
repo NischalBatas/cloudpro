@@ -34,7 +34,7 @@ const ServiceItem = () => {
     animate={isInView ? "visible" : "hidden"}>
       {serviceItem.map((item,index) => {
         return (
-      <motion.li key={index} variants={items} className="service_main_item p-4 bg-[#0e0e1a] rounded-md border border-[#1E2849]">
+      <motion.li key={index} variants={items} className="service_main_item p-3 md:p-4 bg-[#0e0e1a] rounded-md border border-[#1E2849]">
          <div className=" md:max-w-[330px]     h-full flex flex-col items-center justify-between">
            <div className="mb-5 z-20">
              <p className="text-white mb-1 text-[14px] md:text-[16px] font-semibold max-w-[265px] text-left">

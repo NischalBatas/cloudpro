@@ -1,0 +1,311 @@
+.line-svg_main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* offset-path: path("M1 0H0V298H1V0Z");
+  animation: followpath 3s linear infinite; */
+  border: 0;
+  border-radius: 50%;
+background-color: aliceblue;
+padding: 20rem;
+  background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(20, 32, 52, 0.75), rgba(255, 255, 255, 0));
+  /* filter: blur(3px); */
+  width: 80px;
+  height: 4px;
+  /* transform: rotate(90deg); */
+  /* overflow: hidden; */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.line-svg1 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M1 0H0V298H1V0Z");
+    animation: followpath 3s linear infinite;
+    border: 0;
+ 
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+    /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    /* overflow: hidden; */
+  }
+
+  .line-svg20 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M1 0H0V298H1V0Z");
+    /* animation: followpath 3s linear infinite; */
+    border: 0;
+ 
+    background: linear-gradient(to right, rgba(13, 43, 162, 0), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+    /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    transform: rotate(90deg);
+    /* overflow: hidden; */
+    margin-left: 5rem;
+  }
+  
+  
+  
+  
+  @keyframes followpath {
+    0% {
+      opacity: 1;
+      offset-distance: 0%;
+    }50% {
+      opacity: 0.8;
+      offset-distance: 25%;
+    }
+  
+    100% {
+      opacity: 0;
+      offset-distance: 50%;
+    }
+  }
+
+
+
+  .line-svg2 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M85 0H84V298H85V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+
+  .line-svg3 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M102 0H101V353H102V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+
+  .line-svg4 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M185 0H184V353H185V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+  .line-svg5 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M201 0H200V478H201V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+
+  .line-svg6 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M284 0H283V478H284V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+  .line-svg7 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M302 0H301V586H302V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+  .line-svg8 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M385 0H384V586H385V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+  .line-svg9 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M401 0H400V586H401V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+
+  .line-svg10 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M484 0H483V586H484V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+  .line-svg11 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M501 0H500V478H501V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  
+
+
+  .line-svg12 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M584 0H583V478H584V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+  /* M284 0H283V478H284V0Z */
+  
+
+
+
+
+
+  
+  .line-svg15 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("  M602 0H601V353H602V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+
+  
+  .line-svg16 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M685 0H684V353H685V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+
+
+  
+  .line-svg17 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M701 0H700V298H701V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }
+
+
+  
+  .line-svg18 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    offset-path: path("M785 0H784V298H785V0Z");
+    animation: followpath 3s linear infinite;
+    background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(12, 36, 72, 0.75), rgba(255, 255, 255, 0));
+      /* filter: blur(3px); */
+    width: 80px;
+    height: 4px;
+    /* transform: rotate(90deg); */
+    overflow: hidden;
+  }

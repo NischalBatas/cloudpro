@@ -5,6 +5,7 @@ import React, { useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import "./casestudy.css";
 import { motion,useInView } from "framer-motion";
+
 const CaseStudy = () => {
   const ref=useRef(null)
   const isInView=useInView(ref,{once:true})

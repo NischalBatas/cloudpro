@@ -1,9 +1,11 @@
 "use client";
+import ParticleBackground from "@/components/particles/particleBackground";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import BackgroundImage from "./BackgroundImage";
 
 const Introduction = () => {
   const router = useRouter();
@@ -13,17 +15,19 @@ const Introduction = () => {
   };
   return (
     <>
-      <div className="main-container pb-24 md:pb-40 relative">
-        <div
+    <ParticleBackground/>
+      <div className="main-container pb-20 md:pb-40 relative">
+      {/* <div
           className="intro-image top-[-60px] w-full h-[794px] absolute bg-no-repeat bg-center"
           style={{
-            backgroundImage: "url('/Image/background3.svg')",
+            backgroundImage: "url('/path.svg')",
             zIndex: "-1",
           }}
-        ></div>
-        <div className="pt-44 z-20 px-3">
+        ></div> */}
+      <BackgroundImage/>
+        <div className="pt-48 z-20 px-3">
           <div className="flex md:justify-center items-center md:text-center">
-            <p className="w-[327px] md:w-8/12 text-[24px] md:text-[40px] font-bold text-white">
+            <p className="w-[327px] md:w-8/12 text-[24px] md:text-[40px] md:leading-[2.99rem] font-bold text-white">
               Data, AI and Software Cloud Services Consultant
             </p>
           </div>

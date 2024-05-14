@@ -8,6 +8,13 @@ import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
 import ProgressBar from "@/components/Animation/ProgressBar";
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+
+
+const client = new ApolloClient({
+  uri: 'https://blogscloudproai-7a4c2b.ingress-erytho.ewp.live/graphql',
+  cache: new InMemoryCache(),
+});
 
 const ProtectedLayout = ({ children }) => {
   return (
@@ -19,6 +26,7 @@ const ProtectedLayout = ({ children }) => {
     //   scaling="95%"
     // >
    <>
+   <ApolloProvider client={client}>
    <ProgressBar/>
       {/* <Header /> */}
       <Navbar />
@@ -27,7 +35,7 @@ const ProtectedLayout = ({ children }) => {
         {children}
         <Footer />
         <ScrollToTop top='40' component={<FaArrowUp />} className='scroll_top' smooth width='15' height="15"/>
-        
+        </ApolloProvider>
    </>
     // </Theme>
   );

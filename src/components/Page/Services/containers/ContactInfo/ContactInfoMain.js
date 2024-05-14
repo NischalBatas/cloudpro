@@ -27,14 +27,14 @@ const ContactInfoMain = () => {
           <div className="flex items-center flex-wrap gap-3 lg:w-96 mt-4">
             <button
               onClick={() => {
-                handleClick("/contactus");
+                handleClick("/contactus?tab=tab1");
               }}
               className="bg-black text-white shadow-2xl px-6 py-2 rounded font-medium"
             >
               Contact Us
             </button>
             <Link
-              href="/contactus"
+              href="/contactus?tab=tab2"
               className="flex gap-1 text-white hover:opacity-80"
             >
               Book a Free Call <MdOutlineArrowOutward />

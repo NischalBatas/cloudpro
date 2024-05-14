@@ -4,8 +4,12 @@ import React from "react";
 import "./contactus.css";
 import Image from "next/image";
 import MessageBox from "./content/MessageBox";
+import { useSearchParams } from "next/navigation";
 
 const ContactUs = () => {
+  const searchParams = useSearchParams()
+  const paramsData=searchParams.get('tab')
+  console.log("title",paramsData)
   return (
     <div className="navbar-main mb-24 pt-24 md:pt-28">
         <div className="main-container ">
@@ -19,9 +23,8 @@ const ContactUs = () => {
             We love to sit down and talk about ideas. Let‘s get your project up
             and running. Get in touch for a tech consultation today.
           </p>
-       
       </div>
-        <MessageBox/>
+        <MessageBox selectTab={paramsData}/>
    
       </div>
       

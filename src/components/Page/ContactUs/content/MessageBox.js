@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 
 
-const MessageBox = () => {
+const MessageBox = ({selectTab}) => {
   const [formData,setFormData]=useState({
     fullName:'',
     email:'',
@@ -52,7 +52,7 @@ const MessageBox = () => {
   
 
   return (
-    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue="tab1">
+    <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue={`${selectTab}`}>
     <Tabs.List className="TabsList1 text-[20px] md:text-[32px]" aria-label="Manage your account">
       <Tabs.Trigger className="TabsTrigger1 " value="tab1">
         Message

@@ -19,7 +19,7 @@ const MobileNavigation = () => {
   return (
     <div className="hidden navbar-main-group navbar-main-group4 fixed w-full py-2">
       <div className="NavigationMenuRoot4 navbar-main relative">
-        <div className="NavigationMenuList4 w-full">
+        <div className="NavigationMenuList4 w-full ">
           <div className="">
             <Link href="/">
               <Image

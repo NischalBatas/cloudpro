@@ -46,7 +46,7 @@ const Navbar = () => {
               }`}
               href="/casestudy"
             >
-              Case Study
+              Case Studies
             </NavigationMenu.Link>
             <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${

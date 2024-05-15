@@ -89,34 +89,34 @@ import { useQuery } from "@apollo/client";
       
 
 const CaseDetails = ({props}) => {
-  // useEffect(() => {
-  //   const handleClick = (e) => {
-  //     e.preventDefault();
+  useEffect(() => {
+    const handleClick = (e) => {
+      e.preventDefault();
 
-  //     const targetId = e.target.getAttribute('href').substring(1); // Remove the '#'
-  //     const targetElement = document.getElementById(targetId);
+      const targetId = e.target.getAttribute('href').substring(1); // Remove the '#'
+      const targetElement = document.getElementById(targetId);
 
-  //     if (targetElement) {
-  //       const margin = 50; // Adjust this value as requirement
-  //       window.scrollTo({
-  //         top: targetElement.offsetTop - margin,
-  //         behavior: 'smooth'
-  //       });
-  //     }
-  //   };
+      if (targetElement) {
+        const margin = 50; // Adjust this value as requirement
+        window.scrollTo({
+          top: targetElement.offsetTop - margin,
+          behavior: 'smooth'
+        });
+      }
+    };
 
-  //   const anchors = document.querySelectorAll('.tabs_main_service a');
-  //   anchors.forEach(anchor => {
-  //     anchor.addEventListener('click', handleClick);
-  //   });
+    const anchors = document.querySelectorAll('.tabs_main_service a');
+    anchors.forEach(anchor => {
+      anchor.addEventListener('click', handleClick);
+    });
 
-  //   // Clean up the event listener when the component unmounts
-  //   return () => {
-  //     anchors.forEach(anchor => {
-  //       anchor.removeEventListener('click', handleClick);
-  //     });
-  //   };
-  // }, []); //
+    // Clean up the event listener when the component unmounts
+    return () => {
+      anchors.forEach(anchor => {
+        anchor.removeEventListener('click', handleClick);
+      });
+    };
+  }, []); //
 
   // console.log("new data",props)
   // console.log("new data2",props.params.slug)

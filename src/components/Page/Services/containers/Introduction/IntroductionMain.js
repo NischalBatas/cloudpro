@@ -13,8 +13,8 @@ const IntroductionMain = ({content}) => {
     <div className="pb-16 relative w-full h-[680px]">
       {content.map((item, index) => {
         return (
-          <>
-            <div key={index}
+          <div key={index}>
+            <div
               className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
               style={{
                 // filter: "blur(5px)",
@@ -43,7 +43,7 @@ const IntroductionMain = ({content}) => {
                 <div>
                   <button
                     onClick={() => {
-                      onHandleSubmit("/contactus");
+                      onHandleSubmit("/contactus?tab=tab1");
                     }}
                     className="service_main_button"
                   >
@@ -52,7 +52,7 @@ const IntroductionMain = ({content}) => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         );
       })}
     </div>

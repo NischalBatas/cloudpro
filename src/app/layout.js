@@ -8,7 +8,7 @@ import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.
 import "../../static/resources/animate.css-main/animate.css";
 import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
-import { Suspense } from "react";
+
 
 const inter = Inter({ subsets: ["latin"] });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <link rel="shortcut icon" href="/favicon.png" />
-        <Suspense>{children}</Suspense>
+        {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
         <Script src="../../static/resources/Magnific-Popup-master/dist/jquery.magnific-popup.js"></Script>

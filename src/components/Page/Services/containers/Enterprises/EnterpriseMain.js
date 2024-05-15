@@ -21,16 +21,16 @@ const EnterpriseMain = ({content}) => {
           <Tabs.List className="TabsList2" aria-label="Manage your account">
             {content.data.map((item, index) => {
               return (
-                <>
+                <div key={index}>
                   <Tabs.Trigger
-                    key={index}
+                    
                     className="TabsTrigger2"
                     value={`tab${item.id}`}
                   >
                     {item.title}
                   </Tabs.Trigger>
                   <div className="hr-line"></div>
-                </>
+                </div>
               );
             })}
           </Tabs.List>

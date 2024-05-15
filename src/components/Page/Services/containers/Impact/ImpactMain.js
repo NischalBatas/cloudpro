@@ -6,7 +6,7 @@ const ImpactMain = ({ content }) => {
   return (
     <div className="navbar-main bg-cloudBtn2 py-16 text-black">
       <div className="main-container">
-        <div className="wow animate animate__fadeInUp" data-wow-offset="10" data-wow-delay="5s">
+        <div>
           <div className="text-[20px] md:text-[24px] ">
             <span className="font-semibold ">Why</span> {content.title}
           </div>

@@ -7,7 +7,7 @@ import Banner from "./Banner";
 
 const Footer = () => {
   return (
-    <div className="text-white  px-5">
+    <div className="text-white  px-5 pt-10">
       <div className="flex flex-col gap-4 md:gap-1">
         {/* <Contact /> */}
         <Banner/>

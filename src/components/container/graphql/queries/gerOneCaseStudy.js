@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
-export const GET_CASE_STUDY=gql`
-query caseStudies {
-  caseStudies(where: {orderby: {field: DATE, order: DESC}}) {
+export const GET_ONE_CASE_STUDY=gql`
+query caseStudies($userId: ID!) {
+  caseStudies(id:$userId) {
     edges {
       node {
         casestudyfieldgroud {
@@ -34,4 +34,4 @@ query caseStudies {
       }
     }
   }
-}`;
+}` ;

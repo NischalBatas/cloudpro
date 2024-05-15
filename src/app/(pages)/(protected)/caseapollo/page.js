@@ -18,12 +18,19 @@ const Page = () => {
     <div className="pt-40">
     {data.caseStudies.edges.map((item, index) => (
        <div key={index}>
-        <p>{JSON.parse(item.node.casestudyfieldgroud.solution)}</p>
-         <p >{JSON.parse(item.node.casestudyfieldgroud.impactandresult).map((item2,index)=>{
+        <li>{item.node.casestudyfieldgroud.caseStudySector}</li>
+        <li>{item.node.casestudyfieldgroud.caseStudySectorDescription}</li>
+
+        {/* <li>{item.node.casestudyfieldgroud.solution.map((item2,index)=>{
+          return(
+            <ol>{item2.title}</ol>
+          )
+        })}</li> */}
+          {/* <p >{JSON.parse(item.node.casestudyfieldgroud.impactandresult).map((item2,index)=>{
             return(
                 <p>{item2.title}</p>
             )
-        })}</p>
+        })}</p> */}
        </div>
     ))}
 </div>

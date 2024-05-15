@@ -31,7 +31,7 @@ const ProtectedLayout = ({ children }) => {
     <>
       {children}
 
-      <ContactInfoMain />
+      {/* <ContactInfoMain /> */}
     </>
   );
 };

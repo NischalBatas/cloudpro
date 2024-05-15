@@ -9,6 +9,7 @@ import { FaArrowUp } from "react-icons/fa";
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
 import ProgressBar from "@/components/Animation/ProgressBar";
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { Suspense } from "react";
 
 
 const client = new ApolloClient({
@@ -25,7 +26,7 @@ const ProtectedLayout = ({ children }) => {
     //   radius="large"
     //   scaling="95%"
     // >
-   <>
+   <Suspense>
    <ApolloProvider client={client}>
    <ProgressBar/>
       {/* <Header /> */}
@@ -36,7 +37,7 @@ const ProtectedLayout = ({ children }) => {
         <Footer />
         <ScrollToTop top='40' component={<FaArrowUp />} className='scroll_top' smooth width='15' height="15"/>
         </ApolloProvider>
-   </>
+   </Suspense>
     // </Theme>
   );
 };

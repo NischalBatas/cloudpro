@@ -7,7 +7,7 @@ import Image from "next/image";
 import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
 const FooterContent = () => {
   return (
-    <div className="footer_width footer_content grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-10 lg:gap-4 py-12">
+    <div className="footer_width footer_content grid md:grid-cols-2 lg:grid-cols-4 place-content-between gap-10 lg:gap-4 py-12 pt-20">
       <div className="flex flex-col gap-[16px]">
         <div className="text-[#FFFFFF] tracking-[8%] text-[16px] text-sm md:text-base uppercase">
           we are cloudpro ai

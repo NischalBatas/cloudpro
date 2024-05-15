@@ -3,12 +3,14 @@ import FooterContent from "./FooterContent";
 import FooterCopyRight from "./FooterCopyRight";
 import Contact from "./Contact";
 import FooterLogo from "./FooterLogo";
+import Banner from "./Banner";
 
 const Footer = () => {
   return (
     <div className="text-white  px-5">
       <div className="flex flex-col gap-4 md:gap-1">
-        <Contact />
+        {/* <Contact /> */}
+        <Banner/>
         {/* <div className="w-full bg-cloud3" style={{ height: "1px" }}></div> */}
         <FooterContent />
         {/* <div className="w-full bg-cloud3" style={{ height: "1px" }}></div> */}

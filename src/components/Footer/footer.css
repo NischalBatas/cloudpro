@@ -20,3 +20,31 @@
   color: #fff;
 
 }
+
+
+
+  .footer_contanct_user_image{
+    max-width: 690px;
+    width: 100%;
+    background-color:#3654b4;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 0 3.2rem 0 0;
+  }
+  
+
+@media only screen and (max-width:874px){
+  .footer_contanct_user_image{
+    max-width: 990px;
+    width: 100%;
+    background-color:#3654b4;
+    clip-path:none;
+    position: relative;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 16px;
+    padding: 0 0.5rem;
+  }
+  
+}

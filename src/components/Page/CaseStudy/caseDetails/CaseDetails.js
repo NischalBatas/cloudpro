@@ -64,3 +64,148 @@ const CaseDetails = () => {
 };
 
 export default CaseDetails;
+
+
+// "use client"
+// import React, { useEffect, useState } from "react";
+
+// import BreadCrumb from "./Content/BreadCrumb";
+// import Introduction from "./Content/Introduction";
+// import BannerOne from "./Content/BannerOne";
+// import Solution from "./Content/Solution";
+// import { solution1 } from "@/db/casestudy/content/solution";
+// import CaseStudyContent from "./Content/CaseStudyContent";
+// import { caseStudy } from "@/db/casestudy/casestudy";
+// import Conclusion from "./Content/Conclusion";
+// import BannerTwo from "./Content/BannerTwo";
+// import Technology from "./Content/Technology/Technology";
+// import { impactAndResult1 } from "@/db/casestudy/content/impactAndResult";
+// import { technology1 } from "@/db/casestudy/content/technology";
+// import Link from "next/link";
+// import Tabs from "./Content/Tabs";
+// import { useRouter } from "next/navigation";
+// import { GET_ONE_CASE_STUDY } from "@/components/container/graphql/queries/gerOneCaseStudy";
+// import { useQuery } from "@apollo/client";
+      
+
+// const CaseDetails = ({props}) => {
+//   // useEffect(() => {
+//   //   const handleClick = (e) => {
+//   //     e.preventDefault();
+
+//   //     const targetId = e.target.getAttribute('href').substring(1); // Remove the '#'
+//   //     const targetElement = document.getElementById(targetId);
+
+//   //     if (targetElement) {
+//   //       const margin = 50; // Adjust this value as requirement
+//   //       window.scrollTo({
+//   //         top: targetElement.offsetTop - margin,
+//   //         behavior: 'smooth'
+//   //       });
+//   //     }
+//   //   };
+
+//   //   const anchors = document.querySelectorAll('.tabs_main_service a');
+//   //   anchors.forEach(anchor => {
+//   //     anchor.addEventListener('click', handleClick);
+//   //   });
+
+//   //   // Clean up the event listener when the component unmounts
+//   //   return () => {
+//   //     anchors.forEach(anchor => {
+//   //       anchor.removeEventListener('click', handleClick);
+//   //     });
+//   //   };
+//   // }, []); //
+
+//   // console.log("new data",props)
+//   // console.log("new data2",props.params.slug)
+//   // let slug=props.params.slug
+//   // const { loading, error, data } = useQuery(GET_ONE_CASE_STUDY, {variables: { slug },});  
+//   // if (loading) return <p>Loading...</p>;
+//   // if (error) 
+//   //   return <p>Error: {error.message}</p>;
+
+//   // if (!data || !data.caseStudies || !data.caseStudies.edges) {
+//   //     return <p>No data available.</p>;
+//   // }
+
+//   // console.log("New data4",data)
+//   // const caseStudies = data.caseStudies.edges;
+//   const [caseData, setCaseData] = useState(null);
+//   const [loading,setLoading]=useState(true)
+//   let slugs=props.params.slug
+//   useEffect(() => {
+//     fetch('https://blogscloudproai-7a4c2b.ingress-erytho.ewp.live/graphql', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({
+//         query: `
+//         query caseStudyBySlug($slug: String!) {
+//           casestudyBy(slug: $slug) {
+//                 casestudyfieldgroud {
+//                   conclusion
+//                   introduction
+//                   readTime
+//                   solution
+//                   technology
+//                   uploadDate
+//                   herotext
+//                   impactandresult
+//                   backgroundImage {
+//                     node {
+//                       altText
+//                       sourceUrl
+//                     }
+//                   }
+//                   caseStudyImage {
+//                     node {
+//                       altText
+//                       sourceUrl
+//                     }
+//                   }
+//                   caseStudySector
+//                   caseStudySectorDescription
+//                 }
+//                 date
+//                 title
+               
+          
+//           }
+//         }
+//       `, variables: { slug: 'introduction' },
+//       }),
+//     })
+//       .then((res) => res.json())
+//       .then((data) => {
+//         console.log(data);
+//         setCaseData(data);
+//         setLoading(false)
+//       })
+//       .catch((error) => {
+//         console.error('Error fetching data:', error);
+//         // Optionally, set an error state here for user feedback
+//       });
+//   }, []);
+
+//   return (
+//     <div className="">
+//       <BreadCrumb caseData={caseData.data.casestudyBy}/>
+//       {caseData.data.casestudyBy.title}
+//       <Tabs/>
+//       <Introduction />
+//       <BannerOne />
+//       <Solution content={solution1} />
+//       <Technology content={technology1}/>
+//       <BannerTwo content={impactAndResult1}/>
+//       <Conclusion />
+
+//       <div className="line-between-content w-full h-[1px] bg-[#F2F2F2]"></div>
+//       <CaseStudyContent content={caseStudy} />
+//     </div>
+//   );
+// };
+
+// export default CaseDetails;

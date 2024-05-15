@@ -30,6 +30,22 @@ export default function RootLayout({ children }) {
         <Script src="../../static/resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></Script>
 
         <Script src="../../static/resources/WOW-master/dist/wow.js"></Script>
+        <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-LMLSG0PP51"
+></script>
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+      if (typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'G-LMLSG0PP51');
+      }
+    `,
+  }}
+></script>
       </body>
     </html>
   );

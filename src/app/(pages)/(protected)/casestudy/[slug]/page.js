@@ -1,10 +1,10 @@
 import CaseDetails from '@/components/Page/CaseStudy/caseDetails/CaseDetails'
 import React from 'react'
 
-const page = () => {
+const page = (props) => {
   return (
     <div>
-        <CaseDetails/>
+        <CaseDetails props={props}/>
     </div>
   )
 }

@@ -1,37 +1,36 @@
 import { gql } from '@apollo/client';
 
-export const GET_ONE_CASE_STUDY=gql`
-query caseStudies($userId: ID!) {
-  caseStudies(id:$userId) {
-    edges {
-      node {
-        casestudyfieldgroud {
-          conclusion
-          introduction
-          readTime
-          solution
-          technology
-          uploadDate
-          herotext
-          impactandresult
-          backgroundImage {
-            node {
-              altText
-              sourceUrl
+export const GET_ONE_CASE_STUDY = gql`
+  query caseStudyBySlug($slug: String!) {
+    casestudyBy(slug: $slug) {
+          casestudyfieldgroud {
+            conclusion
+            introduction
+            readTime
+            solution
+            technology
+            uploadDate
+            herotext
+            impactandresult
+            backgroundImage {
+              node {
+                altText
+                sourceUrl
+              }
             }
-          }
-          caseStudyImage {
-            node {
-              altText
-              sourceUrl
+            caseStudyImage {
+              node {
+                altText
+                sourceUrl
+              }
             }
+            caseStudySector
+            caseStudySectorDescription
           }
-          caseStudySector
-          caseStudySectorDescription
-        }
-        date
-        title
-      }
+          date
+          title
+         
+    
     }
   }
-}` ;
+`;

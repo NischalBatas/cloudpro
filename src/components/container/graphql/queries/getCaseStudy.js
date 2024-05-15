@@ -31,6 +31,8 @@ query caseStudies {
         }
         date
         title
+        casestudyId
+        slug
       }
     }
   }

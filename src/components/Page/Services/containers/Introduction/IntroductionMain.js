@@ -13,9 +13,9 @@ const IntroductionMain = ({content}) => {
     <div className="pb-16 relative w-full h-[680px]">
       {content.map((item, index) => {
         return (
-          <div key={index}>
-            <div
-              className="w-full absolute bg-no-repeat bg-center bg-cover h-[680px] z-10"
+          < >
+            <div key={index}
+              className="w-full absolute bg-no-repeat bg-center bg-cover h-full z-10"
               style={{
                 // filter: "blur(5px)",
                 zIndex: "-1",
@@ -52,7 +52,7 @@ const IntroductionMain = ({content}) => {
                 </div>
               </div>
             </div>
-          </div>
+          </>
         );
       })}
     </div>

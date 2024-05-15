@@ -1,7 +1,7 @@
 import SolutionSlider from "@/components/SplideSlider/SolutionSlider";
 import React from "react";
 import '../../casestudy.css'
-const Solution = ({ content }) => {
+const Solution = ({ content,caseData }) => {
   return (
     <div className="navbar-main py-10 md:py-16" id="solution_section">
       <div className="main-container">
@@ -25,7 +25,10 @@ const Solution = ({ content }) => {
             );
           })}
         </div> */}
-         <SolutionSlider content={content}/>
+         {caseData ?
+         <SolutionSlider caseData={caseData} content={content}/>
+        : 
+        (<p>Loading...</p>)}
       </div>
     </div>
   );

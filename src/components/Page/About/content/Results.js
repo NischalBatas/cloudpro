@@ -23,8 +23,8 @@ const Results = () => {
                 <div className=" flex flex-col justify-end text-right h-full ">
                   <div className="text-white px-4">
                     <span
-                      className="text-2xl md:text-5xl font-semibold num"
-                      data-val={`${item.ratio}`}
+                      className="text-2xl md:text-5xl font-semibold"
+                      
                     >
                       {item.ratio}
                     </span>

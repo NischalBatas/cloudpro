@@ -1,12 +1,14 @@
 import React from "react";
 import "./table.css";
-const TechnologyContent = ({ content }) => {
+const TechnologyContent = ({ content,caseData }) => {
+  const TechnologyDetails=JSON.parse(caseData.casestudyfieldgroud.technology)
+  console.log(TechnologyDetails)
   return (
     <div className="navbar-main bg-[#EDF5FB] text-black pt-5 pb-16">
       <div className="main-container">
         <table>
           <tbody>
-            {content.map((item, index) => {
+            {TechnologyDetails.map((item, index) => {
               return (
                 <tr key={index}>
                   <td

@@ -3,7 +3,7 @@ import React from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-const ImpactAndResultSlider = ({ content }) => {
+const ImpactAndResultSlider = ({ content,caseData }) => {
   const splideOptions = {
     type: "loop",
     perPage: 1,
@@ -34,18 +34,28 @@ const ImpactAndResultSlider = ({ content }) => {
       },
     },
   };
-
+  console.log('Impact',caseData.casestudyfieldgroud.impactandresult)
+  const ImpactandResult=JSON.parse(caseData.casestudyfieldgroud.impactandresult)
+  console.log("NewData3",ImpactandResult)
   return (
+<>
+{caseData ?
     <Splide options={splideOptions} className="mx-auto overflow-hidden mt-2 md:mt-4 pb-5">
-      {content.map((item, index) => (
-        <SplideSlide
-          key={index}
-          className="flex flex-col justify-center items-center font-bold text-[24px] md:text-[32px] md:leading-[48px]"
-        >
-         <p className="max-w-[589px]">{item.title}</p> 
-        </SplideSlide>
-      ))}
-    </Splide>
+   
+    {ImpactandResult.map((item, index) => (
+      <SplideSlide
+        key={index}
+        className="flex flex-col justify-center items-center font-bold text-[24px] md:text-[32px] md:leading-[48px]"
+      >
+       <p className="max-w-[589px]">{item.title}</p> 
+      </SplideSlide>
+    ))}
+  </Splide>
+
+  :
+  (<p className="text-red-600 z-50">Loading...</p>)
+  }
+  </>
   );
 };
 

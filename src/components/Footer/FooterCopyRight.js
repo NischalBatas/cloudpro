@@ -18,7 +18,7 @@ const FooterCopyRight = () => {
       <div className="flex  items-center gap-[18px] text-cloud2 text-[24px]">
         <Link href="#"><FaXTwitter /></Link>
         <Link href="#"><FaLinkedin /></Link>
-        <Link href="#"><FaInstagram /></Link>
+        {/* <Link href="#"><FaInstagram /></Link> */}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ const BackgroundImage = () => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       zIndex: "-1",
+      filter:'brightness(150%)'
     }}
   >
      <div className="line-svg_main" ></div>

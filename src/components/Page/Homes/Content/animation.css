@@ -98,7 +98,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M102 0H101V353H102V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 4s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -129,7 +129,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M201 0H200V478H201V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 5s linear infinite;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -160,7 +160,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M302 0H301V586H302V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 4s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -206,7 +206,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M484 0H483V586H484V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 4s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -221,7 +221,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M501 0H500V478H501V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 3s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -237,7 +237,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M584 0H583V478H584V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 4s linear infinite;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -289,7 +289,7 @@ padding: 20rem;
     top: 0;
     bottom: 0;
     offset-path: path("M701 0H700V298H701V0Z");
-    animation: followpath 3s linear infinite;
+    animation: followpath 3s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;
@@ -304,8 +304,8 @@ padding: 20rem;
     position: relative;
     top: 0;
     bottom: 0;
-    offset-path: path("M785 0H784V298H785V0Z");
-    animation: followpath 3s linear infinite;
+    offset-path: path("M785 0H784V298H785V0Z ");
+    animation: followpath 3s linear infinite reverse;
     background: linear-gradient(to right, rgb(30 69 221 / 0%), rgba(34, 74, 131, 0.75), rgba(255, 255, 255, 0));
       /* filter: blur(3px); */
     width: 80px;

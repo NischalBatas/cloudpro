@@ -12,9 +12,20 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
-export const metadata = {
-  title: "CloudPro.AI",
-  description: "Data, AI and Software Cloud Services Consultant",
+// export const metadata = {
+//   title: "CloudPro.AI",
+//   description: "Data, AI and Software Cloud Services Consultant",
+// };
+
+
+ 
+export const metadata= {
+  title: {
+    template: '%s | CloudPro.AI',
+    default: 'CloudPro.AI',
+  },
+  description: 'Data, AI and Software Cloud Services Consultant',
+  metadataBase: new URL('https://photos.google.com/share/AF1QipMWUcH0Wf38VEBPT5Z1NXfQcVqHYYFXeXot-UsyjcmgYy8RKgJUxBL1iq9iKFDtCQ/photo/AF1QipOLyMlHCYV7WpzAiwry9V9piTDDnOZqTKoSpc4Q?key=S0REYnRONmx4QlZCS0lVR2FkQ211MWk1UnBhYWdR'),
 };
 
 export default function RootLayout({ children }) {

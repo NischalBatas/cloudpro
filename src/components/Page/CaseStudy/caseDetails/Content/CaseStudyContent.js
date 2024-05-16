@@ -33,7 +33,7 @@ const CaseStudyContent = ({content}) => {
       {contents.map((item, index) => {
         return (
          <motion.div  key={index} variants={items}>
-           <Link href='/casestudy/1' className="">
+           <Link href='/casestudy' className="">
             <div  className="md:max-w-[324px] casestudy_product_container">
               <div
                 className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"

@@ -47,7 +47,7 @@ const ImpactAndResultSlider = ({ content,caseData }) => {
         key={index}
         className="flex flex-col justify-center items-center font-bold text-[24px] md:text-[32px] md:leading-[48px]"
       >
-       <p className="max-w-[589px]">{item.title}</p> 
+       <p className="max-w-[589px] mb-6">{item.title}</p> 
       </SplideSlide>
     ))}
   </Splide>

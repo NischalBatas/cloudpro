@@ -12,27 +12,88 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
-// export const metadata = {
-//   title: "CloudPro.AI",
-//   description: "Data, AI and Software Cloud Services Consultant",
-// };
-
-
- 
-export const metadata= {
-  title: {
-    template: '%s | CloudPro.AI',
-    default: 'CloudPro.AI',
-  },
-  description: 'Data, AI and Software Cloud Services Consultant',
-  metadataBase: new URL('https://photos.google.com/share/AF1QipMWUcH0Wf38VEBPT5Z1NXfQcVqHYYFXeXot-UsyjcmgYy8RKgJUxBL1iq9iKFDtCQ/photo/AF1QipOLyMlHCYV7WpzAiwry9V9piTDDnOZqTKoSpc4Q?key=S0REYnRONmx4QlZCS0lVR2FkQ211MWk1UnBhYWdR'),
+export const metadata = {
+  title: "CloudPro.AI",
+  description: "Data, AI and Software Cloud Services Consultant",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+         <head>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+
+        <meta name="application-name" content="cloudproai" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="cloudproai" />
+        <meta name="description" content="Data, AI and Software Cloud Services Consultant" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="default" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="theme-color" content="default" />
+
+
+        <link rel="mask-icon" href="/Image/logo/logoblack.svg" color="#000" />
         <link rel="shortcut icon" href="/favicon.png" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://www.cloudpro.ai/" />
+        <meta name="twitter:title" content="cloudproai" />
+        <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
+
+        <meta
+          name="twitter:image"
+          content="https://www.cloudpro.ai/Image/logo/logoblack.svg"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="cloudproai" />
+        <meta property="og:description" content="Data, AI and Software Cloud Services Consultant" />
+        <meta property="og:site_name" content="cloudproai" />
+        <meta property="og:url" content="https://www.cloudpro.ai" />
+        <meta
+          property="og:image"
+          content="https://www.cloudpro.ai/Image/logo/logoblack.svg"
+        />
+
+<link rel="apple-touch-icon" href="/Image/logo/logoblack.svg" />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/Image/logo/logoblack.svg"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/Image/logo/logoblack.svg"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="167x167"
+          href="/Image/logo/logoblack.svg"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/Image/logo/logoblack.svg"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/Image/logo/logoblack.svg"
+        />
+        </head>
+      <body className={inter.className}>
+        
+        
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>

@@ -89,6 +89,9 @@ import { useQuery } from "@apollo/client";
       
 
 const CaseDetails = ({props}) => {
+  const [caseData, setCaseData] = useState(null);
+  const [loading,setLoading]=useState(true)
+
   useEffect(() => {
     const handleClick = (e) => {
       e.preventDefault();
@@ -116,24 +119,10 @@ const CaseDetails = ({props}) => {
         anchor.removeEventListener('click', handleClick);
       });
     };
-  }, []); //
+  }, [caseData]); //
 
-  // console.log("new data",props)
-  // console.log("new data2",props.params.slug)
-  // let slug=props.params.slug
-  // const { loading, error, data } = useQuery(GET_ONE_CASE_STUDY, {variables: { slug },});  
-  // if (loading) return <p>Loading...</p>;
-  // if (error) 
-  //   return <p>Error: {error.message}</p>;
 
-  // if (!data || !data.caseStudies || !data.caseStudies.edges) {
-  //     return <p>No data available.</p>;
-  // }
 
-  // console.log("New data4",data)
-  // const caseStudies = data.caseStudies.edges;
-  const [caseData, setCaseData] = useState(null);
-  const [loading,setLoading]=useState(true)
 
 
   useEffect(() => {

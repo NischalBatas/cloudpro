@@ -46,7 +46,7 @@ const CaseStudy = () => {
                 <div
                   className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
                   style={{
-                    backgroundImage: `url(${item.node.casestudyfieldgroud.caseStudyImage.node.sourceUrl})`,
+                    backgroundImage: `url(${item.node.casestudyfieldgroud.backgroundImage.node.sourceUrl})`,
                   }}
                 >
                   <div className="flex justify-between  px-4 pt-4  ">

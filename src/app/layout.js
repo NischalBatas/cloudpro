@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="default" />
 
 
-        <link rel="mask-icon" href="/Image/logo/logoblack.svg" color="#000" />
+        <link rel="mask-icon" href="/favicon.png" color="#000" />
         <link rel="shortcut icon" href="/favicon.png" />
 
         <meta name="twitter:card" content="summary" />
@@ -61,34 +61,34 @@ export default function RootLayout({ children }) {
           content="https://www.cloudpro.ai/Image/logo/logoblack.svg"
         />
 
-<link rel="apple-touch-icon" href="/Image/logo/logoblack.svg" />
+<link rel="apple-touch-icon" href="/favicon.png" />
         <link
           rel="apple-touch-icon"
           sizes="152x152"
-          href="/Image/logo/logoblack.svg"
+          href="/favicon.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/Image/logo/logoblack.svg"
+          href="/favicon.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="167x167"
-          href="/Image/logo/logoblack.svg"
+          href="/favicon.png"
         />
 
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/Image/logo/logoblack.svg"
+          href="/favicon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/Image/logo/logoblack.svg"
+          href="/favicon.png"
         />
         </head>
       <body className={inter.className}>

@@ -26,7 +26,7 @@ const BreadCrumb = ({caseData}) => {
     <div className="flex items-center justify-between gap-5 flex-wrap mt-28 pb-4">
       <div className="flex gap-6 text-[14px] text-[#BDBDBD]">
           <span>  {formattedDate}</span>
-          <span className="flex items-center gap-1"><FaRegClock /> {caseData.readTime} Read</span>
+          <span className="flex items-center gap-1"><FaRegClock /> {caseData.casestudyfieldgroud.readTime} Read</span>
       </div>
       <div className="flex gap-5 text-[18px] md:text-[22px]">
     <Link href='/' className="hover:bg-white hover:text-[#0073ae] rounded-md"><CiLinkedin /></Link>

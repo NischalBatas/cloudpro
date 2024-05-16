@@ -15,18 +15,18 @@ const TechnologyContent = ({ content,caseData }) => {
                     className="text-[16px] font-semibold leading-6"
                     data-label="Account"
                   >
-                    {item.title}
+                    {item.tool}
                   </td>
                   <td className="text-[14px] leading-6" data-label="Due Date">
                     <span className="font-semibold text-[14px] mr-1">
-                      Procedure:
+                    Description:
                     </span>
-                    {item.procedure}
+                    {item.description}
                   </td>
-                  <td className="text-[14px] leading-6" data-label="Amount">
+                  {/* <td className="text-[14px] leading-6" data-label="Amount">
                     <span className="font-semibold text-[14px] mr-1">Impact:</span>{" "}
                     {item.impact}
-                  </td>
+                  </td> */}
                 </tr>
               );
             })}

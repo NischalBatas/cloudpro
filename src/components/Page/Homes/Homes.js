@@ -17,11 +17,11 @@ import ParticleConfig from "@/components/particles/particleConfig";
 const Homes = () => {
   return (
     <div className="pt-20">
-  
+
 
       <Introduction />
       <Partners />
-      
+
       <Service />
       {/* <Features /> */}
       <Industries />

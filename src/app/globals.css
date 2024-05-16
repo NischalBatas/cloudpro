@@ -184,3 +184,46 @@ button:hover {
 #__next::-webkit-scrollbar-track {
   background: #d90505 !important;
 }
+
+.loader-main{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.loader {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  color: #4762b9;
+  animation: fill 1s ease-in infinite alternate;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::before , .loader::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  left: 48px;
+  top: 0;
+
+  animation: fill 0.9s ease-in infinite alternate;
+}
+
+.loader::after {
+  left: auto;
+  right: 48px;
+  animation-duration: 1.1s;
+}
+
+@keyframes fill {
+ 0% {  box-shadow: 0 0 0 2px inset }
+ 100%{ box-shadow: 0 0 0 10px inset }
+}
+  

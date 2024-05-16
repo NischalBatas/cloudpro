@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer/Footer";
 import Homes from "@/components/Page/Homes/Homes";
 import React, { useEffect, useState } from "react";
-import Loading from "./loading";
+
 
 
 const Home = () => {

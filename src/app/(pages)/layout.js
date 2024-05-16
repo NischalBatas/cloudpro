@@ -34,7 +34,7 @@ const ProtectedLayout = ({ children }) => {
       <MobileNavigation/>
      
         {children}
-        <Footer />
+  
         <ScrollToTop top='40' component={<FaArrowUp />} className='scroll_top' smooth width='15' height="15"/>
         </ApolloProvider>
    </Suspense>

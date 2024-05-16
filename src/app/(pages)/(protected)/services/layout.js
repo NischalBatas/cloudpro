@@ -1,4 +1,5 @@
 "use client"
+import Footer from "@/components/Footer/Footer";
 import ContactInfoMain from "@/components/Page/Services/containers/ContactInfo/ContactInfoMain";
 import { useEffect } from "react";
 
@@ -30,7 +31,7 @@ const ProtectedLayout = ({ children }) => {
   return (
     <>
       {children}
-
+      <Footer />
       {/* <ContactInfoMain /> */}
     </>
   );

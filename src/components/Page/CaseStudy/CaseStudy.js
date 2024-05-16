@@ -9,6 +9,7 @@ import { GET_CASE_STUDY } from "@/components/container/graphql/queries/getCaseSt
 import { useQuery } from "@apollo/client";
 import Loading from "./Loading";
 import Newsletter from "./caseDetails/Content/Newsletter";
+import Footer from "@/components/Footer/Footer";
 
 const CaseStudy = () => {
   const {loading,error,data}=useQuery(GET_CASE_STUDY)
@@ -84,7 +85,7 @@ const CaseStudy = () => {
     </div>
 
     <Newsletter/>
-
+      <Footer/>
 
   </div>
   : (<Loading/>)}

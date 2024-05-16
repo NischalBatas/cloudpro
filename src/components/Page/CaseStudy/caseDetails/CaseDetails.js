@@ -88,6 +88,7 @@ import { GET_ONE_CASE_STUDY } from "@/components/container/graphql/queries/gerOn
 import { useQuery } from "@apollo/client";
 import Loading from "./Loading";
 import Newsletter from "./Content/Newsletter";
+import Footer from "@/components/Footer/Footer";
       
 
 const CaseDetails = ({props}) => {
@@ -204,6 +205,7 @@ const CaseDetails = ({props}) => {
   <div className="line-between-content w-full h-[1px] bg-[#F2F2F2]"></div>
   <CaseStudyContent content={caseStudy} />
   <Newsletter/>
+  <Footer/>
       </>
 
 

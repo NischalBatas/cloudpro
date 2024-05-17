@@ -98,7 +98,7 @@ const Menu = ({title,pathname}) => {
             </div>
             <ul className="flex flex-col gap-3 text-[#ABABAB] text-sm">
               <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bi-reporting' ? 'active-menu' :''}`} href="/services/bi-reporting">BI Report and Dashboard</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/ad-hoc-reporting' ? 'active-menu' :''}`} href="/services/ad-hoc-reportin">Ad-Hoc Reporting Solutions</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/ad-hoc-reporting' ? 'active-menu' :''}`} href="/services/ad-hoc-reporting">Ad-Hoc Reporting Solutions</NavigationMenu.Link>
               <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/data-visualization' ? 'active-menu' :''}`} href="/services/data-visualization">Data Visualization Solution</NavigationMenu.Link>
             </ul>
           </div>

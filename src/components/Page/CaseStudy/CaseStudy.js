@@ -38,7 +38,7 @@ const CaseStudy = () => {
         {data.caseStudies.edges.map((item, index) => {
           return (
          <div  key={index}>
-             <Link href={`/casestudy/${item.node.slug}`} className="">
+             <Link href={`/case-studies/${item.node.slug}`} className="">
               <div
                
                 className="md:max-w-[324px] casestudy_product_container"

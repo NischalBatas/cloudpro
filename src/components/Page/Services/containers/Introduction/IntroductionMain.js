@@ -43,7 +43,7 @@ const IntroductionMain = ({content}) => {
                 <div>
                   <button
                     onClick={() => {
-                      onHandleSubmit("/contactus?tab=tab1");
+                      onHandleSubmit("/contact?action=message");
                     }}
                     className="service_main_button"
                   >

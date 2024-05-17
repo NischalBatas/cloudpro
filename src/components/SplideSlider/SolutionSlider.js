@@ -54,7 +54,7 @@ const SolutionSlider = ({content,caseData}) => {
             key={index}
             className="mt-5 flex flex-col justify-between bg-[#2A2A2A] max-w-[190px] min-h-[231px] rounded-lg p-3"
           >
-            <p className="text-right text-[14px] uppercase border-b-[1px] border-[#3B3B3B] pb-1">
+            <p className="text-[14px] uppercase border-b-[1px] border-[#3B3B3B] pb-1">
                {item.tool}
             </p>
             <p className="text-[#BBBBBB] text-[14px]">{item.description}</p>

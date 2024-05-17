@@ -4,7 +4,7 @@ import ImpactAndResultSlider from "@/components/SplideSlider/ImpactAndResultSlid
 const BannerTwo = ({ content,caseData }) => {
   return (
     <div id="impactandResults_section"
-      className="flex flex-col items-center justify-center text-center min-h-[250px] md:min-h-[375px]  bg-no-repeat bg-center bg-cover"
+      className="flex flex-col items-center justify-center text-center min-h-[250px] md:min-h-[375px]  bg-no-repeat bg-center bg-cover py-6"
       style={{
         // filter: "blur(2px)",
         zIndex: "-1",

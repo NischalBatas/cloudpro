@@ -38,7 +38,7 @@ const FooterContent = () => {
         </div>
         <div className="flex flex-col gap-[8px]">
 
-          <Link href='https://www.google.com/maps/place/584+Castro+St+Unit+3077,+San+Francisco,+CA+94114,+USA/@37.7595853,-122.4352523,21z/data=!4m6!3m5!1s0x808f7e1ad23d806f:0xab85d2863027897f!8m2!3d37.7596089!4d-122.4351014!16s%2Fg%2F11y2w86g_w?entry=ttu'>
+          <Link target="_blank" href='https://www.google.com/maps/place/584+Castro+St+Unit+3077,+San+Francisco,+CA+94114,+USA/@37.7595853,-122.4352523,21z/data=!4m6!3m5!1s0x808f7e1ad23d806f:0xab85d2863027897f!8m2!3d37.7596089!4d-122.4351014!16s%2Fg%2F11y2w86g_w?entry=ttu'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/1.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">

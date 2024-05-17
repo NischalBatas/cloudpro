@@ -29,7 +29,7 @@ const BreadCrumb = ({caseData}) => {
           <span className="flex items-center gap-1"><FaRegClock /> {caseData.casestudyfieldgroud.readTime} Read</span>
       </div>
       <div className="flex gap-5 text-[18px] md:text-[22px]">
-    <Link href='https://www.linkedin.com/company/cloudproai/' className="hover:bg-white hover:text-[#0073ae] rounded-md"><CiLinkedin /></Link>
+    <Link target="_blank" href='https://www.linkedin.com/company/cloudproai/' className="hover:bg-white hover:text-[#0073ae] rounded-md"><CiLinkedin /></Link>
     <Link href='#' className="hover:bg-white hover:text-[#0469de] rounded-full"><RiFacebookCircleLine /></Link>
     <Link href='#' className="hover:text-[black] "><RiTwitterXLine /></Link>
       </div>

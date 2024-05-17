@@ -10,18 +10,22 @@ const IntroductionMain = ({content}) => {
     router.push(path);
   };
   return (
-    <div className="pb-16 relative w-full h-[680px]">
+    <div className="pb-6 md:pb-16 relative w-full h-[680px]">
       {content.map((item, index) => {
         return (
-          < >
-            <div key={index}
+          <div key={index} className="w-full bg-no-repeat bg-center bg-cover h-full z-10" style={{
+            // filter: "blur(5px)",
+            zIndex: "-1",
+            backgroundImage: `url(${item.image})`,
+          }}>
+            {/* <div 
               className="w-full absolute bg-no-repeat bg-center bg-cover h-full z-10"
               style={{
                 // filter: "blur(5px)",
                 zIndex: "-1",
                 backgroundImage: `url(${item.image})`,
               }}
-            ></div>
+            ></div> */}
             <div
               className="navbar-main pt-24 h-full pb-4 "
               style={{ zIndex: "11" }}
@@ -52,7 +56,7 @@ const IntroductionMain = ({content}) => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         );
       })}
     </div>

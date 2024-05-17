@@ -37,6 +37,8 @@ const FooterContent = () => {
           Our Locations
         </div>
         <div className="flex flex-col gap-[8px]">
+
+          <Link href='https://www.google.com/maps/place/584+Castro+St+Unit+3077,+San+Francisco,+CA+94114,+USA/@37.7595853,-122.4352523,21z/data=!4m6!3m5!1s0x808f7e1ad23d806f:0xab85d2863027897f!8m2!3d37.7596089!4d-122.4351014!16s%2Fg%2F11y2w86g_w?entry=ttu'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/1.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -44,7 +46,9 @@ const FooterContent = () => {
               <p className="text-[#CED0D1]">San Francisco, CA</p>
             </div>
           </div>
+          </Link>
 
+<Link href='https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353471,85.3217124,16z/data=!3m1!4b1!4m10!1m2!2m1!1smaharajgunj+basundhara-+3+kathmandu+nepal!3m6!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212!15sCiltYWhhcmFqZ3VuaiBiYXN1bmRoYXJhLSAzIGthdGhtYW5kdSBuZXBhbJIBDG5laWdoYm9yaG9vZOABAA!16s%2Fg%2F1ym_k499k?entry=ttu'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/2.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -52,8 +56,10 @@ const FooterContent = () => {
               <p className="text-[#CED0D1]">Maharajgunj, Kathmandu</p>
             </div>
           </div>
+          </Link>
 
 
+          <Link href=''>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/3.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -61,8 +67,9 @@ const FooterContent = () => {
               <p className="text-[#CED0D1]">Ashfield, NSW 2131</p>
             </div>
           </div>
+          </Link>
 
-
+          <Link href=''>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/4.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -70,7 +77,7 @@ const FooterContent = () => {
               <p className="text-[#CED0D1]">050030, Medellín</p>
             </div>
           </div>
-
+    </Link>
 
         </div>
      
@@ -112,9 +119,9 @@ const FooterContent = () => {
           Contact us
         </div>
         <div className="flex flex-col gap-[16px] text-cloud2 text-[14px]">
-          <Link href="#" className="flex gap-2 items-center"><MdOutlinePhoneInTalk /> +1 415-393-2021</Link>
+          <div  className="flex gap-2 items-center"><MdOutlinePhoneInTalk /> +1 415-393-2021</div>
           <Link href='mailto:contact@cloudpro.ai' className="flex gap-2 items-center">  <MdOutlineMailOutline /> contact@cloudpro.ai</Link>
-          <Link
+          <div
             className="flex items-center gap-[16px] border rounded-full py-[0.3rem] px-4 max-w-max border-[#494949]"
             href="#"
           >
@@ -122,8 +129,8 @@ const FooterContent = () => {
               <IoLogoWhatsapp className="text-[#494949]" />
             </span>
             <span>Whatsapp</span>
-          </Link>
-          <Link
+          </div>
+          <div
             className="flex items-center gap-[16px] border rounded-full py-[0.3rem] px-4 max-w-max border-[#494949]"
             href="#"
           >
@@ -131,7 +138,7 @@ const FooterContent = () => {
               <FaViber className="text-[#717171]" />
             </span>
             <span>Viber</span>
-          </Link>
+          </div>
         </div>
       </div>
 

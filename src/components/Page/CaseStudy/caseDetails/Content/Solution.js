@@ -6,8 +6,8 @@ const Solution = ({ content,caseData }) => {
     <div className="navbar-main py-10 md:py-16" id="solution_section">
       <div className="main-container">
         <div>
-          <p className="text-[24px] font-semibold">Solution</p>
-          <p className="text-[14px] leading-6">Process Flow</p>
+          <p className="text-[24px] font-semibold">Technology</p>
+          {/* <p className="text-[14px] leading-6">Process Flow</p> */}
         </div>
         {/* <div className="grid grid-cols-2 md:flex md:justify-start gap-2 md:gap-4 flex-wrap">
           {content.map((item, index) => {

@@ -1,6 +1,8 @@
-"use client"
-import ParticleBackground from '@/components/particles/particleBackground';
-import React, { useEffect, useState } from 'react';
+"use client";
+import ParticleBackground from "@/components/particles/particleBackground";
+import React from "react";
+
+
 
 const Page = () => {
   // const [caseData, setCaseData] = useState(null);
@@ -59,6 +61,8 @@ const Page = () => {
 
   return (
     <div className="pt-20">
+      <h1>This is our Blog</h1>
+
       {/* {caseData ? (
         <div>
           {caseData.data.caseStudies.edges.map((item, index) => (
@@ -71,11 +75,6 @@ const Page = () => {
       ) : (
         <p>Loading...</p>
       )} */}
-
-
-    
-  
-      
     </div>
   );
 };

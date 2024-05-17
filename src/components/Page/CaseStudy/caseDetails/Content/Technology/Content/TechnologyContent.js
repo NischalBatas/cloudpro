@@ -1,7 +1,7 @@
 import React from "react";
 import "./table.css";
 const TechnologyContent = ({ content,caseData }) => {
-  const TechnologyDetails=JSON.parse(caseData.casestudyfieldgroud.technology)
+  const TechnologyDetails=JSON.parse(caseData.casestudyfieldgroud.solution)
   console.log(TechnologyDetails)
   return (
     <div className="navbar-main bg-[#EDF5FB] text-black pt-5 pb-16">
@@ -15,13 +15,13 @@ const TechnologyContent = ({ content,caseData }) => {
                     className="text-[16px] font-semibold leading-6"
                     data-label="Account"
                   >
-                    {item.tool}
+                    {item.step}
                   </td>
                   <td className="text-[14px] leading-6" data-label="Due Date">
                     <span className="font-semibold text-[14px] mr-1">
                     Description:
                     </span>
-                    {item.description}
+                    {item.title}
                   </td>
                   {/* <td className="text-[14px] leading-6" data-label="Amount">
                     <span className="font-semibold text-[14px] mr-1">Impact:</span>{" "}

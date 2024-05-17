@@ -37,8 +37,9 @@ const SolutionSlider = ({content,caseData}) => {
       },
     },
   };
+
   console.log('Impact',caseData.casestudyfieldgroud.solution)
-  const SolutionDetails=JSON.parse(caseData.casestudyfieldgroud.solution)
+  const SolutionDetails=JSON.parse(caseData.casestudyfieldgroud.technology)
   if (!Array.isArray(SolutionDetails)) {
     console.error('ImpactandResult is not an array:',SolutionDetails);
     return null; // or display an error message
@@ -54,9 +55,9 @@ const SolutionSlider = ({content,caseData}) => {
             className="mt-5 flex flex-col justify-between bg-[#2A2A2A] max-w-[190px] min-h-[231px] rounded-lg p-3"
           >
             <p className="text-right text-[14px] uppercase border-b-[1px] border-[#3B3B3B] pb-1">
-              Step {item.step}
+               {item.tool}
             </p>
-            <p className="text-[#BBBBBB] text-[14px]">{item.title}</p>
+            <p className="text-[#BBBBBB] text-[14px]">{item.description}</p>
           </SplideSlide>
         );
       })}

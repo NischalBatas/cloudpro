@@ -16,7 +16,7 @@ const Calendar = () => {
     <>
      <Cal 
     calLink="cloudproai-contact/15min"
-    style={{width:"900px",height:"490px",overflow:"auto"}}
+    style={{maxWidth:"900px",minHeight:"490px",overflow:"auto"}}
     config={{layout: 'month_view'}}
   
     

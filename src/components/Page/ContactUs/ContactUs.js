@@ -8,7 +8,7 @@ import { useSearchParams } from "next/navigation";
 
 const ContactUs = () => {
   const searchParams = useSearchParams()
-  const paramsData=searchParams.get('tab')
+  const paramsData=searchParams.get('action')
   console.log("title",paramsData)
   return (
     <div className="navbar-main mb-24 pt-24 md:pt-28">

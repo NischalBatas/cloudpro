@@ -61,7 +61,7 @@ const MessageBox = ({selectTab}) => {
         Schedule a Call
       </Tabs.Trigger>
     </Tabs.List>
-    <Tabs.Content className="TabsContent1 flex justify-between flex-wrap gap-6 lg:flex-nowrap" value="tab1">
+    <Tabs.Content className="TabsContent1 flex justify-between flex-wrap gap-6 lg:flex-nowrap" value="message">
     <Form.Root className="FormRoot" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
@@ -181,7 +181,7 @@ const MessageBox = ({selectTab}) => {
 
 
 
-    <Tabs.Content className="TabsContent2" value="tab2">
+    <Tabs.Content className="TabsContent2" value="call">
       <Calendar/>
       {/* <Form.Root className="FormRoot mt-6" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">

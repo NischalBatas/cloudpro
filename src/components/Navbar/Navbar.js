@@ -59,7 +59,7 @@ const Navbar = () => {
             </NavigationMenu.Link>
             <button
               onClick={() => {
-                onHandleSubmit("/contact?tab=tab1");
+                onHandleSubmit("/contact?action=message");
               }}
               className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium"
             >

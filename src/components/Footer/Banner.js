@@ -19,10 +19,10 @@ const Banner = () => {
             </div>
 
             <div className="flex items-center flex-wrap gap-3">
-            <button onClick={()=>{handleClick('/contact?tab=tab1')}} className="bg-black mr-[8px] md:mr-[24px]  px-[12px] py-[10px] md:px-[16px] md:py-[14px] text-cloudText border-b-[3px] border-[#484D5E] rounded-[8px] text-[14px] font-semibold">
+            <button onClick={()=>{handleClick('/contact?action=message')}} className="bg-black mr-[8px] md:mr-[24px]  px-[12px] py-[10px] md:px-[16px] md:py-[14px] text-cloudText border-b-[3px] border-[#484D5E] rounded-[8px] text-[14px] font-semibold">
             Start working with us
             </button>
-            <Link href='/contact?tab=tab2' className="flex items-center gap-1 text-[16px] text-white hover:opacity-80">
+            <Link href='/contact?action=call' className="flex items-center gap-1 text-[16px] text-white hover:opacity-80">
             Book a Free Call <MdOutlineArrowOutward />
             </Link>
             </div>

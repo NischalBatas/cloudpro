@@ -21,10 +21,10 @@ const ContactInfo = () => {
         Discover more ways our team can help.
         </div>
         <div className="flex items-center gap-3 lg:w-96 mt-4">
-            <button onClick={()=>{handleClick('/contactus?tab=tab1')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
+            <button onClick={()=>{handleClick('/contactus?action=message')}} className="bg-black text-white shadow-2xl px-2 py-1 rounded font-medium">
               Contact Us
             </button>
-            <Link href='/contactus?tab=tab2' className="flex gap-1 text-white">
+            <Link href='/contactus?action=call' className="flex gap-1 text-white">
               Book a Free Call <MdOutlineArrowOutward />
             </Link>
           </div>

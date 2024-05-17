@@ -40,15 +40,15 @@ const Introduction = () => {
             </p>
           </div>
           <div className="flex md:justify-center items-center gap-3  mt-6">
-            <button title="tab1"
+            <button
               onClick={() => {
-                handleClick("/contactus?tab=tab1");
+                handleClick("/contact?action=message");
               }}
               className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium"
             >
               Contact Us
             </button>
-            <Link href='/contactus?tab=tab2' className="flex items-center gap-1 text-[16px] text-white">
+            <Link href='/contact?action=call' className="flex items-center gap-1 text-[16px] text-white">
               Book a Free Call <MdOutlineArrowOutward />
             </Link>
           </div>

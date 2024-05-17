@@ -40,12 +40,12 @@ const MobileNavigation = () => {
         {navbarStatus &&  hamburger  ? 
     
             <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
-                    <Link className="mobile_menu_link" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/casestudy'>Case Studies</Link>
-                    <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/aboutus'>About Us</Link>                 
+                    <Link className="mobile_menu_link" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/case-studies'>Case Studies</Link>
+                    <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/about'>About Us</Link>                 
                     <MobileMenu setHamburger={setHamburger} setNavbarStatus={setNavbarStatus} pathname={pathname} title="Services" />
                     <button
               onClick={() => {
-                onHandleSubmit("/contactus?tab=tab1"),setNavbarStatus(false),setHamburger(false)
+                onHandleSubmit("/contact?tab=tab1"),setNavbarStatus(false),setHamburger(false)
               }}
               className="bg-cloudBtn text-center navbar_contactus_btn text-white my-2 px-2 py-2 rounded text-[14px]"
             >

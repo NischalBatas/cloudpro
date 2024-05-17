@@ -43,23 +43,23 @@ const Navbar = () => {
 
             <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${
-                pathname === "/casestudy" ? "active-menu" : ""
+                pathname === "/case-studies" ? "active-menu" : ""
               }`}
-              href="/casestudy"
+              href="/case-studies"
             >
               Case Studies
             </NavigationMenu.Link>
             <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${
-                pathname === "/aboutus" ? "active-menu" : ""
+                pathname === "/about" ? "active-menu" : ""
               }`}
-              href="/aboutus"
+              href="/about"
             >
               About Us
             </NavigationMenu.Link>
             <button
               onClick={() => {
-                onHandleSubmit("/contactus?tab=tab1");
+                onHandleSubmit("/contact?tab=tab1");
               }}
               className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium"
             >

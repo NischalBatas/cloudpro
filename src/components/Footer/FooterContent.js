@@ -13,8 +13,8 @@ const FooterContent = () => {
           we are cloudpro ai
         </div>
         <div className="cloudpro_1 flex flex-col gap-[16px] text-cloud2 text-[14px]">
-          <Link href="/aboutus">About Us</Link>
-          <Link href="/casestudy">Case Study</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/case-studies">Case Study</Link>
           <Link href="/blog">Blog</Link>
         </div>
       </div>
@@ -24,10 +24,10 @@ const FooterContent = () => {
           What we do
         </div>
         <div className="flex flex-col gap-[16px] text-cloud2 text-[14px]">
-          <Link href="/services/alconsulting">AI Consulting</Link>
-          <Link href="/services/bigdata">Big Data Consulting</Link>
-          <Link href="/services/dataanalytics">Data Analytics</Link>
-          <Link href="/services/datavisual">Data Visualization Solution</Link>
+          <Link href="/services/ai-consulting">AI Consulting</Link>
+          <Link href="/services/big-data">Big Data Consulting</Link>
+          <Link href="/services/data-analytics">Data Analytics</Link>
+          <Link href="/services/data-visualization">Data Visualization Solution</Link>
         </div>
       </div>
 

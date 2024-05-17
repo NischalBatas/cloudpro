@@ -29,10 +29,10 @@ const Contact = () => {
     
        
         <div className="flex lg:justify-end items-center flex-wrap gap-3 max-lg:w-96 pb-8 md:pb-0">
-          <button onClick={()=>{handleClick('/contactus?tab=tab1')}} className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium">
+          <button onClick={()=>{handleClick('/contact?tab=tab1')}} className="bg-cloudBtn main_button px-5 py-2 text-cloudText rounded-[8px] text-[14px] font-medium">
           Start working with us
           </button>
-          <Link href='/contactus?tab=tab2' className="flex gap-1 text-white hover:opacity-80">
+          <Link href='/contact?tab=tab2' className="flex gap-1 text-white hover:opacity-80">
             Book a Free Call <MdOutlineArrowOutward />
           </Link>
         </div>

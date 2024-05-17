@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Menu = ({title,pathname}) => {
   return (
     <NavigationMenu.Item>
-    <NavigationMenu.Trigger className={`NavigationMenuTrigger NavigationMenuTrigger2 ${pathname==='/services/generativeapp' ? 'active-menu' :''}`}>
+    <NavigationMenu.Trigger className={`NavigationMenuTrigger NavigationMenuTrigger2 ${pathname==='/services/generative-app' ? 'active-menu' :''}`}>
       {title} <IoIosArrowDown className="CaretDown" aria-hidden />
     </NavigationMenu.Trigger>
     <NavigationMenu.Content className="NavigationMenuContent navbar-main">
@@ -27,8 +27,8 @@ const Menu = ({title,pathname}) => {
               Artificial Intelligence
             </div>
             <ul className="flex flex-col gap-3 text-[#ABABAB] text-sm">
-              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/generativeai' ? 'active-menu' :''}`} href="/services/generativeai">Generative AI</NavigationMenu.Link >
-              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/alconsulting' ? 'active-menu' :''}`} href="/services/alconsulting">AI Consulting</NavigationMenu.Link >
+              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/generative-ai' ? 'active-menu' :''}`} href="/services/generative-ai">Generative AI</NavigationMenu.Link >
+              <NavigationMenu.Link  className={`menu-item-list ${pathname==='/services/ai-consulting' ? 'active-menu' :''}`} href="/services/ai-consulting">AI Consulting</NavigationMenu.Link >
             
             </ul>
           </div>
@@ -49,10 +49,10 @@ const Menu = ({title,pathname}) => {
             Cloud Engineering
             </div>
             <ul className="flex flex-col gap-3 text-[#ABABAB] text-sm">
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/architecture' ? 'active-menu' :''}`} href="/services/architecture">Architecture Consulting</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/cloud-architecture' ? 'active-menu' :''}`} href="/services/cloud-architecture">Architecture Consulting</NavigationMenu.Link>
               <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/cloudops' ? 'active-menu' :''}`} href="/services/cloudops">Cloud Ops</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/infrastructure' ? 'active-menu' :''}`} href="/services/infrastructure">Infrastructure migration and upgrades</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bigdata' ? 'active-menu' :''}`} href="/services/bigdata">Big Data Consulting</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/infrastructure-migration' ? 'active-menu' :''}`} href="/services/infrastructure-migration">Infrastructure migration and upgrades</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/big-data' ? 'active-menu' :''}`} href="/services/big-data">Big Data Consulting</NavigationMenu.Link>
             </ul>
           </div>
         </div>
@@ -74,9 +74,9 @@ const Menu = ({title,pathname}) => {
             </div>
             <ul className="flex flex-col gap-3 text-[#ABABAB] text-sm">
               <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/etl' ? 'active-menu' :''}`} href="/services/etl">ETL Services</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/dataanalytics' ? 'active-menu' :''}`} href="/services/dataanalytics">Data Analytics</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datawarehouse' ? 'active-menu' :''}`} href="/services/datawarehouse">Data Lakes and Warehouses</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datasolutions' ? 'active-menu' :''}`} href="/services/datasolutions">Data Pipeline Solutions</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/data-analytics' ? 'active-menu' :''}`} href="/services/data-analytics">Data Analytics</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/data-warehouse' ? 'active-menu' :''}`} href="/services/data-warehouse">Data Lakes and Warehouses</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/data-pipeline' ? 'active-menu' :''}`} href="/services/data-pipeline">Data Pipeline Solutions</NavigationMenu.Link>
             </ul>
           </div>
         </div>
@@ -97,9 +97,9 @@ const Menu = ({title,pathname}) => {
             BI & Data Analytics
             </div>
             <ul className="flex flex-col gap-3 text-[#ABABAB] text-sm">
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bireport' ? 'active-menu' :''}`} href="/services/bireport">BI Report and Dashboard</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/adhoc' ? 'active-menu' :''}`} href="/services/adhoc">Ad-Hoc Reporting Solutions</NavigationMenu.Link>
-              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/datavisual' ? 'active-menu' :''}`} href="/services/datavisual">Data Visualization Solution</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/bi-reporting' ? 'active-menu' :''}`} href="/services/bi-reporting">BI Report and Dashboard</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/ad-hoc-reporting' ? 'active-menu' :''}`} href="/services/ad-hoc-reportin">Ad-Hoc Reporting Solutions</NavigationMenu.Link>
+              <NavigationMenu.Link className={`menu-item-list ${pathname==='/services/data-visualization' ? 'active-menu' :''}`} href="/services/data-visualization">Data Visualization Solution</NavigationMenu.Link>
             </ul>
           </div>
 

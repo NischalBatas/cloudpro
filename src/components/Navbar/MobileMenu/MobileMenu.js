@@ -34,8 +34,8 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Artificial Intelligence</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/generativeai'>Generative AI & Applications</Link>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/alconsulting'>AI Consulting</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/generative-ai'>Generative AI & Applications</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/ai-consulting'>AI Consulting</Link>
           </div>
         </div>
 
@@ -43,10 +43,10 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Cloud Engineering</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/architecture'>Architecture Consulting</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/cloud-architecture'>Architecture Consulting</Link>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/cloudops'>Cloud Ops</Link>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/infrastructure'>Infrastructure migration and upgrades</Link>
-                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/bigdata'>Big Data Consulting</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/infrastructure-migration'>Infrastructure migration and upgrades</Link>
+                <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/big-data'>Big Data Consulting</Link>
           </div>
         </div>
 
@@ -54,18 +54,18 @@ const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>Data Engineering</p>
           <div className='py-2 flex flex-col'>
                 <Link className="mobile_menu_features" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/etl'>ETL Services</Link>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/dataanalytics'>Data Analytics</Link>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/datawarehouse'>Data Lakes and Warehouses</Link>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/datasolutions'>Data Pipeline Solutions</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/data-analytics'>Data Analytics</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/data-warehouse'>Data Lakes and Warehouses</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}}  href='/services/data-pipeline'>Data Pipeline Solutions</Link>
           </div>
         </div>
 
         <div className='py-3 pb-1'>
           <p className='text-[#6083F3] uppercase text-[12px] tracking-wide'>BI & Data Analytics</p>
           <div className='py-2 flex flex-col'>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/bireport'>BI Report and Dashboard</Link>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/adhoc'>Ad-Hoc Reporting Solutions</Link>
-                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/datavisual'>Data Visualization Solution</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/bi-reporting'>BI Report and Dashboard</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/ad-hoc-reporting'>Ad-Hoc Reporting Solutions</Link>
+                <Link className="mobile_menu_features"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/services/data-visualization'>Data Visualization Solution</Link>
           </div>
         </div>
 

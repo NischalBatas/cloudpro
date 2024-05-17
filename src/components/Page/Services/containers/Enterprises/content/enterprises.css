@@ -44,15 +44,10 @@ input {
   line-height: 1;
   color: #fff;
   user-select: none;
-  
 
 }
-.TabsTrigger2:first-child {
 
-}
-.TabsTrigger2:last-child {
- 
-}
+
 .TabsTrigger2:hover {
   color: #6083f3;
 }
@@ -62,8 +57,7 @@ input {
   background-color: rgba(25, 25, 25, 0.91);
   border-left: 2px solid #6083f3;
   font-weight: 600;
-  max-width: 379px;
-  width: 90%;
+  
 }
 .TabsTrigger2:focus {
   position: relative;
@@ -85,6 +79,7 @@ input {
 
 
 .hr-line{
+  max-width: 379px;
     width: 100%;
     height: 1px;
     background-color: #2f2f2f;

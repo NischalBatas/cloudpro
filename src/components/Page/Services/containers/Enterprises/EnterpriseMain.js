@@ -13,8 +13,8 @@ const EnterpriseMain = ({content}) => {
         className="TabsRoot2 gap-6 lg:gap-4 flex-wrap md:flex-nowrap items-center overflow-hidden"
         defaultValue="tab1"
       >
-        <div>
-          <p className="font-medium text-[16px] max-w-[379px]">
+        <div className='max-w-[379px]'>
+          <p className="font-medium text-[16px] max-w-[376px]">
            {content.heading}
           </p>
 
@@ -24,7 +24,7 @@ const EnterpriseMain = ({content}) => {
                 <div key={index}>
                   <Tabs.Trigger
                     
-                    className="TabsTrigger2"
+                    className="TabsTrigger2 max-w-[340px] w-full"
                     value={`tab${item.id}`}
                   >
                     {item.title}

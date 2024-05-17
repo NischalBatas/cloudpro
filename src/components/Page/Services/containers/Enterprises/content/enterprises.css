@@ -27,7 +27,7 @@ input {
   display: flex;
   flex-direction: column;
   gap:1.5rem;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   margin-top: 1.5rem;
 }
 
@@ -35,7 +35,7 @@ input {
   font-family: inherit;
   /* background-color: white; */
   /* padding: 0 10px; */
-  height: 85px;
+  height: 49px;
   flex: 1;
   /* display: flex;
   align-items: center;
@@ -58,10 +58,12 @@ input {
 }
 .TabsTrigger2[data-state='active'] {
   color: #6083f3;
-  padding: 1rem;
-  background-color: #161616;
+  padding:0.8rem 1rem;
+  background-color: rgba(25, 25, 25, 0.91);
   border-left: 2px solid #6083f3;
   font-weight: 600;
+  max-width: 379px;
+  width: 90%;
 }
 .TabsTrigger2:focus {
   position: relative;

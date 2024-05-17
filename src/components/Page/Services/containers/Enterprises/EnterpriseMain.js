@@ -14,7 +14,7 @@ const EnterpriseMain = ({content}) => {
         defaultValue="tab1"
       >
         <div>
-          <p className="font-medium text-[16px] max-w-[376px]">
+          <p className="font-medium text-[16px] max-w-[379px]">
            {content.heading}
           </p>
 

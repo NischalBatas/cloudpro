@@ -48,7 +48,7 @@ const FooterContent = () => {
           </div>
           </Link>
 
-<Link href='https://www.google.com/maps/place/Maharajgunj,+Kathmandu+44600/@27.7353471,85.3217124,16z/data=!3m1!4b1!4m10!1m2!2m1!1smaharajgunj+basundhara-+3+kathmandu+nepal!3m6!1s0x39eb193854e20abb:0x8ff36d1f00e10346!8m2!3d27.7364789!4d85.3304212!15sCiltYWhhcmFqZ3VuaiBiYXN1bmRoYXJhLSAzIGthdGhtYW5kdSBuZXBhbJIBDG5laWdoYm9yaG9vZOABAA!16s%2Fg%2F1ym_k499k?entry=ttu'>
+<Link href='#'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/2.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -59,7 +59,7 @@ const FooterContent = () => {
           </Link>
 
 
-          <Link href=''>
+          <Link href='#'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/3.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">
@@ -69,7 +69,7 @@ const FooterContent = () => {
           </div>
           </Link>
 
-          <Link href=''>
+          <Link href='#'>
           <div className="flex max-w-[277px] h-[62px] border-[1px] rounded-[8px] border-[#1E1E1E] px-[14px]">
             <div className="flex items-end"><Image width={52} height={52} alt='location' src='/Image/footerIcon/4.svg'/></div>
             <div className="text-[14px] pl-[21px] flex flex-col justify-center">

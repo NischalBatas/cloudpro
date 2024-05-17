@@ -61,7 +61,7 @@ const MessageBox = ({selectTab}) => {
         Schedule a Call
       </Tabs.Trigger>
     </Tabs.List>
-    <Tabs.Content className="TabsContent1 flex justify-between" value="tab1">
+    <Tabs.Content className="TabsContent1 flex justify-between flex-wrap gap-6 lg:flex-nowrap" value="tab1">
     <Form.Root className="FormRoot" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
@@ -164,11 +164,11 @@ const MessageBox = ({selectTab}) => {
       </div>
 
       <div className='my-5'>
-         <span className='text-[20px] font-semibold'>Visit us</span>
-         <p className='text-[#888888] text-[14px]'>Chat to us in person at our headquarter</p>
+         <span className='text-[20px] font-semibold'>Mail us</span>
+         <p className='text-[#888888] text-[14px]'>Send correspondence to our headquarters</p>
          <div className='flex items-center gap-2 mt-2 underline'>
          <MdOutlineLocationOn />
-         <Link className='max-w-[290px]' target="_blank" href='https://maps.app.goo.gl/Z8G9DuJLHGfypwM86'>584 Castro St 2165, San Francisco, CA 94114-2512</Link>
+         <Link className='lg:max-w-[290px]' target="_blank" href='https://maps.app.goo.gl/Z8G9DuJLHGfypwM86'>584 Castro St 2165, San Francisco, CA 94114-2512</Link>
          </div>
       </div>
    </div>

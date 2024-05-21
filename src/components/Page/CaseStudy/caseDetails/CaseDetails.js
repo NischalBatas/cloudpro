@@ -203,7 +203,7 @@ const CaseDetails = ({props}) => {
   <Conclusion caseData={caseData.data.casestudyBy}/>
 
   <div className="line-between-content w-full h-[1px] bg-[#F2F2F2]"></div>
-  <CaseStudyContent content={caseStudy} />
+  {/* <CaseStudyContent content={caseStudy} /> */}
   <Newsletter/>
   <Footer/>
       </>

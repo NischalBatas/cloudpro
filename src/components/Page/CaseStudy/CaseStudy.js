@@ -58,8 +58,8 @@ async function getPosts() {
   return data.caseStudies.edges;
 }
 
-const CaseStudy = async({posts}) => {
-
+const CaseStudy = async() => {
+  const posts=await getPosts()
   console.log("Blog Component - Post details", posts);
   return (
    <>
@@ -134,16 +134,7 @@ const CaseStudy = async({posts}) => {
   );
 };
 
-export async function getStaticProps(){
-  const posts=await getPosts()
-  console.log('Data getStatic',posts)
-  return{
-    props:{
-      posts
-    },
-    revalidate: 50, // In seconds
-  }
-}
+
 
 
 export default CaseStudy;

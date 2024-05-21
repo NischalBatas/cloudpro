@@ -1,22 +1,69 @@
 import Link from 'next/link';
-import React, { useRef } from 'react'
+import React from 'react'
 import { MdOutlineArrowOutward } from 'react-icons/md';
-import { motion, useInView } from "framer-motion";
 import '../../casestudy.css'
-import { GET_CASE_STUDY } from '@/components/container/graphql/queries/getCaseStudy';
-import { useQuery } from '@apollo/client';
+
 import Loading from '../Loading';
 
-const CaseStudyContent = () => {
-  const {loading,error,data}=useQuery(GET_CASE_STUDY)
-  if (error) return <p>Error: {error.message}</p>;
-  if (loading) return <Loading />;
-  // if (!data || !data.caseStudies || !data.caseStudies.edges) {
-  //     return <p>No data available.</p>;
-  // }
-  console.log(data)
-  const checkCaseData=data?.caseStudies?.edges
-  const contents=checkCaseData.slice(-3)
+
+
+async function getPosts() {
+  const query = `query caseStudies {
+            caseStudies(where: {orderby: {field: DATE, order: DESC}}) {
+              edges {
+                node {
+                  casestudyfieldgroud {
+                    conclusion
+                    introduction
+                    readTime
+                    solution
+                    technology
+                    uploadDate
+                    herotext
+                    impactandresult
+                    backgroundImage {
+                      node {
+                        altText
+                        sourceUrl
+                      }
+                    }
+                    caseStudyImage {
+                      node {
+                        altText
+                        sourceUrl
+                      }
+                    }
+                    caseStudySector
+                    caseStudySectorDescription
+                  }
+                  date
+                  title
+                  casestudyId
+                  slug
+                }
+              }
+            }
+          }`;
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query }),
+  });
+
+  const { data } = await res.json();
+
+  return data.caseStudies.edges;
+}
+
+
+
+const CaseStudyContent = async() => {
+  const posts=await getPosts()
+  // const contents=posts.slice(-3)
+  console.log('newdata4s',posts)
 
   return (
     <div className="navbar-main bg-white py-14">
@@ -24,7 +71,9 @@ const CaseStudyContent = () => {
     <div><p className='font-semibold text-[24px] text-black'>You may also like</p></div>
     <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
           
-          {contents.map((item, index) => {
+          {posts ? 
+          <>
+          {posts.map((item, index) => {
                       return (
                       <div key={index}>
                           <Link href={`/case-studies/${item.node.slug}`} className="">
@@ -67,6 +116,8 @@ const CaseStudyContent = () => {
                       </div>
                       );
                     })}
+          </>
+                  :'no data'}
           
                   </div>
     </div>

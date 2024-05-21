@@ -30,7 +30,7 @@ export const GET_ONE_CASE_STUDY = gql`
           date
           title
           slug
-         
+          content(format: RENDERED)
     
     }
   }

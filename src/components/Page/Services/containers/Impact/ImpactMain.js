@@ -4,7 +4,7 @@ import ImpactContent from "./ImpactContent";
 
 const ImpactMain = ({ content }) => {
   return (
-    <div className="navbar-main bg-cloudBtn2 py-16 text-black">
+    <div className="navbar-main bg-cloudBtn2 py-10 md:py-16 text-black">
       <div className="main-container">
         <div>
           <div className="text-[20px] md:text-[24px] ">

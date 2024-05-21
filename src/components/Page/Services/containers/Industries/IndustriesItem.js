@@ -50,7 +50,7 @@ const IndustriesItem = () => {
             alt="image_industries"
           />
           </div>
-          <p className="text-black text-[14px] px-4 mt-2">{item.title}</p>
+          <p className="text-black text-[12px] md:text-[14px] px-4 mt-2">{item.title}</p>
         </div>
      </motion.li>
     );

@@ -114,7 +114,7 @@ const FooterContent = () => {
      
       </div> */}
 
-      <div className="grid gap-[16px] text-[14px] lg:place-content-end lg:content-start">
+      <div className="grid gap-[16px] text-[14px]  lg:content-start">
         <div className="text-white tracking-[8%] text-[16px] text-sm md:text-base uppercase">
           Contact us
         </div>

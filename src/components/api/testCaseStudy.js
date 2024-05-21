@@ -1,4 +1,5 @@
-import graphqlRequest from "../../api/graphqlRequest";
+import graphqlRequest from "@/components/api/graphqlRequest";
+
 
 export async function TEST_CASE_STUDY() {
   const query = {

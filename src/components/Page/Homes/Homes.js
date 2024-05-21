@@ -27,7 +27,7 @@ const Homes = () => {
       <Industries />
       <Testominial />
       {/* <Results /> */}
-      <CaseStudy />
+      {/* <CaseStudy /> */}
       <Product/>
 
  

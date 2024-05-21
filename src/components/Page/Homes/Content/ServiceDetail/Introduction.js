@@ -3,7 +3,7 @@ import React from 'react'
 
 const Introduction = () => {
   return (
-   <div className='navbar-main'>
+   <div className='navbar-main pt-[20px]'>
      <div className="pb-[36px] main-container flex justify-between items-center gap-5 flex-wrap md:flex-nowrap">
     <Image
         width={412}

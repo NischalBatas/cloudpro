@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 const ServiceItem = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -35,7 +36,8 @@ const ServiceItem = () => {
       {serviceItem.map((item,index) => {
         return (
       <motion.li key={index} variants={items} className="service_main_item p-3 md:p-4 bg-[#0e0e1a] rounded-md border border-[#1E2849]">
-         <div className=" md:max-w-[330px]     h-full flex flex-col items-center justify-between">
+      <Link href='/service/id'>
+      <div className=" md:max-w-[330px]     h-full flex flex-col items-center justify-between">
            <div className="mb-5 z-20">
              <p className="text-white mb-1 text-[14px] md:text-[16px] font-semibold max-w-[265px] text-left">
                {item.title}
@@ -51,6 +53,7 @@ const ServiceItem = () => {
            />
           </div>
          </div>
+      </Link>
     </motion.li>
         );
       })}

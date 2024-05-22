@@ -66,7 +66,7 @@ const BlogDetails = async({props}) => {
             {posts ? (
         <>
         <Introduction/>
-        {/* <BlogImage/> */}
+        <BlogImage/>
         <div className="bg-white navbar-main">
         <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>

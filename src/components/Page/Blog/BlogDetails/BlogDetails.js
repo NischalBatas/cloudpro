@@ -67,7 +67,10 @@ const BlogDetails = async({props}) => {
         <>
         <Introduction/>
         {/* <BlogImage/> */}
-        <div className="main-container wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
+        <div className="bg-white navbar-main">
+        <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
+        </div>
+        <div className="w-full h-[1px] bg-[#e6e6e6]"></div>
 <CaseStudyContent/>
 <Footer/>
         </>) : 'No data'}

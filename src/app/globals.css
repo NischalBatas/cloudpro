@@ -230,7 +230,7 @@ button:hover {
 .wordpress-container strong,
 .wordpress-container ul{
 
- color: #4762b9;
+ /* color: #4f91ff; */
 }
 
 .wordpress-container strong{
@@ -239,11 +239,11 @@ button:hover {
 
 .wordpress-container p,
 .wordpress-container ul{
-  margin: 1.8rem 0 1rem 0;
+  margin: 1.8rem 0 0.5rem 0;
 }
 
 .wordpress-container p,
 .wordpress-container li{
 
- color: #ffffff;
+ color: #000000;
 }

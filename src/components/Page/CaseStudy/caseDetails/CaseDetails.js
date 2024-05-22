@@ -11,7 +11,7 @@ import BannerTwo from "./Content/BannerTwo";
 import Technology from "./Content/Technology/Technology";
 import { impactAndResult1 } from "@/db/casestudy/content/impactAndResult";
 import { technology1 } from "@/db/casestudy/content/technology";
-
+import Link from "next/link";
 import Tabs from "./Content/Tabs";
 
 import Loading from "./Loading";

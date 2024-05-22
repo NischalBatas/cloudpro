@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Introduction = () => {
@@ -18,7 +19,7 @@ const Introduction = () => {
           Drive Your Business Forward with CloudPro AI's Advanced AI Services 
         </p>
         </div>
-        <p className="text-[#B5B5B5] mt-2 text-[14px] md:text-[16px] md:leading-[28px]">
+        <p className="text-[#B5B5B5] mt-2 mb-[24px] text-[14px] md:text-[16px] md:leading-[28px]">
           Welcome to CloudPro AI Services Category, where artificial
           intelligence drives transformative change. Our AI Services are
           designed to empower businesses with cutting-edge AI solutions,
@@ -26,7 +27,7 @@ const Introduction = () => {
           landscape. 
         </p>
 
-        <button className="mt-[24px] text-[14px] px-[16px] py-[12px] rounded-[8px] bg-white text-black">Speak to an Expert</button>
+        <Link href='/contact?action=message' className=" text-[14px] px-[16px] py-[12px] rounded-[8px] bg-white text-black">Speak to an Expert</Link>
       </div>
     </div>
    </div>

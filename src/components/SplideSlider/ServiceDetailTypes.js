@@ -70,9 +70,9 @@ const ServiceDetailTypes = () => {
                 LLM Learning
               </li>
             </ul>
-            <button className="px-[16px] py-[12px] text-[14px] rounded-[8px] bg-white text-black">
+            <Link href='/services/generative-ai' className="px-[16px] py-[12px] text-[14px] rounded-[8px] bg-white text-black">
               Learn More
-            </button>
+            </Link>
           </div>
           <Image  className="hidden md:block"
             width={391}
@@ -108,9 +108,9 @@ const ServiceDetailTypes = () => {
                 LLM Learning
               </li>
             </ul>
-            <button className="px-[16px] py-[12px] text-[14px] rounded-[8px] bg-white text-black">
+            <Link href='/services/ai-consulting' className="px-[16px] py-[12px] text-[14px] rounded-[8px] bg-white text-black">
               Learn More
-            </button>
+            </Link>
           </div>
           <Image className="hidden md:block"
             width={280}

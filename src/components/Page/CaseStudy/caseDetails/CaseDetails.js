@@ -84,7 +84,7 @@ const CaseDetails = async ({ props }) => {
         <>
      
           <BreadCrumb caseData={posts} />
-          <div className="main-container" dangerouslySetInnerHTML={{__html:posts.content}}></div>
+          {/* <div className="main-container" dangerouslySetInnerHTML={{__html:posts.content}}></div> */}
           <Tabs />
           <Introduction caseData={posts} />
           <BannerOne caseData={posts} />

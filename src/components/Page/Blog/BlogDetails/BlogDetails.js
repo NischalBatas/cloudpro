@@ -8,7 +8,7 @@ import Footer from "@/components/Footer/Footer";
 export async function getSinglePost(slug) {
   const query = `
   query GetBlogBySlug {
-    blogBy(slug: "neural-networ") {
+    blogBy(slug: "${slug}") {
       content(format: RENDERED)
       slug
       title

@@ -26,7 +26,7 @@ const Introduction = () => {
           landscape. 
         </p>
 
-        <button className="mt-[24px] text-[14px] px-[16px] py-[12px] rounded-[8px] bg-white text-black">Speak to an Export</button>
+        <button className="mt-[24px] text-[14px] px-[16px] py-[12px] rounded-[8px] bg-white text-black">Speak to an Expert</button>
       </div>
     </div>
    </div>

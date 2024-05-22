@@ -62,7 +62,7 @@ async function getPosts() {
 
 const CaseStudyContent = async() => {
   const posts=await getPosts()
-  // const contents=posts.slice(-3)
+  const contents=posts.slice(-3)
   console.log('newdata4s',posts)
 
   return (
@@ -71,9 +71,9 @@ const CaseStudyContent = async() => {
     <div><p className='font-semibold text-[24px] text-black'>You may also like</p></div>
     <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
           
-          {posts ? 
+          {contents ? 
           <>
-          {posts.map((item, index) => {
+          {contents.map((item, index) => {
                       return (
                       <div key={index}>
                           <Link href={`/case-studies/${item.node.slug}`} className="">

@@ -1,25 +1,83 @@
-
+"use client"
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import '../../CaseStudy/casestudy.css'
-import { caseStudy } from "@/db/casestudy/casestudy";
-import { motion, useInView } from "framer-motion";
-import { useQuery } from "@apollo/client";
-import { GET_CASE_STUDY } from "@/components/container/graphql/queries/getCaseStudy";
 import Loading from "./Loading";
+
+
+
 const CaseStudy = () => {
 
+  const [posts, setPosts] = useState([]);
+  const contents=posts.slice(-3)
+  const [loading, setLoading] = useState(true);
+  console.log(posts)
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            query: `
+              query caseStudies {
+                caseStudies(where: {orderby: {field: DATE, order: DESC}}) {
+                  edges {
+                    node {
+                      casestudyfieldgroud {
+                        conclusion
+                        introduction
+                        readTime
+                        solution
+                        technology
+                        uploadDate
+                        herotext
+                        impactandresult
+                        backgroundImage {
+                          node {
+                            altText
+                            sourceUrl
+                          }
+                        }
+                        caseStudyImage {
+                          node {
+                            altText
+                            sourceUrl
+                          }
+                        }
+                        caseStudySector
+                        caseStudySectorDescription
+                      }
+                      date
+                      title
+                      casestudyId
+                      slug
+                    }
+                  }
+                }
+              }
+            `,
+          }),
+        });
 
-  const {loading,error,data}=useQuery(GET_CASE_STUDY)
-  if (error) return <p>Error: {error.message}</p>;
+        const { data } = await res.json();
+        setPosts(data.caseStudies.edges);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   if (loading) return <Loading />;
-  // if (!data || !data.caseStudies || !data.caseStudies.edges) {
-  //     return <p>No data available.</p>;
-  // }
-  console.log(data)
-  const checkCaseData=data?.caseStudies?.edges
-  const contents=checkCaseData.slice(-3)
+
+
   return (
     <div className="main-container py-5 md:py-14">
       <div className="mb-8 w-full md:w-8/12 lg:w-4/12 text-left">
@@ -33,7 +91,8 @@ const CaseStudy = () => {
         
 
         <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
-          
+        {contents?
+          <>
 {contents.map((item, index) => {
             return (
             <div key={index}>
@@ -77,7 +136,8 @@ const CaseStudy = () => {
             </div>
             );
           })}
-
+</> :"no data"
+              }
         </div>
    
      

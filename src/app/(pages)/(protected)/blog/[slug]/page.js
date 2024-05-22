@@ -1,10 +1,10 @@
 import BlogDetails from '@/components/Page/Blog/BlogDetails/BlogDetails'
 import React from 'react'
 
-const page = () => {
+const page = (props) => {
   return (
     <div>
-        <BlogDetails/>
+        <BlogDetails props={props}/>
     </div>
   )
 }

@@ -240,7 +240,7 @@ button:hover {
 
 .wordpress-container p,
 .wordpress-container ul{
-  margin: 1.8rem 0 0.5rem 0;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 .wordpress-container p,
@@ -248,3 +248,33 @@ button:hover {
 
  color: #000000;
 }
+
+.wordpress-container li{
+  padding: 0.5rem 0;
+}
+
+.wordpress-container li strong{
+  font-size: 18px;
+}
+
+.wordpress-container figure{
+  margin: 1rem 0;
+}
+
+.wordpress-container table{
+  margin: 1.8rem 0 0.5rem 0;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #8b8b8b;
+
+ }
+
+ .wordpress-container table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+ .wordpress-container table strong{
+  font-size: 16px;
+ }

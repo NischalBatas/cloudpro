@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { TbShare2 } from "react-icons/tb";
 
-const BlogImage = () => {
+const BlogImage = ({posts}) => {
   return (
     <div className='navbar-main bg-white text-[#000] relative'>
       <div className='hidden md:block w-full h-[320px] bg-black absolute' 
@@ -21,18 +21,12 @@ const BlogImage = () => {
             <Image
               width={1500}
               height={387}
-              src="/Image/blog/blogBackground.png"
+              src={posts.featuredImage.node.link}
               alt="Blog Background"
               className='rounded-[8px]'
             />
             <p className="pt-[22px] text-[16px] leading-[24px]">
-              Alternative data is like finding hidden treasures in unexpected
-              places and resources. They are information collected from sources
-              that are different from the usual ones everyone uses and
-              retrieves.This kind can give us insights that regular sources
-              might miss. can give us insights that regular sources might miss.
-              But what counts as alternative data can change depending on the
-              industry and what kind of data everyone else is using.
+            {posts.blogfield.description}
             </p>
           </div>
         </div>  </div>

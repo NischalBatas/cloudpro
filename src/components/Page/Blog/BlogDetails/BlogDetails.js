@@ -7,40 +7,25 @@ import Footer from "@/components/Footer/Footer";
 
 export async function getSinglePost(slug) {
   const query = `
-    query caseStudyBySlug {
-      casestudyBy(slug: "introduction") {
-            casestudyfieldgroud {
-              conclusion
-              introduction
-              readTime
-              solution
-              technology
-              uploadDate
-              herotext
-              impactandresult
-              backgroundImage {
-                node {
-                  altText
-                  sourceUrl
-                }
-              }
-              caseStudyImage {
-                node {
-                  altText
-                  sourceUrl
-                }
-              }
-              caseStudySector
-              caseStudySectorDescription
-            }
-            date
-            title
-            slug
-            content(format: RENDERED)
-      
+  query GetBlogBySlug {
+    blogBy(slug: "neural-networ") {
+      content(format: RENDERED)
+      slug
+      title
+      date
+      blogfield{
+        blogcategory
+        description
+        readTime     
+      }
+      featuredImage {
+        node {
+          altText
+          link
+        }
       }
     }
-  `;
+  }`;
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
     method: "POST",
@@ -52,21 +37,21 @@ export async function getSinglePost(slug) {
 
   const { data } = await res.json();
 
-  return data.casestudyBy;
+  return data.blogBy;
 }
 
 
 const BlogDetails = async({props}) => {
-  let slugs = '1';
+  let slugs = props.params.slug;
   const posts = await getSinglePost(slugs);
-  console.log("Method", posts);
+  console.log("Method", posts,slugs);
 
   return (
     <div>
             {posts ? (
         <>
-        <Introduction/>
-        <BlogImage/>
+        <Introduction posts={posts}/>
+        <BlogImage  posts={posts}/>
         <div className="bg-white navbar-main">
         <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>

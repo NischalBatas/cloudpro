@@ -1,31 +1,31 @@
-.casestudy_product_arrow{
+.blogs_product_arrow{
     opacity: 0;
     transition: opacity 0.4s ease;
     
 }
 
-.casestudy_product_arrow_icon{
+.blogs_product_arrow_icon{
 
     background-color: rgba(231, 231, 231, 0.806);
     font-weight: 600;
     color: #fff;
 }
 
-.casestudy_product_container:hover .casestudy_product_arrow{
+.blogs_product_container:hover .blogs_product_arrow{
     opacity: 1;
 }
 
-.casestudy_product_title{
+.blogs_product_title{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    height: 50px;
+    max-height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
 }
 
-.casestudy_product_description{
+.blogs_product_description{
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Display up to 3 lines */
     line-clamp: 3;

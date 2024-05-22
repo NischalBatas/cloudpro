@@ -6,7 +6,7 @@ const Solution = () => {
   return (
     <div className="navbar-main py-[44px] bg-white text-black">
       <div className="main-container ">
-        <div className="mb-[71px] max-w-[574px] text-[32px] font-bold tracking-[0.32px] capitalize">
+        <div className="mb-[50px] max-w-[574px] text-[24px] md:text-[32px] font-bold tracking-[0.32px] capitalize">
           <p>Why Choose CloudPro AI for Artificial Intelligence Solutions? </p>
         </div>
 

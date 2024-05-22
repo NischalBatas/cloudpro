@@ -23,7 +23,7 @@ const BlogImage = ({posts}) => {
               height={387}
               src={posts.featuredImage.node.link}
               alt="Blog Background"
-              className='rounded-[8px]'
+              className='max-h-[387px] rounded-[8px]'
             />
             <p className="pt-[22px] text-[16px] leading-[24px]">
             {posts.blogfield.description}

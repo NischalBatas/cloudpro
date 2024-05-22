@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import React from 'react'
-import { TbArrowBackUp } from "react-icons/tb";
+import { TbArrowBackUp, TbShare2 } from "react-icons/tb";
 const Introduction = () => {
   return (
-    <div className="navbar-main py-28">
-      <div className="main-container h-[550px] bg-black">
+    <div className="navbar-main py-28 pt-32  relative">
+      <div className="main-container  bg-black">
         <button className="flex items-center gap-3 text-[16px]">
           <TbArrowBackUp className="text-[24px]" />
           <span>Back</span>
@@ -19,7 +20,22 @@ const Introduction = () => {
           data everyone else is using.
         </p>
         <div className="bg-[#202020] h-[1px] mt-[35px]"></div>
+
+        <div className="main-container  hidden lg:flex  bg-[#080808] p-8 w-full mx-4 rounded-md gap-6"
+        >
+      
+
+          <div>
+          <div className='main-container flex items-center justify-between'>
+            <p>May 20, 2024</p>
+            <TbShare2 />
+        </div>
+        <Image width={1500} height={500} src='/Image/blog/blogBackground.png' alt='Blog Background'/>
+   
+          </div>
+        </div>
       </div>
+        
     </div>
   )
 }

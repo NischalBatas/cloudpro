@@ -227,3 +227,6 @@ button:hover {
  100%{ box-shadow: 0 0 0 10px inset }
 }
   
+.wordpress-container p{
+ padding: 2rem 0 1rem 0;
+}

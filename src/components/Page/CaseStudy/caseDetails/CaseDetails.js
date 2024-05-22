@@ -18,6 +18,7 @@ import Loading from "./Loading";
 import Newsletter from "./Content/Newsletter";
 import Footer from "@/components/Footer/Footer";
 
+
 export async function getSinglePost(slug) {
   const query = `
     query caseStudyBySlug {
@@ -78,11 +79,12 @@ const CaseDetails = async ({ props }) => {
   
     
   return (
-    <div className="pt-20">
+    <div className="">
       {posts ? (
         <>
+     
           <BreadCrumb caseData={posts} />
-
+          <div className="main-container" dangerouslySetInnerHTML={{__html:posts.content}}></div>
           <Tabs />
           <Introduction caseData={posts} />
           <BannerOne caseData={posts} />

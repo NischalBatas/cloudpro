@@ -30,7 +30,7 @@ const Introduction = () => {
             <p>May 20, 2024</p>
             <TbShare2 />
         </div>
-        <Image width={1500} height={500} src='/Image/blog/blogBackground.png' alt='Blog Background'/>
+        <Image width={1000} height={500} src='/Image/blog/blogBackground.png' alt='Blog Background'/>
    
           </div>
         </div>

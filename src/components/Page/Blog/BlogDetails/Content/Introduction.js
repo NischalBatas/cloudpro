@@ -3,7 +3,7 @@ import React from 'react'
 import { TbArrowBackUp, TbShare2 } from "react-icons/tb";
 const Introduction = () => {
   return (
-    <div className="navbar-main py-28 pt-32  relative">
+    <div className="navbar-main pb-4 pt-32  relative">
       <div className="main-container  bg-black">
         <button className="flex items-center gap-3 text-[16px]">
           <TbArrowBackUp className="text-[24px]" />

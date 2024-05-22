@@ -227,6 +227,23 @@ button:hover {
  100%{ box-shadow: 0 0 0 10px inset }
 }
   
-.wordpress-container p{
- padding: 2rem 0 1rem 0;
+.wordpress-container strong,
+.wordpress-container ul{
+
+ color: #4762b9;
+}
+
+.wordpress-container strong{
+  font-size: 24px;
+}
+
+.wordpress-container p,
+.wordpress-container ul{
+  margin: 1.8rem 0 1rem 0;
+}
+
+.wordpress-container p,
+.wordpress-container li{
+
+ color: #ffffff;
 }

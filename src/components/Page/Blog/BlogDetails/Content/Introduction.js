@@ -17,7 +17,7 @@ const Introduction = () => {
 
         <div className="main-container  hidden lg:flex  bg-[#080808] py-8 w-full mx-4 rounded-md gap-6">
           <div>
-            <div className="main-container flex items-center justify-between">
+            <div className="pb-4 main-container flex items-center justify-between">
               <p>May 20, 2024</p>
               <TbShare2 />
             </div>

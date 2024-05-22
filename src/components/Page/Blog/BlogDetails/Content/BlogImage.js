@@ -1,8 +1,11 @@
+import { format } from 'date-fns';
 import Image from 'next/image';
 import React from 'react'
 import { TbShare2 } from "react-icons/tb";
 
 const BlogImage = ({posts}) => {
+  const dateString = posts.date
+  const formattedDate = format(new Date(dateString), 'MMMM d, yyyy');
   return (
     <div className='navbar-main bg-white text-[#000] relative'>
       <div className='hidden md:block w-full h-[320px] bg-black absolute' 
@@ -15,7 +18,7 @@ const BlogImage = ({posts}) => {
          <div  style={{zIndex:'2'}} className="relative main-container   pt-8 pb-0 w-full mx-4 rounded-md gap-6">
           <div>
             <div className="pb-4 main-container text-black  md:text-white flex items-center justify-between">
-              <p>May 20, 2024</p>
+              <p>{formattedDate}</p>
               <TbShare2 />
             </div>
             <Image

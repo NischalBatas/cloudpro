@@ -51,6 +51,15 @@ const Navbar = () => {
             </NavigationMenu.Link>
             <NavigationMenu.Link
               className={`NavigationMenuTrigger rounded-[8px] ${
+                pathname === "/blog" ? "active-menu" : ""
+              }`}
+              href="/blog"
+            >
+              Blogs
+            </NavigationMenu.Link>
+
+            <NavigationMenu.Link
+              className={`NavigationMenuTrigger rounded-[8px] ${
                 pathname === "/about" ? "active-menu" : ""
               }`}
               href="/about"

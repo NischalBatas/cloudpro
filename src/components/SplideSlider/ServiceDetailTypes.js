@@ -60,13 +60,13 @@ const ServiceDetailTypes = () => {
             </p>
 
             <ul className="py-[24px] flex text-nowrap gap-2 max-w-[350px] overflow-hidden">
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 Chatbots
               </li>
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 Document Understanding and OCR 
               </li>
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 LLM Learning
               </li>
             </ul>
@@ -98,13 +98,13 @@ const ServiceDetailTypes = () => {
             </p>
 
             <ul className="py-[24px] flex text-nowrap gap-2 max-w-[350px] overflow-hidden">
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 Chatbots
               </li>
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 Document Understanding and OCR 
               </li>
-              <li className="leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+              <li className="text-nowrap leading-[28px] text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                 LLM Learning
               </li>
             </ul>

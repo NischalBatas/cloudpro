@@ -31,6 +31,10 @@
 .navbar-main-group2 .CaretDown {
   /* color: #000; */
 }
+.NavigationMenuList a,
+.NavigationMenuList button{
+  white-space: nowrap;
+}
 
 .navbar-main-group2 .NavigationMenuContent{
   color: rgb(51 51 51 );

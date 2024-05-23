@@ -37,7 +37,7 @@ const Navbar = () => {
             </NavigationMenu.Link>
           </div>
 
-          <div className="flex items-center gap-4 py-1">
+          <div className="flex items-center gap-1 lg:gap-4 py-1">
             <Menu pathname={pathname} title="Services" />
             {/* <Menu title="Product" /> */}
 

@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="logo-main">
             <NavigationMenu.Link href="/">
               <Image
-                className="whitelogo h-auto"
+                className="whitelogo h-auto min-w-[80px]"
                 width={120}
                 height={120}
                 alt="company_logo"

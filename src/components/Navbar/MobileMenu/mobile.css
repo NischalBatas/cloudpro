@@ -18,11 +18,11 @@
 }
 
 .height_content_main{
-    height: calc(100vh - 298px)
+    max-height: calc(100vh - 220px)
   }
 
 .height_content{
-    height: calc(100vh - 350px)
+    max-height: calc(100vh - 320px)
   }
 
 

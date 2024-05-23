@@ -18,12 +18,12 @@
 }
 
 .height_content_main{
-    max-height: calc(100vh - 220px)
-  }
+  max-height: calc(100vh - 298px)
+}
 
 .height_content{
-    max-height: calc(100vh - 320px)
-  }
+  height: calc(100vh - 350px)
+}
 
 
   /* width */

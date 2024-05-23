@@ -17,9 +17,9 @@ const MobileNavigation = () => {
   };
 
   return (
-    <div className="hidden navbar-main-group navbar-main-group4 fixed w-full py-2">
+    <div className="hidden navbar-main-group navbar-main-group4 fixed w-full  py-2">
       <div className="NavigationMenuRoot4 navbar-main relative">
-        <div className="NavigationMenuList4 w-full">
+        <div className="NavigationMenuList4 h-[52px] w-full">
           <div className="">
             <Link href="/">
               <Image
@@ -39,7 +39,7 @@ const MobileNavigation = () => {
         </div>
         {navbarStatus &&  hamburger  ? 
     
-            <div className=" absolute top-8 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
+            <div className=" absolute top-10 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
                     <Link className="mobile_menu_link" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/case-studies'>Case Studies</Link>
                     <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/about'>About Us</Link>                 
                     <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/blog'>Blogs</Link>                 

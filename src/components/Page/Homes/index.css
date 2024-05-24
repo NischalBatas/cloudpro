@@ -227,3 +227,13 @@
   transform: rotate(180deg);
   scale: 1.4;
 }
+
+
+.home_service_description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* Show ellipsis after 3 lines */
+
+}

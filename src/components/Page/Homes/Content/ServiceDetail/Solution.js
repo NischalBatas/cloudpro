@@ -2,16 +2,16 @@ import { ServiceDetail } from "@/db/home/serviceDetail/ServiceDetail";
 import Image from "next/image";
 import React from "react";
 
-const Solution = () => {
+const Solution = ({item}) => {
   return (
     <div className="navbar-main py-[44px] bg-white text-black">
       <div className="main-container ">
         <div className="mb-[50px] max-w-[574px] text-[24px] md:text-[32px] font-bold tracking-[0.32px] capitalize">
-          <p>Why Choose CloudPro AI for Artificial Intelligence Solutions? </p>
+          <p>{item.solutions.title} </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-5">
-          {ServiceDetail.map((item, index) => {
+          {item.solutions.solutiontypes.map((item, index) => {
             return (
               <div key={index} className="flex flex-col gap-[32px]">
                 <Image

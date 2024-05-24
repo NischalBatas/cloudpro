@@ -3,16 +3,28 @@ import Introduction from "@/components/Page/Homes/Content/ServiceDetail/Introduc
 import Products from "@/components/Page/Homes/Content/ServiceDetail/Products";
 import ServiceType from "@/components/Page/Homes/Content/ServiceDetail/ServiceType";
 import Solution from "@/components/Page/Homes/Content/ServiceDetail/Solution";
+import { serviceItem } from "@/db/home/serviceItem";
 import React from "react";
 
-const page = () => {
+const page = (props) => {
+  let id=props.params.id
+  console.log(id)
+  
   return (
     <div className="pt-20">
-        <Introduction/>
-        <Solution/>
-        <ServiceType/>
+      {serviceItem.filter(item=>item.id == id).map((item2,index)=>{
+        return(
+          <div key={index}>
+        <Introduction item={item2}/>
+        <Solution item={item2}/>
+        <ServiceType item={item2}/>
         <Products/>
         <Footer/>
+          </div>
+        )
+      })}
+  
+   
     </div>
   );
 };

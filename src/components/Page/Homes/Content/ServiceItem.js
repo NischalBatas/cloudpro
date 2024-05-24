@@ -36,13 +36,13 @@ const ServiceItem = () => {
       {serviceItem.map((item,index) => {
         return (
       <motion.li key={index} variants={items} className="service_main_item p-3 md:p-4 bg-[#0e0e1a] rounded-md border border-[#1E2849]">
-      <Link href='/service/id'>
+      <Link href={`/service/${item.id}`}>
       <div className=" md:max-w-[330px]     h-full flex flex-col items-center justify-between">
            <div className="mb-5 z-20">
              <p className="text-white mb-1 text-[14px] md:text-[16px] font-semibold max-w-[265px] text-left">
                {item.title}
              </p>
-             <p className="text-[#B8BEBF] text-[12px] md:text-[14px] ">{item.description}</p>
+             <p className="home_service_description text-[#B8BEBF] text-[12px] md:text-[14px] ">{item.description}</p>
            </div>
           <div className="z-20">
           <Image 

@@ -318,25 +318,9 @@
 
   
 .mobile_navigation2 {
-  background-color: var(--black-a9);
+  background-color: #000;
   position: fixed;
   inset: 0;
   animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.mobile_navigation2_Content {
-  background-color: rgb(0, 0, 0);
-  /* border-radius: 6px; */
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: translate(-0%, -0%);
-  width:1000px;
-  max-width: 100%;
-  height: 100vh;
-  padding: 25px;
-  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 999;
-  top:55px;
-}

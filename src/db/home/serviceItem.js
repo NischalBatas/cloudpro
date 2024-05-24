@@ -94,7 +94,7 @@ link:"/services/cloudops",
             },
             {
               title: "Infrastructure Migration and Upgrades",
-              description: "Seamlessly transition to the cloud with our Infrastructure Migration and Upgrades services. We help you migrate your existing infrastructure to the cloud or upgrade your current cloud setup to meet evolving business needs.",
+              description: "Steamlessly transition to the cloud with our Infrastructure Migration and Upgrades services. We help you migrate your existing infrastructure to the cloud or upgrade your current cloud setup to meet evolving business needs.",
               image: "/Image/serviceItem/serviceDetail/6.svg",
 link:"/services/infrastructure-migration",
               items: [

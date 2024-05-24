@@ -15,14 +15,17 @@
     background-color: #010101 !important;
     -webkit-backdrop-filter: blur(0);
   backdrop-filter: blur(0);
+  
 }
 
 .height_content_main{
-  max-height: calc(100vh - 298px)
+  max-height: calc(100vh - 298px);
+  
 }
 
 .height_content{
   height: calc(85vh - 350px)
+  
 }
 
 

@@ -14,6 +14,8 @@ const MessageBox = ({selectTab}) => {
     fullName:'',
     email:'',
     phoneNumber:'',
+    company:'',
+    position:'',
     message:''
   })
 
@@ -41,6 +43,8 @@ const MessageBox = ({selectTab}) => {
           fullName: '',
           phoneNumber: '',
           email: '',
+          company:'',
+          position:'',
           message: '',
         });
       }
@@ -78,6 +82,7 @@ const MessageBox = ({selectTab}) => {
     <input value={formData.fullName} name='fullName' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.John Smith"/>
   </Form.Control>
 </Form.Field>
+
 
 <Form.Field className="FormField" name="email">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
@@ -125,6 +130,39 @@ const MessageBox = ({selectTab}) => {
     <input value={formData.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your phone number"/>
   </Form.Control>
 </Form.Field>
+
+<Form.Field className="FormField" name="Your Company">
+  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+    
+    <Form.Label className="FormLabel">Your Company</Form.Label>
+    <Form.Message className="FormMessage" match="valueMissing">
+      Please enter your Company
+    </Form.Message>
+    <Form.Message className="FormMessage" match="typeMismatch">
+      Please provide a valid name
+    </Form.Message>
+  </div>
+  <Form.Control asChild>
+    <input value={formData.company} name='company' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.Abc"/>
+  </Form.Control>
+</Form.Field>
+
+<Form.Field className="FormField" name="Your Position">
+  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+    
+    <Form.Label className="FormLabel">Your Position</Form.Label>
+    <Form.Message className="FormMessage" match="valueMissing">
+      Please enter your position
+    </Form.Message>
+    <Form.Message className="FormMessage" match="typeMismatch">
+      Please provide a valid name
+    </Form.Message>
+  </div>
+  <Form.Control asChild>
+    <input value={formData.position} name='position' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.xyz"/>
+  </Form.Control>
+</Form.Field>
+
 
 <Form.Field className="FormField" name="question">
   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>

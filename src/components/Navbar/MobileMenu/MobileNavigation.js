@@ -39,7 +39,7 @@ const MobileNavigation = () => {
         </div>
         {navbarStatus &&  hamburger  ? 
     
-            <div className=" absolute top-10 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
+            <div className="overflow-hidden fixed top-10 left-0 w-full flex flex-col bg-black navbar-main py-2 h-screen">
                     <Link className="mobile_menu_link" onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/case-studies'>Case Studies</Link>
                     <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/about'>About Us</Link>                 
                     <Link className="mobile_menu_link"  onClick={()=>{setNavbarStatus(false),setHamburger(false)}} href='/blog'>Blogs</Link>                 

@@ -477,13 +477,13 @@ link:"/services/data-visualization",
         id:5,
         title: "Mobile App Development ",
         description: "Welcome to CloudPro AI Services Category where innovation meets mobility. Our Mobile App Development Solutions are crafted with precision to empower businesses of all scales, providing them with agile and scalable mobile applications to thrive in today's dynamic market landscape.",
-        image: "/Image/serviceItem/5.svg",
+        image: "/Image/serviceItem/6.svg",
         introduction: {
           category: "Mobile App Development",
           title: "Elevate Your Mobile Experience with CloudPro AI's Mobile App Development Services",
           description: "Welcome to CloudPro AI Services Category where innovation meets mobility. Our Mobile App Development Solutions are crafted with precision to empower businesses of all scales, providing them with agile and scalable mobile applications to thrive in today's dynamic market landscape.",
           button: "Speak to an Expert",
-          image: "/Image/serviceItem/5.svg"
+          image: "/Image/serviceItem/6.svg"
         },
         solutions: {
           title: "Why Choose CloudPro AI for Mobile App Development?",
@@ -575,13 +575,13 @@ link:"/services/generative-ai",
         id:6,
         title: "Web App Development",
         description: "Welcome to CloudPro AI, where innovation converges with functionality. Our Web App Development Solutions are meticulously tailored to elevate startups and MNCs alike, providing them with robust capabilities to thrive in the digital realm.",
-        image: "/Image/serviceItem/6.svg",
+        image: "/Image/serviceItem/5.svg",
         introduction: {
           category: "Web App Development",
           title: "Accelerate Your Online Presence with Web App Development Solutions from CloudPro AI",
           description: "Welcome to CloudPro AI, where innovation converges with functionality. Our Web App Development Solutions are meticulously tailored to elevate startups and MNCs alike, providing them with robust capabilities to thrive in the digital realm.",
           button: "Speak to an Expert",
-          image: "/Image/serviceItem/6.svg"
+          image: "/Image/serviceItem/5.svg"
         },
         solutions: {
           title: "Why Choose CloudPro AI for Web App Development?",

@@ -1,4 +1,5 @@
 "use client";
+
 import PartnerSlider from "@/components/SplideSlider/PartnerSlider";
 import Image from "next/image";
 import React, { useState } from "react";

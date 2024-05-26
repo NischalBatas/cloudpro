@@ -1,9 +1,9 @@
-"use client";
+
 
 import PartnerSlider from "@/components/SplideSlider/PartnerSlider";
-import Image from "next/image";
-import React, { useState } from "react";
 
+import React from "react";
+import '../slider.css'
 const Partners = () => {
   return (
     <div className="main-container partners-main flex flex-wrap items-center justify-between  pt-5 pb-20 px-2 gap-4 md:gap-2 ">

@@ -1,7 +1,7 @@
 import TestominialSlider from "@/components/SplideSlider/TestominialSlider";
 import Image from "next/image";
 import React from "react";
-
+import '../slider.css'
 const Testominial = () => {
   return (
     <div className="py-14 testominial-main testominial-home mb-10">

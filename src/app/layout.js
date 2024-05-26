@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
 
         <meta
           name="twitter:image"
-          content="https://www.cloudpro.ai/Image/logo/logoblack.svg"
+          content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="cloudproai" />

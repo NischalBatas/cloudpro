@@ -4,7 +4,7 @@ import React from 'react'
 import '../industriesDetail.css'
 const IndustriesTab = ({item}) => {
   return (
-    <div className='navbar-main bg-[#121315]'>
+    <div className='navbar-main bg-[#121315] fixed w-full z-[999]'>
         <div className='main-container2 flex  flex-nowrap gap-[24px] items-center whitespace-nowrap text-nowrap  '>
         <span className='uppercase text-[#5677E1] text-[14px] font-semibold tracking-[0.39px]'>Industries</span>      
 <div>

@@ -43,7 +43,7 @@ async function getPosts() {
 
 const Blog = async () => {
   const posts = await getPosts();
-  console.log("Blog Component - Post details", posts);
+  console.log("Blog Components - Post details", posts);
   return (
     <>
       {posts ? (

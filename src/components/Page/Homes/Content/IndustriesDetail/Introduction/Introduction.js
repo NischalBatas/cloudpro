@@ -4,7 +4,7 @@ import React from "react";
 
 const Introduction = ({ item }) => {
   return (
-    <div className="navbar-main py-[20px] md:pt-[60px]">
+    <div className="navbar-main py-[20px] md:py-[92px]">
       <div className="pb-[42px] main-container flex justify-between items-center gap-5 flex-wrap md:flex-nowrap">
         <Image
           width={412}

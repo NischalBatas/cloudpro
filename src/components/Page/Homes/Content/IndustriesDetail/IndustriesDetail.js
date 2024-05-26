@@ -10,7 +10,7 @@ import CaseStudyContent from '@/components/Page/CaseStudy/caseDetails/Content/Ca
 
 const IndustriesDetail = () => {
   return (
-    <div className='pt-[72px]'>
+    <div className='pt-16'>
         <IndustriesTab/>
        <Introduction/>
        <IndustriesService/>

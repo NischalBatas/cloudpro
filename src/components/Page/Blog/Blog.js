@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
 import Loading from "./Loading";
 import "./blog.css";
 import Footer from "@/components/Footer/Footer";

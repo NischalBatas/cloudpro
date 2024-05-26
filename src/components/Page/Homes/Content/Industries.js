@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import Link from "next/link";
+import { industriesDetails } from "@/db/home/industriesDetail/industriesDetail";
 
 const Industries = () => {
   const ref = useRef(null);
@@ -46,20 +47,20 @@ const Industries = () => {
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}>
 
-        {industries.map((item, index) => {
+        {industriesDetails.map((item, index) => {
           return (
             <motion.li key={index} variants={items} >
-            <Link href='/industry/1'
+            <Link href={`industry/${item.id}`}
               key={index}
               className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75  hover:opacity-100"
             >
               <Image
                 width={54}
                 height={54}
-                src={item.image}
+                src={item.sectorimage}
                 alt="image_industries"
               />
-              <p className="text-white text-sm px-4 mt-4">{item.title}</p>
+              <p className="text-white text-sm px-4 mt-4">{item.sectortitle}</p>
             </Link>
         </motion.li>
       );

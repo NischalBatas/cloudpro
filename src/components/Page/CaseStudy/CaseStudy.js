@@ -60,7 +60,7 @@ async function getPosts() {
 
 const CaseStudy = async() => {
   const posts=await getPosts()
-  console.log("Blog Component - Post details", posts);
+  // console.log("Blog Component - Post details", posts);
   return (
    <>
    {posts ? 

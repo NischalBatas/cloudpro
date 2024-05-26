@@ -63,7 +63,7 @@ async function getPosts() {
 const CaseStudyContent = async() => {
   const posts=await getPosts()
   const contents=posts.slice(-3)
-  console.log('newdata4s',posts)
+  // console.log('newdata4s',posts)
 
   return (
     <div className="navbar-main bg-white py-14">

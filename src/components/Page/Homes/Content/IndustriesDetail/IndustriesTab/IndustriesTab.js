@@ -2,10 +2,10 @@ import IndustriesSliderTab from '@/components/SplideSlider/IndustriesSliderTab'
 import Link from 'next/link'
 import React from 'react'
 import '../industriesDetail.css'
-const IndustriesTab = () => {
+const IndustriesTab = ({item}) => {
   return (
     <div className='navbar-main bg-[#121315]'>
-        <div className='main-container2 flex  flex-nowrap gap-[24px] items-center whitespace-nowrap text-nowrap  h-[59px]'>
+        <div className='main-container2 flex  flex-nowrap gap-[24px] items-center whitespace-nowrap text-nowrap  '>
         <span className='uppercase text-[#5677E1] text-[14px] font-semibold tracking-[0.39px]'>Industries</span>      
 <div>
 <div className='h-[32px] w-[1px] bg-[#4661B9] block'></div>
@@ -21,7 +21,7 @@ const IndustriesTab = () => {
             <li className='hover:text-[#fff]'><Link href='/'>Energy</Link></li>
             <li className='hover:text-[#fff]'><Link href='/'>Security</Link></li>
         </ul> */}
-<IndustriesSliderTab/>
+<IndustriesSliderTab itemId={item}/>
         
         </div>
     </div>

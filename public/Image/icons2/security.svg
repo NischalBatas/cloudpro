@@ -1,0 +1,48 @@
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1720_982)">
+<mask id="mask0_1720_982" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="54" height="54">
+<path d="M54 0H0V54H54V0Z" fill="white"/>
+<path d="M27 18.5625C27.5822 18.5625 28.0547 19.035 28.0547 19.6172C28.0547 20.1994 27.5822 20.6719 27 20.6719C26.4178 20.6719 25.9453 20.1994 25.9453 19.6172C25.9453 19.035 26.4178 18.5625 27 18.5625Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1720_982)">
+<mask id="mask1_1720_982" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="54" height="54">
+<path d="M0 0.000156403H53.9998V54H0V0.000156403Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_1720_982)">
+<path d="M27.5546 19.6173C27.5546 19.3113 27.306 19.0626 26.9999 19.0626C26.6939 19.0626 26.4453 19.3113 26.4453 19.6173C26.4453 19.9234 26.6939 20.172 26.9999 20.172C27.306 20.172 27.5546 19.9234 27.5546 19.6173Z" fill="black" stroke="#6083F3"/>
+<path d="M50.8358 45.9844H3.16406C1.99863 45.9844 1.05469 45.0404 1.05469 43.875V10.1251C1.05469 8.95968 1.99863 8.01573 3.16406 8.01573H50.8358C52.0012 8.01573 52.9452 8.95968 52.9452 10.1251V43.875C52.9452 45.0404 52.0012 45.9844 50.8358 45.9844Z" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.9842 24.8907H22.7812V14.3439H45.9842V24.8907Z" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.01562 14.3439H16.4531" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.01562 18.5626H16.4531" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.01562 22.7814H16.4531" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7812 39.6562H26.9999" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7812 35.4375H26.9999" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7812 31.2188H26.9999" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.2734 39.6562H36.4921" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.2734 35.4375H36.4921" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.2734 31.2188H36.4921" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7654 39.6562H45.9842" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7654 35.4375H45.9842" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7654 31.2188H45.9842" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.2187 19.6173H41.7655" stroke="#6083F3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g clip-path="url(#clip1_1720_982)">
+<mask id="mask2_1720_982" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="30" width="11" height="11">
+<path d="M8 30H19V41H8V30Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_1720_982)">
+<path d="M13.5 30.4297L9.28906 32.178V34.3034C9.28906 37.0539 10.9534 39.5309 13.5 40.5703C16.0465 39.5309 17.7109 37.0539 17.7109 34.3034V32.178L13.5 30.4297Z" stroke="#6083F3" stroke-width="0.846154" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.8242 35.1585L13.0251 36.3594L15.1758 34.2087" stroke="#6083F3" stroke-width="0.846154" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1720_982">
+<rect width="54" height="54" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1720_982">
+<rect width="11" height="11" fill="white" transform="translate(8 30)"/>
+</clipPath>
+</defs>
+</svg>

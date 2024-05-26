@@ -4,8 +4,10 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { industries } from '@/db/home/industries';
 import Link from 'next/link'
+import { industriesDetails } from '@/db/home/industriesDetail/industriesDetail';
 
-const IndustriesSliderTab = () => {
+const IndustriesSliderTab = ({itemId}) => {
+  console.log('sliderDetail',itemId)
     const splideOptions = {
         type: "slide",
         perPage:6,
@@ -41,12 +43,12 @@ const IndustriesSliderTab = () => {
       };
   return (
     <div className="overflow-hidden">
-      <Splide options={splideOptions} className='flex justify-between w-full gap-[32px] text-[#83858B]  uppercase text-[12px] tracking-[0.12px] '>
-        {industries.map((item, index) => {
+      <Splide options={splideOptions} className='flex justify-between w-full gap-[32px] text-[#83858B]  uppercase text-[12px] tracking-[0.12px] pt-[24px]'>
+        {industriesDetails.map((item, index) => {
           return (
             <SplideSlide
-              key={index} className="">
-            <Link href='/'>{item.title}</Link>
+              key={index} className={item.id == itemId ?' text-white font-semibold border-b-[2px] pb-[20px]':''}>
+            <Link href={`/industry/${item.id}`}>{item.sectortitle}</Link>
 
           </SplideSlide>
           );

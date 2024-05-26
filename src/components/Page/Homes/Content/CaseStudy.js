@@ -12,7 +12,7 @@ const CaseStudy = () => {
   const [posts, setPosts] = useState([]);
   const contents=posts.slice(-3)
   const [loading, setLoading] = useState(true);
-  console.log(posts)
+  // console.log(posts)
   useEffect(() => {
     async function fetchData() {
       try {

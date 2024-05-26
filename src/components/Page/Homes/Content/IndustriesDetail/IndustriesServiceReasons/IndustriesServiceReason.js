@@ -2,12 +2,12 @@ import { industriesDetail } from "@/db/home/industriesDetail/industriesDetail";
 import Image from "next/image";
 import React from "react";
 
-const IndustriesServiceReason = () => {
+const IndustriesServiceReason = ({item}) => {
   return (
     <div className="navbar-main bg-white py-10">
       <div className="main-container ">
         <p className="max-w-[448px] text-[#071518] text-[36px] font-semibold leading-[48px] ">
-          Why Choose CloudProAI for e-commerce?{" "}
+         {item.title}
         </p>
 
         <div className="flex justify-between gap-4 mt-10 flex-wrap md:flex-nowrap">
@@ -15,14 +15,14 @@ const IndustriesServiceReason = () => {
             <Image
               width={592}
               height={606}
-              src="/Image/process/generativeapp/cloud13.svg"
+              src={item.image}
               alt="why cloudpro"
             />
           </div>
           <div className="flex flex-col gap-4">
-            {industriesDetail.map((item,index)=>{
+            {item.lists.map((item,index)=>{
                 return(
-                    <div className="p-[18px] md:max-w-[471px] border-[1px] border-[#CDCDCD] rounded-[8px]">
+                    <div key={index} className="p-[18px] md:max-w-[471px] border-[1px] border-[#CDCDCD] rounded-[8px]">
                     <span className="text-[#000] font-semibold text-[24px]">
                      {item.title}
                     </span>

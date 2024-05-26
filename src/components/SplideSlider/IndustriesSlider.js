@@ -6,7 +6,7 @@ import { industries } from '@/db/home/industries';
 import Link from 'next/link'
 import { industriesDetail } from '@/db/home/industriesDetail/industriesDetail';
 
-const IndustriesSlider = () => {
+const IndustriesSlider = ({serviceItems}) => {
     const splideOptions = {
         type: "loop",
         perPage: 3,
@@ -43,21 +43,16 @@ const IndustriesSlider = () => {
   return (
     <div className="mx-auto overflow-hidden">
       <Splide options={splideOptions} className='flex pt-[40px] '>
-        {industriesDetail.map((item, index) => {
+        {serviceItems.map((item, index) => {
           return (
             <SplideSlide
               key={index} className="max-w-[400px] min-h-[400px] p-[20px] flex flex-col justify-end bg-[#050607]">
             <div className="max-w-[328px]">
-            <span className="text-[24px] font-semibold">Personalized Recommendation Systems</span>
+            <span className="text-[24px] font-semibold">{item.title}</span>
 
             </div>
             <p className="text-[16px] leading-[28px] text-[#B5B5B5]">
-              Deliver personalized shopping experiences that captivate and
-              engage your customers. Our AI-driven recommendation engines
-              provide tailored product suggestions based on individual
-              preferences and browsing history, ensuring your customers find
-              exactly what they're looking for, boosting satisfaction and
-              loyalty. 
+            {item.description}
             </p>
           </SplideSlide>
           );

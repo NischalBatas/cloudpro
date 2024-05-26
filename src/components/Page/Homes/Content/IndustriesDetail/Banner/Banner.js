@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = ({caseData}) => {
+const Banner = ({item}) => {
   return (
     <div
       className="flex flex-col justify-end h-[250px] md:h-[399px]  bg-no-repeat bg-center bg-cover"
@@ -11,7 +11,7 @@ const Banner = ({caseData}) => {
       }}
     >
       <p className="m-auto max-w-[519px] text-center font-bold text:[24px] md:text-[32px] md:leading-[48px]">
-      Empowering Your E-commerce Journey with AI-Driven Precision 
+      {item.banner}
       </p>
     </div>
   );

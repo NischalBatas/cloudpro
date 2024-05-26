@@ -72,7 +72,7 @@ export async function getSinglePost(slug) {
 const CaseDetails = async ({ props }) => {
   let slugs = props.params.slug;
   const posts = await getSinglePost(slugs);
-  console.log("Method", posts);
+  // console.log("Method", posts);
   
 
 

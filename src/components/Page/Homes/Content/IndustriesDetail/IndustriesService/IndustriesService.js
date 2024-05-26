@@ -1,7 +1,7 @@
 import IndustriesSlider from "@/components/SplideSlider/IndustriesSlider";
 import React from "react";
 
-const IndustriesService = () => {
+const IndustriesService = ({item}) => {
   return (
     <div className="navbar-main2 py-[50px] bg-[#3D43562E]">
       <div className="main-container3">
@@ -9,7 +9,7 @@ const IndustriesService = () => {
           Our Services
         </span>
 
-        <IndustriesSlider/>
+        <IndustriesSlider serviceItems={item.services}/>
       </div>
     </div>
   );

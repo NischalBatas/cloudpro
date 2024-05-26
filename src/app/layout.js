@@ -41,15 +41,16 @@ export default function RootLayout({ children }) {
         
 <meta name="title" property="og:title" content="CloudPro.AI" />
   <meta name="description" property="og:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta name="image" property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.jpg" />
+  <meta name="image" property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
   <meta name="url" property="og:url" content="https://www.cloudpro.ai/" />
   <meta name="type" property="og:type" content="website" />
   <meta property="og:site_name" content="CloudPro.AI Services" />
+  <meta name="description" content="Data, AI and Software Cloud Services Consultant" />
 
   <meta name="twitter:card" content="CloudPro.AI Services" />
   <meta name="twitter:title" content="CloudPro.AI" />
   <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.jpg" />
+  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
 
 
         </head>

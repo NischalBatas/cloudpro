@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
           if (targetElement) {
               window.scrollTo({
-                  top: targetElement.offsetTop - 50, // Adjust this value to account for the fixed navigation height
+                  top: targetElement.offsetTop - 60, // Adjust this value to account for the fixed navigation height
                   behavior: 'smooth'
               });
           }

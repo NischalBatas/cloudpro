@@ -15,7 +15,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="navbar-main-group navbar-main-group3 fixed w-full ">
+    <div className="navbar-main-group navbar-main-group3 fixed w-full  z-[999]">
       <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative h-[71px]">
         <div className="NavigationMenuList w-full">
           <div className="logo-main">

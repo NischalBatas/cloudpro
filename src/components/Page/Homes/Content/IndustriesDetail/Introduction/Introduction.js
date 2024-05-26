@@ -4,15 +4,15 @@ import React from "react";
 
 const Introduction = ({ item }) => {
   return (
-    <div className="navbar-main py-[20px] md:py-[92px]">
-      <div className="pb-[42px] main-container flex justify-between items-center gap-5 flex-wrap md:flex-nowrap">
-        <Image
+    <div className="navbar-main py-[40px] md:py-[92px]">
+      <div className="pb-[42px] main-container flex justify-between items-center gap-8 flex-wrap md:flex-nowrap">
+        <Image className="max-w-[220px] md:min-w-[200px] md:max-w-[412px]"
           width={412}
           height={412}
           src="/Image/serviceItem/serviceDetail/1.svg"
           alt="product_image"
         />
-        <div className="md:max-w-[520px]">
+        <div className=" md:max-w-[520px]">
           <span className="text-[#5677E1] text-[10px] font-medium rounded-[8px] px-[16px] py-[8px] bg-[#0c111f]">
             Industries / Ecommerce
           </span>

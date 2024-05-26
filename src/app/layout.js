@@ -42,54 +42,21 @@ export default function RootLayout({ children }) {
         <link rel="mask-icon" href="/favicon.png" color="#000" />
         <link rel="shortcut icon" href="/favicon.png" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://www.cloudpro.ai/" />
-        <meta name="twitter:title" content="cloudproai" />
-        <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
+        
+<meta property="og:title" content="CloudPro.AI" />
+  <meta property="og:description" content="Data, AI and Software Cloud Services Consultant" />
+  <meta property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png" />
+  <meta property="og:url" content="https://www.cloudpro.ai/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CloudPro.AI Services" />
 
-        <meta
-          name="twitter:image"
-          content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="cloudproai" />
-        <meta property="og:description" content="Data, AI and Software Cloud Services Consultant" />
-        <meta property="og:site_name" content="cloudproai" />
-        <meta property="og:url" content="https://www.cloudpro.ai" />
-        <meta
-          property="og:image"
-          content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png"
-        />
 
-<link rel="apple-touch-icon" href="/favicon.png" />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/favicon.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="167x167"
-          href="/favicon.png"
-        />
+  <meta name="twitter:card" content="CloudPro.AI Services" />
+  <meta name="twitter:title" content="CloudPro.AI" />
+  <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
+  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png" />
 
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon.png"
-        />
+
         </head>
       <body className={inter.className}>
         

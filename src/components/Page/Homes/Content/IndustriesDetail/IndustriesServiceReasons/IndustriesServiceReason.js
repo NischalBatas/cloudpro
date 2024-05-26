@@ -24,14 +24,10 @@ const IndustriesServiceReason = () => {
                 return(
                     <div className="p-[18px] md:max-w-[471px] border-[1px] border-[#CDCDCD] rounded-[8px]">
                     <span className="text-[#000] font-semibold text-[24px]">
-                      Expertise and Experience
+                     {item.title}
                     </span>
                     <p className="mt-1 text-[16px] leading-[24px] text-[#393939]">
-                      With years of experience serving diverse e-commerce businesses,
-                      we understand the unique challenges and opportunities in the
-                      digital marketplace. Our team of experts is dedicated to
-                      delivering solutions that are tailored to your specific needs.{" "}
-                    </p>
+                     {item.description}    </p>
                   </div>
                 )
             })}

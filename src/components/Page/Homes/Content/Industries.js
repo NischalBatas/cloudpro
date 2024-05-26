@@ -3,6 +3,7 @@ import { industries } from "@/db/home/industries";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 
 const Industries = () => {
   const ref = useRef(null);
@@ -48,7 +49,7 @@ const Industries = () => {
         {industries.map((item, index) => {
           return (
             <motion.li key={index} variants={items} >
-            <div
+            <Link href='/industry/1'
               key={index}
               className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75  hover:opacity-100"
             >
@@ -59,7 +60,7 @@ const Industries = () => {
                 alt="image_industries"
               />
               <p className="text-white text-sm px-4 mt-4">{item.title}</p>
-            </div>
+            </Link>
         </motion.li>
       );
     })}

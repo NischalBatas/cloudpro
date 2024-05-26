@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://www.cloudpro.ai" />
         <meta
           property="og:image"
-          content="https://www.cloudpro.ai/Image/logo/logoblack.svg"
+          content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png"
         />
 
 <link rel="apple-touch-icon" href="/favicon.png" />

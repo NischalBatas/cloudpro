@@ -2,11 +2,9 @@ import { Inter } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-
 import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css";
 import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css";
 import "../../static/resources/animate.css-main/animate.css";
-import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
 
 
@@ -37,24 +35,21 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="default" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="default" />
-
-
         <link rel="mask-icon" href="/favicon.png" color="#000" />
         <link rel="shortcut icon" href="/favicon.png" />
 
         
-<meta property="og:title" content="CloudPro.AI" />
-  <meta property="og:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png" />
-  <meta property="og:url" content="https://www.cloudpro.ai/" />
-  <meta property="og:type" content="website" />
+<meta name="title" property="og:title" content="CloudPro.AI" />
+  <meta name="description" property="og:description" content="Data, AI and Software Cloud Services Consultant" />
+  <meta name="image" property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.jpg" />
+  <meta name="url" property="og:url" content="https://www.cloudpro.ai/" />
+  <meta name="type" property="og:type" content="website" />
   <meta property="og:site_name" content="CloudPro.AI Services" />
-
 
   <meta name="twitter:card" content="CloudPro.AI Services" />
   <meta name="twitter:title" content="CloudPro.AI" />
   <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.png" />
+  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudpro-theme.jpg" />
 
 
         </head>

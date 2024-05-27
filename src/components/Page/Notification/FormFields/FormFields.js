@@ -171,7 +171,6 @@ const FormFields = () => {
           }}
         >
           <Form.Label className="FormLabel">
-            {" "}
             Phone Number (Optional)
           </Form.Label>
           {/* <Form.Message className="FormMessage" match="valueMissing">
@@ -193,7 +192,8 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Submit asChild>
+     <div>
+     <Form.Submit asChild>
         <button
           type="submit"
           className="Button bg-cloud"
@@ -203,13 +203,14 @@ const FormFields = () => {
         </button>
       </Form.Submit>
 
-      <div className="">
-        <p className="text-[14px] leading-[19px] text-[#878787] italic">
+     
+        <p className="mt-4 text-[14px] leading-[19px] text-[#878787] italic">
         Your information will only be used for personalization purposes and
         sharing you the contents produced by Cloudpro AI. You can unsubscribe
         anytime.
       </p>
-      </div>
+     </div>
+  
     </Form.Root>
   );
 };

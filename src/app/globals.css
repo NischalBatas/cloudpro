@@ -93,6 +93,13 @@ button:hover {
 
 
 
+.main-container4{
+  max-width: 1125px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 .navbar-main {
   padding-left: 15rem;
   padding-right: 15rem;

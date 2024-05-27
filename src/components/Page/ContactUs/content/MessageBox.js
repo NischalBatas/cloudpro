@@ -65,6 +65,7 @@ const MessageBox = ({selectTab}) => {
         Schedule a Call
       </Tabs.Trigger>
     </Tabs.List>
+    
     <Tabs.Content className="TabsContent1 flex justify-between flex-wrap gap-6 lg:flex-nowrap" value="message">
     <Form.Root className="FormRoot" onSubmit={handleSubmit}>
 <Form.Field className="FormField" name="Your full name">

@@ -8,9 +8,12 @@ const Newsletter = () => {
   return (
     <div className='pt-20'>
      <NewsletterForm/>
+     <div className='hidden md:block'>
      <CaseStudy/>
      <Product/>
      <Footer/>
+      </div>
+   
     </div>
   )
 }

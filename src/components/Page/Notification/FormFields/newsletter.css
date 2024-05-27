@@ -1,4 +1,14 @@
+.newsletter_main_content{
+  background-image: url('/Image/notification/bg.png');
+  z-index: -1;
+}
 
+@media only screen and (max-width:650px){
+  .newsletter_main_content{
+    background-image: url('/Image/notification/mobile_bg.png');
+    z-index: -1;
+  }
+}
 /* reset */
 input,
 textarea,

@@ -6,11 +6,8 @@ const NewsletterForm = () => {
   return (
     <div className="">
       <div
-        className="flex flex-col pt-24 pb-10   bg-no-repeat bg-center bg-cover"
-        style={{
-          zIndex: "-1",
-          backgroundImage: `url('/Image/notification/bg.png')`,
-        }}
+        className="newsletter_main_content flex flex-col pt-24 pb-10   bg-no-repeat md:bg-center md:bg-cover"
+       
       >
   <div className="main-container4  md:bg-[black]  rounded-[16px] p-[24px] md:p-[55px]">
         

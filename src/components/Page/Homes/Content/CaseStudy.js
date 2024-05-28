@@ -112,7 +112,7 @@ const CaseStudy = async() => {
                     <div className="casestudy_product_title font-semibold text-[16px] text-[#fff]">
                     {item.node.title}
                     </div>
-                    <div className="casestudy_product_description mt-2 text-[14px] text-[#B8BEBF] leading-6">
+                    <div className="casestudy_product_description mt-1 text-[14px] text-[#B8BEBF] leading-6">
                     {item.node.casestudyfieldgroud.introduction}
                     </div>
                   </div>

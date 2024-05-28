@@ -95,7 +95,7 @@ const Blog = async () => {
                           <div className="blogs_product_title font-semibold text-[16px] text-[#000]">
                             {item.title}
                           </div>
-                          <div className="blogs_product_description mt-2 text-[14px] text-[#666666] leading-6">
+                          <div className="blogs_product_description mt-1 text-[14px] text-[#666666] leading-6">
                             {item.blogfield.description}
                           </div>
                         </div>

@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer/Footer";
+import CaseStudyContent from "@/components/Page/CaseStudy/caseDetails/Content/CaseStudyContent";
 import Introduction from "@/components/Page/Homes/Content/ServiceDetail/Introduction";
 import Products from "@/components/Page/Homes/Content/ServiceDetail/Products";
 import ServiceType from "@/components/Page/Homes/Content/ServiceDetail/ServiceType";
@@ -20,6 +21,7 @@ const page = (props) => {
         <Solution item={item2}/>
         <ServiceType item={item2}/>
         <Tools item={item2}/>
+        <CaseStudyContent/>
         <Products/>
         <Footer/>
           </div>

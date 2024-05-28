@@ -26,8 +26,7 @@ const FormFields = () => {
         headers:{
           "Content-Type":"application/json"
         },
-        body:JSON.stringify(formData),
-        next:{revalidate:50}
+        body:JSON.stringify(formData)
       })
       if (res.status === 200) {
         alert("Sent Successfully, We will get back to you soon.");

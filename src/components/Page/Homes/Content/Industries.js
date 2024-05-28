@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from "react";
 import { industries } from "@/db/home/industries";
 import Image from "next/image";

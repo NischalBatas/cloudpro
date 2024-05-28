@@ -1,3 +1,4 @@
+"use client"
 import { serviceItem } from "@/db/home/serviceItem";
 import Image from "next/image";
 import React, { useRef } from "react";

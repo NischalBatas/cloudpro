@@ -33,6 +33,7 @@ export async function getSinglePost(slug) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
+    next:{revalidate:50}
   });
 
   const { data } = await res.json();

@@ -34,6 +34,7 @@ async function getPosts() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
+    next:{revalidate: 50}
   });
 
   const { data } = await res.json();

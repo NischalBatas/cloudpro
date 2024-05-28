@@ -1,7 +1,7 @@
-"use client";
+"use client"
 import Footer from "@/components/Footer/Footer";
 import Homes from "@/components/Page/Homes/Homes";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 
 

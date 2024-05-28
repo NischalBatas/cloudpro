@@ -24,8 +24,8 @@ const NewsletterForm = () => {
              </p>
            </div>
            <div className="flex items-center flex-col justify-center md:max-w-[424px]">
-           <Image className="mt-10" width={280} height={280} src='/Image/notification/qr.png'/>
-           <span className="mt-2 text-[14px] text-[#b0b0b0]">Scan to fillup the form</span>
+           <Image className="mt-10" width={250} height={250} src='/Image/notification/qr.png'/>
+           <span className="mt-2 text-[14px] text-[#b0b0b0]">Please scan to QR code for the form</span>
            </div>
 </div>
    

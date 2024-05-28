@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-main-group navbar-main-group3 fixed w-full  z-[999]">
-      <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative h-[71px]">
+      <NavigationMenu.Root className="NavigationMenuRoot navbar-main relative h-[62px]">
         <div className="NavigationMenuList w-full">
           <div className="logo-main">
             <NavigationMenu.Link href="/">

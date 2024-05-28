@@ -67,10 +67,10 @@ const CaseStudyContent = async() => {
   // console.log('newdata4s',posts)
 
   return (
-    <div className="navbar-main bg-white py-14">
+    <div className="navbar-main bg-white py-5 md:py-10">
     <div className='main-container'>
     <div><p className='font-semibold text-[24px] text-black'>You may also like</p></div>
-    <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
+    <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
           
           {contents ? 
           <>

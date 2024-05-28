@@ -51,6 +51,7 @@ async function getPosts() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
+    next:{revalidate:50}
   });
 
   const { data } = await res.json();
@@ -62,7 +63,7 @@ async function getPosts() {
 
 const CaseStudyContent = async() => {
   const posts=await getPosts()
-  const contents=posts.slice(-3)
+  const contents=posts.slice(0,3)
   // console.log('newdata4s',posts)
 
   return (

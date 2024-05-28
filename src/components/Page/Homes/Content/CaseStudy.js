@@ -1,81 +1,66 @@
-"use client"
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import '../../CaseStudy/casestudy.css'
 import Loading from "./Loading";
 
-
-
-const CaseStudy = () => {
-
-  const [posts, setPosts] = useState([]);
-  const contents=posts.slice(-3)
-  const [loading, setLoading] = useState(true);
-  // console.log(posts)
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            query: `
-              query caseStudies {
-                caseStudies(where: {orderby: {field: DATE, order: DESC}}) {
-                  edges {
-                    node {
-                      casestudyfieldgroud {
-                        conclusion
-                        introduction
-                        readTime
-                        solution
-                        technology
-                        uploadDate
-                        herotext
-                        impactandresult
-                        backgroundImage {
-                          node {
-                            altText
-                            sourceUrl
-                          }
-                        }
-                        caseStudyImage {
-                          node {
-                            altText
-                            sourceUrl
-                          }
-                        }
-                        caseStudySector
-                        caseStudySectorDescription
+async function getPosts() {
+  const query = `query caseStudies {
+            caseStudies(where: {orderby: {field: DATE, order: DESC}}) {
+              edges {
+                node {
+                  casestudyfieldgroud {
+                    conclusion
+                    introduction
+                    readTime
+                    solution
+                    technology
+                    uploadDate
+                    herotext
+                    impactandresult
+                    backgroundImage {
+                      node {
+                        altText
+                        sourceUrl
                       }
-                      date
-                      title
-                      casestudyId
-                      slug
                     }
+                    caseStudyImage {
+                      node {
+                        altText
+                        sourceUrl
+                      }
+                    }
+                    caseStudySector
+                    caseStudySectorDescription
                   }
+                  date
+                  title
+                  casestudyId
+                  slug
                 }
               }
-            `,
-          }),
-        });
+            }
+          }`;
 
-        const { data } = await res.json();
-        setPosts(data.caseStudies.edges);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setLoading(false);
-      }
-    }
+  const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query }),
+    next:{revalidate:50}
+  });
 
-    fetchData();
-  }, []);
+  const { data } = await res.json();
 
-  if (loading) return <Loading />;
+  return data.caseStudies.edges;
+}
+
+
+const CaseStudy = async() => {
+  const posts=await getPosts()
+  const contents=posts.slice(0,3)
+
 
 
   return (
@@ -91,7 +76,7 @@ const CaseStudy = () => {
         
 
         <div  className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 my-6">
-        {contents?
+        {contents ?
           <>
 {contents.map((item, index) => {
             return (

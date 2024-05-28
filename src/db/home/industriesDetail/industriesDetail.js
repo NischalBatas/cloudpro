@@ -207,7 +207,7 @@ export const industriesDetails = [
         banner: "Driving Technology Innovation with AI-Driven Solutions",
         reasons: {
             title: "Why Choose CloudProAI for Technology?",
-            image: "/Image/process/generativeapp/cloud20.svg",
+            image: "/Image/industries/a1.svg",
             lists: [
                 { title: "Technology Expertise", description: "Our team has a deep understanding of the technology sector, providing solutions that address specific challenges and opportunities. We help you stay ahead in a competitive landscape." },
                 { title: "Innovative Solutions", description: "We leverage the latest AI and cloud technologies to deliver innovative solutions that drive technology innovation. Our commitment to technological excellence ensures you have the tools needed for success." },
@@ -234,7 +234,7 @@ export const industriesDetails = [
         banner: "Empowering the Energy Sector with AI-Driven Innovation",
         reasons: {
             title: "Why Choose CloudProAI for Energy?",
-            image: "/Image/process/generativeapp/cloud21.svg",
+            image: "/Image/industries/a1.svg",
             lists: [
                 { title: "Energy Expertise", description: "Our team has extensive experience in the energy sector, understanding the unique challenges and opportunities. We provide tailored solutions that address specific needs, ensuring optimal results." },
                 { title: "Innovative Solutions", description: "We leverage the latest AI and cloud technologies to provide innovative solutions that keep your operations ahead of the competition. Our commitment to innovation ensures you always have access to cutting-edge tools." },
@@ -261,7 +261,7 @@ export const industriesDetails = [
         banner: "Transforming Security with AI-Driven Precision",
         reasons: {
             title: "Why Choose CloudProAI for Security?",
-            image: "/Image/process/generativeapp/cloud22.svg",
+            image: "/Image/industries/a1.svg",
             lists: [
                 { title: "Security Expertise", description: "Our team has extensive experience in the security sector, understanding the unique challenges and opportunities. We provide tailored solutions that address specific needs, ensuring optimal results." },
                 { title: "Innovative Solutions", description: "We leverage the latest AI and cloud technologies to provide innovative solutions that keep your organization ahead of potential threats. Our commitment to innovation ensures you always have access to cutting-edge tools." },

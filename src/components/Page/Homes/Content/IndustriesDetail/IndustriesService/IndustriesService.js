@@ -3,8 +3,8 @@ import React from "react";
 
 const IndustriesService = ({item}) => {
   return (
-    <div className="navbar-main2 py-[50px] bg-[#3D43562E]">
-      <div className="main-container3">
+    <div className="navbar-main py-[50px] bg-[#3D43562E]">
+      <div className="main-container">
         <span className="uppercase border-l-[5px] px-5 border-[#5677E1] text-[24px] font-bold leading-[32px] tracking-[0.24px]">
           Our Services
         </span>

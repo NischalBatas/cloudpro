@@ -49,7 +49,6 @@ const IndustriesSlider = ({serviceItems}) => {
               key={index} className="max-w-[400px] min-h-[400px] p-[20px] flex flex-col justify-end bg-[#050607]">
             <div className="max-w-[328px]">
             <span className="text-[24px] font-semibold">{item.title}</span>
-
             </div>
             <p className="text-[16px] leading-[28px] text-[#B5B5B5]">
             {item.description}

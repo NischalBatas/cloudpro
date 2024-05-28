@@ -21,6 +21,7 @@ const NewsletterForm = () => {
                news, updates, and products. Get valuable insights into the world of
                AI
              </p>
+             <Image className="mt-8" width={280} height={280} src='/Image/notification/qr.png'/>
            </div>
    
            <FormFields/>

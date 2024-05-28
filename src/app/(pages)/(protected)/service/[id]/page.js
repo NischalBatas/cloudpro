@@ -3,6 +3,7 @@ import Introduction from "@/components/Page/Homes/Content/ServiceDetail/Introduc
 import Products from "@/components/Page/Homes/Content/ServiceDetail/Products";
 import ServiceType from "@/components/Page/Homes/Content/ServiceDetail/ServiceType";
 import Solution from "@/components/Page/Homes/Content/ServiceDetail/Solution";
+import Tools from "@/components/Page/Homes/Content/ServiceDetail/Tools";
 import { serviceItem } from "@/db/home/serviceItem";
 import React from "react";
 
@@ -18,6 +19,7 @@ const page = (props) => {
         <Introduction item={item2}/>
         <Solution item={item2}/>
         <ServiceType item={item2}/>
+        <Tools item={item2}/>
         <Products/>
         <Footer/>
           </div>

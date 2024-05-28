@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "./newsletter.css";
+
 const FormFields = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -20,13 +21,14 @@ const FormFields = () => {
     e.preventDefault();
 
     try {
-      const res = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
-      );
-      console.log("EmailJS response:", res);
+      const res =await fetch(`${process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT}`,{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify(formData),
+        next:{revalidate:50}
+      })
       if (res.status === 200) {
         alert("Sent Successfully, We will get back to you soon.");
 
@@ -40,8 +42,8 @@ const FormFields = () => {
         });
       }
     } catch (error) {
-      console.log("EmailJS error:", error);
-      alert("Can't send, please check and try again.");
+      console.log("Newsletter error:", error);
+      alert("Can't send, please check and try again.",error);
     }
   };
   return (
@@ -173,12 +175,7 @@ const FormFields = () => {
           <Form.Label className="FormLabel">
             Phone Number (Optional)
           </Form.Label>
-          {/* <Form.Message className="FormMessage" match="valueMissing">
-          Enter the Phone Number
-        </Form.Message>
-        <Form.Message className="FormMessage" match="typeMismatch">
-          Please provide a valid number
-        </Form.Message> */}
+     
         </div>
         <Form.Control asChild>
           <input

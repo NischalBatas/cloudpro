@@ -141,7 +141,18 @@ link:"/services/big-data",
               ]
             }
           ]
-        }
+        },
+        tools:[
+          {title:"AWS",image:"/Image/tools/cloud/1.svg"},
+          {title:"Microsoft Azure ",image:"/Image/tools/cloud/2.svg"},
+          {title:"Google Cloud ",image:"/Image/tools/cloud/3.svg"},
+          {title:"Kubernetes",image:"/Image/tools/cloud/4.svg"},
+          {title:"Terraform ",image:"/Image/tools/cloud/5.svg"},
+          {title:"Ansible ",image:"/Image/tools/cloud/6.svg"},
+          {title:"Datadog ",image:"/Image/tools/cloud/7.svg"},
+          {title:"Grafana Labs ",image:"/Image/tools/cloud/8.svg"},
+        ]
+     
       },
 
       {
@@ -204,7 +215,15 @@ link:"/services/ai-consulting",
               items: []
             }
           ]
-        }
+        },   
+        tools:[
+          {title:"Fivetran",image:"/Image/tools/ai/1.svg"},
+          {title:"Databricks",image:"/Image/tools/ai/2.svg"},
+          {title:"Hightouch",image:"/Image/tools/ai/3.svg"},
+          {title:"Datavault",image:"/Image/tools/ai/4.svg"},
+
+        ]
+     
       },
 
       {
@@ -349,7 +368,16 @@ link:"/services/data-pipeline",
               ]
             }
           ]
-        }
+        },
+        tools:[
+          {title:"Cassandra ",image:"/Image/tools/data/1.svg"},
+          {title:"MongoDB ",image:"/Image/tools/data/2.svg"},
+          {title:"Microsoft SQL ",image:"/Image/tools/data/3.svg"},
+          {title:"MySQL ",image:"/Image/tools/data/4.svg"},
+          {title:"Snowflake ",image:"/Image/tools/data/5.svg"},
+          {title:"Oracle ",image:"/Image/tools/data/6.svg"},
+          {title:"PostgreSQL ",image:"/Image/tools/data/7.svg"},
+        ]
       },
 
       {
@@ -470,7 +498,17 @@ link:"/services/data-visualization",
               ]
             }
           ]
-        }
+        },
+        tools:[
+          {title:"Snowflake ",image:"/Image/tools/bi/1.svg"},
+          {title:"Microsoft SQL ",image:"/Image/tools/bi/2.svg"},
+          {title:"MySQL ",image:"/Image/tools/bi/3.svg"},
+          {title:"PostgreSQL ",image:"/Image/tools/bi/4.svg"},
+          {title:"Databricks ",image:"/Image/tools/bi/5.svg"},
+          {title:"Tableau ",image:"/Image/tools/bi/6.svg"},
+          {title:"Power BI ",image:"/Image/tools/bi/7.svg"},
+        
+        ]
       },
 
       {
@@ -568,7 +606,15 @@ link:"/services/generative-ai",
               items: []
             }
           ]
-        }
+        },
+        tools:[
+          {title:"React Native",image:"/Image/tools/mobile/4.svg"},
+          {title:"Flutter",image:"/Image/tools/mobile/1.png"},
+          {title:"Android",image:"/Image/tools/mobile/2.png"},
+          {title:"Swift",image:"/Image/tools/mobile/3.png"},
+      
+          
+        ]
       },
 
       {
@@ -713,7 +759,17 @@ link:"/services/generative-ai",
               ]
             }
           ]
-        }
+        },
+        tools:[
+          {title:"NextJS",image:"/Image/tools/web/1.svg"},
+          {title:"React ",image:"/Image/tools/web/2.svg"},
+          {title:"Rails",image:"/Image/tools/web/3.svg"},
+          {title:"Vue.js",image:"/Image/tools/web/4.svg"},
+          {title:"WordPress ",image:"/Image/tools/web/5.svg"},
+          {title:"Express ",image:"/Image/tools/web/6.svg"},
+          {title:"Node.js ",image:"/Image/tools/web/7.svg"},
+          {title:"Ruby on Rails",image:"/Image/tools/web/8.svg"},
+        ]
       }
 
 ]

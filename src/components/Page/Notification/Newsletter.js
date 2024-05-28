@@ -6,7 +6,7 @@ import Footer from '@/components/Footer/Footer'
 
 const Newsletter = () => {
   return (
-    <div className='pt-20'>
+    <div className='pt-14'>
      <NewsletterForm/>
      <div className='hidden md:block'>
      <CaseStudy/>

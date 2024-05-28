@@ -12,6 +12,7 @@ const NewsletterForm = () => {
   <div className="main-container4  md:bg-[black]  rounded-[16px] p-[24px] md:p-[55px]">
         
         <div className="grid md:grid-cols-2 gap-10 md:gap-4">
+        <div>
         <div className="md:max-w-[424px]">
          <div className="max-w-[366px]">
          <span className="max-w-[366px] text-[24px] md:text-[32px] leading-8 md:leading-[42px] font-bold">Get Notified with our newsletter</span>
@@ -21,8 +22,12 @@ const NewsletterForm = () => {
                news, updates, and products. Get valuable insights into the world of
                AI
              </p>
-             <Image className="mt-8" width={280} height={280} src='/Image/notification/qr.png'/>
            </div>
+           <div className="flex items-center flex-col justify-center md:max-w-[424px]">
+           <Image className="mt-10" width={280} height={280} src='/Image/notification/qr.png'/>
+           <span className="mt-2 text-[14px] text-[#b0b0b0]">Scan to fillup the form</span>
+           </div>
+</div>
    
            <FormFields/>
         </div>

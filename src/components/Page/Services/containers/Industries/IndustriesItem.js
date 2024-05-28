@@ -5,8 +5,11 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { industries } from '@/db/services/industries';
+import { industriesDetails } from '@/db/home/industriesDetail/industriesDetail';
+import Link from 'next/link';
 
 const IndustriesItem = () => {
+  const industriesSlice=industriesDetails.slice(0,8)
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const container = {
@@ -35,10 +38,10 @@ const IndustriesItem = () => {
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}>
 
-    {industries.map((item, index) => {
+    {industriesSlice.map((item, index) => {
       return (
         <motion.li key={index} variants={items} >
-        <div
+              <Link href={`/industry/${item.id}`}
 
           className=" flex flex-col items-center "
         >
@@ -46,12 +49,13 @@ const IndustriesItem = () => {
           <Image
             width={54}
             height={54}
-            src={item.image}
+            src={item.sectorimage}
             alt="image_industries"
           />
           </div>
-          <p className="text-black text-[12px] md:text-[14px] px-4 mt-2">{item.title}</p>
-        </div>
+          <p className="text-black text-[12px] md:text-[14px] px-4 mt-2">{item.sectortitle}</p>
+     
+        </Link>
      </motion.li>
     );
   })}

@@ -2,9 +2,6 @@
 import React from 'react'
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { industries } from '@/db/home/industries';
-import Link from 'next/link'
-import { industriesDetail } from '@/db/home/industriesDetail/industriesDetail';
 
 const IndustriesSlider = ({serviceItems}) => {
     const splideOptions = {

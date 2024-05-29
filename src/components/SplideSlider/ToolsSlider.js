@@ -49,7 +49,8 @@ const ToolsSlider = ({ tools }) => {
         {tools.map((item, index) => {
           return (
             <SplideSlide key={index}>
-              <Image
+             <Link target="_blank" href={item.link}>
+             <Image
                 className="rounded-[6px] max-w-[117px]"
                 width={117}
                 height={117}
@@ -61,6 +62,7 @@ const ToolsSlider = ({ tools }) => {
                   {item.title}
                 </span>
               </div>
+             </Link>
             </SplideSlide>
           );
         })}

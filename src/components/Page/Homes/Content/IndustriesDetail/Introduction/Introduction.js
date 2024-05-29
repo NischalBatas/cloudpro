@@ -6,9 +6,9 @@ const Introduction = ({ item }) => {
   return (
     <div className="navbar-main pt-[95px] pb-[32px] md:pt-[142px] md:pb-[72px]">
       <div className="pb-[42px] main-container flex justify-between items-center gap-8 flex-wrap md:flex-nowrap">
-        <Image className="max-w-[220px] md:min-w-[200px] md:max-w-[412px]"
-          width={412}
-          height={412}
+        <Image className="home_service_intro max-w-[220px] md:min-w-[200px] md:max-w-[400px]"
+          width={400}
+          height={460}
           src={item.introduction.image}
           alt="product_image"
         />

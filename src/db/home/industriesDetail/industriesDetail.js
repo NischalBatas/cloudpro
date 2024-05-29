@@ -6,7 +6,7 @@ export const industriesDetails = [
         introduction: {
             title: "Transforming Customer Experience, One Interaction At A Time",
             description: "At CloudProAI, we take immense pride in empowering e-commerce businesses of all sizes to achieve their full potential. In the fast-evolving digital marketplace, our advanced AI and cloud solutions are designed to meet the unique needs of online retailers, marketplaces, and e-commerce platforms. From startups to global enterprises, we provide the tools and expertise necessary to enhance operations, optimize customer experiences, and drive sustainable growth.",
-            image: "/Image/icons2/commerce.svg",
+            image: "/Image/icons2/detail/E-commerce.svg",
             category: "Industries / Ecommerce",
             button: "Speak to an Expert"
         },
@@ -33,7 +33,7 @@ export const industriesDetails = [
         introduction: {
             title: "Revolutionizing Retail with Cutting-Edge AI Solutions",
             description: "CloudProAI is dedicated to transforming the retail industry through advanced AI and cloud technologies. We help retailers of all sizes optimize their operations, enhance customer experiences, and drive sales growth. From inventory management to personalized marketing, our solutions cater to the unique needs of the retail sector.",
-            image: "/Image/icons2/retail.svg",
+            image: "/Image/icons2/detail/Retail.svg",
             category: "Industries / Retail",
             button: "Speak to an Expert"
         },
@@ -60,7 +60,7 @@ export const industriesDetails = [
         introduction: {
             title: "Driving Financial Innovation with AI and Cloud Technologies",
             description: "CloudProAI empowers financial institutions to innovate and thrive in a rapidly evolving industry. Our AI and cloud solutions help banks and fintech companies enhance security, optimize operations, and deliver exceptional customer experiences. From fraud detection to personalized banking, we provide the tools needed to stay ahead.",
-            image: "/Image/icons2/fintech.svg",
+            image: "/Image/icons2/detail/Banking.svg",
             category: "Industries / Fintech",
             button: "Speak to an Expert"
         },
@@ -87,7 +87,7 @@ export const industriesDetails = [
         introduction: {
             title: "Transforming Education with Advanced AI Solutions",
             description: "CloudProAI is dedicated to revolutionizing the education sector through innovative AI and cloud technologies. We provide solutions that enhance learning experiences, streamline administrative tasks, and support personalized education. From K-12 to higher education and professional training, our tools are designed to meet the diverse needs of the education industry.",
-            image: "/Image/icons2/edtech.svg",
+            image: "/Image/icons2/detail/Edtech.svg",
             category: "Industries / Edtech",
             button: "Speak to an Expert"
         },
@@ -114,7 +114,7 @@ export const industriesDetails = [
         introduction: {
             title: "Enhancing Healthcare with AI and Cloud Technologies",
             description: "CloudProAI is committed to improving healthcare through advanced AI and cloud solutions. We help healthcare providers enhance patient care, streamline operations, and optimize medical research. From diagnostics to personalized treatment plans, our tools are designed to meet the unique needs of the healthcare industry.",
-            image: "/Image/icons2/health.svg",
+            image: "/Image/icons2/detail/Healthcare.svg",
             category: "Industries / Healthcare",
             button: "Speak to an Expert"
         },
@@ -141,7 +141,7 @@ export const industriesDetails = [
         introduction: {
             title: "Optimizing Manufacturing with Advanced AI Solutions",
             description: "CloudProAI empowers manufacturers to optimize their operations through advanced AI and cloud technologies. We help manufacturers improve efficiency, reduce costs, and enhance product quality. From predictive maintenance to supply chain optimization, our solutions are designed to meet the unique needs of the manufacturing industry.",
-            image: "/Image/icons2/manufacturing.svg",
+            image: "/Image/icons2/detail/Manufacturing.svg",
             category: "Industries / Manufacturing",
             button: "Speak to an Expert"
         },
@@ -168,7 +168,7 @@ export const industriesDetails = [
         introduction: {
             title: "Revolutionizing Construction with AI and Cloud Technologies",
             description: "CloudProAI is dedicated to transforming the construction industry through advanced AI and cloud solutions. We help construction companies enhance project management, improve safety, and optimize resource allocation. From planning to execution, our tools are designed to meet the unique needs of the construction sector.",
-            image: "/Image/icons2/construction.svg",
+            image: "/Image/icons2/detail/Construction.svg",
             category: "Industries / Construction",
             button: "Speak to an Expert"
         },
@@ -195,7 +195,7 @@ export const industriesDetails = [
         introduction: {
             title: "Advancing Technology with AI and Cloud Solutions",
             description: "CloudProAI empowers technology companies to innovate and excel in a rapidly evolving industry. Our AI and cloud solutions help tech companies enhance product development, optimize operations, and deliver exceptional customer experiences. From startups to established enterprises, our tools are designed to meet the diverse needs of the technology sector.",
-            image: "/Image/icons2/technology.svg",
+            image: "/Image/icons2/detail/Technology.svg",
             category: "Industries / Technology",
             button: "Speak to an Expert"
         },
@@ -222,7 +222,7 @@ export const industriesDetails = [
         introduction: {
             title: "Transforming the Energy Sector with AI and Cloud Technologies",
             description: "CloudProAI is dedicated to revolutionizing the energy sector through advanced AI and cloud solutions. We help energy companies optimize production, improve efficiency, and enhance sustainability. From renewable energy to traditional power generation, our tools are designed to meet the unique needs of the energy industry.",
-            image: "/Image/icons2/energy.svg",
+            image: "/Image/icons2/detail/Energy.svg",
             category: "Industries / Energy",
             button: "Speak to an Expert"
         },
@@ -249,7 +249,7 @@ export const industriesDetails = [
         introduction: {
             title: "Enhancing Security with Advanced AI Solutions",
             description: "CloudProAI empowers organizations to enhance their security posture through advanced AI and cloud technologies. We help companies protect their assets, ensure compliance, and respond to threats in real-time. From cybersecurity to physical security, our tools are designed to meet the unique needs of the security industry.",
-            image: "/Image/icons2/security.svg",
+            image: "/Image/icons2/detail/Security.svg",
             category: "Industries / Security",
             button: "Speak to an Expert"
         },

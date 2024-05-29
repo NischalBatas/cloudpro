@@ -17,7 +17,7 @@ button {
   box-sizing: border-box;
 }
 
-.FormRoot {
+.FormRoot2 {
     width: 100%;
     gap: 28px;
     display: flex;
@@ -25,7 +25,7 @@ button {
  
 }
 
-.FormField {
+.FormField2 {
   display: grid;
   margin-bottom: 6px;
 }
@@ -97,7 +97,7 @@ button {
   line-height: 1;
   font-weight: 500;
   padding: 10px;
-  max-width: 405px;
+  /* max-width: 405px; */
   width: 100%;
   border: 1px solid transparent;
 

@@ -46,8 +46,8 @@ const FormFields = () => {
     }
   };
   return (
-    <Form.Root className="FormRoot   md:max-w-[405px]" onSubmit={handleSubmit}>
-      <Form.Field className="FormField" name="Your full name">
+    <Form.Root className="FormRoot2   md:max-w-[500px]" onSubmit={handleSubmit}>
+      <Form.Field className="FormField2" name="Your full name">
         <div
           style={{
             display: "flex",
@@ -76,7 +76,7 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField" name="email">
+      <Form.Field className="FormField2" name="email">
         <div
           style={{
             display: "flex",
@@ -105,7 +105,7 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField" name="Company">
+      <Form.Field className="FormField2" name="Company">
         <div
           style={{
             display: "flex",
@@ -134,7 +134,7 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField" name="Position">
+      <Form.Field className="FormField2" name="Position">
         <div
           style={{
             display: "flex",
@@ -163,7 +163,7 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField" name="phonenumber">
+      <Form.Field className="FormField2" name="phonenumber">
         <div
           style={{
             display: "flex",

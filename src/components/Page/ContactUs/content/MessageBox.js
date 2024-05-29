@@ -80,7 +80,7 @@ const MessageBox = ({selectTab}) => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input value={formData.fullName} name='fullName' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.John Smith"/>
+    <input value={formData.fullName} name='fullName' onChange={handleChange}  className="Input" type="text" required  placeholder="Enter your Full Name"/>
   </Form.Control>
 </Form.Field>
 
@@ -97,7 +97,7 @@ const MessageBox = ({selectTab}) => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input value={formData.email} name='email' onChange={handleChange} className="Input" type="email" required placeholder="eg.you@example.com"/>
+    <input value={formData.email} name='email' onChange={handleChange} className="Input" type="email" required placeholder="Enter your Email"/>
   </Form.Control>
 </Form.Field>
 
@@ -128,7 +128,7 @@ const MessageBox = ({selectTab}) => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input value={formData.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your phone number"/>
+    <input value={formData.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your Phone Number"/>
   </Form.Control>
 </Form.Field>
 
@@ -144,7 +144,7 @@ const MessageBox = ({selectTab}) => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input value={formData.company} name='company' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.Abc"/>
+    <input value={formData.company} name='company' onChange={handleChange}  className="Input" type="text" required  placeholder="Enter your Company Name"/>
   </Form.Control>
 </Form.Field>
 
@@ -160,7 +160,7 @@ const MessageBox = ({selectTab}) => {
     </Form.Message>
   </div>
   <Form.Control asChild>
-    <input value={formData.position} name='position' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.xyz"/>
+    <input value={formData.position} name='position' onChange={handleChange}  className="Input" type="text" required  placeholder="Enter your Current Position"/>
   </Form.Control>
 </Form.Field>
 
@@ -188,7 +188,7 @@ const MessageBox = ({selectTab}) => {
          <span className='text-[20px] font-semibold'>Chat with us</span>
          <p className='text-[#888888] text-[14px]'>Speak to our friendly team via email</p>
          <div className='flex items-center gap-2 mt-2 underline'>
-         <MdOutlineMailOutline />
+         <MdOutlineMailOutline className='text-[18px]'/>
          <Link href='mailto:contact@cloudpro.ai'>Send us an email</Link>
          </div>
       </div>
@@ -197,7 +197,7 @@ const MessageBox = ({selectTab}) => {
          <span className='text-[20px] font-semibold'>Call us</span>
          <p className='text-[#888888] text-[14px]'>Call our team Mon-Fri from 8am to 5pm</p>
          <div className='flex items-center gap-2 mt-2'>
-         <MdOutlinePhoneInTalk />
+         <MdOutlinePhoneInTalk className='text-[18px]'/>
          <p>+1 415-393-2021</p>
          </div>
       </div>
@@ -206,7 +206,7 @@ const MessageBox = ({selectTab}) => {
          <span className='text-[20px] font-semibold'>Mail us</span>
          <p className='text-[#888888] text-[14px]'>Send correspondence to our headquarters</p>
          <div className='flex items-center gap-2 mt-2 underline'>
-         <MdOutlineLocationOn />
+         <MdOutlineLocationOn className='text-[20px]'/>
          <Link className='lg:max-w-[290px]' target="_blank" href='https://maps.app.goo.gl/Z8G9DuJLHGfypwM86'>584 Castro St 2165, San Francisco, CA 94114-2512</Link>
          </div>
       </div>
@@ -222,76 +222,6 @@ const MessageBox = ({selectTab}) => {
 
     <Tabs.Content className="TabsContent2" value="call">
       <Calendar/>
-      {/* <Form.Root className="FormRoot mt-6" onSubmit={handleSubmit}>
-<Form.Field className="FormField" name="Your full name">
-  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-    
-    <Form.Label className="FormLabel">Your Full Name</Form.Label>
-    <Form.Message className="FormMessage" match="valueMissing">
-      Please enter your full name
-    </Form.Message>
-    <Form.Message className="FormMessage" match="typeMismatch">
-      Please provide a valid full name
-    </Form.Message>
-  </div>
-  <Form.Control asChild>
-    <input value={formData.fullName} name='fullName' onChange={handleChange}  className="Input" type="text" required  placeholder="eg.John Smith"/>
-  </Form.Control>
-</Form.Field>
-
-<Form.Field className="FormField" name="email">
-  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-    
-    <Form.Label className="FormLabel">Email</Form.Label>
-    <Form.Message className="FormMessage" match="valueMissing">
-      Please enter your email
-    </Form.Message>
-    <Form.Message className="FormMessage" match="typeMismatch">
-      Please provide a valid email
-    </Form.Message>
-  </div>
-  <Form.Control asChild>
-    <input value={formData.email} name='email' onChange={handleChange} className="Input" type="email" required placeholder="eg.you@example.com"/>
-  </Form.Control>
-</Form.Field>
-
-
-
-
-<Form.Field className="FormField" name="phonenumber">
-  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-    
-    <Form.Label className="FormLabel"> Phone Number</Form.Label>
-    <Form.Message className="FormMessage" match="valueMissing">
-      Enter the Phone Number
-    </Form.Message>
-    <Form.Message className="FormMessage" match="typeMismatch">
-      Please provide a valid number
-    </Form.Message>
-  </div>
-  <Form.Control asChild>
-    <input value={formData.phoneNumber} name='phoneNumber' onChange={handleChange} className="Input" type="number" required  placeholder="Enter your phone number"/>
-  </Form.Control>
-</Form.Field>
-
-<Form.Field className="FormField" name="question">
-  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-    <Form.Label className="FormLabel">Message</Form.Label>
-    <Form.Message className="FormMessage" match="valueMissing">
-      Please enter a message
-    </Form.Message>
-  </div>
-  <Form.Control asChild>
-    <textarea value={formData.message} name='message' onChange={handleChange} className="Textarea" required />
-  </Form.Control>
-</Form.Field>
-
-<Form.Submit asChild>
-  <button type='submit' className="Button bg-cloud" style={{ marginTop: 10 }}>
-  Send Message
-  </button>
-</Form.Submit>
-</Form.Root> */}
     </Tabs.Content>
   </Tabs.Root>
   )

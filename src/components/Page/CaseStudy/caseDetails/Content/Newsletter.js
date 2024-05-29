@@ -13,7 +13,7 @@ const Newsletter = () => {
   }}
 >
       <div className="flex flex-col md:justify-center md:items-center py-5">
-      <span className="font-semibold text-[24px] leading-8">Get Notification by our newsletter</span>
+      <span className="font-semibold text-[24px] leading-8">Get Notified by our newsletter</span>
       <p className="mt-2 text-[14px] leading-6 md:text-center max-w-[456px]">
         Subscribe to our newsletter and stay upto date with the latest news,
         updates and exclusive offers. Get valuable insights.

@@ -23,7 +23,7 @@ const NewsletterForm = () => {
                AI
              </p>
            </div>
-           <div className="hidden md:block flex items-center flex-col justify-center md:max-w-[424px]">
+           <div className="hidden md:flex items-center flex-col justify-center md:max-w-[424px]">
            <Image className=" mt-10" width={200} height={200} src='/Image/notification/qr.png'/>
            <span className="mt-2 text-[12px] text-[#b0b0b0]">Please scan the QR code to access the form.</span>
            </div>

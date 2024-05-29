@@ -55,12 +55,12 @@
   scrollbar-color: transparent transparent; /* For Firefox */
 }
 
-.splide__arrow svg {
+/* .splide__arrow svg {
     fill: #ffff !important;
     height: 1.2em;
     width: 1.2em;
     display: none !important;
-  }
+  } */
 /*   
   .splide__arrow--prev {
     left: 0 !important;

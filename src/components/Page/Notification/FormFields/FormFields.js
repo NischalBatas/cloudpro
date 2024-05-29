@@ -192,7 +192,7 @@ const FormFields = () => {
      <Form.Submit asChild>
         <button
           type="submit"
-          className="Button4 w-full bg-cloud"
+          className="Button4 bg-cloud"
           style={{ marginTop: 5 }}
         >
           SUBSCRIBE

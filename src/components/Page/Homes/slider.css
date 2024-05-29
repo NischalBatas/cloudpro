@@ -16,7 +16,7 @@
   transform: translateY(-50%);
   width: 2em;
   z-index: 1;
- 
+  color: #000 !important;
 }
 
 .home_service_tools   

@@ -44,7 +44,7 @@ const TestominialSlider = () => {
     },
   };
   return (
-    <div className="mx-auto overflow-hidden">
+    <div className="mx-auto overflow-hidden pt-10 ">
       <Splide options={splideOptions}>
         {testimonialClient.map((item, index) => {
           return (

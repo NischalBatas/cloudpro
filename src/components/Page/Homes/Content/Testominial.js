@@ -4,7 +4,7 @@ import React from "react";
 import '../slider.css'
 const Testominial = () => {
   return (
-    <div className="py-14 testominial-main testominial-home mb-10">
+    <div className="testominial-main-sliders py-14 testominial-main testominial-home mb-10">
       <div className="flex flex-col justify-center items-center">
         <p className="text-[14px] uppercase tracking-widest text-cloud">
           Testominials
@@ -14,7 +14,7 @@ const Testominial = () => {
         </p>
       </div>
 
-      <div className="flex mt-8 ">
+      <div className="flex ">
         <TestominialSlider />
       </div>
       

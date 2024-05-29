@@ -41,7 +41,7 @@ const ToolsSlider = ({ tools }) => {
     },
   };
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Splide
         options={splideOptions}
         className="mt-10 flex justify-start text-center"

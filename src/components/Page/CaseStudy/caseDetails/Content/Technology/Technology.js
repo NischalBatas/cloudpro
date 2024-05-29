@@ -1,7 +1,7 @@
 import React from 'react'
 import TechnologyHeading from './Content/TechnologyHeading'
 import TechnologyContent from './Content/TechnologyContent'
-
+import '../../../casestudy.css'
 const Technology = ({content,caseData}) => {
   return (
     <div id='technology_section'>

@@ -4,7 +4,7 @@ const TechnologyContent = ({ content,caseData }) => {
   const TechnologyDetails=JSON.parse(caseData.casestudyfieldgroud.solution)
   console.log(TechnologyDetails)
   return (
-    <div className="navbar-main bg-[#EDF5FB] text-black pt-5 pb-16">
+    <div className=" navbar-main bg-[#EDF5FB] text-black pt-5 pb-16">
       <div className="main-container">
         <table>
           <tbody>

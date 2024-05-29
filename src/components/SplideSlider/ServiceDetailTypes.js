@@ -46,7 +46,7 @@ const ServiceDetailTypes = ({item}) => {
       <Splide options={splideOptions}>
         {item.servicetypeitem.map((item2,index)=>{
           return(
-<SplideSlide className="md:max-w-[1010px] flex justify-between gap-4 rounded-[8px]  px-[24px] py-[28px] bg-[#4762BB]">
+<SplideSlide key={index} className="md:max-w-[1010px] flex justify-between gap-4 rounded-[8px]  px-[24px] py-[28px] bg-[#4762BB]">
           <div className="md:max-w-[446px]">
             <span className="text-[32px] font-bold">{item2.title}</span>
             <p className="pt-[20px] text-[14px] leading-[24px]">
@@ -54,9 +54,9 @@ const ServiceDetailTypes = ({item}) => {
             </p>
 
             <ul className="py-[24px] flex text-nowrap gap-2 max-w-[350px] overflow-hidden">
-              {item2.items.map((item3,index)=>{
+              {item2.items.map((item3,index3)=>{
                 return(
-                  <li className="text-nowrap leading-[28px] whitespace-nowrap text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
+                  <li key={index3} className="text-nowrap leading-[28px] whitespace-nowrap text-[16px] font-semibold px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#00000029] bg-[##0303030d]">
                   {item3.title}
                 </li>
               

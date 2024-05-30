@@ -1,5 +1,5 @@
 export const enterprisesadhoc = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
   data: [
     {
       id: 1,
@@ -50,7 +50,7 @@ export const enterprisesadhoc = {
 };
 
 export const enterprisesadlconsulting = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Transform your business landscape with our strategic AIconsulting and management services.",
+  heading: "Transform your business landscape with our tailored products or your develop your AI solutions with us.",
   data: [
     {
     id: 1,
@@ -126,7 +126,7 @@ export const enterprisesadlconsulting = {
 };
 
 export const enterprisesarchitecture = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Design and develop robust cloud architecture that scales with your ever-growing business needs.",
   data: [
     {
     id: 1,
@@ -181,7 +181,7 @@ export const enterprisesarchitecture = {
 };
 
 export const enterprisesbigData = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Generate valuable insights from huge amounts of data and drive business growth with Cloudpro AI .",
   data: [
     {
     id: 1,
@@ -233,7 +233,7 @@ export const enterprisesbigData = {
 };
 
 export const enterprisesBireport = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Get an in-depth understanding of your data using custom BI solutions and identify pain points in businesses with Cloudpro AI.",
   data: [
     {
     id: 1,
@@ -284,7 +284,7 @@ export const enterprisesBireport = {
 };
 
 export const enterprisescloudops = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Design, develop, deploy and monitor your cloud infrastructure and ensure robustness and scalability with Cloudpro AI's cloudOps services.",
   data: [
     {
     id: 1,
@@ -336,7 +336,7 @@ export const enterprisescloudops = {
 };
 
 export const enterprisesdataAnalytics = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Extract key insights and make successful business decisions to drive growth in your business.",
   data: [
     {
     id: 1,
@@ -398,7 +398,7 @@ export const enterprisesdataAnalytics = {
 };
 
 export const enterprisesdatasoltions = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Build a robust data pipeline, ensure data integrity and security with Cloudpro AI.",
   data: [
     {
     id: 1,
@@ -449,7 +449,7 @@ export const enterprisesdatasoltions = {
 };
 
 export const enterprisesdataVisual = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Get a visual understanding of your data, identify key trends and make data-aided decisions for business growth.",
   data: [
     {
     id: 1,
@@ -500,7 +500,7 @@ export const enterprisesdataVisual = {
 };
 
 export const enterprisesdataWarehouse = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Secure and scalable data warehousing for your business. Store valuable data securely that can help you make business decisions in future.",
   data: [
     {
     id: 1,
@@ -540,7 +540,7 @@ export const enterprisesdataWarehouse = {
 };
 
 export const enterprisesEtl = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "A robust data extraction, transformation and loading pipeline for any type of businesses.",
   data: [
     {
     id: 1,
@@ -626,7 +626,7 @@ export const enterprisesgenApplication = {
 };
 
 export const enterprisesgenAI = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Create engaging agents, improve efficiency and customer experience with Cloudpro AI's generative AI solutions.",
   data: [
     {
     id: 1,
@@ -669,7 +669,7 @@ export const enterprisesgenAI = {
 };
 
 export const enterprisesInfrastructure = {
-  heading: "Detailed Explanation: Sub-services and Their Processes/Details Tagline: Drive strategic business growth and efficiency with CloudProAI’s tailored Big Data solutions.",
+  heading: "Shift your infrastructure from in-house to cloud. Ensure it's robustness and scalability with Cloudpro AI.",
   data: [
     {
     id: 1,

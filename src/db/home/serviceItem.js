@@ -231,7 +231,7 @@ link:"/services/ai-consulting",
     { "name": "Google AI", "url": "https://ai.google/" },
     { "name": "IBM Watson", "url": "https://www.ibm.com/watson" },
     { "name": "Microsoft Azure AI", "url": "https://azure.microsoft.com/en-us/services/machine-learning/" },
-    { "name": "Amazon Web Services (AWS)", "url": "https://aws.amazon.com/machine-learning/" },
+    { "name": "AWS", "url": "https://aws.amazon.com/machine-learning/" },
     { "name": "OpenAI", "url": "https://www.openai.com/" }
   ],
   tools:[
@@ -396,9 +396,9 @@ link:"/services/data-pipeline",
       },
       tools_services:{
       service_providers:[
-    { "name": "Amazon Web Services (AWS)", "url": "https://aws.amazon.com/" },
+    { "name": "AWS", "url": "https://aws.amazon.com/" },
     { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" },
-    { "name": "Google Cloud Platform (GCP)", "url": "https://cloud.google.com/" },
+    { "name": "Google Cloud", "url": "https://cloud.google.com/" },
     { "name": "IBM Cloud", "url": "https://www.ibm.com/cloud" },
     { "name": "Snowflake", "url": "https://www.snowflake.com/",image:"/Image/tools/data/5.svg", }
   ],

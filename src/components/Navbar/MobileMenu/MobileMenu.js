@@ -9,7 +9,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import { useRouter } from 'next/navigation';
 
 const MobileMenu = ({title,pathname,setNavbarStatus,setHamburger}) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const router=useRouter()
 
   const handleClick=(path)=>{

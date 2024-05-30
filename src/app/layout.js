@@ -53,12 +53,6 @@ export default function RootLayout({ children }) {
   <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
 
 
-  {/* <meta prefix="og: http://ogp.me/ns#"  property="og:title" content="CloudPro.AI" />
-  <meta prefix="og: http://ogp.me/ns#"  property="og:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta prefix="og: http://ogp.me/ns#"  property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://www.cloudpro.ai/" />
-  <meta prefix="og: http://ogp.me/ns#"  property="og:type" content="website" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="CloudPro.AI Services" /> */}
 
         </head>
       <body className={inter.className}>

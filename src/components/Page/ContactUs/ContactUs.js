@@ -5,7 +5,7 @@ import "./contactus.css";
 import Image from "next/image";
 import MessageBox from "./content/MessageBox";
 import { useSearchParams } from "next/navigation";
-
+import toast, { Toaster } from "react-hot-toast";
 const ContactUs = () => {
   const searchParams = useSearchParams()
   const paramsData=searchParams.get('action')
@@ -25,7 +25,12 @@ const ContactUs = () => {
           </p>
       </div>
         <MessageBox selectTab={paramsData}/>
-   
+        <Toaster position="bottom-right"
+                                 toastOptions={{
+                                  style: {
+                                    fontSize:'14px', fontWeight:'600',background:'#fff'
+                                  }}}
+                                />
       </div>
       
     </div>

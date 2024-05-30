@@ -6,7 +6,7 @@ import Calendar from './Calendar';
 import emailjs from 'emailjs-com';
 import { MdOutlineLocationOn, MdOutlineMailOutline, MdOutlinePhoneInTalk } from 'react-icons/md';
 import Link from 'next/link';
-
+import toast, { Toaster } from "react-hot-toast";
 
 
 const MessageBox = ({selectTab}) => {
@@ -36,7 +36,7 @@ const MessageBox = ({selectTab}) => {
       );
       console.log("EmailJS response:", res);
       if (res.status === 200) {
-        alert("Sent Successfully, We will get back to you soon.");
+        toast.success('Thank you for reaching out! We will get back to you shortly.');
   
         // Reset the formData fields
         setFormData({
@@ -50,7 +50,7 @@ const MessageBox = ({selectTab}) => {
       }
     } catch (error) {
       console.log("EmailJS error:", error);
-      alert("Can't send, please check and try again.");
+      toast.error("Please try again.");
     }
   };
   

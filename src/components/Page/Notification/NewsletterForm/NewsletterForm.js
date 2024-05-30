@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import FormFields from "../FormFields/FormFields";
+import toast, { Toaster } from "react-hot-toast";
 
 const NewsletterForm = () => {
+
   return (
     <div className="">
       <div
@@ -23,12 +26,20 @@ const NewsletterForm = () => {
                AI
              </p>
            </div>
+
+           <Toaster position="bottom-right"
+                                 toastOptions={{
+                                  style: {
+                                    fontSize:'14px', fontWeight:'600',background:'#fff'
+                                  }}}
+                                />
            <div className="hidden md:flex items-center flex-col justify-center md:max-w-[424px]">
            <Image className=" mt-10" width={200} height={200} src='/Image/notification/qr.png'/>
            <span className="mt-2 text-[12px] text-[#b0b0b0]">Please scan the QR code to access the form.</span>
            </div>
 </div>
-   
+
+
            <FormFields/>
         </div>
          </div>

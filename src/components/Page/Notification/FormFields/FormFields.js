@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "./newsletter.css";
+import toast, { Toaster } from "react-hot-toast";
 
 const FormFields = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,8 @@ const FormFields = () => {
         body:JSON.stringify(formData)
       })
       if (res.status === 200) {
-        alert("Sent Successfully, We will get back to you soon.");
+        // alert("Sent Successfully, We will get back to you soon.");
+        toast.success('Thank you for reaching out! We will get back to you shortly.');
 
         // Reset the formData fields
         setFormData({
@@ -41,8 +43,9 @@ const FormFields = () => {
         });
       }
     } catch (error) {
-      console.log("Newsletter error:", error);
-      alert("Can't send, please check and try again.",error);
+      console.log("Please try again.", error);
+      toast.error("Please try again.");
+
     }
   };
   return (

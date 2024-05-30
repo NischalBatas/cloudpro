@@ -144,20 +144,20 @@ link:"/services/big-data",
       },
       tools_services:{
       service_providers:[
-    { "name": " (AWS)", "url": "https://aws.amazon.com/" ,image:"/Image/tools/cloud/1.svg"},
-    { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/",image:"/Image/tools/cloud/2.svg" },
-    { "name": "Google Cloud", "url": "https://cloud.google.com/" ,image:"/Image/tools/cloud/3.svg"},
-    { "name": "IBM Cloud", "url": "https://www.ibm.com/cloud",image:"/Image/tools/cloud/4.png" },
-    { "name": "Oracle Cloud", "url": "https://www.oracle.com/cloud/",image:"/Image/tools/data/6.svg" }
+    { "name": " (AWS)" ,  "url": "https://aws.amazon.com/" ,image:"/Image/tools/cloud/1.svg"},
+    { "name": "Microsoft Azure" ,  "url": "https://azure.microsoft.com/",image:"/Image/tools/cloud/2.svg" },
+    { "name": "Google Cloud" ,  "url": "https://cloud.google.com/" ,image:"/Image/tools/cloud/3.svg"},
+    { "name": "IBM Cloud" ,  "url": "https://www.ibm.com/cloud",image:"/Image/tools/cloud/4.png" },
+    { "name": "Oracle Cloud" ,  "url": "https://www.oracle.com/cloud/",image:"/Image/tools/data/6.svg" }
   ],
   tools: [
-    { "name": "Kubernetes", "url": "https://kubernetes.io/",image:"/Image/tools/cloud/4.svg" },
-    { "name": "Docker", "url": "https://www.docker.com/",image:"/Image/tools/cloud/5.png" },
-    { "name": "Terraform", "url": "https://www.terraform.io/",image:"/Image/tools/cloud/5.svg" },
-    { "name": "Ansible", "url": "https://www.ansible.com/",image:"/Image/tools/cloud/6.svg" },
-    { "name": "Jenkins", "url": "https://www.jenkins.io/",image:"/Image/tools/cloud/6.jpg" },
-    { "name": "Prometheus", "url": "https://prometheus.io/",image:"/Image/tools/cloud/8.png" },
-    { "name": "Grafana", "url": "https://grafana.com/" ,image:"/Image/tools/cloud/8.svg"},
+    { "name": "Kubernetes" ,  "url": "https://kubernetes.io/",image:"/Image/tools/cloud/4.svg" },
+    { "name": "Docker" ,  "url": "https://www.docker.com/",image:"/Image/tools/cloud/5.png" },
+    { "name": "Terraform" ,  "url": "https://www.terraform.io/",image:"/Image/tools/cloud/5.svg" },
+    { "name": "Ansible" ,  "url": "https://www.ansible.com/",image:"/Image/tools/cloud/6.svg" },
+    { "name": "Jenkins" ,  "url": "https://www.jenkins.io/",image:"/Image/tools/cloud/6.jpg" },
+    { "name": "Prometheus" ,  "url": "https://prometheus.io/",image:"/Image/tools/cloud/8.png" },
+    { "name": "Grafana" ,  "url": "https://grafana.com/" ,image:"/Image/tools/cloud/8.svg"},
       ]
   
       }
@@ -228,22 +228,22 @@ link:"/services/ai-consulting",
       },   
       tools_services:{
       service_providers:[
-    { "name": "Google AI", "url": "https://ai.google/" },
-    { "name": "IBM Watson", "url": "https://www.ibm.com/watson" },
-    { "name": "Microsoft Azure AI", "url": "https://azure.microsoft.com/en-us/services/machine-learning/" },
-    { "name": "AWS", "url": "https://aws.amazon.com/machine-learning/" },
-    { "name": "OpenAI", "url": "https://www.openai.com/" }
+    { "name": "Google AI", image:"/Image/tools/cloudpro/Google AI.svg" ,  "url": "https://ai.google/"},
+    { "name": "IBM Watson", image:"/Image/tools/cloudpro/IBM Watson.svg" ,  "url": "https://www.ibm.com/watson" },
+    { "name": "Microsoft Azure AI", image:"/Image/tools/cloudpro/Azure-2.svg" ,  "url": "https://azure.microsoft.com/en-us/services/machine-learning/" },
+    { "name": "AWS", image:"/Image/tools/cloudpro/AWS.svg" ,  "url": "https://aws.amazon.com/machine-learning/" },
+    { "name": "OpenAI", image:"/Image/tools/cloudpro/OpenAI.svg" ,  "url": "https://www.openai.com/" }
   ],
   tools:[
-    { "name": "TensorFlow", "url": "https://www.tensorflow.org/" },
-    { "name": "PyTorch", "url": "https://pytorch.org/" },
-    { "name": "Keras", "url": "https://keras.io/" },
-    { "name": "Scikit-learn", "url": "https://scikit-learn.org/" },
-    { "name": "OpenCV", "url": "https://opencv.org/" },
-    { "name": "Hugging Face Transformers", "url": "https://huggingface.co/transformers/" },
-    { "name": "Apache Spark MLlib", "url": "https://spark.apache.org/mllib/" },
-    { "name": "RapidMiner", "url": "https://rapidminer.com/" },
-    { "name": "NVIDIA CUDA", "url": "https://developer.nvidia.com/cuda-zone" },
+    { "name": "TensorFlow", image:"/Image/tools/cloudpro/TensorFlow.svg" ,  "url": "https://www.tensorflow.org/" },
+    { "name": "PyTorch", image:"/Image/tools/cloudpro/PyTorch.svg" ,  "url": "https://pytorch.org/" },
+    { "name": "Keras", image:"/Image/tools/cloudpro/Keras.svg" ,  "url": "https://keras.io/" },
+    { "name": "Scikit-learn", image:"/Image/tools/cloudpro/Scikit learn.svg" ,  "url": "https://scikit-learn.org/" },
+    { "name": "OpenCV", image:"/Image/tools/cloudpro/OpenCV.svg" ,  "url": "https://opencv.org/" },
+    { "name": "Huggingface", image:"/Image/tools/cloudpro/HuggingFace.svg" ,  "url": "https://huggingface.co/transformers/" },
+    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/spark-1.svg" ,  "url": "https://spark.apache.org/mllib/" },
+    { "name": "RapidMiner", image:"/Image/tools/cloudpro/RapidMiner.svg" ,  "url": "https://rapidminer.com/" },
+    { "name": "NVIDIA CUDA", image:"/Image/tools/cloudpro/CUDA.svg" ,  "url": "https://developer.nvidia.com/cuda-zone" },
   ]
       
       }
@@ -396,23 +396,21 @@ link:"/services/data-pipeline",
       },
       tools_services:{
       service_providers:[
-    { "name": "AWS", "url": "https://aws.amazon.com/" },
-    { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" },
-    { "name": "Google Cloud", "url": "https://cloud.google.com/" },
-    { "name": "IBM Cloud", "url": "https://www.ibm.com/cloud" },
-    { "name": "Snowflake", "url": "https://www.snowflake.com/",image:"/Image/tools/data/5.svg", }
+    { "name": "AWS", image:"/Image/tools/cloudpro/aws.svg" ,  "url": "https://aws.amazon.com/" },
+    { "name": "Microsoft Azure", image:"/Image/tools/cloudpro/Azure.svg" ,  "url": "https://azure.microsoft.com/" },
+    { "name": "Google Cloud", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://cloud.google.com/" },
+    { "name": "IBM Cloud", image:"/Image/tools/cloud/4.png" ,  "url": "https://www.ibm.com/cloud" },
+    { "name": "Snowflake", image:"/Image/tools/cloudpro/Snowflesk.svg" ,  "url": "https://www.snowflake.com/", }
   ],
   tools:[
-    { "name": "Apache Hadoop", "url": "https://hadoop.apache.org/" },
-    { "name": "Apache Spark", "url": "https://spark.apache.org/" },
-    { "name": "Apache Kafka", "url": "https://kafka.apache.org/" },
-    { "name": "Apache Airflow", "url": "https://airflow.apache.org/" },
-    { "name": "Talend", "url": "https://www.talend.com/" },
-    { "name": "Informatica", "url": "https://www.informatica.com/" },
-    { "name": "Tableau", "url": "https://www.tableau.com/" },
-    { "name": "Power BI", "url": "https://powerbi.microsoft.com/" },
-    { "name": "dbt (Data Build Tool)", "url": "https://www.getdbt.com/" },
-    { "name": "Databricks", "url": "https://databricks.com/" }
+    { "name": "Apache Hadoop", image:"/Image/tools/cloudpro/Hadoop.svg" ,  "url": "https://hadoop.apache.org/" },
+    { "name": "Apache Spark", image:"/Image/tools/cloudpro/Spark.svg" ,  "url": "https://spark.apache.org/" },
+    { "name": "Apache Kafka", image:"/Image/tools/cloudpro/Kafka.svg" ,  "url": "https://kafka.apache.org/" },
+    { "name": "Apache Airflow", image:"/Image/tools/cloudpro/Airflow.svg" ,  "url": "https://airflow.apache.org/" },
+    { "name": "Talend", image:"/Image/tools/cloudpro/Talend.svg" ,  "url": "https://www.talend.com/" },
+    { "name": "Tableau", image:"/Image/tools/cloudpro/Tableau.svg" ,  "url": "https://www.tableau.com/" },
+    { "name": "Power BI", image:"/Image/tools/cloudpro/Power BI.svg" ,  "url": "https://powerbi.microsoft.com/" },
+    { "name": "Databricks", image:"/Image/tools/cloudpro/Databreak.svg" ,  "url": "https://databricks.com/" }
   ]
       
       }
@@ -540,18 +538,17 @@ link:"/services/data-visualization",
       },
       tools_services:{
       service_providers:[
-    { "name": "Microsoft Power BI", "url": "https://powerbi.microsoft.com/",image:"/Image/tools/bi/7.svg" },
+    { "name": "Microsoft Power BI" ,  "url": "https://powerbi.microsoft.com/",image:"/Image/tools/bi/7.svg" },
     { "name": "Tableau", "url": "https://www.tableau.com/" ,image:"/Image/tools/bi/6.svg"},
-    { "name": "Qlik", "url": "https://www.qlik.com/" },
-    { "name": "SAP Analytics Cloud", "url": "https://www.sap.com/products/analytics-cloud.html" },
-    { "name": "Google Data Studio", "url": "https://datastudio.google.com/" }
+    { "name": "Qlik", image:"/Image/tools/cloudpro/qlik Q.svg" ,  "url": "https://www.qlik.com/" },
+    { "name": "SAP Analytics Cloud", image:"/Image/tools/cloudpro/SAP.svg" ,  "url": "https://www.sap.com/products/analytics-cloud.html" },
+    { "name": "Google Data Studio", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://datastudio.google.com/" }
   ],
   tools:[
-    { "name": "Looker", "url": "https://looker.com/" },
-    { "name": "Domo", "url": "https://www.domo.com/" },
-    { "name": "Sisense", "url": "https://www.sisense.com/" },
-    { "name": "TIBCO Spotfire", "url": "https://www.tibco.com/products/tibco-spotfire" },
-    { "name": "IBM Cognos Analytics", "url": "https://www.ibm.com/products/cognos-analytics" }
+    { "name": "Looker", image:"/Image/tools/cloudpro/Looker.svg" ,  "url": "https://looker.com/" },
+    { "name": "Domo", image:"/Image/tools/cloudpro/Domo.svg" ,  "url": "https://www.domo.com/" },
+    { "name": "Sisense", image:"/Image/tools/cloudpro/Sisense.svg" ,  "url": "https://www.sisense.com/" },
+    { "name": "TIBCO Spotfire", image:"/Image/tools/cloudpro/TIBC spotfire.svg" ,  "url": "https://www.tibco.com/products/tibco-spotfire" },
   ]
       }
       
@@ -655,24 +652,24 @@ link:"/services/generative-ai",
       },
       tools_services:{
       service_providers:[
-      { "name": "AWS", "url": "https://aws.amazon.com/" },
-    { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" },
-    { "name": "Google Cloud", "url": "https://cloud.google.com/" },
-    { "name": "Google", "url": "https://developers.google.com/" },
-    { "name": "Apple", "url": "https://developer.apple.com/" },
+      { "name": "AWS", image:"/Image/tools/cloudpro/AWS.svg" ,  "url": "https://aws.amazon.com/" },
+    { "name": "Microsoft Azure", image:"/Image/tools/cloudpro/Azure.svg" ,  "url": "https://azure.microsoft.com/" },
+    { "name": "Google Cloud", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://cloud.google.com/" },
+    { "name": "Google", image:"/Image/tools/cloudpro/Google.svg" ,  "url": "https://developers.google.com/" },
+    { "name": "Apple", image:"/Image/tools/cloudpro/Apple.svg" ,  "url": "https://developer.apple.com/" },
 
   ],
   tools:[
-    { "name": "Flutter", "url": "https://flutter.dev/" ,image:"/Image/tools/mobile/1.png"},
-    { "name": "React Native", "url": "https://reactnative.dev/",image:"/Image/tools/mobile/4.svg", },
-    { "name": "Xamarin", "url": "https://dotnet.microsoft.com/apps/xamarin" },
-    { "name": "Swift", "url": "https://swift.org/" },
-    { "name": "Kotlin", "url": "https://kotlinlang.org/" },
-    { "name": "Java", "url": "https://www.java.com/" },
-    { "name": "Objective-C", "url": "https://developer.apple.com/documentation/objectivec" },
-    { "name": "Android Studio", "url": "https://developer.android.com/studio",image:"/Image/tools/mobile/2.png", },
-    { "name": "Xcode", "url": "https://developer.apple.com/xcode/" },
-    { "name": "Ionic", "url": "https://ionicframework.com/" }
+    { "name": "Flutter", image:"/Image/tools/cloudpro/Flutter.svg" ,  "url": "https://flutter.dev/" ,image:"/Image/tools/mobile/1.png"},
+    { "name": "React Native", image:"/Image/tools/cloudpro/React Native.svg" ,  "url": "https://reactnative.dev/",image:"/Image/tools/mobile/4.svg", },
+    { "name": "Xamarin", image:"/Image/tools/cloudpro/Xamarin.svg" ,  "url": "https://dotnet.microsoft.com/apps/xamarin" },
+    { "name": "Swift", image:"/Image/tools/cloudpro/Swift.svg" ,  "url": "https://swift.org/" },
+    { "name": "Kotlin", image:"/Image/tools/cloudpro/Kotlin.svg" ,  "url": "https://kotlinlang.org/" },
+    { "name": "Java", image:"/Image/tools/cloudpro/Java.svg" ,  "url": "https://www.java.com/" },
+    { "name": "Objective-C", image:"/Image/tools/cloudpro/ObjC.svg" ,  "url": "https://developer.apple.com/documentation/objectivec" },
+    { "name": "Android Studio", image:"/Image/tools/cloudpro/Android Studi.svg" ,  "url": "https://developer.android.com/studio",image:"/Image/tools/mobile/2.png", },
+    { "name": "Xcode", image:"/Image/tools/cloudpro/Xcode.svg" ,  "url": "https://developer.apple.com/xcode/" },
+    { "name": "Ionic", image:"/Image/tools/cloudpro/Ionic.svg" ,  "url": "https://ionicframework.com/" }
   ]
       }
       
@@ -823,23 +820,23 @@ link:"/services/generative-ai",
       },
       tools_services:{
       service_providers:[
-    { "name": "AWS", "url": "https://aws.amazon.com/",image:"/Image/tools/web/6.svg" },
-    { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" ,image:"/Image/tools/cloud/2.svg"},
-    { "name": "Google Cloud", "url": "https://cloud.google.com/",image:"/Image/tools/cloud/3.svg" },
-    { "name": "Heroku", "url": "https://www.heroku.com/" },
-    { "name": "Netlify", "url": "https://www.netlify.com/" }
+    { "name": "AWS", image:"/Image/tools/cloudpro/AWS.svg" ,  "url": "https://aws.amazon.com/" },
+    { "name": "Microsoft Azure", image:"/Image/tools/cloudpro/Azure.svg" ,  "url": "https://azure.microsoft.com/" },
+    { "name": "Google Cloud", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://cloud.google.com/" },
+    { "name": "Heroku", image:"/Image/tools/cloudpro/Heroku.svg" ,  "url": "https://www.heroku.com/" },
+    { "name": "Netlify", image:"/Image/tools/cloudpro/Netlify.svg" ,  "url": "https://www.netlify.com/" }
   ],
   tools: [
-    { "name": "React.js", "url": "https://reactjs.org/",image:"/Image/tools/web/2.svg" },
-    { "name": "Angular", "url": "https://angular.io/" },
-    { "name": "Vue.js", "url": "https://vuejs.org/",image:"/Image/tools/web/4.svg" },
-    { "name": "Django", "url": "https://www.djangoproject.com/" },
-    { "name": "Ruby on Rails", "url": "https://rubyonrails.org/",image:"/Image/tools/web/8.svg" },
-    { "name": "ASP.NET", "url": "https://dotnet.microsoft.com/apps/aspnet" },
-    { "name": "Laravel", "url": "https://laravel.com/" },
+    { "name": "Next.js",  "url": "https://nextjs.org/",image:"/Image/tools/web/1.svg" },
+    { "name": "React.js",  "url": "https://reactjs.org/",image:"/Image/tools/web/2.svg" },
+    { "name": "Angular", image:"/Image/tools/cloudpro/Angular.svg" ,  "url": "https://angular.io/" },
+    { "name": "Vue.js",   "url": "https://vuejs.org/",image:"/Image/tools/web/4.svg" },
+    { "name": "Django", image:"/Image/tools/cloudpro/Django.svg" ,  "url": "https://www.djangoproject.com/" },
+    { "name": "ASP.NET", image:"/Image/tools/cloudpro/ASP.NET.svg" ,  "url": "https://dotnet.microsoft.com/apps/aspnet" },
+    { "name": "Laravel", image:"/Image/tools/cloudpro/Laravel.svg" ,  "url": "https://laravel.com/" },
     { "name": "Node.js", "url": "https://nodejs.org/",image:"/Image/tools/web/7.svg" },
-    { "name": "Express.js", "url": "https://expressjs.com/" ,image:"/Image/tools/web/6.svg"},
-    { "name": "Flask", "url": "https://flask.palletsprojects.com/" }
+    { "name": "Express.js",   "url": "https://expressjs.com/" ,image:"/Image/tools/web/6.svg"},
+    { "name": "Flask", image:"/Image/tools/cloudpro/Flask.svg" ,  "url": "https://flask.palletsprojects.com/" }
   ]
       }
       

@@ -547,11 +547,6 @@ link:"/services/data-visualization",
     { "name": "Google Data Studio", "url": "https://datastudio.google.com/" }
   ],
   tools:[
-    { "name": "Microsoft Power BI", "url": "https://powerbi.microsoft.com/" ,image:"/Image/tools/bi/7.svg"},
-    { "name": "Tableau", "url": "https://www.tableau.com/",image:"/Image/tools/bi/6.svg" },
-    { "name": "Qlik Sense", "url": "https://www.qlik.com/us/products/qlik-sense" },
-    { "name": "SAP BusinessObjects", "url": "https://www.sap.com/products/businessobjects-business-intelligence.html" },
-    { "name": "Google Data Studio", "url": "https://datastudio.google.com/" },
     { "name": "Looker", "url": "https://looker.com/" },
     { "name": "Domo", "url": "https://www.domo.com/" },
     { "name": "Sisense", "url": "https://www.sisense.com/" },
@@ -660,9 +655,9 @@ link:"/services/generative-ai",
       },
       tools_services:{
       service_providers:[
-      { "name": "Amazon Web Services (AWS)", "url": "https://aws.amazon.com/" },
+      { "name": "AWS", "url": "https://aws.amazon.com/" },
     { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" },
-    { "name": "Google Cloud Platform (GCP)", "url": "https://cloud.google.com/" },
+    { "name": "Google Cloud", "url": "https://cloud.google.com/" },
     { "name": "Google", "url": "https://developers.google.com/" },
     { "name": "Apple", "url": "https://developer.apple.com/" },
 
@@ -828,9 +823,9 @@ link:"/services/generative-ai",
       },
       tools_services:{
       service_providers:[
-    { "name": "Amazon Web Services (AWS)", "url": "https://aws.amazon.com/",image:"/Image/tools/web/6.svg" },
+    { "name": "AWS", "url": "https://aws.amazon.com/",image:"/Image/tools/web/6.svg" },
     { "name": "Microsoft Azure", "url": "https://azure.microsoft.com/" ,image:"/Image/tools/cloud/2.svg"},
-    { "name": "Google Cloud Platform (GCP)", "url": "https://cloud.google.com/",image:"/Image/tools/cloud/3.svg" },
+    { "name": "Google Cloud", "url": "https://cloud.google.com/",image:"/Image/tools/cloud/3.svg" },
     { "name": "Heroku", "url": "https://www.heroku.com/" },
     { "name": "Netlify", "url": "https://www.netlify.com/" }
   ],

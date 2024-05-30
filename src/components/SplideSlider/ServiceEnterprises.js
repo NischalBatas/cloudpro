@@ -15,7 +15,7 @@ const ServiceEnterprises = ({content}) => {
     autoplay: false, // Whether to enable autoplay
     interval: 2400, // Autoplay interval in milliseconds
     pauseOnHover: true, // Whether to pause autoplay on hover
-    drag: true, // Whether to enable drag/swipe interaction
+    drag: true, // Whether to enable drag/swipe interactions
     keyboard: true, // Whether to enable keyboard navigation
     focus: "left",
     lazyLoad: "sequential",

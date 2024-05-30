@@ -10,7 +10,7 @@ const Banner = ({item}) => {
         backgroundImage: "url('/Image/casestudy/am.svg')",
       }}
     >
-      <p className="m-auto max-w-[519px] text-center font-bold text:[24px] md:text-[32px] md:leading-[48px]">
+      <p className="m-auto max-w-[519px] text-center font-bold text:[28px] md:text-[32px] md:leading-[48px]">
       {item.banner}
       </p>
     </div>

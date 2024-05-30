@@ -54,7 +54,7 @@ const ServiceEnterprises = ({content}) => {
                   style={{ zIndex: "-1" }}
                 ></div>
                 <div className=" lg:max-w-[535px] min-h-[383px] bg-white rounded text-black p-4">
-                  <p className="max-w-[381px] text-[16px] font-medium">
+                  <p className="max-w-[220px] sm:max-w-[381px] text-[16px] font-medium">
                     {item.title}
                   </p>
                   <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">

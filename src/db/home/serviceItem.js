@@ -808,7 +808,7 @@ link:"/services/generative-ai",
               },
               {
                 title: "Microservices Architecture",
-                description: "Develop and implement microservices architecture for your web applications. Our solutions enable modular, scalable, and maintainable applications that can evolve with your business needs."
+                description: "Develop and implement microservices architecture for your web applications. Our solutions enable modular, scalable, and maintainable applications that can enable with your business needs."
               },
               {
                 title: "API Management",

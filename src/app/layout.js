@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 export const metadata = {
   title: "CloudPro.AI",
-  description: "Data, AI and Software Cloud Services Consultant",
+  description: "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
 };
 
 export default function RootLayout({ children }) {
@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   <meta property="og:url" content="https://www.cloudpro.ai/" />
   <meta  property="og:type" content="website" />
   <meta property="og:site_name" content="CloudPro.AI Services" />
+  <meta name="author" content="CloudPro.AI"/>
 
   <meta name="twitter:card" content="CloudPro.AI Services" />
   <meta name="twitter:title" content="CloudPro.AI" />

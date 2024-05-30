@@ -11,6 +11,7 @@ const Introduction = ({item}) => {
         height={412}
         src={item.introduction.image}
         alt="product_image"
+        priority
       />
       <div className="md:max-w-[520px]">
         <span className="text-[#5677E1] text-[10px] font-medium rounded-[8px] px-[16px] py-[8px] bg-[#0c111f]">{item.introduction.category}</span>

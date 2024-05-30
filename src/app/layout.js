@@ -39,25 +39,25 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.png" />
 
         
-<meta  property="og:title" content="CloudPro.AI" />
-  <meta  property="og:description" content="Data, AI and Software Cloud Services Consultant" />
-  <meta  property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
+<meta  name="title" property="og:title" content="CloudPro.AI" />
+  <meta  name="description"  property="og:description" content="CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements." />
+  <meta name="image"  property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
   <meta property="og:url" content="https://www.cloudpro.ai/" />
   <meta  property="og:type" content="website" />
   <meta property="og:site_name" content="CloudPro.AI Services" />
 
   <meta name="twitter:card" content="CloudPro.AI Services" />
   <meta name="twitter:title" content="CloudPro.AI" />
-  <meta name="twitter:description" content="Data, AI and Software Cloud Services Consultant" />
+  <meta name="twitter:description" content="CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements." />
   <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
 
 
-  <meta prefix="og: http://ogp.me/ns#"  property="og:title" content="CloudPro.AI" />
+  {/* <meta prefix="og: http://ogp.me/ns#"  property="og:title" content="CloudPro.AI" />
   <meta prefix="og: http://ogp.me/ns#"  property="og:description" content="Data, AI and Software Cloud Services Consultant" />
   <meta prefix="og: http://ogp.me/ns#"  property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
   <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://www.cloudpro.ai/" />
   <meta prefix="og: http://ogp.me/ns#"  property="og:type" content="website" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="CloudPro.AI Services" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="CloudPro.AI Services" /> */}
 
         </head>
       <body className={inter.className}>

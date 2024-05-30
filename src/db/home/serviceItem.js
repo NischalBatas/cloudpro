@@ -235,14 +235,14 @@ link:"/services/ai-consulting",
     { "name": "OpenAI", image:"/Image/tools/cloudpro/OpenAI.svg" ,  "url": "https://www.openai.com/" }
   ],
   tools:[
-    { "name": "TensorFlow", image:"/Image/tools/cloudpro/TensorFlow.svg" ,  "url": "https://www.tensorflow.org/" },
-    { "name": "PyTorch", image:"/Image/tools/cloudpro/PyTorch.svg" ,  "url": "https://pytorch.org/" },
+    { "name": "TensorFlow", image:"/Image/tools/cloudpro/tensorFlow.svg" ,  "url": "https://www.tensorflow.org/" },
+    { "name": "PyTorch", image:"/Image/tools/cloudpro/Pytorch.svg" ,  "url": "https://pytorch.org/" },
     { "name": "Keras", image:"/Image/tools/cloudpro/Keras.svg" ,  "url": "https://keras.io/" },
-    { "name": "Scikit-learn", image:"/Image/tools/cloudpro/Scikit learn.svg" ,  "url": "https://scikit-learn.org/" },
+    { "name": "Scikit-learn", image:"/Image/tools/cloudpro/scikitlearn.svg" ,  "url": "https://scikit-learn.org/" },
     { "name": "OpenCV", image:"/Image/tools/cloudpro/OpenCV.svg" ,  "url": "https://opencv.org/" },
-    { "name": "Huggingface", image:"/Image/tools/cloudpro/HuggingFace.svg" ,  "url": "https://huggingface.co/transformers/" },
-    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/spark-1.svg" ,  "url": "https://spark.apache.org/mllib/" },
-    { "name": "RapidMiner", image:"/Image/tools/cloudpro/RapidMiner.svg" ,  "url": "https://rapidminer.com/" },
+    { "name": "Huggingface", image:"/Image/tools/cloudpro/huggingFace.svg" ,  "url": "https://huggingface.co/transformers/" },
+    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/Spark-1.svg" ,  "url": "https://spark.apache.org/mllib/" },
+    { "name": "RapidMiner", image:"/Image/tools/cloudpro/rapidMiner.svg" ,  "url": "https://rapidminer.com/" },
     { "name": "NVIDIA CUDA", image:"/Image/tools/cloudpro/CUDA.svg" ,  "url": "https://developer.nvidia.com/cuda-zone" },
   ]
       
@@ -396,11 +396,11 @@ link:"/services/data-pipeline",
       },
       tools_services:{
       service_providers:[
-    { "name": "AWS", image:"/Image/tools/cloudpro/aws.svg" ,  "url": "https://aws.amazon.com/" },
+    { "name": "AWS", image:"/Image/tools/cloudpro/AWS.svg" ,  "url": "https://aws.amazon.com/" },
     { "name": "Microsoft Azure", image:"/Image/tools/cloudpro/Azure.svg" ,  "url": "https://azure.microsoft.com/" },
     { "name": "Google Cloud", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://cloud.google.com/" },
     { "name": "IBM Cloud", image:"/Image/tools/cloud/4.png" ,  "url": "https://www.ibm.com/cloud" },
-    { "name": "Snowflake", image:"/Image/tools/cloudpro/Snowflesk.svg" ,  "url": "https://www.snowflake.com/", }
+    { "name": "Snowflake", image:"/Image/tools/cloudpro/snowflesk.svg" ,  "url": "https://www.snowflake.com/", }
   ],
   tools:[
     { "name": "Apache Hadoop", image:"/Image/tools/cloudpro/Hadoop.svg" ,  "url": "https://hadoop.apache.org/" },
@@ -409,7 +409,7 @@ link:"/services/data-pipeline",
     { "name": "Apache Airflow", image:"/Image/tools/cloudpro/Airflow.svg" ,  "url": "https://airflow.apache.org/" },
     { "name": "Talend", image:"/Image/tools/cloudpro/Talend.svg" ,  "url": "https://www.talend.com/" },
     { "name": "Tableau", image:"/Image/tools/cloudpro/Tableau.svg" ,  "url": "https://www.tableau.com/" },
-    { "name": "Power BI", image:"/Image/tools/cloudpro/Power BI.svg" ,  "url": "https://powerbi.microsoft.com/" },
+    { "name": "Power BI", image:"/Image/tools/cloudpro/Power Bi.svg" ,  "url": "https://powerbi.microsoft.com/" },
     { "name": "Databricks", image:"/Image/tools/cloudpro/Databreak.svg" ,  "url": "https://databricks.com/" }
   ]
       
@@ -540,15 +540,15 @@ link:"/services/data-visualization",
       service_providers:[
     { "name": "Microsoft Power BI" ,  "url": "https://powerbi.microsoft.com/",image:"/Image/tools/bi/7.svg" },
     { "name": "Tableau", "url": "https://www.tableau.com/" ,image:"/Image/tools/bi/6.svg"},
-    { "name": "Qlik", image:"/Image/tools/cloudpro/qlik Q.svg" ,  "url": "https://www.qlik.com/" },
+    { "name": "Qlik", image:"/Image/tools/cloudpro/Qlik Q.svg" ,  "url": "https://www.qlik.com/" },
     { "name": "SAP Analytics Cloud", image:"/Image/tools/cloudpro/SAP.svg" ,  "url": "https://www.sap.com/products/analytics-cloud.html" },
     { "name": "Google Data Studio", image:"/Image/tools/cloudpro/Google Cloud.svg" ,  "url": "https://datastudio.google.com/" }
   ],
   tools:[
     { "name": "Looker", image:"/Image/tools/cloudpro/Looker.svg" ,  "url": "https://looker.com/" },
-    { "name": "Domo", image:"/Image/tools/cloudpro/Domo.svg" ,  "url": "https://www.domo.com/" },
-    { "name": "Sisense", image:"/Image/tools/cloudpro/Sisense.svg" ,  "url": "https://www.sisense.com/" },
-    { "name": "TIBCO Spotfire", image:"/Image/tools/cloudpro/TIBC spotfire.svg" ,  "url": "https://www.tibco.com/products/tibco-spotfire" },
+    { "name": "Domo", image:"/Image/tools/cloudpro/DOMO.svg" ,  "url": "https://www.domo.com/" },
+    { "name": "Sisense", image:"/Image/tools/cloudpro/sisense.svg" ,  "url": "https://www.sisense.com/" },
+    { "name": "TIBCO Spotfire", image:"/Image/tools/cloudpro/TIBC Spotfire.svg" ,  "url": "https://www.tibco.com/products/tibco-spotfire" },
   ]
       }
       
@@ -666,7 +666,7 @@ link:"/services/generative-ai",
     { "name": "Swift", image:"/Image/tools/cloudpro/Swift.svg" ,  "url": "https://swift.org/" },
     { "name": "Kotlin", image:"/Image/tools/cloudpro/Kotlin.svg" ,  "url": "https://kotlinlang.org/" },
     { "name": "Java", image:"/Image/tools/cloudpro/Java.svg" ,  "url": "https://www.java.com/" },
-    { "name": "Objective-C", image:"/Image/tools/cloudpro/ObjC.svg" ,  "url": "https://developer.apple.com/documentation/objectivec" },
+    { "name": "Objective-C", image:"/Image/tools/cloudpro/objc.svg" ,  "url": "https://developer.apple.com/documentation/objectivec" },
     { "name": "Android Studio", image:"/Image/tools/cloudpro/Android Studi.svg" ,  "url": "https://developer.android.com/studio",image:"/Image/tools/mobile/2.png", },
     { "name": "Xcode", image:"/Image/tools/cloudpro/Xcode.svg" ,  "url": "https://developer.apple.com/xcode/" },
     { "name": "Ionic", image:"/Image/tools/cloudpro/Ionic.svg" ,  "url": "https://ionicframework.com/" }
@@ -831,8 +831,8 @@ link:"/services/generative-ai",
     { "name": "React.js",  "url": "https://reactjs.org/",image:"/Image/tools/web/2.svg" },
     { "name": "Angular", image:"/Image/tools/cloudpro/Angular.svg" ,  "url": "https://angular.io/" },
     { "name": "Vue.js",   "url": "https://vuejs.org/",image:"/Image/tools/web/4.svg" },
-    { "name": "Django", image:"/Image/tools/cloudpro/Django.svg" ,  "url": "https://www.djangoproject.com/" },
-    { "name": "ASP.NET", image:"/Image/tools/cloudpro/ASP.NET.svg" ,  "url": "https://dotnet.microsoft.com/apps/aspnet" },
+    { "name": "Django", image:"/Image/tools/cloudpro/django.svg" ,  "url": "https://www.djangoproject.com/" },
+    { "name": "ASP.NET", image:"/Image/tools/cloudpro/Asp.net.svg" ,  "url": "https://dotnet.microsoft.com/apps/aspnet" },
     { "name": "Laravel", image:"/Image/tools/cloudpro/Laravel.svg" ,  "url": "https://laravel.com/" },
     { "name": "Node.js", "url": "https://nodejs.org/",image:"/Image/tools/web/7.svg" },
     { "name": "Express.js",   "url": "https://expressjs.com/" ,image:"/Image/tools/web/6.svg"},

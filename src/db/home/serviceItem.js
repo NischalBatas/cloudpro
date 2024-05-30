@@ -784,7 +784,7 @@ link:"/services/generative-ai",
               },
               {
                 title: "Performance Optimization",
-                description: "Improve the speed and performance of your web applications. We optimize your applications to ensure fast load times, smooth interactions, and efficient resource usage."
+                description: "Improve the speed and performance of your web applications. We optimizes your applications to ensure fast load times, smooth interactions, and efficient resource usage."
               },
               {
                 title: "Security Enhancements",

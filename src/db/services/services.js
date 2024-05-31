@@ -1,12 +1,22 @@
 export const services=[
-    {title:'AI Chatbot Services',description:'Craft secure, scalable cloud solutions tailored to your business needs with us.'},
-    {title:'Generative AI Apps',description:'Experience the creativity and innovation of Generative AI with our dedicated app development services.'},
-    {title:'AI Implementation Services',description:'Embark on a journey of AI implementation with our comprehensive services.'},
-    {title:'LLM (Large Language Model)',description:'Empower your education and training initiatives with our advanced Learning Management System (LLMS). '},
-    {title:'Deep Learning Services',description:'Dive into the world of Deep Learning with our specialized services.'},
-    {title:'Machine Learning',description:'Explore the possibilities of Machine Learning (ML) with our cutting-edge solutions.'},
-
-]
-
-
-
+    {
+      title: "Generative AI/ML Services",
+      description: "Craft secure, scalable and innovative Generative AI/ML solutions suitable for your business needs.",
+      url: "https://cloudpro.ai/service/2"
+    },
+    {
+      title: "Cloud Engineering Services",
+      description: "Promote growth by implementing robust cloud infrastructure for your business.",
+      url: "https://cloudpro.ai/service/1"
+    },
+    {
+      title: "Data Engineering Services",
+      description: "Make data-driven decisions and grow your business using our secure and scalable data engineering solutions.",
+      url: "https://cloudpro.ai/service/3"
+    },
+    {
+      title: "BI & Analytics Services",
+      description: "Analyze your data, identify pain points, understand customer segments and grow your client-base. ",
+      url: "https://cloudpro.ai/service/4"
+    }
+  ]

@@ -39,7 +39,7 @@ const NewsletterSlider = () => {
         },
       };
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden hidden md:block">
       <Splide options={splideOptions} className='flex justify-start pt-[40px] '>
         {NewsletterData.map((item, index) => {
           return (

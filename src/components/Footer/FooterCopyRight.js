@@ -18,7 +18,7 @@ const FooterCopyRight = () => {
 
       <div className="flex  items-center gap-[18px] text-cloud2 text-[24px]">
         <Link href="#"><FaXTwitter /></Link>
-        <Link href="#"><SlSocialYoutube /></Link>
+        <Link target="_blank" href="https://www.youtube.com/@CloudProAI"><SlSocialYoutube /></Link>
         <Link target="_blank" href="https://www.linkedin.com/company/cloudproai/"><FaLinkedin /></Link>
         {/* <Link href="#"><FaInstagram /></Link> */}
       </div>

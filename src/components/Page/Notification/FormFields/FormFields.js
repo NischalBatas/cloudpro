@@ -175,7 +175,7 @@ const FormFields = () => {
           }}
         >
           <Form.Label className="FormLabel">
-            Phone Number (Optional)
+            Phone Number 
           </Form.Label>
      
         </div>
@@ -185,7 +185,7 @@ const FormFields = () => {
             name="phoneNumber"
             onChange={handleChange}
             className="Input"
-            type="number"
+            type="number" required
             placeholder="Enter your Phone Number"
           />
         </Form.Control>

@@ -3,6 +3,7 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { SlSocialYoutube } from "react-icons/sl";
 import Image from "next/image";
 
 const FooterCopyRight = () => {
@@ -17,6 +18,7 @@ const FooterCopyRight = () => {
 
       <div className="flex  items-center gap-[18px] text-cloud2 text-[24px]">
         <Link href="#"><FaXTwitter /></Link>
+        <Link href="#"><SlSocialYoutube /></Link>
         <Link target="_blank" href="https://www.linkedin.com/company/cloudproai/"><FaLinkedin /></Link>
         {/* <Link href="#"><FaInstagram /></Link> */}
       </div>

@@ -120,7 +120,7 @@ const FooterContent = () => {
         </div>
         <div className="flex flex-col gap-[16px] text-cloud2 text-[14px]">
           <div  className="flex gap-2 items-center"><MdOutlinePhoneInTalk /> +1 415-393-2021</div>
-          <Link href='mailto:contact@cloudpro.ai' className="flex gap-2 items-center">  <MdOutlineMailOutline /> contact@cloudpro.ai</Link>
+          <Link href='mailto:contact@cloudpro.ai' className="flex gap-2 items-center">  <MdOutlineMailOutline />contact@cloudproai.com</Link>
           <div
             className="flex items-center gap-[16px] border rounded-full py-[0.3rem] px-4 max-w-max border-[#494949]"
             href="#"

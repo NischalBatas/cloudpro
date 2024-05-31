@@ -7,6 +7,7 @@ import Products from "./content/Products";
 import Industries from "./content/Industries";
 import Faq from "./content/Faq";
 import Enterprises from "./content/Enterprises";
+import Blogs from "../containers/Blog/Blogs";
 const DataSolutions = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const DataSolutions = () => {
         <Journey/>
         {/* <Services/> */}
     
-
+        <Blogs/>
        
     </div>
   )

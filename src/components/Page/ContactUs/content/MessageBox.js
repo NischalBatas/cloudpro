@@ -182,10 +182,10 @@ const options = [
             <p className="text-[#7c7c7c] text-[12px] mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
             </Form.Label>
             <Form.Control asChild>
-            <select name="service" className="md:h-[260px]  bg-black text-white" multiple
+            <select name="service" className="md:h-[280px] border p-2 sm:border-none  bg-black text-white" multiple
               onChange={handleChangeService} >
             {options.map((option) => (
-              <option className="md:my-1 p-2 w-[280px] text-center rounded-[16px] border" value={option.value}>{option.label}</option>
+              <option className="md:my-1 md:p-2 md:w-[280px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
             ))}
           </select>
             </Form.Control>

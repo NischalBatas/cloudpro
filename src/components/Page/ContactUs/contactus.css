@@ -217,7 +217,7 @@ button {
   font-size: 16px;
   background: #000 !important;
   color: #fff !important;
-  border: 1px solid #CACACA;
+  border: 1px solid #2a2a2c !important;
   border-radius: 5px;
   width: 300px;
   outline: none;
@@ -228,4 +228,9 @@ button {
 .react-tel-input .flag-dropdown{
   z-index: 2;
   /* background: white; */
+}
+
+.react-tel-input .form-control:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #fff !important;
 }

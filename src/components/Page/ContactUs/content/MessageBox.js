@@ -186,20 +186,7 @@ const options = [
             </Form.Control>
           </Form.Field>
 
-          <Form.Field className="FormField " name="service">
-            <Form.Label className="FormLabel">
-            Select the services you may need.
-            <p className="text-[#7c7c7c] text-[12px] mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
-            </Form.Label>
-            <Form.Control asChild>
-            <select name="service" className="contactus_main_select md:h-[302px] border p-2 sm:border-none rounded-[16px] bg-black text-white" multiple
-              onChange={handleChangeService} >
-            {options.map((option) => (
-              <option className="md:my-2 cursor-pointer md:p-2 md:w-[200px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
-            ))}
-          </select>
-            </Form.Control>
-          </Form.Field>
+        
           
 
           <Form.Field className="FormField" name="phonenumber">
@@ -230,6 +217,21 @@ const options = [
                 // placeholder="Enter your Phone Number"
               />
           
+          </Form.Field>
+          
+          <Form.Field className="FormField " name="service">
+            <Form.Label className="FormLabel">
+            Select the services you may need.
+            <p className="text-[#7c7c7c] text-[12px] mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
+            </Form.Label>
+            <Form.Control asChild>
+            <select name="service" className="contactus_main_select md:h-[302px] border p-2 sm:border-none rounded-[16px] bg-black text-white" multiple
+              onChange={handleChangeService} >
+            {options.map((option) => (
+              <option className="md:my-2 cursor-pointer md:p-2 md:w-[200px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
+            ))}
+          </select>
+            </Form.Control>
           </Form.Field>
           
           {/* <PhoneInput

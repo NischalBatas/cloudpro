@@ -8,7 +8,7 @@ import "./NewsletterForm.css";
 const NewsletterForm = () => {
   return (
     <div className="NewsletterForm_main">
-      <div className="newsletter_main_content flex flex-col pt-[80px] md:pt-[121px] pb-10   bg-no-repeat  md:bg-contain  ">
+      <div className="newsletter_main_content flex flex-col pt-[80px] md:pt-[104px] pb-10   bg-no-repeat  md:bg-contain  ">
    
         <div className="main-container4 flex flex-col justify-center items-center   p-[32px] md:p-[55px]">
           <div>
@@ -31,7 +31,7 @@ const NewsletterForm = () => {
             </p>
           </div>
         </div>
-        <div className="main-container4 mt-[91px] bg-[black]  rounded-[16px] p-[24px] md:p-[55px]">
+        <div className="main-container4 mt-[91px] bg-[black]  rounded-[16px] py-[42px] px-[24px] md:p-[55px]">
           <div className="grid md:grid-cols-2 gap-10 md:gap-10">
             <div>
               <div className="max-w-[424px]">

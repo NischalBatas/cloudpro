@@ -11,7 +11,10 @@ import {
 } from "react-icons/md";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
+import PhoneInput from "react-phone-input-2";
 
+
+import 'react-phone-input-2/lib/material.css'
 const MessageBox = ({ selectTab }) => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -34,6 +37,13 @@ const MessageBox = ({ selectTab }) => {
       .filter((option) => option.selected)
       .map((option) => option.value);
     setFormData({ ...formData, [name]: selectedOptions });
+  };
+
+  const handleChangePhone = (value) => {
+    setFormData(prevState => ({
+      ...prevState,
+      phoneNumber: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -208,20 +218,30 @@ const options = [
                 Please provide a valid number
               </Form.Message>
             </div>
-            <Form.Control asChild>
-              <input
+   
+            <PhoneInput
+               country={'us'}
                 value={formData.phoneNumber}
                 name="phoneNumber"
-                onChange={handleChange}
-                className="Input"
-                type="tel"
-                required
-                placeholder="Enter your Phone Number"
+                onChange={handleChangePhone}
+                className="text-black bg-black"
+                // type="tel"
+        
+                // placeholder="Enter your Phone Number"
               />
-            </Form.Control>
+          
           </Form.Field>
           
-
+          {/* <PhoneInput
+               country={'us'}
+                value={formData.phoneNumber}
+                name="phoneNumber"
+                onChange={handleChangePhone}
+                className="text-black bg-black"
+                // type="tel"
+        
+                // placeholder="Enter your Phone Number"
+              /> */}
 
 
           <Form.Field className="FormField" name="Your Company">

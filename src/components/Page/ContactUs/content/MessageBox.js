@@ -303,7 +303,7 @@ const options = [
                 name="message"
                 onChange={handleChange}
                 className="Textarea"
-                required placeholder="Enter your queries"
+                required 
               />
             </Form.Control>
           </Form.Field>

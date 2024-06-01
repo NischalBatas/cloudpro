@@ -231,6 +231,6 @@ button {
 }
 
 .react-tel-input .form-control:focus {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #fff !important;
+  border-color: #ffff;
+  box-shadow: 0 0 0 1px #ffff !important;
 }

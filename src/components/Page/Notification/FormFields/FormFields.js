@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "./newsletter.css";
 import toast, { Toaster } from "react-hot-toast";
-
+import PhoneInput from "react-phone-input-2";
+import 'react-phone-input-2/lib/material.css'
 const FormFields = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -16,6 +17,13 @@ const FormFields = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleChangePhone = (value) => {
+    setFormData(prevState => ({
+      ...prevState,
+      phoneNumber: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -166,30 +174,35 @@ const FormFields = () => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField2" name="phonenumber">
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            justifyContent: "space-between",
-          }}
-        >
-          <Form.Label className="FormLabel">
-            Phone Number 
-          </Form.Label>
-     
-        </div>
-        <Form.Control asChild>
-          <input
-            value={formData.phoneNumber}
-            name="phoneNumber"
-            onChange={handleChange}
-            className="Input"
-            type="number" required
-            placeholder="Enter your Phone Number"
-          />
-        </Form.Control>
-      </Form.Field>
+      <Form.Field className="FormField" name="phonenumber">
+            <div
+              style={{
+                display: "flex",
+                alignItems: "baseline",
+                justifyContent: "space-between",
+              }}
+            >
+              <Form.Label className="FormLabel"> Phone Number</Form.Label>
+              <Form.Message className="FormMessage" match="valueMissing">
+                Enter the Phone Number
+              </Form.Message>
+              <Form.Message className="FormMessage" match="typeMismatch">
+                Please provide a valid number
+              </Form.Message>
+            </div>
+   
+            <PhoneInput
+               country={'us'}
+                value={formData.phoneNumber}
+                name="phoneNumber"
+                onChange={handleChangePhone}
+                className="text-black bg-black"
+                // type="tel"
+        
+                // placeholder="Enter your Phone Number"
+              />
+          
+          </Form.Field>
 
      <div>
      <Form.Submit asChild>

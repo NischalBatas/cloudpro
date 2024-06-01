@@ -217,9 +217,10 @@ button {
   font-size: 16px;
   background: #000 !important;
   color: #fff !important;
-  border: 1px solid #2a2a2c !important;
-  border-radius: 5px;
-  width: 300px;
+  border: none !important;
+  border-bottom: 1px solid #2a2a2c !important;
+  border-radius: 0 !important;
+  width: 100% !important;
   outline: none;
   padding: 15.5px 14px 15.5px 58px !important;
   transition: box-shadow ease .25s, border-color ease .25s;
@@ -231,6 +232,7 @@ button {
 }
 
 .react-tel-input .form-control:focus {
-  border-color: #ffff;
-  box-shadow: 0 0 0 1px #ffff !important;
+  /* border-color: #ffff; */
+  box-shadow: none !important;
+  border-bottom: 1px solid #ffff !important;
 }

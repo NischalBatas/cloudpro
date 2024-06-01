@@ -28,6 +28,14 @@ const MessageBox = ({ selectTab }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleChangeService = (e) => {
+    const { name, options } = e.target;
+    const selectedOptions = Array.from(options)
+      .filter((option) => option.selected)
+      .map((option) => option.value);
+    setFormData({ ...formData, [name]: selectedOptions });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -52,7 +60,7 @@ const MessageBox = ({ selectTab }) => {
           company: "",
           position: "",
           message: "",
-          service: "",
+          service: [],
         });
       }
     } catch (error) {
@@ -61,13 +69,34 @@ const MessageBox = ({ selectTab }) => {
     }
   };
 
-  const options = [
-    "Artificial Intelligence",
-    "BI & Data Analytics",
-    "Cloud Engineering",
-    "Data Engineering",
-    "Web Development",
-    "App Development"
+
+
+const options = [
+  {
+    label: "Artificial Intelligence",
+    value: "Artificial Intelligence",
+  },
+  {
+    label: "BI & Data Analytics",
+    value: "BI & Data Analytics",
+  },
+  {
+    label: "Cloud Engineering",
+    value: "Cloud Engineering",
+  },
+  {
+    label: "Data Engineering",
+    value: "Data Engineering",
+  },
+  {
+    label: "Web Development",
+    value: "Web Development",
+  },
+  {
+    label: "App Development",
+    value: "App Development",
+  },
+
 ];
 
   return (
@@ -147,25 +176,17 @@ const MessageBox = ({ selectTab }) => {
             </Form.Control>
           </Form.Field>
 
-          <Form.Field className="FormField" name="service">
+          <Form.Field className="FormField text-black" name="service">
             <Form.Label className="FormLabel">
             Select the services you may need.
             </Form.Label>
             <Form.Control asChild>
-              <select multiple
-             
-              
-                onChange={handleChange}
-                className="p-2 font-semibold rounded-md bg-[#252525]"
-              >
-                  {options.map((option, index) => {
-                    return (
-                        <option key={index}>
-                            {option}
-                        </option>
-                    );
-                })}
-              </select>
+            <select name="service" multiple
+              onChange={handleChangeService} >
+            {options.map((option) => (
+              <option value={option.value}>{option.label}</option>
+            ))}
+          </select>
             </Form.Control>
           </Form.Field>
           
@@ -192,12 +213,15 @@ const MessageBox = ({ selectTab }) => {
                 name="phoneNumber"
                 onChange={handleChange}
                 className="Input"
-                type="number"
+                type="tel"
                 required
                 placeholder="Enter your Phone Number"
               />
             </Form.Control>
           </Form.Field>
+          
+
+
 
           <Form.Field className="FormField" name="Your Company">
             <div

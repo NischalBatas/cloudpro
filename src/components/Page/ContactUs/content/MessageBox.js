@@ -294,7 +294,7 @@ const options = [
           <Form.Field className="FormField " name="service">
             <Form.Label className="FormLabel">
             Select the services you may need.
-            <p className="text-[#7c7c7c] text-[12px] mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
+            <p className="text-[#7c7c7c] text-[12px] hidden md:block mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
             </Form.Label>
             <Form.Control asChild>
             <select name="service" id="contactus_main_select" className="md:h-[302px] border p-2 sm:border-none rounded-[16px] bg-black text-white" multiple

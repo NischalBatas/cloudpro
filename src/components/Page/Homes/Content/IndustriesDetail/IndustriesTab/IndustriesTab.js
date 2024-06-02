@@ -6,7 +6,7 @@ const IndustriesTab = ({item}) => {
   return (
     <div className='main-tabs navbar-main bg-[#121315] fixed top-[50px] md:top-[60px] w-full z-[998]'>
         <div className='main-container2 flex  flex-nowrap gap-[24px] items-center whitespace-nowrap text-nowrap  '>
-        <span className='uppercase text-[#5677E1] text-[14px] font-semibold tracking-[0.39px]'>Industries</span>      
+        <span className='uppercase hidden md:block text-[#5677E1] text-[14px] font-semibold tracking-[0.39px]'>Industries</span>      
 <div>
 <div className='h-[32px] w-[1px] bg-[#4661B9] block'></div>
 </div>

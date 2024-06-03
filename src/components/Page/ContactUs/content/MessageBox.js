@@ -32,10 +32,11 @@ const MessageBox = ({ selectTab }) => {
   };
 
   const handleServiceChange = (selectedOptions) => {
-    const values = selectedOptions ? selectedOptions.map(option => option.value) : [];
+    const values = selectedOptions
+      ? selectedOptions.map((option) => option.value)
+      : [];
     setFormData({ ...formData, service: values });
   };
-  
 
   const handleChangePhone = (value) => {
     setFormData((prevState) => ({
@@ -46,7 +47,7 @@ const MessageBox = ({ selectTab }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('formData',formData)
+    console.log("formData", formData);
     try {
       const res = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -68,7 +69,7 @@ const MessageBox = ({ selectTab }) => {
           company: "",
           position: "",
           message: "",
-          service: [],
+          service: "",
         });
       }
     } catch (error) {
@@ -77,28 +78,27 @@ const MessageBox = ({ selectTab }) => {
     }
   };
 
-
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      backgroundColor: 'black',
-      color: 'white'
+      backgroundColor: "black",
+      color: "white",
     }),
     menu: (provided) => ({
       ...provided,
-      backgroundColor: 'white',
+      backgroundColor: "white",
     }),
     multiValue: (provided) => ({
       ...provided,
-      backgroundColor: '#2E2E2E',
+      backgroundColor: "#2E2E2E",
     }),
     multiValueLabel: (provided) => ({
       ...provided,
-      color: 'white',
+      color: "white",
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: 'white',
+      color: "white",
     }),
   };
 
@@ -234,9 +234,19 @@ const MessageBox = ({ selectTab }) => {
 
           <div>
             <label>Select the services you may need</label>
-            <Select placeholder="select the sevices"  styles={customStyles} className="mt-3 border-[#2E2E2E] rounded-[16px] bg-black text-black" name="service" isMulti options={options}   onChange={handleServiceChange}/>
+            <Select
+              placeholder="Select the sevices"
+              value={options.filter((option) =>
+                formData.service.includes(option.value)
+              )}
+              styles={customStyles}
+              className="mt-3 border-[#2E2E2E] rounded-[16px] bg-black text-black"
+              name="service"
+              isMulti
+              options={options}
+              onChange={handleServiceChange}
+            />
           </div>
-
 
           <Form.Field className="FormField" name="Your Company">
             <div
@@ -296,7 +306,6 @@ const MessageBox = ({ selectTab }) => {
             </Form.Control>
           </Form.Field>
 
-   
           <Form.Field className="FormField" name="question">
             <div
               style={{

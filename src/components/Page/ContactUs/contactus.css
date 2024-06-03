@@ -266,6 +266,7 @@ button {
 
   box-sizing: border-box;
   color: white;
+  padding: 0.2rem 0 !important;
 }
 
 .css-1yqoimm-control {
@@ -298,4 +299,13 @@ button {
   box-shadow: 0 0 0 1px #6083f3 !important;
   box-sizing: border-box;
   color: white;
+  padding: 0.2rem 0 !important;
+}
+
+.css-1jqq78o-placeholder {
+  grid-area: 1 / 1 / 2 / 3;
+  color: #92a3af !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-sizing: border-box;
 }

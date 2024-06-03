@@ -12,9 +12,9 @@ import {
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import PhoneInput from "react-phone-input-2";
-import '../contactus.css'
-
-import 'react-phone-input-2/lib/material.css'
+import "../contactus.css";
+import Select from "react-select";
+import "react-phone-input-2/lib/material.css";
 const MessageBox = ({ selectTab }) => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -31,16 +31,14 @@ const MessageBox = ({ selectTab }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleChangeService = (e) => {
-    const { name, options } = e.target;
-    const selectedOptions = Array.from(options)
-      .filter((option) => option.selected)
-      .map((option) => option.value);
-    setFormData({ ...formData, [name]: selectedOptions });
+  const handleServiceChange = (selectedOptions) => {
+    const values = selectedOptions ? selectedOptions.map(option => option.value) : [];
+    setFormData({ ...formData, service: values });
   };
+  
 
   const handleChangePhone = (value) => {
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       phoneNumber: value,
     }));
@@ -48,7 +46,7 @@ const MessageBox = ({ selectTab }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log('formData',formData)
     try {
       const res = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -80,34 +78,56 @@ const MessageBox = ({ selectTab }) => {
   };
 
 
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      backgroundColor: 'black',
+      color: 'white'
+    }),
+    menu: (provided) => ({
+      ...provided,
+      backgroundColor: 'white',
+    }),
+    multiValue: (provided) => ({
+      ...provided,
+      backgroundColor: '#2E2E2E',
+    }),
+    multiValueLabel: (provided) => ({
+      ...provided,
+      color: 'white',
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: 'white',
+    }),
+  };
 
-const options = [
-  {
-    label: "Artificial Intelligence",
-    value: "Artificial Intelligence",
-  },
-  {
-    label: "BI & Data Analytics",
-    value: "BI & Data Analytics",
-  },
-  {
-    label: "Cloud Engineering",
-    value: "Cloud Engineering",
-  },
-  {
-    label: "Data Engineering",
-    value: "Data Engineering",
-  },
-  {
-    label: "Web Development",
-    value: "Web Development",
-  },
-  {
-    label: "App Development",
-    value: "App Development",
-  },
-
-];
+  const options = [
+    {
+      label: "Artificial Intelligence",
+      value: "Artificial Intelligence",
+    },
+    {
+      label: "BI & Data Analytics",
+      value: "BI & Data Analytics",
+    },
+    {
+      label: "Cloud Engineering",
+      value: "Cloud Engineering",
+    },
+    {
+      label: "Data Engineering",
+      value: "Data Engineering",
+    },
+    {
+      label: "Web Development",
+      value: "Web Development",
+    },
+    {
+      label: "App Development",
+      value: "App Development",
+    },
+  ];
 
   return (
     <Tabs.Root className="TabsRoot1 mt-8 md:mt-0" defaultValue={`${selectTab}`}>
@@ -186,9 +206,6 @@ const options = [
             </Form.Control>
           </Form.Field>
 
-        
-          
-
           <Form.Field className="FormField" name="phonenumber">
             <div
               style={{
@@ -205,32 +222,20 @@ const options = [
                 Please provide a valid number
               </Form.Message>
             </div>
-   
-            <PhoneInput
-               country={'us'}
-                value={formData.phoneNumber}
-                name="phoneNumber"
-                onChange={handleChangePhone}
-                className="text-black bg-black"
-                // type="tel"
-        
-                // placeholder="Enter your Phone Number"
-              />
-          
-          </Form.Field>
-          
-       
 
-          {/* <PhoneInput
-               country={'us'}
-                value={formData.phoneNumber}
-                name="phoneNumber"
-                onChange={handleChangePhone}
-                className="text-black bg-black"
-                // type="tel"
-        
-                // placeholder="Enter your Phone Number"
-              /> */}
+            <PhoneInput
+              country={"us"}
+              value={formData.phoneNumber}
+              name="phoneNumber"
+              onChange={handleChangePhone}
+              className="text-black bg-black"
+            />
+          </Form.Field>
+
+          <div>
+            <label>Select the services you may need</label>
+            <Select placeholder="select the sevices"  styles={customStyles} className="mt-3 border-[#2E2E2E] rounded-[16px] bg-black text-black" name="service" isMulti options={options}   onChange={handleServiceChange}/>
+          </div>
 
 
           <Form.Field className="FormField" name="Your Company">
@@ -291,21 +296,7 @@ const options = [
             </Form.Control>
           </Form.Field>
 
-          <Form.Field className="FormField " name="service">
-            <Form.Label className="FormLabel">
-            Select the services you may need.
-            <p className="text-[#7c7c7c] text-[12px] hidden md:block mt-[-10px] mb-[5px]"><span className="text-white font-bold">Note:</span> Press ctrl key to select multiple services</p>
-            </Form.Label>
-            <Form.Control asChild>
-            <select name="service" id="contactus_main_select" className="md:h-[302px] border p-2 sm:border-none rounded-[16px] bg-black text-white" multiple
-              onChange={handleChangeService} >
-            {options.map((option,index) => (
-              <option key={index} className="md:my-2 cursor-pointer md:p-2 md:w-[200px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
-            ))}
-          </select>
-            </Form.Control>
-          </Form.Field>
-
+   
           <Form.Field className="FormField" name="question">
             <div
               style={{
@@ -327,7 +318,7 @@ const options = [
                 name="message"
                 onChange={handleChange}
                 className="Textarea"
-                required 
+                required
               />
             </Form.Control>
           </Form.Field>

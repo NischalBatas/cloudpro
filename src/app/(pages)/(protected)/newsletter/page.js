@@ -1,4 +1,5 @@
-import Newsletter from '@/components/Page/Notification/Newsletter'
+
+import Newsletter from '@/components/Page/Newsletter/Newsletter'
 import React from 'react'
 
 const page = () => {

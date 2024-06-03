@@ -1,5 +1,5 @@
 .newsletter_main_content{
-  background-image: url('/Image/notification/bg.svg');
+  background-image: url('/Image/newsletter/bg.svg');
   z-index: -1;
 
 }
@@ -7,7 +7,7 @@
 @media only screen and (min-width:3250px){
   .newsletter_main_content{
     background-size: cover;
-    /* background-image: url('/Image/notification/mobile_bg.png'); */
+    /* background-image: url('/Image/newsletter/mobile_bg.png'); */
     z-index: -1;
   }
 }
@@ -134,4 +134,33 @@ button {
 /* Handle on hover */
 .cal-inline-container::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
+}
+
+/* For phone form */
+.special-label{
+  display: none !important;
+}
+
+.react-tel-input .form-control {
+  font-size: 16px;
+  background: #000 !important;
+  color: #fff !important;
+  border: none !important;
+  border-bottom: 1px solid #2a2a2c !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  outline: none;
+  padding: 15.5px 14px 15.5px 58px !important;
+  transition: box-shadow ease .25s, border-color ease .25s;
+}
+
+.react-tel-input .flag-dropdown{
+  z-index: 2;
+  /* background: white; */
+}
+
+.react-tel-input .form-control:focus {
+  /* border-color: #ffff; */
+  box-shadow: none !important;
+  border-bottom: 1px solid #ffff !important;
 }

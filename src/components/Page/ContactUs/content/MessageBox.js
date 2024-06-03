@@ -299,8 +299,8 @@ const options = [
             <Form.Control asChild>
             <select name="service" id="contactus_main_select" className="md:h-[302px] border p-2 sm:border-none rounded-[16px] bg-black text-white" multiple
               onChange={handleChangeService} >
-            {options.map((option) => (
-              <option className="md:my-2 cursor-pointer md:p-2 md:w-[200px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
+            {options.map((option,index) => (
+              <option key={index} className="md:my-2 cursor-pointer md:p-2 md:w-[200px] md:text-center md:rounded-[16px] md:border" value={option.value}>{option.label}</option>
             ))}
           </select>
             </Form.Control>

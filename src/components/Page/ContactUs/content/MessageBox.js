@@ -15,7 +15,10 @@ import PhoneInput from "react-phone-input-2";
 import "../contactus.css";
 import Select from "react-select";
 import "react-phone-input-2/lib/material.css";
+import Loading from "./Loading";
+
 const MessageBox = ({ selectTab }) => {
+  const [loading, setLoading] = useState(false); // Add loading state
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -48,6 +51,8 @@ const MessageBox = ({ selectTab }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("formData", formData);
+    setLoading(true); // Set loading to true
+
     try {
       const res = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -71,10 +76,13 @@ const MessageBox = ({ selectTab }) => {
           message: "",
           service: "",
         });
+        await new Promise((resolve) => setTimeout(resolve, 1100));
       }
     } catch (error) {
       console.log("EmailJS error:", error);
       toast.error("Please try again.");
+    } finally {
+      setLoading(false); // Set loading to false after submission
     }
   };
 
@@ -147,201 +155,207 @@ const MessageBox = ({ selectTab }) => {
         className="TabsContent1 flex justify-between flex-wrap gap-6 lg:flex-nowrap"
         value="message"
       >
-        <Form.Root className="FormRoot" onSubmit={handleSubmit}>
-          <Form.Field className="FormField" name="Your full name">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel">Your Full Name</Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Please enter your full name
-              </Form.Message>
-              <Form.Message className="FormMessage" match="typeMismatch">
-                Please provide a valid full name
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <input
-                value={formData.fullName}
-                name="fullName"
-                onChange={handleChange}
-                className="Input"
-                type="text"
-                required
-                placeholder="Enter your Full Name"
-              />
-            </Form.Control>
-          </Form.Field>
+        {!loading ? (
+          <>
+            <Form.Root className="FormRoot" onSubmit={handleSubmit}>
+              <Form.Field className="FormField" name="Your full name">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel">Your Full Name</Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Please enter your full name
+                  </Form.Message>
+                  <Form.Message className="FormMessage" match="typeMismatch">
+                    Please provide a valid full name
+                  </Form.Message>
+                </div>
+                <Form.Control asChild>
+                  <input
+                    value={formData.fullName}
+                    name="fullName"
+                    onChange={handleChange}
+                    className="Input"
+                    type="text"
+                    required
+                    placeholder="Enter your Full Name"
+                  />
+                </Form.Control>
+              </Form.Field>
 
-          <Form.Field className="FormField" name="email">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel">Email</Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Please enter your email
-              </Form.Message>
-              <Form.Message className="FormMessage" match="typeMismatch">
-                Please provide a valid email
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <input
-                value={formData.email}
-                name="email"
-                onChange={handleChange}
-                className="Input"
-                type="email"
-                required
-                placeholder="Enter your Email"
-              />
-            </Form.Control>
-          </Form.Field>
+              <Form.Field className="FormField" name="email">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel">Email</Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Please enter your email
+                  </Form.Message>
+                  <Form.Message className="FormMessage" match="typeMismatch">
+                    Please provide a valid email
+                  </Form.Message>
+                </div>
+                <Form.Control asChild>
+                  <input
+                    value={formData.email}
+                    name="email"
+                    onChange={handleChange}
+                    className="Input"
+                    type="email"
+                    required
+                    placeholder="Enter your Email"
+                  />
+                </Form.Control>
+              </Form.Field>
 
-          <Form.Field className="FormField" name="phonenumber">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel"> Phone Number</Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Enter the Phone Number
-              </Form.Message>
-              <Form.Message className="FormMessage" match="typeMismatch">
-                Please provide a valid number
-              </Form.Message>
-            </div>
+              <Form.Field className="FormField" name="phonenumber">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel"> Phone Number</Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Enter the Phone Number
+                  </Form.Message>
+                  <Form.Message className="FormMessage" match="typeMismatch">
+                    Please provide a valid number
+                  </Form.Message>
+                </div>
 
-            <PhoneInput
-              country={"us"}
-              value={formData.phoneNumber}
-              name="phoneNumber"
-              onChange={handleChangePhone}
-              className="text-black bg-black"
-            />
-          </Form.Field>
+                <PhoneInput
+                  country={"us"}
+                  value={formData.phoneNumber}
+                  name="phoneNumber"
+                  onChange={handleChangePhone}
+                  className="text-black bg-black"
+                />
+              </Form.Field>
 
-          <div>
-            <label>Select the services you may need</label>
-            <Select
-              placeholder="Select the sevices"
-              value={options.filter((option) =>
-                formData.service.includes(option.value)
-              )}
-              styles={customStyles}
-              className="mt-3 border-[#2E2E2E] rounded-[16px] bg-black text-black"
-              name="service"
-              isMulti
-              options={options}
-              onChange={handleServiceChange}
-            />
-          </div>
+              <div>
+                <label>Select the services you may need</label>
+                <Select
+                  placeholder="Select the sevices"
+                  value={options.filter((option) =>
+                    formData.service.includes(option.value)
+                  )}
+                  styles={customStyles}
+                  className="mt-3 border-[#2E2E2E] rounded-[16px] bg-black text-black"
+                  name="service"
+                  isMulti
+                  options={options}
+                  onChange={handleServiceChange}
+                />
+              </div>
 
-          <Form.Field className="FormField" name="Your Company">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel">Your Company</Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Please enter your Company
-              </Form.Message>
-              <Form.Message className="FormMessage" match="typeMismatch">
-                Please provide a valid name
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <input
-                value={formData.company}
-                name="company"
-                onChange={handleChange}
-                className="Input"
-                type="text"
-                required
-                placeholder="Enter your Company Name"
-              />
-            </Form.Control>
-          </Form.Field>
+              <Form.Field className="FormField" name="Your Company">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel">Your Company</Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Please enter your Company
+                  </Form.Message>
+                  <Form.Message className="FormMessage" match="typeMismatch">
+                    Please provide a valid name
+                  </Form.Message>
+                </div>
+                <Form.Control asChild>
+                  <input
+                    value={formData.company}
+                    name="company"
+                    onChange={handleChange}
+                    className="Input"
+                    type="text"
+                    required
+                    placeholder="Enter your Company Name"
+                  />
+                </Form.Control>
+              </Form.Field>
 
-          <Form.Field className="FormField" name="Your Position">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel">Your Position</Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Please enter your position
-              </Form.Message>
-              <Form.Message className="FormMessage" match="typeMismatch">
-                Please provide a valid name
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <input
-                value={formData.position}
-                name="position"
-                onChange={handleChange}
-                className="Input"
-                type="text"
-                required
-                placeholder="Enter your Current Position"
-              />
-            </Form.Control>
-          </Form.Field>
+              <Form.Field className="FormField" name="Your Position">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel">Your Position</Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Please enter your position
+                  </Form.Message>
+                  <Form.Message className="FormMessage" match="typeMismatch">
+                    Please provide a valid name
+                  </Form.Message>
+                </div>
+                <Form.Control asChild>
+                  <input
+                    value={formData.position}
+                    name="position"
+                    onChange={handleChange}
+                    className="Input"
+                    type="text"
+                    required
+                    placeholder="Enter your Current Position"
+                  />
+                </Form.Control>
+              </Form.Field>
 
-          <Form.Field className="FormField" name="question">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <Form.Label className="FormLabel">
-                Tell us something about your project
-              </Form.Label>
-              <Form.Message className="FormMessage" match="valueMissing">
-                Please enter a message
-              </Form.Message>
-            </div>
-            <Form.Control asChild>
-              <textarea
-                value={formData.message}
-                name="message"
-                onChange={handleChange}
-                className="Textarea"
-                required
-              />
-            </Form.Control>
-          </Form.Field>
+              <Form.Field className="FormField" name="question">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Form.Label className="FormLabel">
+                    Tell us something about your project
+                  </Form.Label>
+                  <Form.Message className="FormMessage" match="valueMissing">
+                    Please enter a message
+                  </Form.Message>
+                </div>
+                <Form.Control asChild>
+                  <textarea
+                    value={formData.message}
+                    name="message"
+                    onChange={handleChange}
+                    className="Textarea"
+                    required
+                  />
+                </Form.Control>
+              </Form.Field>
 
-          <Form.Submit asChild>
-            <button
-              type="submit"
-              className="Button bg-cloud"
-              style={{ marginTop: 10 }}
-            >
-              Send Message
-            </button>
-          </Form.Submit>
-        </Form.Root>
+              <Form.Submit asChild>
+                <button
+                  type="submit"
+                  className="Button bg-cloud"
+                  style={{ marginTop: 10 }}
+                >
+                  Send Message
+                </button>
+              </Form.Submit>
+            </Form.Root>
+          </>
+        ) : (
+          <Loading/>
+        )}
         <div>
           <div className="my-5">
             <span className="text-[20px] font-semibold">Chat with us</span>

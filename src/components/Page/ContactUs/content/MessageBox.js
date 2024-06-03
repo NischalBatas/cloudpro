@@ -76,7 +76,7 @@ const MessageBox = ({ selectTab }) => {
           message: "",
           service: "",
         });
-        await new Promise((resolve) => setTimeout(resolve, 1100));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       }
     } catch (error) {
       console.log("EmailJS error:", error);

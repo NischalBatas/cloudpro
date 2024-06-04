@@ -5,7 +5,7 @@ import BlogImage from "./Content/BlogImage";
 import CaseStudyContent from "../../CaseStudy/caseDetails/Content/CaseStudyContent";
 import Footer from "@/components/Footer/Footer";
 import Newsletter from "../../CaseStudy/caseDetails/Content/Newsletter";
-
+import './Content/blog_detail.css'
 export async function getSinglePost(slug) {
   const query = `
   query GetBlogBySlug {

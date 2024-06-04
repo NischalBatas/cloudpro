@@ -36,6 +36,8 @@
     white-space: normal;
 }
 
+
+
 .tabs_main_service a:focus,
 .tabs_main_service a:first-child:active{
   color: #000000;

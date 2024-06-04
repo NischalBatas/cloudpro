@@ -1,0 +1,10 @@
+.blogs_detail_intro{
+    display: -webkit-box;
+      -webkit-line-clamp: 3; 
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      height: 188px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+  }

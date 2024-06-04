@@ -4,6 +4,7 @@ import Introduction from "./Content/Introduction";
 import BlogImage from "./Content/BlogImage";
 import CaseStudyContent from "../../CaseStudy/caseDetails/Content/CaseStudyContent";
 import Footer from "@/components/Footer/Footer";
+import Newsletter from "../../CaseStudy/caseDetails/Content/Newsletter";
 
 export async function getSinglePost(slug) {
   const query = `
@@ -57,6 +58,7 @@ const BlogDetails = async({props}) => {
         <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>
         <div className="w-full h-[1px] bg-[#e6e6e6]"></div>
+<Newsletter/>
 <CaseStudyContent/>
 <Footer/>
         </>) : 'No data'}

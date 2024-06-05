@@ -245,13 +245,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-        />
-        <link rel="preload" href="particleBackground.js" />
-      </head>
       <body className={inter.className}>
         {children}
         <Script src="../../static/js/jquery.js"></Script>

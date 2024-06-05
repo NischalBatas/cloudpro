@@ -2,8 +2,6 @@ import { Inter } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css";
-import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css";
 import "../../static/resources/animate.css-main/animate.css";
 import Script from "next/script";
 
@@ -207,7 +205,7 @@ export const metadata = {
     },
   },
 
-  manifest: "https://www.cloudpro.ai/manifest.json",
+  // manifest: "https://www.cloudpro.ai/manifest.json",
   archives: ['https://www.cloudpro.ai'],
   bookmarks: ['https://www.cloudpro.ai'],
   category: 'technology',
@@ -252,18 +250,14 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
-        <link rel="preload" href="particleBackground.js" as="script" />
+        <link rel="preload" href="particleBackground.js" />
       </head>
       <body className={inter.className}>
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
-        <Script src="../../static/resources/Magnific-Popup-master/dist/jquery.magnific-popup.js"></Script>
 
-        <Script src="../../static/resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></Script>
-
-        <Script src="../../static/resources/WOW-master/dist/wow.js"></Script>
-        <script
+            <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-LMLSG0PP51"
         ></script>

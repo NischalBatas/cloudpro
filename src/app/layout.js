@@ -144,19 +144,13 @@ export const metadata = {
       "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
     url: "https://www.cloudpro.ai/",
     siteName: "CloudPro.AI",
-    images: [
-      {
-        url: "https://www.cloudpro.ai/favicon.png", // Must be an absolute URL
-        width: 200,
-        height: 200,
-      },
+    images: 
       {
         url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg", // Must be an absolute URL
-        width: 400,
-        height: 400,
+        width: 200,
+        height: 200,
         alt: "cloudpro website",
       },
-    ],
     locale: "en_US",
     type: "website",
   },

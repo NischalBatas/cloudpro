@@ -13,8 +13,3 @@ const page = () => {
 
 export default page;
 
-export function generateMetadata({ params }) {
-  return {
-    title:"About Us",
-  }
-}

@@ -7,57 +7,186 @@ import "../../static/resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.
 import "../../static/resources/animate.css-main/animate.css";
 import Script from "next/script";
 
-
 const inter = Inter({ subsets: ["latin"] });
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
+// const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
+
 export const metadata = {
-  title: "CloudPro.AI",
-  description: "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
+  title: {
+    template: "%s | CloudPro.AI",
+    default: "CloudPro.AI", // a default is required when creating a template
+  },
+  description:
+    "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
+  generator: "CloudPro.AI",
+  applicationName: "CloudPro.AI",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "artificial intelligence",
+    "machine learning",
+    "cloud computing",
+    "cloud services",
+    "AI solutions",
+    "cloud platform",
+    "data analytics",
+    "cloud infrastructure",
+    "AI technology",
+    "cloud hosting",
+    "SaaS solutions",
+    "AI development",
+    "cloud storage",
+    "PaaS platform",
+    "cloud security",
+    "AI applications",
+    "cloud migration",
+    "deep learning",
+    "cloud integration",
+    "AI research",
+    "hybrid cloud",
+    "cloud provider",
+    "AI innovation",
+    "multi-cloud",
+    "cloud optimization",
+    "natural language processing",
+    "cloud management",
+    "AI automation",
+    "cloud deployment",
+    "edge computing",
+    "AI tools",
+    "serverless computing",
+    "AI consulting",
+    "cloud-native",
+    "AI systems",
+    "cloud backup",
+    "computer vision",
+    "cloud development",
+    "AI-powered",
+    "public cloud",
+    "AI-driven",
+    "private cloud",
+    "AI algorithms",
+    "cloud ecosystem",
+    "AI platforms",
+    "cloud networking",
+    "AI data processing",
+    "cloud architecture",
+    "intelligent systems",
+    "cloud solutions",
+    "AI integration",
+    "cloud strategy",
+    "AI advancements",
+    "cloud transformation",
+    "AI frameworks",
+    "cloud orchestration",
+    "AI software",
+    "cloud performance",
+    "AI-driven insights",
+    "cloud computing trends",
+    "AI deployment",
+    "cloud cost management",
+    "AI models",
+    "cloud scalability",
+    "AI analytics",
+    "cloud automation",
+    "AI innovation hub",
+    "cloud service management",
+    "AI business solutions",
+    "cloud consultancy",
+    "AI ethics",
+    "cloud modernization",
+    "AI ethics and governance",
+    "cloud data protection",
+    "AI project management",
+    "cloud solutions architect",
+    "AI research and development",
+    "cloud computing services",
+    "AI business intelligence",
+    "cloud-based AI",
+    "AI data security",
+    "cloud innovation",
+    "AI product development",
+    "cloud service provider",
+    "AI infrastructure",
+    "cloud collaboration",
+    "AI-driven applications",
+    "cloud-based solutions",
+    "AI-driven decision making",
+    "cloud technology trends",
+    "AI-powered analytics",
+    "cloud computing benefits",
+    "AI and big data",
+    "cloud hosting services",
+    "AI-enabled services",
+    "cloud software development",
+    "AI-driven marketing",
+    "cloud business solutions",
+    "AI-powered cloud",
+    "cloud engineering",
+    "AI-powered tools",
+  ],
+  authors: [{ name: "Cloudpro.AI", url: "https://www.cloudpro.ai/" }],
+  creator: "Cloudpro.AI",
+  publisher: "Cloudpro.AI",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+
+  metadataBase: new URL("https://www.cloudpro.ai/"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
+  openGraph: {
+    title: "CloudPro.AI",
+    description:
+      "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
+    url: "https://www.cloudpro.ai/",
+    siteName: "CloudPro.AI",
+    images: [
+      {
+        url: "https://www.cloudpro.ai/favicon.png", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg", // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: "cloudpro website",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "CloudPro.AI",
+    title: "CloudPro.AI",
+    description:
+      "CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements.",
+    creator: "CloudPro.AI",
+    images: {
+      url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg", // Must be an absolute URL
+      alt: "cloudpro website",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-         <head>
+      <head>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
-
-        <meta name="application-name" content="cloudproai" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="cloudproai" />
-        <meta name="description" content="Data, AI and Software Cloud Services Consultant" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-config" content="/icons/browserconfig.xml" />
-        <meta name="msapplication-TileColor" content="default" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="theme-color" content="default" />
-        <link rel="mask-icon" href="/favicon.png" color="#000" />
-        <link rel="shortcut icon" href="/favicon.png" />
-
-        
-<meta  name="title" property="og:title" content="CloudPro.AI" />
-  <meta  name="description"  property="og:description" content="CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements." />
-  <meta name="image"  property="og:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
-  <meta property="og:url" content="https://www.cloudpro.ai/" />
-  <meta  property="og:type" content="website" />
-  <meta property="og:site_name" content="CloudPro.AI Services" />
-  <meta name="author" content="CloudPro.AI"/>
-
-  <meta name="twitter:card" content="CloudPro.AI Services" />
-  <meta name="twitter:title" content="CloudPro.AI" />
-  <meta name="twitter:description" content="CloudPro.AI offers innovative AI, data, and software cloud services. We specialize in cloud engineering, generative AI apps, data engineering, BI & data analytics, mobile and web app development for businesses of all sizes. Our global partnerships include top-tier companies like AWS, Google, and Apple. Contact us to assess your business readiness for technological advancements." />
-  <meta name="twitter:image" content="https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg" />
-
-
-
-        </head>
+        <link rel="preload" href="particleBackground.js" as="script" />
+      </head>
       <body className={inter.className}>
-        
-        
         {children}
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
@@ -67,12 +196,12 @@ export default function RootLayout({ children }) {
 
         <Script src="../../static/resources/WOW-master/dist/wow.js"></Script>
         <script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-LMLSG0PP51"
-></script>
-<script
-  dangerouslySetInnerHTML={{
-    __html: `
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LMLSG0PP51"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
       if (typeof window !== 'undefined') {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments)};
@@ -80,8 +209,8 @@ export default function RootLayout({ children }) {
         gtag('config', 'G-LMLSG0PP51');
       }
     `,
-  }}
-></script>
+          }}
+        ></script>
       </body>
     </html>
   );

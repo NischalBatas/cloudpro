@@ -6,6 +6,7 @@ import CaseStudyContent from "../../CaseStudy/caseDetails/Content/CaseStudyConte
 import Footer from "@/components/Footer/Footer";
 import Newsletter from "../../CaseStudy/caseDetails/Content/Newsletter";
 import './Content/blog_detail.css'
+import Head from "next/head";
 export async function getSinglePost(slug) {
   const query = `
   query GetBlogBySlug {
@@ -50,6 +51,15 @@ const BlogDetails = async({props}) => {
 
   return (
     <div>
+       <Head>
+        <title>{posts.title}</title>
+        <meta name="description" content={posts.blogfield.description} />
+        <meta property="og:title" content={posts.title} />
+        <meta property="og:description" content={posts.blogfield.description} />
+        <meta property="og:image" content={posts.featuredImage.node.link} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}/blog/${posts.slug}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
             {posts ? (
         <>
         <Introduction posts={posts}/>
@@ -67,3 +77,5 @@ const BlogDetails = async({props}) => {
 };
 
 export default BlogDetails;
+
+

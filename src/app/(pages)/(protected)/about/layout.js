@@ -14,3 +14,4 @@ const ProtectedLayout = ({ children }) => {
 };
 
 export default ProtectedLayout;
+

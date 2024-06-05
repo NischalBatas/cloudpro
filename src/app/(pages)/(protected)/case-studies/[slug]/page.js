@@ -10,3 +10,9 @@ const page = (props) => {
 }
 
 export default page
+
+export function generateMetadata({ params }) {
+  return {
+    title:params.slug,
+  }
+}

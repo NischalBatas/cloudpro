@@ -174,6 +174,74 @@ export const metadata = {
       alt: "cloudpro website",
     },
   },
+
+  icons: {
+    icon: [
+      { url: "/favicon.png" },
+      new URL("/favicon.png", "https://www.cloudpro.ai"),
+      { url: "/favicon.png", media: "(prefers-color-scheme: dark)" },
+    ],
+    shortcut: ["/favicon.png"],
+    apple: [
+      { url: "/favicon.png" },
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "apple-touch-icon-precomposed",
+        url: "/favicon.png",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  manifest: "https://www.cloudpro.ai/manifest.json",
+  archives: ['https://www.cloudpro.ai'],
+  bookmarks: ['https://www.cloudpro.ai'],
+  category: 'technology',
+
+  itunes: {
+    appId: 'myAppStoreID',
+    appArgument: 'myAppArgument',
+  },
+  appleWebApp: {
+    title: 'Apple Web App',
+    statusBarStyle: 'black-translucent',
+    startupImage: [
+      '/Image/logo/cloudprotheme.jpg',
+      {
+        url: '/Image/logo/cloudprotheme.jpg',
+        media: '(device-width: 768px) and (device-height: 1024px)',
+      },
+    ],
+  },
+
+  appLinks: {
+    ios: {
+      url: 'https://www.cloudpro.ai/ios',
+      app_store_id: 'app_store_id',
+    },
+    android: {
+      package: 'com.example.android/package',
+      app_name: 'app_name_android',
+    },
+    web: {
+      url: 'https://www.cloudpro.ai/web',
+      should_fallback: true,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

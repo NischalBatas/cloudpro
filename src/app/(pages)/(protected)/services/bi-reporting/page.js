@@ -10,3 +10,7 @@ const page = () => {
 }
 
 export default page
+
+export const metadata = {
+  title: 'BI Report and Dashboard',
+}

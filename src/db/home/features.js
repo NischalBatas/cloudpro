@@ -18,7 +18,7 @@ export const features=[
     {icons:'/Image/icon/f.png', title:'Big Data Analytics Solutions'},
     {icons:'/Image/icon/e.png', title:'Data Mining Solutions'},
     {icons:'/Image/icon/h.png', title:'Data Visulization'},
-    {icons:'/Image/icon/g.png', title:'Predictive Analysis Solutions '},
+    {icons:'/Image/icon/g.png', title:'Predictive Analysis Solution '},
 
   
 ]

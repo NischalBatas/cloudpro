@@ -149,13 +149,13 @@ export const metadata = {
     images: [
       {
         url: "https://www.cloudpro.ai/favicon.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
+        width: 200,
+        height: 200,
       },
       {
         url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg", // Must be an absolute URL
-        width: 1800,
-        height: 1600,
+        width: 400,
+        height: 400,
         alt: "cloudpro website",
       },
     ],

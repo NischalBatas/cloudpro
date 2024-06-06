@@ -241,7 +241,7 @@ link:"/services/ai-consulting",
     { "name": "Scikit-learn", image:"/Image/tools/cloudpro/scikitlearn.svg" ,  "url": "https://scikit-learn.org/" },
     { "name": "OpenCV", image:"/Image/tools/cloudpro/OpenCV.svg" ,  "url": "https://opencv.org/" },
     { "name": "Huggingface", image:"/Image/tools/cloudpro/huggingface.svg" ,  "url": "https://huggingface.co/transformers/" },
-    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/Spark.svg" ,  "url": "https://spark.apache.org/mllib/" },
+    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/scikit-learn.svg" ,  "url": "https://spark.apache.org/mllib/" },
     { "name": "RapidMiner", image:"/Image/tools/cloudpro/rapidminer.svg" ,  "url": "https://rapidminer.com/" },
     { "name": "NVIDIA CUDA", image:"/Image/tools/cloudpro/CUDA.svg" ,  "url": "https://developer.nvidia.com/cuda-zone" },
   ]

@@ -232,17 +232,17 @@ link:"/services/ai-consulting",
     { "name": "IBM Watson", image:"/Image/tools/cloudpro/IBM Watson.svg" ,  "url": "https://www.ibm.com/watson" },
     { "name": "Microsoft Azure AI", image:"/Image/tools/cloudpro/Azure-2.svg" ,  "url": "https://azure.microsoft.com/en-us/services/machine-learning/" },
     { "name": "AWS", image:"/Image/tools/cloudpro/AWS.svg" ,  "url": "https://aws.amazon.com/machine-learning/" },
-    { "name": "OpenAI", image:"/Image/tools/cloudpro/OpenAI.svg" ,  "url": "https://www.openai.com/" }
+    { "name": "OpenAI", image:"/Image/tools/cloudpro/openai.svg" ,  "url": "https://www.openai.com/" }
   ],
   tools:[
-    { "name": "TensorFlow", image:"/Image/tools/cloudpro/tensorFlow.svg" ,  "url": "https://www.tensorflow.org/" },
+    { "name": "TensorFlow", image:"/Image/tools/cloudpro/tensorflow.svg" ,  "url": "https://www.tensorflow.org/" },
     { "name": "PyTorch", image:"/Image/tools/cloudpro/Pytorch.svg" ,  "url": "https://pytorch.org/" },
     { "name": "Keras", image:"/Image/tools/cloudpro/Keras.svg" ,  "url": "https://keras.io/" },
     { "name": "Scikit-learn", image:"/Image/tools/cloudpro/scikitlearn.svg" ,  "url": "https://scikit-learn.org/" },
     { "name": "OpenCV", image:"/Image/tools/cloudpro/OpenCV.svg" ,  "url": "https://opencv.org/" },
-    { "name": "Huggingface", image:"/Image/tools/cloudpro/huggingFace.svg" ,  "url": "https://huggingface.co/transformers/" },
-    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/Spark-1.svg" ,  "url": "https://spark.apache.org/mllib/" },
-    { "name": "RapidMiner", image:"/Image/tools/cloudpro/rapidMiner.svg" ,  "url": "https://rapidminer.com/" },
+    { "name": "Huggingface", image:"/Image/tools/cloudpro/huggingface.svg" ,  "url": "https://huggingface.co/transformers/" },
+    { "name": "Apache Spark MLlib", image:"/Image/tools/cloudpro/Spark.svg" ,  "url": "https://spark.apache.org/mllib/" },
+    { "name": "RapidMiner", image:"/Image/tools/cloudpro/rapidminer.svg" ,  "url": "https://rapidminer.com/" },
     { "name": "NVIDIA CUDA", image:"/Image/tools/cloudpro/CUDA.svg" ,  "url": "https://developer.nvidia.com/cuda-zone" },
   ]
       

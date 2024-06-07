@@ -9,7 +9,6 @@ import React from "react";
 const notfound = () => {
   return (
     <>
-    <Header/>
       <Navbar />
       <MobileNavigation />
     <div className="navbar-main">

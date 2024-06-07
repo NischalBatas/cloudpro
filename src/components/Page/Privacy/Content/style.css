@@ -1,0 +1,65 @@
+.privacy_main_content_policy{
+  display: grid;
+  grid-template-columns: 250px 1fr ;
+  width: 100%;
+}
+@media only screen and (max-width:767px){
+  .privacy_main_content_policy{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+.introduction_main_image_contain{
+    width: 100%;
+    height: 320px;
+    /* background-image: url('/Image/service-bg/3.webp'); */
+    /* background-image: url('/Image/casestudy/4.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%; */
+    background-color: #000;
+    clip-path: ellipse(80% 50% at 50% 50%);
+}
+
+@media only screen and (max-width:350px){
+  .introduction_main_image_contain{
+    width: 100%;
+    height: 250px;
+}
+  
+}
+
+
+.policyinfo_main table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.policyinfo_main  td, .policyinfo_main th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+/* .policyinfo_main  tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+  .policyinfo_main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .policy_main_tab a:focus,
+.policy_main_tab a:first-child:active{
+  color: #000000;
+  border-bottom: 2px solid #0349a3;
+  font-weight: 600;
+}
+

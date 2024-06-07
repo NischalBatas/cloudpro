@@ -29,7 +29,7 @@ const Sidebar = () => {
         };
     }, []);
   return (
-    <div className='hidden md:block relative'>
+    <div className='hidden  md:block relative'>
         <div className='fixed policy_main_tab flex flex-col gap-2 text-wrap w-[250px]'>
         <Link className='py-2 text-[16px] font-semibold' href='#california'>California privacy policy for CloudPro AI</Link>
         <Link className='py-2 text-[16px] font-semibold' href='#information2'>What information do we collect?</Link>

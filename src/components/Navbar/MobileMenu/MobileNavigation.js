@@ -56,7 +56,7 @@ const MobileNavigation = () => {
           )}
         </div>
         {navbarStatus && hamburger ? (
-          <div className="overflow-hidden fixed top-12 left-0 w-full flex flex-col bg-black px-[1.4rem] py-2 pb-5 ">
+          <div className="overflow-hidden fixed top-12 left-0 w-full flex flex-col bg-black px-[1.2rem] py-2">
             <Link className="mobile_menu_link" onClick={() => { setNavbarStatus(false); setHamburger(false); }} href='/case-studies'>Case Studies</Link>
             <Link className="mobile_menu_link" onClick={() => { setNavbarStatus(false); setHamburger(false); }} href='/about'>About Us</Link>
             <Link className="mobile_menu_link" onClick={() => { setNavbarStatus(false); setHamburger(false); }} href='/blog'>Blogs</Link>
@@ -67,7 +67,7 @@ const MobileNavigation = () => {
                 setNavbarStatus(false);
                 setHamburger(false);
               }}
-              className="bg-cloudBtn text-center navbar_contactus_btn text-white my-2 px-2 py-2 rounded text-[14px]"
+              className="bg-cloudBtn text-center navbar_contactus_btn text-white my-4 px-2 py-2 rounded text-[14px]"
             >
               Contact Us
             </button>

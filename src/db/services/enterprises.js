@@ -18,7 +18,7 @@ export const enterprisesadhoc = {
       subheading: "The Future of Data Integration: Cloud-Based ETL Services. ",
       list: [
         "Seamless Integration: Ensure ad-hoc reporting tools integrate smoothly with existing databases and BI platforms to maintain data consistency and integrity. ",
-        "Customizable Templates: Provide a range of templates that users can modify or use as a starting point for their reports. ",
+        "Customizable Templates: Provide a range of templates that users can modify or use as a starting point for their report. ",
         "Extensive Export Options: Allow users to export reports in various formats such as PDF, Excel, or HTML for easy sharing and presentation. ",
       ],
     },

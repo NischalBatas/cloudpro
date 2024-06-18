@@ -43,7 +43,6 @@ const Product = () => {
       <div className="grid md:grid-cols-2 items-stretch flex-wrap gap-3 my-5">
         {product.map((item, index) => {
           return (
-        
             <motion.div key={index} variants={items}>
               <Link key={index} href={item.link}>
               <div 

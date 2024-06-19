@@ -9,12 +9,12 @@ import { serviceItem } from "@/db/home/serviceItem";
 import React from "react";
 
 const page = (props) => {
-  let id=props.params.id
-  console.log(id)
+  let slug=props.params.slug
+  console.log(slug)
   
   return (
     <div className="pt-20">
-      {serviceItem.filter(item=>item.id == id).map((item2,index)=>{
+      {serviceItem.filter(item=>item.slug == slug).map((item2,index)=>{
         return(
           <div key={index}>
         <Introduction item={item2}/>

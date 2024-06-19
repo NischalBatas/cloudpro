@@ -1,6 +1,7 @@
 export const serviceItem=[
   {
       id:1,
+      slug:"cloud-engineering-services",
       title: "Cloud Engineering Services",
       description: "Welcome to CloudProAI, where innovation meets intelligence. Our Cloud Engineering Solutions are meticulously crafted to empower businesses of all sizes, from startups to MNCs, with advanced capabilities that drive success in the digital era.",
       image: "/Image/serviceItem/1.svg",
@@ -167,7 +168,8 @@ link:"/services/big-data",
 
     {
       id:2,
-      title: "Generative AI Apps ",
+      slug:"generative-ai-apps",
+      title: "Generative AI Apps",
       description: "Welcome to CloudProAI, where innovation meets intelligence. Our Generative App Services are designed to empower your business with cutting-edge AI technologies, revolutionizing the way you engage with your customers and optimize your operations.",
       image: "/Image/serviceItem/2.svg",
       introduction: {
@@ -253,6 +255,7 @@ link:"/services/ai-consulting",
 
     {
       id:3,
+      slug:"data-engineering",
       title: "Data Engineering",
       description: "Welcome to CloudProAI, your trusted ally in harnessing the true potential of your data. Our Data Engineering Solutions are meticulously crafted to cater to businesses of all scales, from startups to multinational corporations, providing advanced capabilities that drive triumph in today's data-driven landscape.",
       image: "/Image/serviceItem/3.svg",
@@ -419,6 +422,7 @@ link:"/services/data-pipeline",
 
     {
       id:4,
+      slug:"bi-&-data-analytics",
       title: "BI & Data Analytics",
       description: "Welcome to CloudProAI, your trusted partner in unlocking actionable insights from your data. Our Data Analytics Solutions encompass a range of services tailored to meet your business needs, enabling you to make informed decisions and drive growth in today's competitive landscape.",
       image: "/Image/serviceItem/4.svg",
@@ -556,7 +560,8 @@ link:"/services/data-visualization",
 
     {
       id:5,
-      title: "Mobile App Development ",
+      slug:"mobile-app-development",
+      title: "Mobile App Development",
       description: "Welcome to CloudPro AI Services Category where innovation meets mobility. Our Mobile App Development Solutions are crafted with precision to empower businesses of all scales, providing them with agile and scalable mobile applications to thrive in today's dynamic market landscape.",
       image: "/Image/serviceItem/6.svg",
       introduction: {
@@ -677,7 +682,8 @@ link:"/services/generative-ai",
 
     {
       id:6,
-      title: "Web App Development",
+      slug:"website-development",
+      title: "Website Development",
       description: "Welcome to CloudPro AI, where innovation converges with functionality. Our Web App Development Solutions are meticulously tailored to elevate startups and MNCs alike, providing them with robust capabilities to thrive in the digital realm.",
       image: "/Image/serviceItem/5.svg",
       introduction: {

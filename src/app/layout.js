@@ -4,7 +4,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import "../../static/resources/animate.css-main/animate.css";
 import Script from "next/script";
-
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 // const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -241,6 +241,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
+        <Analytics />
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
 

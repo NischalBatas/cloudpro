@@ -9,15 +9,15 @@ import Product from "../Product";
 import CaseStudyContent from "@/components/Page/CaseStudy/caseDetails/Content/CaseStudyContent";
 import { industriesDetails } from "@/db/home/industriesDetail/industriesDetail";
 
-const IndustriesDetail = ({id}) => {
+const IndustriesDetail = ({slug}) => {
  
-  console.log(id)
+  console.log(slug)
   return (
     <div className="pt-16">
-      {industriesDetails.filter(items=>items.id == id).map((item, index) => {
+      {industriesDetails.filter(items=>items.slug == slug).map((item, index) => {
         return (
           <div key={index}>
-            <IndustriesTab item={id}/>
+            <IndustriesTab item={slug}/>
             <Introduction item={item}/>
             <IndustriesService item={item}/>
             <Banner item={item}/>

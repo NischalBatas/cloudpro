@@ -47,8 +47,8 @@ const IndustriesSliderTab = ({itemId}) => {
         {industriesDetails.map((item, index) => {
           return (
             <SplideSlide
-              key={index} className={item.id == itemId ?' text-white font-semibold border-b-[2px] pb-[20px]':''}>
-            <Link href={`/industry/${item.id}`}>{item.sectortitle}</Link>
+              key={index} className={item.slug == itemId ?' text-white font-semibold border-b-[2px] pb-[20px]':''}>
+            <Link href={`/industry/${item.slug}`}>{item.sectortitle}</Link>
 
           </SplideSlide>
           );

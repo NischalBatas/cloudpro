@@ -2,10 +2,10 @@ import IndustriesDetail from '@/components/Page/Homes/Content/IndustriesDetail/I
 import React from 'react'
 
 const page = (props) => {
-  let id = props.params.id
+  let slug = props.params.slug
   return (
     <div>
-        <IndustriesDetail id={id}/>
+        <IndustriesDetail slug={slug}/>
     </div>
   )
 }

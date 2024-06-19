@@ -51,7 +51,7 @@ const Industries = () => {
         {industriesDetails.map((item, index) => {
           return (
             <motion.li key={index} variants={items} >
-            <Link href={`/industry/${item.id}`}
+            <Link href={`/industry/${item.slug}`}
               key={index}
               className="flex flex-col items-center field-content p-4 rounded-md border border-[#1E2849] opacity-75  hover:opacity-100"
             >

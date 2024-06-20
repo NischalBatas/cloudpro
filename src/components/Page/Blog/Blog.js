@@ -106,6 +106,7 @@ const Blog = async () => {
               })}
             </div>
           </div>
+
           <Newsletter />
           <Footer />
         </div>

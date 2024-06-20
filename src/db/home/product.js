@@ -20,7 +20,7 @@ export const product = [
     description:
       "We Help enterprises leverage AI for customer support. Build engaging conversational agents, automate interactions, integrate CRM tools and create custom journey powered by state-of-the-art LLM Models",
     image: "/Image/fields/mask2.png",
-    color:'#402695',
+    color:'linear-gradient(#010313 13%,#382282 79%,#9575ff)',
     link:'https://gavie.ai/'
   },
 

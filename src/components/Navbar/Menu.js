@@ -114,6 +114,7 @@ const Menu = ({title,pathname}) => {
             <ul className="flex gap-3 text-[#ABABAB] text-sm justify-between">
           <NavigationMenu.Link href='https://docchat.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/docchat.svg' alt='product_image'/></NavigationMenu.Link>
           <NavigationMenu.Link href='https://zales.cloudpro.ai/'> <Image width={220} height={220} src='/Image/navbar/zales.svg' alt='product_image'/></NavigationMenu.Link>
+          <NavigationMenu.Link href='https://www.gavie.ai/'> <Image width={220} height={220} src='/Image/navbar/gavieai.svg' alt='product_image'/></NavigationMenu.Link>
 
             </ul>
           </div>

@@ -46,7 +46,7 @@ const Product = () => {
             <motion.div key={index} variants={items}>
               <Link key={index} href={item.link}>
               <div 
-                style={{ backgroundColor: `${item.color}` }}
+                style={{ background: `${item.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
                 <div className="px-5 pt-4 md:pt-5 flex flex-col justify-start">
@@ -66,7 +66,7 @@ const Product = () => {
 
                 <div className="hover:scale-125  cursor-pointer">
                   <Image
-                    className="product-content-box-image"
+                    className="product-content-box-image w-full h-auto"
                     width={1000}
                     height={1000}
                     src={`${item.image}`}

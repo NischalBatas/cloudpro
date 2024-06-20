@@ -5,7 +5,7 @@ import { TbArrowBackUp, TbShare2 } from "react-icons/tb";
 
 const Introduction = ({posts}) => {
   return (
-    <div className="navbar-main pb-4 pt-36 h-[350px]   relative">
+    <div className="navbar-main pb-4 pt-20 md:pt-36 h-[350px]   relative">
       <div className="main-container  bg-black">
         <Link href='/blog' className="flex items-center gap-3 text-[16px] hover:underline">
           <TbArrowBackUp className="text-[24px]" />

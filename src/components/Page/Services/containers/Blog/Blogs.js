@@ -42,9 +42,10 @@ async function getPosts() {
 
 const Blogs = async () => {
   const posts = await getPosts();
+  const contents=posts.slice(0,3)
   console.log("Blog Components - Post details", posts);
 
-  const contents=posts.slice(0,3)
+  
   return (
     <div className="navbar-main bg-white py-10">
       {contents ? (
@@ -58,7 +59,7 @@ const Blogs = async () => {
         </div> */}
       </div>
             <div className="main-container relative  grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 ">
-              {posts.map((item, index) => {
+              {contents.map((item, index) => {
                 return (
                   <div key={index}>
                     <Link href={`/blog/${item.slug}`} className="">

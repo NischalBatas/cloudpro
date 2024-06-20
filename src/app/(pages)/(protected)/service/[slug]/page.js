@@ -37,3 +37,43 @@ export default page;
 
 
 
+
+export async function generateMetadata(props){
+  let slug=props.params.slug
+  const service = serviceItem.find(item => item.slug === slug);
+
+  if (!service) {
+    return {};
+  }
+  return {
+    title: service.title,
+    description: service.introduction.description,
+    openGraph: {
+      title: service.title,
+      description:
+        service.introduction.description,
+
+      images:
+        {
+          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service.introduction.image`, // Must be an absolute URL
+          width: 200,
+          height: 200,
+          alt: service.title,
+        },
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: service.title,
+      title: service.title,
+      description:
+      `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service.introduction.image`,
+      creator: service.title,
+      images: {
+        url: service.introduction.image, // Must be an absolute URL
+        alt: service.title,
+      },
+    },
+  }
+}

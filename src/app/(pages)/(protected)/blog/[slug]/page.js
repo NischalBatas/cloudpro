@@ -92,10 +92,22 @@ export async function generateMetadata(props){
           url: post.featuredImage.node.link, // Must be an absolute URL
           width: 200,
           height: 200,
-          alt: "cloudpro website",
+          alt: post.title,
         },
       locale: "en_US",
       type: "website",
+    },
+
+    twitter: {
+      card: post.title,
+      title: post.title,
+      description:
+      post.blogfield.description,
+      creator: post.title,
+      images: {
+        url: post.featuredImage.node.link, // Must be an absolute URL
+        alt: post.title,
+      },
     },
   }
 }

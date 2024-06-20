@@ -45,35 +45,38 @@ export async function generateMetadata(props){
   if (!service) {
     return {};
   }
+  
+  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
+
   return {
     title: service.title,
     description: service.introduction.description,
+    image: imageUrl,
     openGraph: {
       title: service.title,
-      description:
-        service.introduction.description,
-
-      images:
+      description: service.introduction.description,
+      images: [
         {
-          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`, // Must be an absolute URL
+          url: imageUrl, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: service.title,
         },
+      ],
       locale: "en_US",
       type: "website",
     },
-
     twitter: {
-      card: service.title,
+      card: 'summary_large_image',
       title: service.title,
-      description:
-      `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service.introduction.image`,
+      description: service.introduction.description,
       creator: service.title,
-      images: {
-        url: service.introduction.image, // Must be an absolute URL
-        alt: service.title,
-      },
+      images: [
+        {
+          url: imageUrl, // Must be an absolute URL
+          alt: service.title,
+        },
+      ],
     },
-  }
+  };
 }

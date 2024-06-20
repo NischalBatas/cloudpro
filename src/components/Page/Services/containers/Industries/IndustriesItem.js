@@ -41,7 +41,7 @@ const IndustriesItem = () => {
     {industriesSlice.map((item, index) => {
       return (
         <motion.li key={index} variants={items} >
-              <Link href={`/industry/${item.id}`}
+              <Link href={`/industry/${item.slug}`}
 
           className=" flex flex-col items-center "
         >

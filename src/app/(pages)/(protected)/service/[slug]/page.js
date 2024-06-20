@@ -55,7 +55,7 @@ export async function generateMetadata(props){
 
       images:
         {
-          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service.introduction.image`, // Must be an absolute URL
+          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: service.title,

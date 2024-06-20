@@ -24,6 +24,7 @@ async function getPosts() {
       }
     }
   }`;
+  
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
     method: "POST",
@@ -42,9 +43,11 @@ async function getPosts() {
 const Blogs = async () => {
   const posts = await getPosts();
   console.log("Blog Components - Post details", posts);
+
+  const contents=posts.slice(0,3)
   return (
     <div className="navbar-main bg-white py-10">
-      {posts ? (
+      {contents ? (
       
 
           <div className="main-container">

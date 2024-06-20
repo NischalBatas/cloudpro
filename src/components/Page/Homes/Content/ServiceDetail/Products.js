@@ -48,7 +48,7 @@ const Products = () => {
             <motion.div key={index} variants={items}>
               <Link key={index} href={item.link}>
               <div 
-                style={{ backgroundColor: `${item.color}` }}
+                style={{ background: `${item.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
                 <div className="px-5 pt-4 md:pt-5 flex flex-col justify-start">

@@ -81,6 +81,21 @@ export async function generateMetadata(props){
   return {
     title: post.title,
     description: post.blogfield.description,
-    image:post.featuredImage.node.link
+    image:post.featuredImage.node.link,
+    openGraph: {
+      title: post.title,
+      description:
+        post.blogfield.description,
+
+      images:
+        {
+          url: post.featuredImage.node.link, // Must be an absolute URL
+          width: 200,
+          height: 200,
+          alt: "cloudpro website",
+        },
+      locale: "en_US",
+      type: "website",
+    },
   }
 }

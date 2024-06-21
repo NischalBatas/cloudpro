@@ -62,7 +62,7 @@ export async function generateMetadata(props) {
       ],
       locale: "en_US",
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${slug}`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${service.slug}`,
     },
     twitter: {
       card: "summary_large_image",

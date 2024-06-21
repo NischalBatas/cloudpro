@@ -15,12 +15,13 @@ export default page
 export async function generateMetadata(props) {
   let slug = props.params.slug;
   const service = industriesDetails.find((item) => item.slug === slug);
+  
 
   if (!service) {
     return {};
   }
 
-  const imageUrl = service.introduction.image;
+  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
 
   return {
     title: service.introduction.title,
@@ -39,7 +40,7 @@ export async function generateMetadata(props) {
       ],
       locale: "en_US",
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${service.slug}`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/industry/${service.slug}`,
     },
     twitter: {
       card: "summary_large_image",

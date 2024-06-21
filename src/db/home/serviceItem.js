@@ -422,7 +422,7 @@ link:"/services/data-pipeline",
 
     {
       id:4,
-      slug:"bi-&-data-analytics",
+      slug:"bi-and-data-analytics",
       title: "BI & Data Analytics",
       description: "Welcome to CloudProAI, your trusted partner in unlocking actionable insights from your data. Our Data Analytics Solutions encompass a range of services tailored to meet your business needs, enabling you to make informed decisions and drive growth in today's competitive landscape.",
       image: "/Image/serviceItem/4.svg",

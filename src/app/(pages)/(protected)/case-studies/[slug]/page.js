@@ -104,6 +104,7 @@ export async function generateMetadata(props){
   if (!post) {
     return {}
   }
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/case-studies/${props.params.slug}`;
 
   return {
     title: post.title,
@@ -123,6 +124,8 @@ export async function generateMetadata(props){
         },
       locale: "en_US",
       type: "website",
+      url: canonicalUrl,
+
     },
 
     twitter: {

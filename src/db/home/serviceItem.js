@@ -257,7 +257,7 @@ link:"/services/ai-consulting",
       id:3,
       slug:"data-engineering",
       title: "Data Engineering",
-      description: "Welcome to CloudProAI, your trusted ally in harnessing the true potential of your data. Our Data Engineering Solutions are meticulously crafted to cater to businesses of all scales, from startups to multinational corporations, providing advanced capabilities that drive triumph in today's data-driven landscape.",
+      description: "Welcome to CloudProAI, your trusted allys in harnessing the true potential of your data. Our Data Engineering Solutions are meticulously crafted to cater to businesses of all scales, from startups to multinational corporations, providing advanced capabilities that drive triumph in today's data-driven landscape.",
       image: "/Image/serviceItem/3.svg",
       introduction: {
         category: "Data Engineering",

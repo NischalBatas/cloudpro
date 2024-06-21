@@ -1,11 +1,32 @@
+import Footer from '@/components/Footer/Footer';
+import CaseStudyContent from '@/components/Page/CaseStudy/caseDetails/Content/CaseStudyContent';
+import Banner from '@/components/Page/Homes/Content/IndustriesDetail/Banner/Banner';
 import IndustriesDetail from '@/components/Page/Homes/Content/IndustriesDetail/IndustriesDetail'
+import IndustriesService from '@/components/Page/Homes/Content/IndustriesDetail/IndustriesService/IndustriesService';
+import IndustriesServiceReason from '@/components/Page/Homes/Content/IndustriesDetail/IndustriesServiceReasons/IndustriesServiceReason';
+import IndustriesTab from '@/components/Page/Homes/Content/IndustriesDetail/IndustriesTab/IndustriesTab';
+import Introduction from '@/components/Page/Homes/Content/IndustriesDetail/Introduction/Introduction';
+import Product from '@/components/Page/Homes/Content/Product';
 import { industriesDetails } from "@/db/home/industriesDetail/industriesDetail";import React from 'react'
 
 const page = (props) => {
   let slug = props.params.slug
   return (
-    <div>
-        <IndustriesDetail slug={slug}/>
+    <div className="pt-16">
+      {industriesDetails.filter(items=>items.slug == slug).map((item, index) => {
+        return (
+          <div key={index}>
+            <IndustriesTab item={slug}/>
+            <Introduction item={item}/>
+            <IndustriesService item={item}/>
+            <Banner item={item}/>
+            <IndustriesServiceReason item={item.reasons}/>
+            <CaseStudyContent />
+            <Product />
+            <Footer />
+          </div>
+        );
+      })}
     </div>
   )
 }

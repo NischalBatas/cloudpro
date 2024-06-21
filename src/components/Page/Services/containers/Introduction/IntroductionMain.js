@@ -11,19 +11,18 @@ const IntroductionMain = ({content}) => {
   };
   return (
     <div className="pb-6 md:pb-16 relative w-full h-[680px]">
-      {content.map((item, index) => {
-        return (
-          <div key={index} className="w-full bg-no-repeat bg-center bg-cover h-full z-10" style={{
+ 
+          <div  className="w-full bg-no-repeat bg-center bg-cover h-full z-10" style={{
             // filter: "blur(5px)",
             zIndex: "-1",
-            backgroundImage: `url(${item.image})`,
+            backgroundImage: `url(${content.image})`,
           }}>
             {/* <div 
               className="w-full absolute bg-no-repeat bg-center bg-cover h-full z-10"
               style={{
                 // filter: "blur(5px)",
                 zIndex: "-1",
-                backgroundImage: `url(${item.image})`,
+                backgroundImage: `url(${content.image})`,
               }}
             ></div> */}
             <div
@@ -35,13 +34,13 @@ const IntroductionMain = ({content}) => {
                   <Link href="/" className="mr-1">
                     Services
                   </Link>
-                  <span className="">/ {item.path} </span>
+                  <span className="">/ {content.path} </span>
                 </div>
                 <p className="text-xl md:text-2xl lg:text-4xl service_main_title">
-                 {item.title}
+                 {content.title}
                 </p>
                 <div className="service_main_description">
-                  {item.description}
+                  {content.description}
                 </div>
 
                 <div>
@@ -51,14 +50,13 @@ const IntroductionMain = ({content}) => {
                     }}
                     className="service_main_button"
                   >
-                    {item.button}
+                    {content.button}
                   </button>
                 </div>
               </div>
             </div>
           </div>
-        );
-      })}
+  
     </div>
   );
 };

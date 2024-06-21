@@ -1,4 +1,4 @@
-export const introductionAdhoc = [
+export const introductionAdhoc = 
   {
     "path": "ad-hoc-reporting",
     "title": "Ad-hoc Reporting Solutions",
@@ -6,7 +6,7 @@ export const introductionAdhoc = [
     "button": "Customize Your Reports",
     "image": "/Image/service-bg/1.webp"
   }
-];
+;
 
 
 export const introductionaiConsulting = [

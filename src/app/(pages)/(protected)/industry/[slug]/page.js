@@ -53,7 +53,7 @@ export async function generateMetadata(props) {
       description: service.introduction.description,
       images: [
         {
-          url: imageUrl, // Must be an absolute URL
+          url: service.introduction.image, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: service.introduction.title,
@@ -70,7 +70,7 @@ export async function generateMetadata(props) {
       creator: service.introduction.title,
       images: [
         {
-          url: imageUrl, // Must be an absolute URL
+          url: service.introduction.image, // Must be an absolute URL
           alt: service.introduction.title,
         },
       ],

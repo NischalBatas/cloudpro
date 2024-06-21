@@ -9,7 +9,7 @@ export const introductionAdhoc =
 ;
 
 
-export const introductionaiConsulting = [
+export const introductionaiConsulting = 
   {
     "path": "ai-consulting",
     "title": "AI Consulting",
@@ -17,9 +17,9 @@ export const introductionaiConsulting = [
     "button": "Partner with Us",
     "image": "/Image/service-bg/2.webp"
   }
-];
+;
 
-export const introductionarchitectureConsulting = [
+export const introductionarchitectureConsulting = 
   {
     "path": "architecture-consulting",
     "title": "Architecture Consulting",
@@ -27,10 +27,10 @@ export const introductionarchitectureConsulting = [
     "button": "Consult with Us",
     "image": "/Image/service-bg/3.webp"
   }
-];
+;
 
 
-export const introductionbigDataConsulting = [
+export const introductionbigDataConsulting = 
   {
     "path": "big-data-consulting",
     "title": "Big Data Consulting",
@@ -38,9 +38,9 @@ export const introductionbigDataConsulting = [
     "button": "Empower Your Data",
     "image": "/Image/service-bg/4.webp"
   }
-];
+;
 
-export const introductionbiReportDashboard = [
+export const introductionbiReportDashboard = 
   {
     "path": "bi-report-dashboard",
     "title": "BI Report & Dashboard",
@@ -48,10 +48,10 @@ export const introductionbiReportDashboard = [
     "button": "Visualize Your Success",
     "image": "/Image/service-bg/5.webp"
   }
-];
+;
 
 
-export const introductioncloudOps = [
+export const introductioncloudOps = 
   {
     "path": "cloudops",
     "title": "CloudOps",
@@ -59,9 +59,9 @@ export const introductioncloudOps = [
     "button": "Transform Your Data Today",
     "image": "/Image/service-bg/6.webp"
   }
-];
+;
 
-export const introductiondataVisualizationSolutions = [
+export const introductiondataVisualizationSolutions = 
   {
     "path": "data-visualization-solutions",
     "title": "Data Visualization Solutions",
@@ -69,10 +69,10 @@ export const introductiondataVisualizationSolutions = [
     "button": "Visualize Now",
     "image": "/Image/service-bg/7.webp"
   }
-];
+;
 
 
-export const introductiondataPipelineSolutions = [
+export const introductiondataPipelineSolutions = 
   {
     "path": "data-pipeline-solutions",
     "title": "Data Pipeline Solutions",
@@ -80,10 +80,10 @@ export const introductiondataPipelineSolutions = [
     "button": "Enhance Your Data Flow",
     "image": "/Image/service-bg/8.webp"
   }
-];
+;
 
 
-export const introductiondataAnalytics = [
+export const introductiondataAnalytics = 
   {
     "path": "data-analytics",
     "title": "Data Analytics",
@@ -91,10 +91,10 @@ export const introductiondataAnalytics = [
     "button": "Analyse Your Data",
     "image": "/Image/service-bg/9.webp"
   }
-];
+;
 
 
-export const introductiondataLakesWarehouses = [
+export const introductiondataLakesWarehouses = 
   {
     "path": "data-lakes-warehouses",
     "title": "Data Lakes and Warehouses",
@@ -102,9 +102,9 @@ export const introductiondataLakesWarehouses = [
     "button": "Optimize Your Data Storage",
     "image": "/Image/service-bg/10.webp"
   }
-];
+;
 
-export const introductionetl = [
+export const introductionetl = 
   {
     "path": "etl",
     "title": "ETL",
@@ -112,9 +112,9 @@ export const introductionetl = [
     "button": "Optimize Your Cloud",
     "image": "/Image/service-bg/11.webp"
   }
-];
+;
 
-export const introductiongenerativeAI = [
+export const introductiongenerativeAI = 
   {
     "path": "generative-ai",
     "title": "Generative AI",
@@ -122,10 +122,10 @@ export const introductiongenerativeAI = [
     "button": "Speak to an AI Expert",
     "image": "/Image/service-bg/12.webp"
   }
-];
+;
 
 
-export const introductiongenerativeAIApplications = [
+export const introductiongenerativeAIApplications = 
   {
     "path": "generative-ai-applications",
     "title": "Generative AI and Applications",
@@ -133,10 +133,10 @@ export const introductiongenerativeAIApplications = [
     "button": "Build with Us",
     "image": "/Image/service-bg/13.webp"
   }
-];
+;
 
 
-export const introductioninfrastructureMigrationUpgrades = [
+export const introductioninfrastructureMigrationUpgrades = 
   {
     "path": "infrastructure-migration-upgrades",
     "title": "Infrastructure Migration and Upgrades",
@@ -144,4 +144,4 @@ export const introductioninfrastructureMigrationUpgrades = [
     "button": "Start Your Cloud Journey",
     "image": "/Image/service-bg/14.webp"
   }
-];
+;

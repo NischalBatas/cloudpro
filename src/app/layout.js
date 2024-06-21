@@ -237,10 +237,7 @@ export const metadata = {
   },
 };
 
-// export const metadata = {
-//   title: "Cloudpro",
-//   description: "Open source site",
-// };
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

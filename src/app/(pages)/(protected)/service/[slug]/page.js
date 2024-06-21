@@ -9,54 +9,52 @@ import { serviceItem } from "@/db/home/serviceItem";
 import React from "react";
 
 const page = (props) => {
-  let slug=props.params.slug
-  console.log(slug)
-  
+  let slug = props.params.slug;
+  console.log(slug);
+
   return (
     <div className="pt-20">
-      {serviceItem.filter(item=>item.slug == slug).map((item2,index)=>{
-        return(
-          <div key={index}>
-        <Introduction item={item2}/>
-        <Solution item={item2}/>
-        <ServiceType item={item2}/>
-        <Tools item={item2}/>
-        <CaseStudyContent/>
-        <Products/>
-        <Footer/>
-          </div>
-        )
-      })}
-  
-   
+      {serviceItem
+        .filter((item) => item.slug == slug)
+        .map((item2, index) => {
+          return (
+            <div key={index}>
+              <Introduction item={item2} />
+              <Solution item={item2} />
+              <ServiceType item={item2} />
+              <Tools item={item2} />
+              <CaseStudyContent />
+              <Products />
+              <Footer />
+            </div>
+          );
+        })}
     </div>
   );
 };
 
 export default page;
 
-
-
-
-export async function generateMetadata(props){
-  let slug=props.params.slug
-  const service = serviceItem.find(item => item.slug === slug);
+export async function generateMetadata(props) {
+  let slug = props.params.slug;
+  const service = serviceItem.find((item) => item.slug === slug);
 
   if (!service) {
     return {};
   }
-  
-  // const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
+
+  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
 
   return {
     title: service.title,
     description: service.introduction.description,
+    // image: imageUrl,
     openGraph: {
       title: service.title,
       description: service.introduction.description,
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`, // Must be an absolute URL
+          url: imageUrl, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: service.title,
@@ -64,11 +62,10 @@ export async function generateMetadata(props){
       ],
       locale: "en_US",
       type: "website",
-      url:`${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${props.params.slug}`
-  
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${slug}`,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: service.title,
       description: service.introduction.description,
       creator: service.title,

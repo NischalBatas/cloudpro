@@ -43,7 +43,7 @@ export async function generateMetadata(props) {
     return {};
   }
 
-  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
+  const imageUrl =  "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg";
 
   return {
     title: service.title,

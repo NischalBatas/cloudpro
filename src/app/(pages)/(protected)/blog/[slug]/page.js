@@ -86,7 +86,7 @@ export async function generateMetadata(props){
       title: post.title,
       description:
         post.blogfield.description,
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/case-studies/${props.params.slug}`,
+      
       images:
         {
           url: post.featuredImage.node.link, // Must be an absolute URL

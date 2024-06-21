@@ -81,12 +81,12 @@ export async function generateMetadata(props){
   return {
     title: post.title,
     description: post.blogfield.description,
-  
+    image:post.featuredImage.node.link,
     openGraph: {
       title: post.title,
       description:
         post.blogfield.description,
-      
+
       images:
         {
           url: post.featuredImage.node.link, // Must be an absolute URL
@@ -95,12 +95,11 @@ export async function generateMetadata(props){
           alt: post.title,
         },
       locale: "en_US",
-      type: "blog",
-      authors: ['CloudPro AI',"Nimesh"],
+      type: "website",
     },
 
     twitter: {
-      card: 'summary_large_image',
+      card: post.title,
       title: post.title,
       description:
       post.blogfield.description,

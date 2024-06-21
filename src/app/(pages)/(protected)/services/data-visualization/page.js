@@ -31,7 +31,7 @@ export async function generateMetadata() {
       ],
       locale: "en_US",
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/${introductiondataVisualizationSolutions.path}`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/data-visualization`,
     },
     twitter: {
       card: "summary_large_image",

@@ -32,7 +32,7 @@ export async function generateMetadata() {
       ],
       locale: "en_US",
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/${introductionaiConsulting.path}`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/ai-consulting`,
     },
     twitter: {
       card: "summary_large_image",

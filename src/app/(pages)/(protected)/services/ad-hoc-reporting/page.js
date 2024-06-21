@@ -34,7 +34,7 @@ export async function generateMetadata() {
       ],
       locale: "en_US",
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/${introductionAdhoc.path}`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/services/ad-hoc-reporting`,
     },
     twitter: {
       card: "summary_large_image",

@@ -46,18 +46,17 @@ export async function generateMetadata(props){
     return {};
   }
   
-  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
+  // const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`;
 
   return {
     title: service.title,
     description: service.introduction.description,
-    image: imageUrl,
     openGraph: {
       title: service.title,
       description: service.introduction.description,
       images: [
         {
-          url: imageUrl, // Must be an absolute URL
+          url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${service.introduction.image}`, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: service.title,
@@ -65,6 +64,8 @@ export async function generateMetadata(props){
       ],
       locale: "en_US",
       type: "website",
+      url:`${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/service/${props.params.slug}`
+  
     },
     twitter: {
       card: 'summary_large_image',

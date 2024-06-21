@@ -109,7 +109,7 @@ export async function generateMetadata(props){
   return {
     title: post.title,
     description: post.casestudyfieldgroud.herotext,
-    image:post.casestudyfieldgroud.caseStudyImage.node.sourceUrl,
+    // image:post.casestudyfieldgroud.caseStudyImage.node.sourceUrl,
     openGraph: {
       title: post.title,
       description:

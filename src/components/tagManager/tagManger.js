@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const GTM_ID = "G-LMLSG0PP51"; // Replace with your GTM ID
+const GTM_ID = "GTM-5JKLQSQZ"; // Replace with your GTM ID
 
 const GtmScript = () => (
   <>

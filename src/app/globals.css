@@ -244,12 +244,13 @@ button:hover {
 .wordpress-container strong{
   font-size: 24px;
 }
-
+.wordpress-container pre,
 .wordpress-container p,
 .wordpress-container ul{
   margin: 1.5rem 0 0.5rem 0;
 }
 
+.wordpress-container pre,
 .wordpress-container p,
 .wordpress-container li{
 

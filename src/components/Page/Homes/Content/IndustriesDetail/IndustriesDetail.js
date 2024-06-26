@@ -13,7 +13,7 @@ const IndustriesDetail = ({slug}) => {
  
   console.log(slug)
   return (
-    <div className="pt-16">
+    <div className="md:pt-16">
       {industriesDetails.filter(items=>items.slug == slug).map((item, index) => {
         return (
           <div key={index}>

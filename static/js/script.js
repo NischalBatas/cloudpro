@@ -1,4 +1,4 @@
-
+const abc="abc"
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 1000;
 

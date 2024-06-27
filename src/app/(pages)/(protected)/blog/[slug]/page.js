@@ -84,6 +84,7 @@ export async function generateMetadata(props){
     title: post.title,
     description: post.blogfield.description,
     // image:post.featuredImage.node.link,
+    
     openGraph: {
       title: post.title,
       description:

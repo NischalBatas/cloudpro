@@ -95,8 +95,7 @@ export async function generateMetadata(props){
         post.blogfield.description,
       images:
         {
-          url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg",
-          // post.featuredImage.node.link, // Must be an absolute URL
+          url: post.featuredImage.node.link, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: post.title,

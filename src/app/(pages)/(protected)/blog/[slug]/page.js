@@ -77,15 +77,14 @@ export async function generateMetadata(props){
   if (!post) {
     return {}
   }
-  const canonicalUrl = "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg";
-  // `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
 
 
   return {
     title: post.title,
     description: post.blogfield.description,
     // image:post.featuredImage.node.link,
-
+    
     openGraph: {
       title: post.title,
       description:

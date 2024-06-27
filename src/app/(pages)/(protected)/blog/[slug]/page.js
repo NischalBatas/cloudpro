@@ -81,9 +81,7 @@ export async function generateMetadata(props){
   if (!post) {
     return {}
   }
-  const canonicalUrl = 
-
-  `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
 
 
   return {

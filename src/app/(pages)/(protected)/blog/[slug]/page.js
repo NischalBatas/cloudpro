@@ -65,7 +65,7 @@ const page = async(props) => {
         </>) : 'No data'}
     </div>
         {/* <BlogDetails props={props}/> */}
-        
+
     </div>
   )
 }
@@ -81,9 +81,9 @@ export async function generateMetadata(props){
   if (!post) {
     return {}
   }
-  const canonicalUrl = "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg";
+  const canonicalUrl = 
 
-  // `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
+  `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog/${props.params.slug}`;
 
 
   return {
@@ -97,7 +97,8 @@ export async function generateMetadata(props){
         post.blogfield.description,
       images:
         {
-          url: post.featuredImage.node.link, // Must be an absolute URL
+          url: "https://www.cloudpro.ai/Image/logo/cloudprotheme.jpg",
+          // post.featuredImage.node.link, // Must be an absolute URL
           width: 200,
           height: 200,
           alt: post.title,

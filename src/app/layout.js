@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import "@radix-ui/themes/styles.css";
-import "../../static/resources/animate.css-main/animate.css";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { Description } from "@radix-ui/themes/dist/cjs/components/alert-dialog";

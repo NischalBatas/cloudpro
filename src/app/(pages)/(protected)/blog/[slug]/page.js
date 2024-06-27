@@ -65,6 +65,7 @@ const page = async(props) => {
         </>) : 'No data'}
     </div>
         {/* <BlogDetails props={props}/> */}
+        
     </div>
   )
 }

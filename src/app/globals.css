@@ -287,5 +287,18 @@ button:hover {
   font-size: 16px;
  }
 
+ .marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+ .marquee{
+  animation: marquee-c 10s linear infinite;
+ }
 
- 
+ @keyframes marquee-c{
+  0%{
+    transform: translateX(100%);
+  }100%{
+    transform: translateX(-100%);
+  }
+ }

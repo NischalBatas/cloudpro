@@ -6,8 +6,9 @@ import React from "react";
 import '../slider.css'
 const Partners = () => {
   return (
-    <div className="main-container partners-main flex flex-wrap items-center justify-between  pt-5 pb-20 px-2 gap-4 md:gap-2 ">
-      <p className="text-center uppercase text-cloud w-full text-[12px] mb-2 tracking-widest">
+    <div className="main-container partners-main flex  flex-wrap items-center justify-between  pt-5 pb-20 px-2 gap-4 md:gap-2 ">
+
+     <p className="text-center uppercase text-cloud w-full text-[12px] mb-2 tracking-widest">
         Global Partners
       </p>
 
@@ -16,6 +17,7 @@ const Partners = () => {
         tier companies like AWS, Google, Apple, Meta and many more fortune 500
         companies:
       </p>
+   
 
       <div className="partners-home">
         <PartnerSlider />

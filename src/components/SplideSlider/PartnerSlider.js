@@ -41,7 +41,7 @@ const PartnerSlider = () => {
         },
       };
   return (
-    <div className="mx-auto overflow-hidden">
+    <div className="mx-auto">
       <Splide options={splideOptions}>
         {partners.map((item, index) => {
           return (
@@ -62,6 +62,21 @@ const PartnerSlider = () => {
           );
         })}
       </Splide>
+
+      {/* <div className="marquee-container  ">
+  <div className="marquee flex gap-4 items-center ">
+    {partners.map((item, index) => (
+      <div key={index} className='flex justify-center items-center w-[100px]'>
+        <Image 
+          width={item.width}
+          height={item.height }
+          src={item.image}
+          alt={`Partner ${index}`}
+        />
+      </div>
+    ))}
+  </div>
+</div> */}
     </div>
   )
 }

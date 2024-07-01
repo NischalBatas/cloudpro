@@ -5,6 +5,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { Description } from "@radix-ui/themes/dist/cjs/components/alert-dialog";
 import GtmScript from "../components/tagManager/tagManger"; // Adjust the import path as necessary
+import SegementKey from "@/components/segment/SegementKey";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -132,12 +133,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <GtmScript />
+        <SegementKey/>
       </head>
       <body className={inter.className}>
         {children}
         <Analytics />
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
+        
       </body>
     </html>
   );

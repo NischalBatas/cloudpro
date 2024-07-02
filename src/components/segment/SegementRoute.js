@@ -20,6 +20,7 @@ const SegementRoute = () => {
         };
       }, []);
   return (
+    
     <div></div>
   )
 }

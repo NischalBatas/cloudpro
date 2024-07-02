@@ -137,7 +137,7 @@ export default function RootLayout({ children }) {
         <SegementKey/>
       </head>
       <body className={inter.className}>
-        <SegementRoute/>
+        {/* <SegementRoute/> */}
         {children}
         <Analytics />
         <Script src="../../static/js/jquery.js"></Script>

@@ -5,9 +5,9 @@ import * as snippet from '@segment/snippet'
 const SegementKey = () => {
   function renderSnippet() {
     const opts = {
-      apiKey: process.env.NEXT_PUBLIC_SEGMENT_WRITE_KEY
+      apiKey: process.env.NEXT_PUBLIC_ANALYTICS_WRITE_KEY,
    // note: the page option only covers SSR tracking.
-      // page: true,
+      page: true,
     }
   
     if (process.env.NODE_ENV === 'development') {

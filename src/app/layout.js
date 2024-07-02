@@ -3,9 +3,9 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
-import { Description } from "@radix-ui/themes/dist/cjs/components/alert-dialog";
 import GtmScript from "../components/tagManager/tagManger"; // Adjust the import path as necessary
 import SegementKey from "@/components/segment/SegementKey";
+import SegementRoute from "@/components/segment/SegementRoute";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -136,7 +136,7 @@ export default function RootLayout({ children }) {
         <SegementKey/>
       </head>
       <body className={inter.className}>
-        
+        <SegementRoute/>
         {children}
         <Analytics />
         <Script src="../../static/js/jquery.js"></Script>

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useEffect } from 'react';
-import Router from 'next/navigation';
+import Router from 'next/router';
 
 const SegementRoute = () => {
     useEffect(() => {
@@ -20,7 +20,7 @@ const SegementRoute = () => {
         };
       }, []);
   return (
-    
+
     <div></div>
   )
 }

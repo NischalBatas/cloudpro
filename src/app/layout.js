@@ -133,15 +133,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <GtmScript />
-        <SegementKey/>
+        {<SegementKey/>}
       </head>
       <body className={inter.className}>
-        <SegementRoute/>
+        <SegementRoute>
         {children}
         <Analytics />
         <Script src="../../static/js/jquery.js"></Script>
         <Script src="../../static/js/script.js"></Script>
-        
+        </SegementRoute>
       </body>
     </html>
   );

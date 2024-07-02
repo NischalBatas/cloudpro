@@ -3,7 +3,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import Router from 'next/router';
 
-const SegementRoute = () => {
+const SegementRoute = ({children}) => {
     useEffect(() => {
         const handleRouteChange = (url) => {
           if (url) {
@@ -21,7 +21,9 @@ const SegementRoute = () => {
       }, []);
   return (
 
-    <div></div>
+    <div>
+        {children}
+    </div>
   )
 }
 

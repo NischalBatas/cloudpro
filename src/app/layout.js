@@ -8,7 +8,6 @@ import SegementKey from "@/components/segment/SegementKey";
 import SegementRoute from "@/components/segment/SegementRoute";
 
 const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: {
     template: "%s | CloudPro.AI",

@@ -26,6 +26,7 @@ const SegementRoute = ({children}) => {
   return (
 
     <div>
+      
         {children}
     </div>
   )

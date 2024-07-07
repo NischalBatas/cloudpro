@@ -59,7 +59,7 @@ const Mission = () => {
               src="/Image/target.svg"
               alt="mission_image"
             />
-            <p className="text-[14px] mt-3">Innovative Solutions</p>
+            <p className="text-[14px] mt-3">Goals and Targets</p>
           </div>
 
           <div className="p-5 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">

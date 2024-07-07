@@ -22,6 +22,7 @@ export async function generateMetadata(){
     title: "Blogs",
     description: "We're prepared for the era of Generative AI and excited to collaborate. Let's evaluate your business and infrastructure to ensure you're ready for this significant technological advancement.",
     // image: imageUrl,
+    url: `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}/blog`,
     openGraph: {
       title: "Blogs",
       description: "We're prepared for the era of Generative AI and excited to collaborate. Let's evaluate your business and infrastructure to ensure you're ready for this significant technological advancement.",

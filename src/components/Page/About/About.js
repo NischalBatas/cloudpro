@@ -16,7 +16,7 @@ const About = () => {
       <Results />
       <Testominial/>
       <ProfifleMessage />
-      <ContactInfo/>
+      {/* <ContactInfo/> */}
    
 
     </div>

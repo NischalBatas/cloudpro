@@ -1,33 +1,27 @@
 "use client"
 import React from 'react'
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 import Router from 'next/router';
+import { usePathname } from 'next/navigation';
 
 const SegementRoute = ({children}) => {
-    const router = useRouter();
-
-    useEffect(() => {
-        const handleRouteChange = (url) => {
-          if (url) {
-            global.analytics.page('Loaded Another Website Page', {
-              page: url,
-            });
-          }
-        };
-    
-        // Get the current page URL on initial load
+  const pathname=usePathname()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (url) {
         global.analytics.page('Loaded Another Website Page', {
-          page: router.asPath,
+          page: url,
         });
-    
-        Router.events.on('routeChangeComplete', handleRouteChange);
-    
-        return () => {
-          Router.events.off('routeChangeComplete', handleRouteChange);
-        };
-      }, [router.asPath]);
+      }
+    };
+
+    Router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
     
   return (
 

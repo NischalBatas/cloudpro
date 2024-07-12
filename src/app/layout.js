@@ -232,7 +232,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <GtmScript />
-        <SegementKey/>
+        {<SegementKey/>}
       </head>
       <body className={inter.className}>
         <SegementRoute>

@@ -1,45 +1,57 @@
 "use client";
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
-import './style.css'
+import "./style.css";
+import { usePathname, useRouter } from "next/navigation";
 const NewsletterForm = () => {
-    const [formData, setFormData] = useState({
-        fullName: "",
-        email: "",
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-    
-        try {
-          const res =await fetch(`${process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT}`,{
-            method:"POST",
-            headers:{
-              "Content-Type":"application/json"
-            },
-            body:JSON.stringify(formData)
-          })
-          if (res.status === 200) {
-            alert("Sent Successfully, We will get back to you soon.");
-    
-            // Reset the formData fields
-            setFormData({
-              fullName: "",
-              email: ""
-            });
-          }
-        } catch (error) {
-          console.log("Newsletter error:", error);
-          alert("Can't send, please check and try again.",error);
+  const pathanme=usePathname()
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    url: pathanme,
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         }
-      };
+      );
+      console.log("Form Data ",formData)
+      if (res.status === 200) {
+        alert("Sent Successfully, We will get back to you soon.");
+
+        // Reset the formData fields
+        setFormData({
+          fullName: "",
+          email: "",
+          url: pathanme,
+        });
+      }
+    } catch (error) {
+      console.log("Newsletter error:", error);
+      alert("Can't send, please check and try again.", error);
+    }
+  };
   return (
-    <Form.Root className="FormRoot4 mt-[43px]  max-w-[325px]" onSubmit={handleSubmit}>
+    <Form.Root
+      className="FormRoot4 mt-[43px]  max-w-[325px]"
+      onSubmit={handleSubmit}
+    >
       <Form.Field className="FormField4" name="Your full name">
         <div
           style={{
@@ -98,21 +110,17 @@ const NewsletterForm = () => {
         </Form.Control>
       </Form.Field>
 
+   
 
-     <div>
-     <Form.Submit asChild>
-        <button
-          type="submit"
-          className="Button5 max-w-[325px]  mt-[4px]"
-
-        >
-          SUBSCRIBE
-        </button>
-      </Form.Submit>
-     </div>
-  
+      <div>
+        <Form.Submit asChild>
+          <button type="submit" className="Button5 max-w-[325px]  mt-[4px]">
+            SUBSCRIBE
+          </button>
+        </Form.Submit>
+      </div>
     </Form.Root>
-  )
-}
+  );
+};
 
-export default NewsletterForm
+export default NewsletterForm;

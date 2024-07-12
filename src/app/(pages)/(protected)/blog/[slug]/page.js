@@ -59,7 +59,7 @@ const page = async(props) => {
         <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>
         <div className="w-full h-[1px] bg-[#e6e6e6]"></div>
-<Newsletter/>
+<Newsletter contentType="Blog" contentTitle={posts.title} contentCategory={posts.blogfield.blogcategory}/>
 <CaseStudyContent/>
 <Footer/>
         </>) : 'No data'}

@@ -1,7 +1,7 @@
 import React from 'react'
 import NewsletterForm from './NewsletterForm/NewsletterForm'
 
-const Newsletter = () => {
+const Newsletter = ({contentType,contentTitle,contentCategory}) => {
   return (
  
       
@@ -24,7 +24,7 @@ const Newsletter = () => {
         <button className="bg-black px-3 md:px-5 py-2 rounded-[10px] text-[14px]">Subscribe</button>
        
       </div> */}
-      <NewsletterForm/>
+      <NewsletterForm contentType={contentType} contentTitle={contentTitle} contentCategory={contentCategory}/>
       </div>
     </div>
   

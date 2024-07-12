@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "./style.css";
 import { usePathname, useRouter } from "next/navigation";
-const NewsletterForm = () => {
-  const pathanme=usePathname()
-
+const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
+  const pathname=usePathname()
+  console.log("url",pathname)
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    url: pathanme,
+    contentType: contentType,
+    contentTitle: contentTitle,
+    contentCategory:contentCategory,
+
   });
 
   const handleChange = (e) => {
@@ -39,7 +42,9 @@ const NewsletterForm = () => {
         setFormData({
           fullName: "",
           email: "",
-          url: pathanme,
+          url: pathname,
+          contentTitle: contentTitle,
+          contentCategory:contentCategory,
         });
       }
     } catch (error) {

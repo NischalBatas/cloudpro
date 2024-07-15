@@ -233,7 +233,10 @@ button:hover {
   }
 }
 
-
+.wordpress-container li{
+  list-style-type: circle;
+  list-style-position: inside;
+}
   
 .wordpress-container strong,
 .wordpress-container ul{

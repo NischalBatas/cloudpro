@@ -56,7 +56,7 @@ const page = async(props) => {
         <Introduction posts={posts}/>
         <BlogImage  posts={posts}/>
         <div className="bg-white navbar-main">
-        <div className="main-container  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
+        <div className="main-container text-[#000]  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>
         <div className="w-full h-[1px] bg-[#e6e6e6]"></div>
 <Newsletter contentType="Blog" contentTitle={posts.title} contentCategory={posts.blogfield.blogcategory}/>

@@ -234,7 +234,7 @@ button:hover {
 }
 
 .wordpress-container li{
-  list-style-type: circle;
+  list-style-type:disc;
   list-style-position: inside;
 }
   
@@ -244,20 +244,27 @@ button:hover {
  /* color: #4f91ff; */
 }
 
-.wordpress-container strong{
-  /* font-size: 24px; */
+.wordpress-container h1,
+.wordpress-container p strong{
+  font-size: 24px;
 }
 .wordpress-container pre,
-.wordpress-container p,
-.wordpress-container ul{
-  margin: 1.5rem 0 0.5rem 0;
+.wordpress-container p{
+  margin: 1rem 0 0.6rem 0;
 }
+
+
 
 .wordpress-container pre,
 .wordpress-container p,
 .wordpress-container li{
 
  color: #000000;
+}
+
+
+.wordpress-container ul{
+  margin: 0.6rem 0 0.6rem 0;
 }
 
 .wordpress-container li{

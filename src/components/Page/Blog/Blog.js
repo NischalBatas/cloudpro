@@ -38,13 +38,15 @@ async function getPosts() {
   });
 
   const { data } = await res.json();
-
+  console.log(data)
   return data.blogs.nodes;
+ 
 }
 
 const Blog = async () => {
+
   const posts = await getPosts();
-  console.log("Blog Components - Post details", posts);
+  // console.log("Blog Components - Post details", posts);
   return (
     <>
       {posts ? (

@@ -41,4 +41,5 @@ const SegementRoute = ({ children }) => {
   );
 };
 
+
 export default SegementRoute;

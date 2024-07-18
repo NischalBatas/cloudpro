@@ -11,7 +11,7 @@ const SegementRoute = ({children}) => {
     const handleRouteChange = (url) => {
       if (url) {
         global.analytics.page('Loaded Another Website Page', {
-          page: url/{pathname},
+          page: `${url}/${pathname}`,
         });
       }
     };

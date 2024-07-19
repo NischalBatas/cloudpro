@@ -8,7 +8,7 @@ import Newsletter from "../CaseStudy/caseDetails/Content/Newsletter";
 
 async function getPosts() {
   const query = `query GetAllBlogPost {
-    blogs(first: 50) {
+    blogs(first: 10) {
       nodes {
         slug
         title
@@ -35,23 +35,20 @@ async function getPosts() {
   }`;
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
-    mode:"no-cors",
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
-    next:{revalidate: 50}
+    next: { revalidate: 50 },
   });
 
   const { data } = await res.json();
-  console.log(data)
+  console.log(data);
   return data.blogs.nodes;
- 
 }
 
 const Blog = async () => {
-
   const posts = await getPosts();
   // console.log("Blog Components - Post details", posts);
   return (

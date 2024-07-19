@@ -279,7 +279,7 @@ const Blog = () => {
               ))}
             </div>
 
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center ">
               {pageInfo.hasNextPage && (
                 <button
                   onClick={handleNextPage}

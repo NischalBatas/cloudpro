@@ -8,7 +8,7 @@ import Newsletter from "../CaseStudy/caseDetails/Content/Newsletter";
 
 async function getPosts() {
   const query = `query GetAllBlogPost {
-    blogs {
+    blogs(first: 50) {
       nodes {
         slug
         title
@@ -25,6 +25,12 @@ async function getPosts() {
           readTime
         }
       }
+         pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
     }
   }`;
 

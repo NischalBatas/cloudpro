@@ -138,7 +138,7 @@ import Newsletter from "../CaseStudy/caseDetails/Content/Newsletter";
 async function getPosts(cursor = null) {
   const query = `
     query GetAllBlogPost($cursor: String) {
-      blogs(first: 10, after: $cursor) {
+      blogs(first: 9, after: $cursor) {
         nodes {
           slug
           title
@@ -283,7 +283,7 @@ const Blog = () => {
               {pageInfo.hasNextPage && (
                 <button
                   onClick={handleNextPage}
-                  className="px-4 py-2 mx-2 bg-gray-200 rounded"
+                  className="px-4 py-2 mx-2 bg-[#1c66f0] rounded mb-4"
                 >
                   {loadingMore ? "Loading..." : "Load More"}
                 </button>

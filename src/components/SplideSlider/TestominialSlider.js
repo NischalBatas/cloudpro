@@ -52,8 +52,8 @@ const TestominialSlider = () => {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item.description}</p>
-              <Link href={item.link}>
+              <p className="text-[14px] text-center max-w-[540px] text-[#B8BEBF] leading-6">{item?.description}</p>
+              <Link href={item?.link}>
               <div className="flex items-center gap-3 mt-6">
            
                 <div >
@@ -67,11 +67,11 @@ const TestominialSlider = () => {
                 </div>
                 <div>
            
-                  <p className="font-semibold text-[14px]">{item.name}</p>
+                  <p className="font-semibold text-[14px]">{item?.name}</p>
                
-                  <p className="text-[#B8BEBF] text-[14px]">{item.position}</p>
+                  <p className="text-[#B8BEBF] text-[14px]">{item?.position}</p>
                   <div className="flex items-center justify-between">
-                  <p className="text-[#4863bb] font-semibold text-[14px] max-w-[220px] md:max-w-full">{item.company}</p>
+                  <p className="text-[#4863bb] font-semibold text-[14px] max-w-[220px] md:max-w-full">{item?.company}</p>
                   <FaLinkedin className="ml-4"/>
                   </div>
                 </div>

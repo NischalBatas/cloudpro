@@ -45,9 +45,9 @@ const NewsletterSlider = () => {
           return (
             <SplideSlide
               key={index} className="flex flex-col max-w-[265px]">
-            <Image className='rounded-[22px]' width={265} height={300} src={item.image} alt={item.title}/>
+            <Image className='rounded-[22px]' width={265} height={300} src={item?.image} alt={item?.title}/>
             <div className="text-center">
-            <span className="text-[14px]  font-semibold">{item.title}</span>
+            <span className="text-[14px]  font-semibold">{item?.title}</span>
             </div>
         
           </SplideSlide>

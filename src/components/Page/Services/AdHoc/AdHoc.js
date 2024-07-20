@@ -2,12 +2,10 @@ import React from "react";
 import Introduction from "./content/Introduction";
 import Impact from "./content/Impact";
 import Journey from "./content/Journey";
-import Services from "./content/Services";
 import Products from "./content/Products";
 import Industries from "./content/Industries";
 import Faq from "./content/Faq";
 import Enterprises from "./content/Enterprises";
-import Newsletter from "../../CaseStudy/caseDetails/Content/Newsletter";
 import Blogs from "../containers/Blog/Blogs";
 
 const AdHoc = () => {
@@ -20,7 +18,6 @@ const AdHoc = () => {
       <Industries />
       <Faq />
       <Journey />
-      {/* <Services /> */}
      <Blogs/>
     </div>
   );

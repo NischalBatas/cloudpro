@@ -41,7 +41,7 @@ const IndustriesItem = () => {
     {industriesSlice.map((item, index) => {
       return (
         <motion.li key={index} variants={items} >
-              <Link href={`/industry/${item.slug}`}
+              <Link href={`/industry/${item?.slug}`}
 
           className=" flex flex-col items-center "
         >
@@ -49,11 +49,11 @@ const IndustriesItem = () => {
           <Image
             width={54}
             height={54}
-            src={item.sectorimage}
+            src={item?.sectorimage}
             alt="image_industries"
           />
           </div>
-          <p className="text-black text-[12px] md:text-[14px] px-4 mt-2">{item.sectortitle}</p>
+          <p className="text-black text-[12px] md:text-[14px] px-4 mt-2">{item?.sectortitle}</p>
      
         </Link>
      </motion.li>

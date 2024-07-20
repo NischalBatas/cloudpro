@@ -8,7 +8,7 @@ const ImpactMain = ({ content }) => {
       <div className="main-container">
         <div>
           <div className="text-[20px] md:text-[24px] ">
-            <span className="font-semibold ">Why</span> {content.title}
+            <span className="font-semibold ">Why</span> {content?.title}
           </div>
         </div>
 

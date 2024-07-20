@@ -12,7 +12,7 @@ const Introduction = ({posts}) => {
           <span>Back</span>
         </Link>
         <p className="blogs_detail_intro max-w-[650px] pt-[22px] pb-[24px] text-[28px] md:text-[40px] font-semibold md:leading-[54px]">
-          {posts.title}
+          {posts?.title}
         </p>
 
         <div className="bg-[#202020] h-[1px] mt-[20px]"></div>

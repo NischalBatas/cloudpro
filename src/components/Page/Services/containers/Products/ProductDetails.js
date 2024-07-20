@@ -34,15 +34,15 @@ const ProductDetails = ({content}) => {
               className="pb-4"
               width={48}
               height={48}
-              src={item.image}
+              src={item?.image}
               alt="product_solution"
             />
 
             <div className="">
               <p className="text-[16px] font-semibold text-black pb-1">
-                {item.title}
+                {item?.title}
               </p>
-              <p className="text-[14px] text-[#393939]">{item.description}</p>
+              <p className="text-[14px] text-[#393939]">{item?.description}</p>
             </div>
           </motion.div>
         );

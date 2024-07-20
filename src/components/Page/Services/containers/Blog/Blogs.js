@@ -67,12 +67,12 @@ const Blogs = async () => {
                         <div
                           className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
                           style={{
-                            backgroundImage: `url(${item.featuredImage.node.link})`,
+                            backgroundImage: `url(${item.featuredImage ? item.featuredImage.node.link :'/image/service-bg/1.webp'})`,
                           }}
                         >
                           <div className="flex justify-between  px-4 pt-4  ">
                             <div className="text-white text-base  font-medium w-44">
-                              {item.blogfield.blogcategory}
+                              {item.blogfield ? item.blogfield.blogcategory : 'no data'}
                             </div>
                             <div className="blogs_product_arrow">
                               <MdOutlineArrowOutward className="blogs_product_arrow_icon rounded-full  w-6 h-6 text-xs p-1" />
@@ -82,19 +82,19 @@ const Blogs = async () => {
 
                         <div className="flex gap-2 items-center text-xs mt-3 text-white">
                           <div className="bg-cloud px-2 rounded-full py-1">
-                            {item.blogfield.blogcategory}
+                          {item.blogfield ? item.blogfield.blogcategory : 'no data'}
                           </div>
                           <div className="text-[10px] text-[#909090] tracking-wider">
-                            {item.blogfield.readTime} Read
+                          {item.blogfield ? item.blogfield.readTime : 'no data'} Read
                           </div>
                         </div>
 
                         <div className="my-4">
                           <div className="blogs_product_title font-semibold text-[16px] text-[#000]">
-                            {item.title}
+                            {item ? item.title : 'no data'}
                           </div>
                           <div className="blogs_product_description mt-1 text-[14px] text-[#666666] leading-6">
-                            {item.blogfield.description}
+                            {item.blogfield ? item.blogfield.description : 'no data'}
                           </div>
                         </div>
                       </div>

@@ -46,13 +46,13 @@ const Product = () => {
             <motion.div key={index} variants={items}>
               <Link key={index} href={item.link}>
               <div 
-                style={{ background: `${item.color}` }}
+                style={{ background: `${item?.color}` }}
                 className="product-content-box overflow-hidden  relative flex flex-col  justify-between  bg-no-repeat bg-cover rounded-lg"
               >
                 <div className="px-5 pt-4 md:pt-5 flex flex-col justify-start">
                   <div className="flex justify-between items-center w-full">
                     <div className="text-white text-lg  font-semibold">
-                      {item.title}
+                      {item?.title}
                     </div>
                     <div>
                       <MdOutlineArrowOutward className="product-arrow bg-white rounded-full text-cloud w-6 h-6 text-xs p-1" />
@@ -60,11 +60,11 @@ const Product = () => {
                   </div>
 
                   <div className="mt-2 text-sm text-white leading-6 ">
-                    {item.description}
+                    {item?.description}
                   </div>
                 </div>
 
-                <div className="hover:scale-125  cursor-pointer">
+                {item.image ? (<div className="hover:scale-125  cursor-pointer">
                   <Image
                     className="product-content-box-image w-full h-auto"
                     width={1000}
@@ -72,7 +72,7 @@ const Product = () => {
                     src={`${item.image}`}
                     alt="product_image"
                   />
-                </div>
+                </div>): 'no image'}
               </div>
               </Link>
             </motion.div>

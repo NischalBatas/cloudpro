@@ -16,7 +16,7 @@ const EnterpriseMain = ({content}) => {
       >
         <div className='max-w-[379px]'>
           <p className="font-medium text-[16px] max-w-[376px]">
-           {content.heading}
+           {content?.heading}
           </p>
 
           <Tabs.List className="TabsList2" aria-label="Manage your account">
@@ -28,7 +28,7 @@ const EnterpriseMain = ({content}) => {
                     className="TabsTrigger2 max-w-[340px] w-full"
                     value={`tab${item.id}`}
                   >
-                    {item.title}
+                    {item?.title}
                   </Tabs.Trigger>
                   <div className="hr-line"></div>
                 </div>
@@ -50,7 +50,7 @@ const EnterpriseMain = ({content}) => {
                 ></div>
                 <div className="max-w-[400px] lg:max-w-[535px] min-h-[383px] bg-white rounded text-black p-4">
                   <p className="max-w-[381px] text-[16px] font-medium">
-                    {item.title}
+                    {item?.title}
                   </p>
                   <ul className="text-[#393939] text-[14px] mt-5 list-disc px-6 leading-7">
                     {item.list.map((item, index) => {
@@ -99,7 +99,7 @@ const EnterpriseMain = ({content}) => {
         })}
         </div> */}
               <p className=" mb-4 font-medium text-[16px] max-w-[376px]">
-           {content.heading}
+           {content?.heading}
           </p>
         <ServiceEnterprises content={content}/>
     </div>

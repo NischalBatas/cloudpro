@@ -11,9 +11,7 @@ const page = () => {
 
 export default page
 
-// export const metadata = {
-  
-// }
+
 export async function generateMetadata() {
   const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${introductionAdhoc.image}`;
 

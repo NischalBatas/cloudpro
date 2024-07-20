@@ -6,7 +6,7 @@ const FaqContainer = ({content}) => {
       <p className="font-bold text-[36px] w-[219px]">FAQ</p>
 
           <p className="text-[16px] text-[#BCBCBC] max-w-[219px] tracking-normal">
-            {content.title}
+            {content?.title}
           </p>
      
     

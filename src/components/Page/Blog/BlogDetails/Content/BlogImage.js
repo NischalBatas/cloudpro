@@ -24,12 +24,12 @@ const BlogImage = ({posts}) => {
             <Image
               width={1500}
               height={387}
-              src={posts.featuredImage.node.link}
+              src={posts?.featuredImage?.node?.link}
               alt="Blog Background"
               className=' rounded-[8px]'
             />
             <p className="pt-[22px] text-[16px] leading-[24px]">
-            {posts.blogfield.description}
+            {posts?.blogfield?.description}
             </p>
           </div>
         </div>  </div>

@@ -12,7 +12,7 @@ const page = () => {
 export default page
 
 export async function generateMetadata() {
-  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${introductiondataAnalytics.image}`;
+  const imageUrl = `${process.env.NEXT_PUBLIC_CLOUDPRO_URL}${introductiondataAnalytics?.image}`;
 
   return {
     title: introductiondataAnalytics.title,

@@ -77,17 +77,17 @@ const CaseStudyContent = async() => {
           {contents.map((item, index) => {
                       return (
                       <div key={index}>
-                          <Link href={`/case-studies/${item.node.slug}`} className="">
+                          <Link href={`/case-studies/${item?.node?.slug}`} className="">
                           <div key={index} className="md:max-w-[324px] casestudy_product_container">
                             <div
                               className="h-[202px] md:max-w-[324px] relative  bg-no-repeat bg-cover rounded-lg"
                               style={{
-                                backgroundImage: `url(${item.node.casestudyfieldgroud.backgroundImage.node.sourceUrl})`,
+                                backgroundImage: `url(${item?.node?.casestudyfieldgroud?.backgroundImage?.node?.sourceUrl})`,
                               }}
                             >
                               <div className="flex justify-between  px-4 pt-4  ">
                                 <div className="text-white text-base  font-medium w-44">
-                                {item.node.casestudyfieldgroud.caseStudySectorDescription}
+                                {item?.node?.casestudyfieldgroud?.caseStudySectorDescription}
                                 </div>
                                 <div className="casestudy_product_arrow">
                                 <MdOutlineArrowOutward className="casestudy_product_arrow_icon rounded-full  w-6 h-6 text-xs p-1" />
@@ -97,19 +97,19 @@ const CaseStudyContent = async() => {
           
                             <div className="flex gap-2 items-center text-xs mt-3 text-white">
                               <div className="bg-cloud px-2 rounded-full py-1">
-                              {item.node.casestudyfieldgroud.caseStudySector}
+                              {item?.node?.casestudyfieldgroud?.caseStudySector}
                               </div>
                               <div className="text-[10px] text-[#909090] tracking-wider">
-                              {item.node.casestudyfieldgroud.readTime} Read
+                              {item?.node?.casestudyfieldgroud?.readTime} Read
                               </div>
                             </div>
           
                             <div className="my-4">
                               <div className="casestudy_product_title font-semibold text-[16px] text-[#000]">
-                              {item.node.title}
+                              {item?.node?.title}
                               </div>
                               <div className="casestudy_product_description mt-2 text-[14px] text-[#666666] leading-6">
-                              {item.node.casestudyfieldgroud.introduction}
+                              {item?.node?.casestudyfieldgroud?.introduction}
                               </div>
                             </div>
                           </div>

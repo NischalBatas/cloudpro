@@ -8,7 +8,7 @@ const Introduction = ({caseData}) => {
         <div className="md:max-w-[444px]">
           <p className="text-black text-[24px] font-semibold">Introduction</p>
           <p className="text-[16px] text-black leading-8 mt-2">
-            {caseData.casestudyfieldgroud.introduction}
+            {caseData?.casestudyfieldgroud?.introduction}
           </p>
         </div>
        
@@ -16,7 +16,7 @@ const Introduction = ({caseData}) => {
             className="md:min-w-[350px] rounded-md"
             width={510}
             height={308}
-            src={caseData.casestudyfieldgroud.caseStudyImage.node.sourceUrl}
+            src={caseData?.casestudyfieldgroud?.caseStudyImage?.node?.sourceUrl}
             alt="Case_details"
           />
        

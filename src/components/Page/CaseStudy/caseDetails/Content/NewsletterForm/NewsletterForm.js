@@ -8,6 +8,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
   console.log("url",pathname)
   const [formData, setFormData] = useState({
     FNAME: "",
+    LName: "",
     EMAIL: "",
     contentType: contentType,
     contentTitle: contentTitle,
@@ -68,10 +69,10 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         >
           {/* <Form.Label className="FormLabel">Your Full Name</Form.Label> */}
           <Form.Message className="FormMessage" match="valueMissing">
-            Please enter your full name
+            Please enter your first name
           </Form.Message>
           <Form.Message className="FormMessage" match="typeMismatch">
-            Please provide a valid full name
+            Please provide a valid first name
           </Form.Message>
         </div>
         <Form.Control asChild>
@@ -82,10 +83,41 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
             className="Input4"
             type="text"
             required
-            placeholder="Enter your Full Name"
+            placeholder="Enter your First Name"
           />
         </Form.Control>
       </Form.Field>
+
+      <Form.Field className="FormField4" name="LName">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+          }}
+        >
+          {/* <Form.Label className="FormLabel">Your Full Name</Form.Label> */}
+          <Form.Message className="FormMessage" match="valueMissing">
+            Please enter your last name
+          </Form.Message>
+          <Form.Message className="FormMessage" match="typeMismatch">
+            Please provide a valid last name
+          </Form.Message>
+        </div>
+        <Form.Control asChild>
+          <input
+            value={formData.LName}
+            name="LName"
+            onChange={handleChange}
+            className="Input4"
+            type="text"
+            required
+            placeholder="Enter your Last Name"
+          />
+        </Form.Control>
+      </Form.Field>
+
+
       <Form.Field className="FormField4" name="EMAIL">
         <div
           style={{

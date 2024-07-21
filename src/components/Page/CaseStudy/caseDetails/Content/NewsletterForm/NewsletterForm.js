@@ -20,42 +20,43 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-      console.log("Form Data ",formData)
-      if (res.status === 200) {
-        alert("Sent Successfully, We will get back to you soon.");
+  //   try {
+  //     const res = await fetch(
+  //       `${process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT}`,
+  //       {
+  //         mode:'no-cors',
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(formData),
+  //       }
+  //     );
+  //     console.log("Form Data ",formData)
+  //     if (res.status === 200) {
+  //       alert("Sent Successfully, We will get back to you soon.");
 
-        // Reset the formData fields
-        setFormData({
-          FNAME: "",
-          EMAIL: "",
-          url: pathname,
-          contentTitle: contentTitle,
-          contentCategory:contentCategory,
-        });
-      }
-    } catch (error) {
-      console.log("Newsletter error:", error);
-      alert("Can't send, please check and try again.", error);
-    }
-  };
+  //       // Reset the formData fields
+  //       setFormData({
+  //         FNAME: "",
+  //         EMAIL: "",
+  //         url: pathname,
+  //         contentTitle: contentTitle,
+  //         contentCategory:contentCategory,
+  //       });
+  //     }
+  //   } catch (error) {
+  //     console.log("Newsletter error:", error);
+  //     alert("Can't send, please check and try again.", error);
+  //   }
+  // };
   return (
     <Form.Root action='https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&amp;id=ee16cacbcb&amp;f_id=008dd0e1f0' method="POST"
       className="FormRoot4 mt-[43px]  max-w-[325px]"
-      onSubmit={handleSubmit}
+     
     >
       <Form.Field className="FormField4" name="FNAME">
         <div

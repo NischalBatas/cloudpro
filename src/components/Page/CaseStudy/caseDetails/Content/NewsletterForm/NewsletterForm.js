@@ -114,7 +114,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         </Form.Control>
       </Form.Field>
 
-   
+      <div><input type="hidden" name="tags" value="12960"/></div>
 
       <div>
         <Form.Submit asChild>

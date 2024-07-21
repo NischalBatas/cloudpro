@@ -53,11 +53,11 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
     }
   };
   return (
-    <Form.Root
+    <Form.Root action='https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&amp;id=ee16cacbcb&amp;f_id=008dd0e1f0' method="POST"
       className="FormRoot4 mt-[43px]  max-w-[325px]"
       onSubmit={handleSubmit}
     >
-      <Form.Field className="FormField4" name="Your full name">
+      <Form.Field className="FormField4" name="FNAME">
         <div
           style={{
             display: "flex",
@@ -76,7 +76,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         <Form.Control asChild>
           <input
             value={formData.fullName}
-            name="fullName"
+            name="FNAME"
             onChange={handleChange}
             className="Input4"
             type="text"
@@ -86,7 +86,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField4" name="email">
+      <Form.Field className="FormField4" name="EMAIL">
         <div
           style={{
             display: "flex",
@@ -105,7 +105,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         <Form.Control asChild>
           <input
             value={formData.email}
-            name="email"
+            name="EMAIL"
             onChange={handleChange}
             className="Input4"
             type="email"

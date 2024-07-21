@@ -45,11 +45,11 @@ const Mission = () => {
             <Image
               width={120}
               height={120}
-              src="/Image/target.svg"
+              src="/Image/results/client.svg"
               alt="mission_image"
-              style={{ maxWidth: "100px", maxHeight: "100px" }}
+              
             />
-            <p className="text-[14px] mt-3">Client-Centric Approach</p>
+            <p className="text-[14px] mt-3">Client-Centric</p>
           </div>
 
           <div className="p-5 max-w-[295px] max-h-[295px] bg-cloud rounded flex flex-col items-center">
@@ -66,7 +66,7 @@ const Mission = () => {
             <Image
               width={120}
               height={120}
-              src="/Image/inno.svg"
+              src="/Image/results/env.svg"
               alt="mission_image"
             />
             <p className="text-[14px] mt-3">Innovative Solutions</p>

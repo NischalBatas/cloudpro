@@ -31,7 +31,10 @@
     position: relative;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-    padding: 0 3.2rem 0 0;
+    /* padding: 0 3.2rem 0 0; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
 
@@ -44,7 +47,7 @@
     position: relative;
     border-top-right-radius: 0;
     border-bottom-right-radius: 16px;
-    padding: 0 0.5rem;
+    /* padding: 0 0.5rem; */
   }
   
 }

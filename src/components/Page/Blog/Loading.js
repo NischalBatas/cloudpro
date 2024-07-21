@@ -11,7 +11,7 @@ const Loading = () => {
       </div>
 
       <div className="navbar-main bg-black ">
-        <div className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 place-content-between gap-3 md:gap-y-8 my-6">
+        <div className="main-container relative bottom-28  grid md:grid-cols-2 lg:grid-cols-3 place-content-center md:place-content-between gap-3 md:gap-y-8 my-6">
           <div>
             <div className="md:max-w-[324px] casestudy_product_container">
               <div className="h-[202px] md:max-w-[324px] bg-[#27292d] relative rounded-lg"></div>

@@ -5,6 +5,7 @@ import Loading from "./Loading";
 import "./blog.css";
 import Footer from "@/components/Footer/Footer";
 import Newsletter from "../CaseStudy/caseDetails/Content/Newsletter";
+import Pagination from "./Pagination/Pagination";
 
 async function getPosts() {
   const query = `query GetAllBlogPost {
@@ -25,6 +26,12 @@ async function getPosts() {
           readTime
         }
       }
+         pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
     }
   }`;
 
@@ -38,13 +45,14 @@ async function getPosts() {
   });
 
   const { data } = await res.json();
-
-  return data.blogs.nodes;
+  console.log(data)
+  return data.blogs;
 }
 
 const Blog = async () => {
-  const posts = await getPosts();
-  console.log("Blog Components - Post details", posts);
+  const apiFetchData = await getPosts();
+  const posts=apiFetchData.nodes
+  // console.log("Blog Components - Post details", posts);
   return (
     <>
       {posts ? (
@@ -105,10 +113,12 @@ const Blog = async () => {
                 );
               })}
             </div>
+        
           </div>
 
           <Newsletter />
           <Footer />
+        
         </div>
       ) : (
         <Loading />

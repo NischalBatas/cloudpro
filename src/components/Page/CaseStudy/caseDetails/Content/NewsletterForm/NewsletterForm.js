@@ -7,8 +7,8 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
   const pathname=usePathname()
   console.log("url",pathname)
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
+    FNAME: "",
+    EMAIL: "",
     contentType: contentType,
     contentTitle: contentTitle,
     contentCategory:contentCategory,
@@ -40,8 +40,8 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
 
         // Reset the formData fields
         setFormData({
-          fullName: "",
-          email: "",
+          FNAME: "",
+          EMAIL: "",
           url: pathname,
           contentTitle: contentTitle,
           contentCategory:contentCategory,
@@ -75,7 +75,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         </div>
         <Form.Control asChild>
           <input
-            value={formData.fullName}
+            value={formData.FNAME}
             name="FNAME"
             onChange={handleChange}
             className="Input4"
@@ -104,7 +104,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
         </div>
         <Form.Control asChild>
           <input
-            value={formData.email}
+            value={formData.EMAIL}
             name="EMAIL"
             onChange={handleChange}
             className="Input4"

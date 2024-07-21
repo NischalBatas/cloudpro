@@ -85,7 +85,6 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
           />
         </Form.Control>
       </Form.Field>
-
       <Form.Field className="FormField4" name="EMAIL">
         <div
           style={{

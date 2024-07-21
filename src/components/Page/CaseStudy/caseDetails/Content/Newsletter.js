@@ -6,7 +6,7 @@ const Newsletter = ({contentType,contentTitle,contentCategory}) => {
  
       
     <div
-  className="navbar-main flex flex-col justify-center min-h-[250px] md:h-[399px] bg-[#101012]  bg-no-repeat bg-center bg-cover"
+  className="navbar-main flex flex-col justify-center  bg-[#101012]  bg-no-repeat bg-center bg-cover"
   style={{
     // filter: "blur(2px)",
     zIndex: "-1",

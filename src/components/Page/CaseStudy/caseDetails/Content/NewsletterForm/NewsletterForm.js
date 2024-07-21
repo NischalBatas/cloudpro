@@ -151,7 +151,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
 
       <div>
         <Form.Submit asChild>
-          <button type="submit" className="Button5 max-w-[325px]  mt-[4px]">
+          <button type="submit" className="text-[#000] text-[14px] font-semibold w-full text-center py-2 rounded-[6px] bg-[#ececec] mt-[4px]">
             SUBSCRIBE
           </button>
         </Form.Submit>

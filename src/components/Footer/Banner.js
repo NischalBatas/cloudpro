@@ -17,7 +17,6 @@ const Banner = () => {
         <div className=" pb-[21px] font-semibold text-[29px] md:text-[32px] leading-[42px] max-w-[468px]">
           Together, let's create something wonderful.
         </div>
-
         <div className="flex items-center flex-wrap gap-3">
           <button
             onClick={() => {

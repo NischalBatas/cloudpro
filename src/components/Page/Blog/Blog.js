@@ -116,7 +116,7 @@ const Blog = async () => {
         
           </div>
 
-          <Newsletter />
+          <Newsletter contentType="Blog"/>
           <Footer />
         
         </div>

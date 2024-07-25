@@ -126,7 +126,7 @@ const CaseStudy = async() => {
       </div>
     </div>
 
-    <Newsletter/>
+    <Newsletter contentType="CASE_SUDY"/>
       <Footer/>
 
   </div>

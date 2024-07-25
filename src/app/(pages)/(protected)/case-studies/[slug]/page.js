@@ -86,7 +86,7 @@ const page = async(props) => {
 
         <div className="line-between-content w-full h-[1px] bg-[#F2F2F2]"></div>
         <CaseStudyContent content={caseStudy} />
-        <Newsletter contentType="CaseStudy" contentTitle={posts.title} contentCategory={posts.casestudyfieldgroud.caseStudySector}/>
+        <Newsletter contentType="CASE_SUDY" contentTitle={posts.title} contentCategory={posts.casestudyfieldgroud.caseStudySector}/>
         <Footer />
       </>
     ) : (

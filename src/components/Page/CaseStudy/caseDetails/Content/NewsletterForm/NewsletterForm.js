@@ -22,7 +22,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-    const filterData=MailCheap.filter((item)=>item?.name?.toLowerCase() == contentType?.toLowerCase())
+    const filterData=MailCheap.filter((item)=>item.name.toLowerCase() == contentType.toLowerCase())
     console.log("url",contentType,filterData)
 
   // const handleSubmit = async (e) => {
@@ -150,13 +150,13 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
           />
         </Form.Control>
       </Form.Field>
-        {filterData &&   filterData.map((item,index)=>{
+        {filterData ?   filterData.map((item,index)=>{
             return(
               <div key={index}>
                 
-                <input type="hidden" name="tags" value={item.id}/></div>
+                <input type="hidden" name="tags" value={item?.id}/></div>
             )
-          })}
+          }):''}
         
 
   

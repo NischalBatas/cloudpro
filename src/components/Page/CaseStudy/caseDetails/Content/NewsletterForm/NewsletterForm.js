@@ -150,13 +150,13 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
           />
         </Form.Control>
       </Form.Field>
-        {filterData ?   filterData.map((item,index)=>{
-            return(
-              <div key={index}>
-                
-                <input type="hidden" name="tags" value={item?.id}/></div>
-            )
-          }):''}
+      {filterData && filterData.length > 0 &&
+        filterData.map((item, index) => (
+          <div key={index}>
+            <input type="hidden" name="tags" value={item?.id} />
+          </div>
+        ))
+      }
         
 
   

@@ -24,6 +24,7 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
   };
     const filterData=MailCheap.filter((item)=>item.name.toLowerCase() == contentType.toLowerCase())
     console.log("url",contentType,filterData)
+    
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
 

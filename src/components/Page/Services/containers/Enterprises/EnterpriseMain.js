@@ -36,7 +36,7 @@ const EnterpriseMain = ({content}) => {
             })}
           </Tabs.List>
         </div>
-        {content.data.map((item, index) => {
+        {content.data && content.data.length > 0 && content.data.map((item, index) => {
           return (
             <Tabs.Content
               key={index}

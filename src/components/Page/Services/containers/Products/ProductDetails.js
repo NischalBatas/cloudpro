@@ -24,7 +24,7 @@ const ProductDetails = ({content}) => {
   }
   return (
     <motion.div ref={ref} variants={container} initial="hidden" animate={isInView ? "visible" :"hidden"} className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {content.data.map((item, index) => {
+      {content.data && content.data.length > 0 && content.data.map((item, index) => {
         return (
           <motion.div variants={items}
             key={index}

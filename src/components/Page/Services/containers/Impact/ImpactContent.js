@@ -4,7 +4,7 @@ import React from 'react'
 const ImpactContent = ({content}) => {
   return (
     <div className="flex gap-2 flex-wrap lg:flex-nowrap justify-between">
-    {content.data.map((item, index) => {
+    {content && content.length > 0 && content.data.map((item, index) => {
       return (
         <div key={index} className="testominal max-w-44 md:max-w-64 py-2 md:p-1">
           {/* data-val={`${item.ratio}`} */}

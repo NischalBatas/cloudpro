@@ -38,7 +38,7 @@ const IndustriesItem = () => {
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}>
 
-    {industriesSlice.map((item, index) => {
+    {industriesSlice && industriesSlice.length > 0 && industriesSlice.map((item, index) => {
       return (
         <motion.li key={index} variants={items} >
               <Link href={`/industry/${item?.slug}`}

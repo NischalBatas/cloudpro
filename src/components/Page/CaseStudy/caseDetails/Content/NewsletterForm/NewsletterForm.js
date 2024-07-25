@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "./style.css";
 import { usePathname, useRouter } from "next/navigation";
+import { MailCheap } from "@/db/mailcheap";
 const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
   const pathname=usePathname()
-  console.log("url",pathname)
+
+  console.log("slug title",contentType)
   const [formData, setFormData] = useState({
     FNAME: "",
     LName: "",
@@ -20,7 +22,8 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+    const filterData=MailCheap.filter((item)=>item.name.toLowerCase() == contentType.toLowerCase())
+    console.log("url",contentType,filterData)
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
 
@@ -146,8 +149,16 @@ const NewsletterForm = ({contentType,contentTitle,contentCategory}) => {
           />
         </Form.Control>
       </Form.Field>
+          {filterData.map((item,index)=>{
+            return(
+              <div>
+                
+                <input type="hidden" name="tags" value={item.id}/></div>
+            )
+          })}
+        
 
-      <div><input type="hidden" name="tags" value="12960"/></div>
+  
 
       <div>
         <Form.Submit asChild>

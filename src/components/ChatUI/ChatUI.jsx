@@ -140,7 +140,10 @@ const ChatUI = () => {
       )}
       <div>
         <button onClick={() => setOpen(!open)} className="chatbot_main  flex gap-1  text-black">
-        {!open &&  <span className="bg-white px-3 py-[2px] max-h-fit rounded-[6px] text-[14px]">Chat with us ...</span>} 
+<div>
+{!open &&  <span className="bg-white px-3 py-[2px] max-h-fit rounded-[6px] text-[14px]">Chat with us ...</span>} 
+
+</div>
           <AiFillMessage className="chatbot_btn text-white"/>
         </button>
       </div>

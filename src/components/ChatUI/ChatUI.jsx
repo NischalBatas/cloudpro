@@ -6,7 +6,8 @@ import { IoClose } from "react-icons/io5";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { AiOutlineMessage } from "react-icons/ai";
 import { AiFillMessage } from "react-icons/ai";
-
+import Link from "next/link";
+import { AiTwotoneMessage } from "react-icons/ai";
 const ChatUI = () => {
   const [open, setOpen] = useState(false);
 
@@ -40,9 +41,10 @@ const ChatUI = () => {
                 </div>
                 <div className="leading-snug">
                   <p className="text-[14px] font-semibold">
-                    Powered by DocChat
+                    Cloudpro Chatbot
                   </p>
-                  <p className="flex items-center text-[12px]">Online</p>
+                  <Link className="flex items-center text-[10px]" href='https://docchat.cloudpro.ai/'>Powered by DocChat</Link>
+             
                 </div>
               </div>
 
@@ -141,10 +143,10 @@ const ChatUI = () => {
       <div>
         <button onClick={() => setOpen(!open)} className="chatbot_main  flex gap-1  text-black">
 <div>
-{!open &&  <span className="bg-white px-3 py-[2px] max-h-fit rounded-[6px] text-[14px]">Chat with us ...</span>} 
+{/* {!open &&  <span className="bg-white  px-3 py-[2px] max-h-fit rounded-[6px] text-[14px]">Chat with us ...</span>}  */}
 
 </div>
-          <AiFillMessage className="chatbot_btn text-white"/>
+          <AiOutlineMessage  className="chatbot_btn text-[#4f91ff]"/>
         </button>
       </div>
     </>

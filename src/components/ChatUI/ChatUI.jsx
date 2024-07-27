@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoDotFill } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -10,12 +10,41 @@ import Link from "next/link";
 import { AiTwotoneMessage } from "react-icons/ai";
 const ChatUI = () => {
   const [open, setOpen] = useState(false);
+  const [newMessage, setNewMessage]=useState({
+    info:'',
+    time:''
+  })
+  const [allMessage,setAllMessage]=useState([])
 
+  useEffect(() => {
+    try {
+      const savedMessages = localStorage.getItem('messages');
+      if (savedMessages) {
+        setAllMessage(JSON.parse(savedMessages));
+      }
+    } catch (error) {
+      console.error("Error retrieving messages from localStorage:", error);
+    }
+  }, []);
+
+
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+    if(!newMessage.info == ''){
+      setAllMessage((prev)=>[...prev,{info:newMessage.info, time:new Date().toLocaleTimeString([], {
+        hour12: true,
+        hour: "2-digit",
+        minute: "2-digit",
+      }),}])
+      window.localStorage.setItem('messages', JSON.stringify(allMessage))
+      setNewMessage({info:'',time:''})
+    }
+  }
   return (
     <>
       {open && (
         <div
-          className="fixed z-[9999] max-w-[310px]   w-full         bottom-[0.6rem] right-[5.9rem]"
+          className="fixed z-[9999] max-w-[310px]   w-full shadow-2xl      bottom-[0.6rem] right-[5.9rem]"
           style={{
             transform: "translate(-0%,-0%)",
           }}
@@ -69,8 +98,7 @@ const ChatUI = () => {
 
                 <div className="max-w-[220px] text-[12px] text-[#000] bg-[#dce0f2] px-2 pt-2 pb-1 rounded-[6px]">
                   <p>
-                    We're Gen AI-Ready and Eager to Collaborate. Business and
-                    Infrastructure Readiness
+                    Hello, I'm CloudproAI ! How can I assist you !!
                   </p>
                   <span className="flex justify-end text-[10px] mt-1 text-[#525252]">
                     08:42 am
@@ -78,61 +106,31 @@ const ChatUI = () => {
                 </div>
               </div>
 
-              <div className="flex justify-end gap-2">
-                <div className="max-w-[220px] text-[12px] text-[#fff] bg-[#5677e1] px-2 pt-2 pb-1 rounded-[6px]">
-                  <p>
-                    We're Gen AI-Ready and Eager to Collaborate. Business and
-                    Infrastructure Readiness
-                  </p>
-                  <span className="flex justify-end text-[10px] mt-1 text-[#e0e0e0]">
-                    08:42 am
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div className="w-[24px]">
-                  <Image
-                    className="border-2 border-[#5677e1] rounded-full"
-                    width={24}
-                    height={24}
-                    src="/Image/icon/chatbot.svg"
-                    alt="chatbot"
-                  />
-                </div>
-
-                <div className="max-w-[220px] text-[12px] text-[#000] bg-[#dce0f2] px-2 pt-2 pb-1 rounded-[6px]">
-                  <p>
-                    We're Gen AI-Ready and Eager to Collaborate. Business and
-                    Infrastructure Readiness
-                  </p>
-                  <span className="flex justify-end text-[10px] mt-1 text-[#525252]">
-                    08:42 am
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex justify-end gap-2">
-                <div className="max-w-[220px] text-[12px] text-[#fff] bg-[#5677e1] px-2 pt-2 pb-1 rounded-[6px]">
-                  <p>
-                    We're Gen AI-Ready and Eager to Collaborate. Business and
-                    Infrastructure Readiness
-                  </p>
-                  <span className="flex justify-end text-[10px] mt-1 text-[#e0e0e0]">
-                    08:42 am
-                  </span>
-                </div>
-              </div>
+           
+                    {allMessage.map((item,index)=>{
+                      return(
+                        <div key={index} className="flex justify-end gap-2">
+                        <div className="max-w-[220px] text-[12px] text-[#fff] bg-[#5677e1] px-2 pt-2 pb-1 rounded-[6px]">
+                          <p>
+                          {item.info}
+                          </p>
+                          <span className="flex justify-end text-[10px] mt-1 text-[#e0e0e0]">
+                            {item.time}
+                          </span>
+                        </div>
+                      </div>
+                      )
+                    })}
+             
             </div>
 
             <div className="bg-[#f5f5f5]  p-2 rounded-b-[6px] border-t-[1px]">
-              <form className="flex items-center justify-between gap-1">
-                <input
+              <form onSubmit={handleSubmit} className="flex items-center justify-between gap-1">
+                <input value={newMessage.info} name="newMessage" onChange={(e)=>setNewMessage({info:e.target.value})}
                   className="bg-[#f5f5f5] p-1 w-full text-[#000] text-[14px] outline-none"
                   placeholder="Type your message"
                 />
                 <button>
-                  {" "}
                   <RiSendPlaneFill className="text-[#5677e1] text-[24px]" />
                 </button>
               </form>

@@ -220,7 +220,7 @@ const Blog = () => {
           </div>
 
           <div className="navbar-main bg-white">
-            <div className="main-container relative bottom-24 grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-6">
+            <div className="main-container relative bottom-24 grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-8 my-2">
               {posts.map((item, index) => (
                 <div key={index}>
                   <Link href={`/blog/${item.slug}`} className="">
@@ -264,7 +264,7 @@ const Blog = () => {
               ))}
             </div>
             {pageInfo.hasNextPage && (
-            <div className="flex justify-center pb-6">
+            <div className="flex justify-center relative bottom-10">
               <button onClick={handleLoadMore} className="bg-[#2145bd] px-6 py-2 rounded-[6px]">
                 {loadingMore ? "Loading..." : "Load More"}
               </button>

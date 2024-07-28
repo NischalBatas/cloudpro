@@ -27,19 +27,30 @@ const ChatUI = () => {
     }
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('messages', JSON.stringify(allMessage));
+  }, [allMessage]);
 
-  const handleSubmit=(e)=>{
-    e.preventDefault()
-    if(!newMessage.info == ''){
-      setAllMessage((prev)=>[...prev,{info:newMessage.info, time:new Date().toLocaleTimeString([], {
-        hour12: true,
-        hour: "2-digit",
-        minute: "2-digit",
-      }),}])
-      window.localStorage.setItem('messages', JSON.stringify(allMessage))
-      setNewMessage({info:'',time:''})
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (newMessage.info.trim() !== '') {
+      const updatedMessages = [
+        ...allMessage,
+        {
+          info: newMessage.info,
+          time: new Date().toLocaleTimeString([], {
+            hour12: true,
+            hour: "2-digit",
+            minute: "2-digit",
+          }),
+        }
+      ];
+      setAllMessage(updatedMessages);
+      setNewMessage({ info: '', time: '' });
     }
-  }
+  };
+
+
   return (
     <>
       {open && (

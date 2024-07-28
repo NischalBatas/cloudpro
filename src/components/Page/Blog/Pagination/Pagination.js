@@ -1,16 +1,21 @@
 "use client"
-import React, { useEffect, useState } from 'react'
-import { getPosts } from '../Blog'
+import React from "react";
 
-const Pagination = ({apiFetchData}) => {
-    const [currentPage,setCurrentPage]=useState()
-
-    
+const Pagination = ({ hasNextPage, hasPreviousPage, onPageChange, endCursor, startCursor }) => {
   return (
-    <div className='pb-6 w-full flex justify-center'>
-        <button className='bg-[#2356e0] px-6 py-2 rounded-md'>Load More</button>
+    <div className="flex justify-center mt-4">
+      {hasPreviousPage && (
+        <button onClick={() => onPageChange(startCursor)} className="mr-2">
+          Previous
+        </button>
+      )}
+      {hasNextPage && (
+        <button onClick={() => onPageChange(endCursor)} className="ml-2">
+          Next
+        </button>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;

@@ -1,0 +1,81 @@
+
+/* reset */
+input,
+textarea,
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.FormRoot5 {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+ 
+}
+
+.FormField5 {
+  display: grid;
+  /* margin-bottom: 6px; */
+}
+
+.FormLabel5 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+  color: white;
+}
+
+.FormMessage5 {
+  font-size: 12px;
+  color: rgb(189, 17, 17);
+  opacity: 0.8;
+}
+
+.Input5,
+.Textarea {
+   
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 9px; */
+
+  font-size: 15px;
+  color: #000;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.979);
+  background: rgba(255, 255, 255, 0.03);
+  /* background-color: var(--black-a5); */
+  /* box-shadow: 0 0 0 1px white; */
+
+}
+.Input5:hover,
+.Textarea:hover {
+    border-bottom: 1px solid #000;
+  /* box-shadow: 0 0 0 1px white; */
+}
+.Input5:focus,
+.Textarea:focus {
+  /* box-shadow: 0 0 0 2px white; */
+  border-bottom: 1px solid #000;
+}
+
+
+.Input5::selection,
+.Textarea::selection {
+  background-color: #000;
+  color: white;
+}
+
+.Input5 {
+  padding: 12px 14px;
+  /* height: 35px; */
+  line-height: 1;
+}
+
+
+
+
+

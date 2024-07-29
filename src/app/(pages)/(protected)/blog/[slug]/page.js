@@ -6,6 +6,7 @@ import CaseStudyContent from '@/components/Page/CaseStudy/caseDetails/Content/Ca
 import Newsletter from '@/components/Page/CaseStudy/caseDetails/Content/Newsletter';
 import React from "react";
 import '../../../../../components/Page/Blog/BlogDetails/Content/blog_detail.css'
+import NewsletterPopup from '@/components/NewsletterPopup/NewsletterPopup';
 
 export async function getSinglePost(slug) {
   const query = `
@@ -50,6 +51,7 @@ const page = async(props) => {
   console.log("Method",props);
   return (
     <div>
+
         <div>
             {posts ? (
         <>
@@ -59,6 +61,7 @@ const page = async(props) => {
         <div className="main-container text-[#000]  wordpress-container py-10" dangerouslySetInnerHTML={{__html:posts.content}}></div>
         </div>
         <div className="w-full h-[1px] bg-[#e6e6e6]"></div>
+        <NewsletterPopup contentType="Blog" contentTitle={posts.title} contentCategory={posts.blogfield.blogcategory}/>
 <Newsletter contentType="Blog" contentTitle={posts.title} contentCategory={posts.blogfield.blogcategory}/>
 <CaseStudyContent/>
 <Footer/>

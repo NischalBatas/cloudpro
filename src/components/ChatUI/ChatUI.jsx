@@ -15,7 +15,7 @@ const ChatUI = () => {
     time:''
   })
   const [allMessage,setAllMessage]=useState([])
-
+  const [localData,setLocalData]=useState()
   useEffect(() => {
     try {
       const savedMessages = localStorage.getItem('messages');
@@ -27,15 +27,21 @@ const ChatUI = () => {
     }
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('messages', JSON.stringify(allMessage));
-  }, [allMessage]);
+ 
+
+
+  useEffect(()=>{
+    const getData=window.localStorage.getItem("messages")
+    const parseData=JSON.parse(getData)
+    setLocalData(parseData)
+    window.localStorage.setItem("messages",JSON.stringify(allMessage))
+
+  },[allMessage])
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newMessage.info.trim() !== '') {
-      const updatedMessages = [
-        ...allMessage,
+      setAllMessage([
+        ...allMessage, 
         {
           info: newMessage.info,
           time: new Date().toLocaleTimeString([], {
@@ -44,10 +50,8 @@ const ChatUI = () => {
             minute: "2-digit",
           }),
         }
-      ];
-      setAllMessage(updatedMessages);
+      ]);
       setNewMessage({ info: '', time: '' });
-    }
   };
 
 

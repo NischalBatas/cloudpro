@@ -31,6 +31,7 @@ export async function getSinglePost(slug) {
   }`;
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}`, {
+    mode:'no-cors',
     method: "POST",
     headers: {
       "Content-Type": "application/json",

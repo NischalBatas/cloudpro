@@ -124,8 +124,17 @@ const ChatUI = () => {
                 </div>
               ))}
               {loading && (
-                <div className="flex justify-center items-center">
-                  <div className="loader"></div>
+                <div className="flex  items-center gap-3">
+                 <div className="w-[24px]">
+                  <Image
+                    className="border-2 border-[#5677e1] rounded-full"
+                    width={24}
+                    height={24}
+                    src="/Image/icon/chatbot.svg"
+                    alt="chatbot"
+                  />
+                </div>
+                <p className="animate-pulse text-[#888] text-[24px]">...</p>
                 </div>
               )}
               {chatResponse.map((item, index) => (

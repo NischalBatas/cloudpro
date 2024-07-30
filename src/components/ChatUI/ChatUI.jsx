@@ -12,6 +12,7 @@ const ChatUI = () => {
   const [newMessage, setNewMessage] = useState({ info: '', time: '' });
   const [allMessages, setAllMessages] = useState([]);
   const [chatResponse, setChatResponse] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +27,7 @@ const ChatUI = () => {
       };
       setAllMessages(prev => [...prev, message]);
       setNewMessage({ info: '', time: '' });
+      setLoading(true); // Start loading
 
       // Make API call to get chatbot response
       try {
@@ -43,6 +45,8 @@ const ChatUI = () => {
         setChatResponse(prev => [...prev, ...data.response.content]);
       } catch (error) {
         console.log(error);
+      } finally {
+        setLoading(false); // End loading
       }
     }
   };
@@ -119,7 +123,12 @@ const ChatUI = () => {
                   </div>
                 </div>
               ))}
-              {chatResponse ? chatResponse.map((item, index) => (
+              {loading && (
+                <div className="flex justify-center items-center">
+                  <div className="loader"></div>
+                </div>
+              )}
+              {chatResponse.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="w-[24px]">
                     <Image
@@ -135,7 +144,7 @@ const ChatUI = () => {
                     <span className="flex justify-end text-[10px] mt-1 text-[#525252]">08:42 am</span>
                   </div>
                 </div>
-              )) :<p className="text-[#000]">Loading...</p>}
+              ))}
             </div>
             <div className="bg-[#f5f5f5] p-2 rounded-b-[6px] border-t-[1px]">
               <form onSubmit={handleSubmit} className="flex items-center justify-between gap-1">

@@ -15,45 +15,59 @@ const ChatUI = () => {
     time:''
   })
   const [allMessage,setAllMessage]=useState([])
-  const [localData,setLocalData]=useState()
-  useEffect(() => {
-    try {
-      const savedMessages = localStorage.getItem('messages');
-      if (savedMessages) {
-        setAllMessage(JSON.parse(savedMessages));
-      }
-    } catch (error) {
-      console.error("Error retrieving messages from localStorage:", error);
+  const [chatResponse,setChatResponse]=useState(null)
+
+const handleSubmit=(e)=>{
+  e.preventDefault()
+  if(newMessage.info != ''){
+    setAllMessage((prev)=>[...prev,{
+      info: newMessage.info,
+      time: new Date().toLocaleTimeString([], {
+        hour12: true,
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    }])
+    setNewMessage({info:'',time:''})
+  }
+}
+
+useEffect(() => {
+  const storedMessages = JSON.parse(window.localStorage.getItem('allmessages'));
+  if (storedMessages) {
+    setAllMessage(storedMessages);
+  }
+}, []);
+
+
+useEffect(() => {
+  if (allMessage.length > 0) {
+    window.localStorage.setItem('allmessages', JSON.stringify(allMessage));
+  }
+}, [allMessage]);
+
+useEffect(()=>{
+  const APIEndPoint=async()=>{
+    try{
+      const res=await fetch(`${process.env.NEXT_PUBLIC_CHATBOT}`,{
+        method:'POST',
+        headers:{
+          "Content-Type": "application/json",
+        },
+        body:JSON.stringify({
+            question: newMessage.info,
+            thread_id:""
+        })
+      })
+      const data=await res.json()
+      console.log(data)
+      setChatResponse(data.response.content);
+    }catch(error){
+      console.log(error)
     }
-  }, []);
-
- 
-
-
-  useEffect(()=>{
-    const getData=window.localStorage.getItem("messages")
-    const parseData=JSON.parse(getData)
-    setLocalData(parseData)
-    window.localStorage.setItem("messages",JSON.stringify(allMessage))
-
-  },[allMessage])
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-      setAllMessage([
-        ...allMessage, 
-        {
-          info: newMessage.info,
-          time: new Date().toLocaleTimeString([], {
-            hour12: true,
-            hour: "2-digit",
-            minute: "2-digit",
-          }),
-        }
-      ]);
-      setNewMessage({ info: '', time: '' });
-  };
-
+  }
+  APIEndPoint()
+},[newMessage])
 
   return (
     <>
@@ -119,7 +133,11 @@ const ChatUI = () => {
                     08:42 am
                   </span>
                 </div>
+
               </div>
+        
+                
+            
 
            
                     {allMessage.map((item,index)=>{
@@ -136,6 +154,24 @@ const ChatUI = () => {
                       </div>
                       )
                     })}
+
+{chatResponse && chatResponse.map((item, index) => (
+                <div key={index} className="flex items-center gap-2">
+                  <div className="w-[24px]">
+                    <Image
+                      className="border-2 border-[#5677e1] rounded-full"
+                      width={24}
+                      height={24}
+                      src="/Image/icon/chatbot.svg"
+                      alt="chatbot"
+                    />
+                  </div>
+                  <div className="max-w-[220px] text-[12px] text-[#000] bg-[#dce0f2] px-2 pt-2 pb-1 rounded-[6px]">
+                    <p>{item.text.value}</p>
+                    <span className="flex justify-end text-[10px] mt-1 text-[#525252]">08:42 am</span>
+                  </div>
+                </div>
+              ))}
              
             </div>
 

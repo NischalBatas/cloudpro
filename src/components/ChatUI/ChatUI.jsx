@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { GoDotFill } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -13,6 +13,7 @@ const ChatUI = () => {
   const [allMessages, setAllMessages] = useState([]);
   const [chatResponse, setChatResponse] = useState([]);
   const [loading, setLoading] = useState(false);
+  const chatContainerRef = useRef(null); // Add a ref for the chat container
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -70,6 +71,13 @@ const ChatUI = () => {
     }
   }, [chatResponse]);
 
+  useEffect(() => {
+    // Scroll to the bottom whenever allMessages or chatResponse is updated
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [allMessages, chatResponse]);
+
   return (
     <>
       {open && (
@@ -99,7 +107,7 @@ const ChatUI = () => {
                 <IoClose className="text-[20px]" />
               </button>
             </div>
-            <div className="bg-[#ffffff] p-2 h-[350px] overflow-y-scroll flex flex-col gap-2 mb-1">
+            <div ref={chatContainerRef} className="bg-[#ffffff] p-2 h-[350px] overflow-y-scroll flex flex-col gap-2 mb-1">
               <div className="flex items-center gap-2">
                 <div className="w-[24px]">
                   <Image

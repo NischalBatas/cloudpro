@@ -68,8 +68,19 @@ const ChatUI = () => {
   useEffect(() => {
     if (messages.length > 0) {
       window.localStorage.setItem("messages", JSON.stringify(messages));
+      const timeoutId = setTimeout(() => {
+        window.localStorage.removeItem("messages");
+      }, 86400000); //  24 hours
+
+      return () => clearTimeout(timeoutId);
     }
   }, [messages]);
+
+  useEffect(()=>{
+    clearTimeout(()=>{
+
+    })
+  },[])
 
   useEffect(() => {
     if (chatContainerRef.current) {

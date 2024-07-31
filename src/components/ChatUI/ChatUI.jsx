@@ -66,6 +66,13 @@ const ChatUI = () => {
   }, [allMessages]);
 
   useEffect(() => {
+    const storedMessages2 = JSON.parse(window.localStorage.getItem('chatResponse'));
+    if (storedMessages2) {
+      setChatResponse(storedMessages2);
+    }
+  }, []);
+
+  useEffect(() => {
     if (chatResponse.length > 0) {
       window.localStorage.setItem('chatResponse', JSON.stringify(chatResponse));
     }
@@ -131,20 +138,7 @@ const ChatUI = () => {
                   </div>
                 </div>
               ))}
-              {loading && (
-                <div className="flex  items-center gap-3">
-                 <div className="w-[24px]">
-                  <Image
-                    className="border-2 border-[#5677e1] rounded-full"
-                    width={24}
-                    height={24}
-                    src="/Image/icon/chatbot.svg"
-                    alt="chatbot"
-                  />
-                </div>
-                <p className="animate-pulse text-[#888] text-[24px]">...</p>
-                </div>
-              )}
+              
               {chatResponse.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="w-[24px]">
@@ -162,6 +156,20 @@ const ChatUI = () => {
                   </div>
                 </div>
               ))}
+              {loading && (
+                <div className="flex  items-center gap-3">
+                 <div className="w-[24px]">
+                  <Image
+                    className="border-2 border-[#5677e1] rounded-full"
+                    width={24}
+                    height={24}
+                    src="/Image/icon/chatbot.svg"
+                    alt="chatbot"
+                  />
+                </div>
+                <p className="animate-pulse text-[#888] text-[24px]">...</p>
+                </div>
+              )}
             </div>
             <div className="bg-[#f5f5f5] p-2 rounded-b-[6px] border-t-[1px]">
               <form onSubmit={handleSubmit} className="flex items-center justify-between gap-1">

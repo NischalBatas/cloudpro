@@ -75,9 +75,9 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
           left: "50%",
           transform: "translate(-50%,-50%)",
         }}
-        className=" fixed z-[999999] flex flex-col justify-center  bg-[#000000a2] backdrop-blur-[2px] w-full h-screen"
+        className=" fixed z-[999999] px-1  flex flex-col justify-center  bg-[#000000a2] backdrop-blur-[2px] w-full h-screen"
       >
-       <div className="main-container bg-[#fff] px-3 py-[40px]  shadow-2xl  rounded-[6px]">
+       <div className="main-container bg-[#fff] px-4 py-[40px]  shadow-2xl  rounded-[6px]">
        <div className="flex flex-col    text-[#000] ">
           {/* <div className="flex justify-end  w-full">
             <button onClick={()=>setOpen(false)}>
@@ -95,7 +95,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
             </div>
             <div className="sm:max-w-[60%] ">
               <div>
-              <p className="text-[32px]  font-semibold leading-tight tracking-tight">
+              <p className="text-[26px] sm:text-[32px]  font-semibold leading-tight tracking-tight">
                 Sign Up For Our Newsletter
               </p>
               <p className="max-w-[450px] mt-2 text-[14px] text-[#929292]">

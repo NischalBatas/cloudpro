@@ -185,7 +185,7 @@ const ChatUI = () => {
                       alt="chatbot"
                     />
                   </div>
-                  <p className="animate-pulse text-[#888] text-[24px]">...</p>
+                  <p className="animate-pulse text-[#888] text-[32px]">...</p>
                 </div>
               )}
             </div>

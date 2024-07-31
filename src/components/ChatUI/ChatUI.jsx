@@ -199,6 +199,7 @@ const ChatUI = () => {
                   onChange={(e) => setNewMessage(e.target.value)}
                   className="bg-[#f5f5f5] p-1 w-full text-[#000] text-[14px] outline-none"
                   placeholder="Type your message"
+                  disabled={loading}
                 />
                 <button type="submit">
                   <RiSendPlaneFill className="text-[#5677e1] text-[24px]" />

@@ -105,7 +105,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
               </div>
               <div>
         <Form.Root onSubmit={handleFormSubmit} action='https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&amp;id=ee16cacbcb&amp;f_id=008dd0e1f0' method="POST"
-      className="FormRoot5  sm:pb-[16px] mt-[12px]"
+      className="FormRoot5  sm:pb-[12px] mt-[12px]"
      
     >
       <Form.Field className="FormField5" name="FNAME">

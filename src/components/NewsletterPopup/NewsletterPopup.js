@@ -77,14 +77,14 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
         }}
         className=" fixed z-[999999] flex flex-col justify-center  bg-[#000000a2] backdrop-blur-[2px] w-full h-screen"
       >
-       <div className="main-container bg-[#fff] px-3 py-6 shadow-2xl  rounded-[6px]">
-       <div className="flex flex-col    text-[#000]">
-          <div className="flex justify-end  w-full">
+       <div className="main-container bg-[#fff] px-3 py-[40px]  shadow-2xl  rounded-[6px]">
+       <div className="flex flex-col    text-[#000] ">
+          {/* <div className="flex justify-end  w-full">
             <button onClick={()=>setOpen(false)}>
               <IoClose className="text-[24px]" />
             </button>
-          </div>
-          <div className="flex justify-center sm:justify-between  flex-wrap sm:flex-nowrap gap-2 ">
+          </div> */}
+          <div className="flex justify-center items-center sm:justify-between  flex-wrap sm:flex-nowrap gap-2 ">
             <div>
               <Image
                 width={500}
@@ -93,7 +93,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
                 alt="email newslettter"
               />
             </div>
-            <div className="sm:max-w-[60%]">
+            <div className="sm:max-w-[60%] ">
               <div>
               <p className="text-[32px]  font-semibold leading-tight tracking-tight">
                 Sign Up For Our Newsletter
@@ -105,7 +105,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
               </div>
               <div>
         <Form.Root onSubmit={handleFormSubmit} action='https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&amp;id=ee16cacbcb&amp;f_id=008dd0e1f0' method="POST"
-      className="FormRoot5 sm:pb-[32px] mt-[12px]"
+      className="FormRoot5  sm:pb-[16px] mt-[12px]"
      
     >
       <Form.Field className="FormField5" name="FNAME">

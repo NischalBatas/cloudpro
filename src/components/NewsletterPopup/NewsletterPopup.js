@@ -44,7 +44,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
       }else{
         window.localStorage.setItem("UserFormDetails",JSON.stringify(formData))
       }
-      router.push('/blog')
+      
       }
  
 

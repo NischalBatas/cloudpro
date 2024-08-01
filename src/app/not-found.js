@@ -1,5 +1,4 @@
-"use client";
-import Header from "@/components/Header/Header";
+
 import MobileNavigation from "@/components/Navbar/MobileMenu/MobileNavigation";
 import Navbar from "@/components/Navbar/Navbar";
 import Image from "next/image";

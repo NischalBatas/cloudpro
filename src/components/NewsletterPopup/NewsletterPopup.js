@@ -13,7 +13,7 @@ import { IoClose } from "react-icons/io5";
 const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
   const [open,setOpen]=useState(false)
   // const [storageData,setStorageData]=useState(true)
-  const pathname=usePathname()
+  const router= useRouter()
 
   console.log("slug title",contentType)
   const [formData, setFormData] = useState({
@@ -44,6 +44,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
       }else{
         window.localStorage.setItem("UserFormDetails",JSON.stringify(formData))
       }
+      router.push('/blog')
       }
  
 

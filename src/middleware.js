@@ -11,12 +11,13 @@ export function middleware(request){
 // }
 
 
-return NextResponse.redirect(new URL('/gavie-ai',request.url))
+return NextResponse.redirect(new URL('/',request.url))
 }
 
 
 export const config={
 matcher:[
-'/newsletter'
+'/newsletter',
+'/en/dashboards/crm'
 ]
 }

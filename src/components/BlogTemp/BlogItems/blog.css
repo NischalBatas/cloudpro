@@ -1,0 +1,94 @@
+.blogs_product_arrow{
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    
+}
+
+.blogs_product_arrow_icon{
+
+    background-color: rgba(231, 231, 231, 0.806);
+    font-weight: 600;
+    color: #fff;
+}
+
+.blogs_product_container:hover .blogs_product_arrow{
+    opacity: 1;
+}
+
+.blogs_product_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.blogs_product_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Display up to 3 lines */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 78px; /* Adjusted height for 3 lines of text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+.tabs_main_service a:focus,
+.tabs_main_service a:first-child:active{
+  color: #000000;
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+}
+
+
+
+/* Hide scrollbar background */
+.tabs_main_service::-webkit-scrollbar {
+  background-color: transparent; /* For Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar background for Firefox */
+.tabs_main_service {
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+/* .splide__arrow svg {
+    fill: #ffff !important;
+    height: 1.2em;
+    width: 1.2em;
+    display: none !important;
+  } */
+/*   
+  .splide__arrow--prev {
+    left: 0 !important;
+  }
+  
+  .splide__arrow--next {
+    right: 0 !important;
+  }
+  
+  
+  @media only screen and (max-width:850px){
+    .splide__arrow--prev {
+      left: 0 !important;
+    }
+    
+    .splide__arrow--next {
+      right: 0 !important;
+    }
+  }
+  
+  @media only screen and (max-width:400px){
+    .splide__arrow--prev {
+      left: 0 !important;
+    }
+    
+    .splide__arrow--next {
+      right: 0 !important;
+    }
+  } */

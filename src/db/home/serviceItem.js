@@ -3,7 +3,7 @@ export const serviceItem=[
       id:1,
       slug:"cloud-engineering-services",
       title: "Cloud Engineering Services",
-      description: "Welcome to CloudProAI, where innovation meets intelligence. Our Cloud Engineering Solutions are meticulously crafted to empower businesses of all sizes, from startups to MNCs, with advanced capabilities that drive success in the digital era.",
+      description:"Welcome to CloudProAI, where innovation meets intelligence. Our Cloud Engineering Solutions are meticulously crafted to empower businesses of all sizes, from startups to MNCs, with advanced capabilities that drive success in the digital era.",
       image: "/Image/serviceItem/1.svg",
       introduction: {
         category: "Cloud Engineering",

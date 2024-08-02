@@ -74,7 +74,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
     
         // In no-cors mode, you won't be able to read the response directly
         console.log("Form submitted successfully.");
-        toast.success('Subscription Successful')
+        toast.success('Thank you for subscribing!')
         setOpen(false)
       } catch (error) {
         console.log("Error submitting form:", error);
@@ -104,27 +104,17 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
 
   return (
    <>
-     <Toaster
-        position="bottom-right"
-        reverseOrder={false}
-        gutter={8}
-        containerClassName=""
-        containerStyle={{}}
-        toastOptions={{
-          duration: 5000,
-          style: {
-            background: '#363636',
-            color: '#fff',
-          },
-          success: {
-            duration: 3000,
-            theme: {
-              primary: 'green',
-              secondary: 'black',
+      <Toaster
+          position="bottom-right"
+          toastOptions={{
+            duration:'50000',
+            style: {
+              fontSize: "14px",
+              fontWeight: "600",
+              background: "#fff",
             },
-          },
-        }}
-      />
+          }}
+        />
    {open &&  <div className="relative newsletter_popup">
       <div
         style={{

@@ -70,7 +70,7 @@ const ChatUI = () => {
       window.localStorage.setItem("messages", JSON.stringify(messages));
       const timeoutId = setTimeout(() => {
         window.localStorage.removeItem("messages");
-      }, 20000); //  24 hours
+      }, 864000); //  24 hours
 
       return () => clearTimeout(timeoutId);
     }

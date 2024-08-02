@@ -9,6 +9,7 @@ import PopoutNewsForm from "./PopoutNewsForm/PopoutNewsForm";
 
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import toast, { Toaster } from "react-hot-toast";
 
 const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
   const [open,setOpen]=useState(false)
@@ -18,8 +19,9 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
   console.log("slug title",contentType)
   const [formData, setFormData] = useState({
     FNAME: "",
-    LName: "",
+    LNAME: "",
     EMAIL: "",
+    tags:"",
     contentType: contentType,
     contentTitle: contentTitle,
     contentCategory:contentCategory,
@@ -33,19 +35,52 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
     const filterData=MailCheap.filter((item)=>item.name && contentType && item.name.toLowerCase() === contentType.toLowerCase());
     console.log("url",contentType,filterData)
 
+    useEffect(() => {
+      // Update tags when filterData changes
+      const tags = filterData.map((item) => item.id).concat("12960").join(",");
+      setFormData((prevState) => ({ ...prevState, tags }));
+    }, [filterData]);
 
-      const handleFormSubmit=()=>{
-        const getFormData=window.localStorage.getItem("UserFormDetails")
-      if(getFormData){
-        const parseData=JSON.parse(getFormData)
-      if(parseData.EMAIL === ""){
-          window.localStorage.setItem("UserFormDetails",JSON.stringify(formData))
-      }
-      }else{
-        window.localStorage.setItem("UserFormDetails",JSON.stringify(formData))
+    const handleFormSubmit = async (e) => {
+      e.preventDefault();
+      
+      // Assuming formData is available in the scope
+      const getFormData = window.localStorage.getItem("UserFormDetails");
+      
+      if (getFormData) {
+        const parseData = JSON.parse(getFormData);
+        if (parseData.EMAIL === "") {
+          window.localStorage.setItem("UserFormDetails", JSON.stringify(formData));
+        }
+      } else {
+        window.localStorage.setItem("UserFormDetails", JSON.stringify(formData));
       }
       
+      try {
+        const formData2 = new FormData();
+        formData2.append('FNAME', formData.FNAME);
+        formData2.append('LNAME', formData.LNAME);
+        formData2.append('EMAIL', formData.EMAIL);
+        formData2.append('tags', formData.tags);
+
+        const res = await fetch(
+          `https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&id=ee16cacbcb&f_id=008dd0e1f0`,
+          {
+            method: "POST",
+            mode: 'no-cors',
+            body: formData2,
+          }
+        );
+    
+        // In no-cors mode, you won't be able to read the response directly
+        console.log("Form submitted successfully.");
+        toast.success('Subscription Successful')
+        setOpen(false)
+      } catch (error) {
+        console.log("Error submitting form:", error);
       }
+    };
+    
  
 
     useEffect(() => {
@@ -69,6 +104,27 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
 
   return (
    <>
+     <Toaster
+        position="bottom-right"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          duration: 5000,
+          style: {
+            background: '#363636',
+            color: '#fff',
+          },
+          success: {
+            duration: 3000,
+            theme: {
+              primary: 'green',
+              secondary: 'black',
+            },
+          },
+        }}
+      />
    {open &&  <div className="relative newsletter_popup">
       <div
         style={{
@@ -105,7 +161,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
               </p>
               </div>
               <div>
-        <Form.Root onSubmit={handleFormSubmit} action='https://cloudpro.us22.list-manage.com/subscribe/post?u=433a51ee95aafec37792a952d&amp;id=ee16cacbcb&amp;f_id=008dd0e1f0' method="POST"
+        <Form.Root onSubmit={handleFormSubmit} 
       className="FormRoot5  sm:pb-[12px] mt-[12px]"
      
     >
@@ -138,7 +194,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
         </Form.Control>
       </Form.Field>
 
-      <Form.Field className="FormField5" name="LName">
+      <Form.Field className="FormField5" name="LNAME">
         <div
           style={{
             display: "flex",
@@ -156,8 +212,8 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
         </div>
         <Form.Control asChild>
           <input
-            value={formData.LName}
-            name="LName"
+            value={formData.LNAME}
+            name="LNAME"
             onChange={handleChange}
             className="Input5"
             type="text"
@@ -199,7 +255,9 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
       {filterData && filterData.length > 0 &&
         filterData.map((item, index) => (
           <div key={index}>
-            <input type="hidden" name="tags" value={`${item.id ? item.id : ""},12960`} />
+            <input  
+            onChange={handleChange}
+             type="hidden" name="tags" value={formData.tags}  />
           </div>
         ))
       }

@@ -15,7 +15,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
   const [open,setOpen]=useState(false)
   // const [storageData,setStorageData]=useState(true)
   const router= useRouter()
-
+  const [loading, setLoading] = useState(false);
   console.log("slug title",contentType)
   const [formData, setFormData] = useState({
     FNAME: "",
@@ -43,7 +43,7 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
 
     const handleFormSubmit = async (e) => {
       e.preventDefault();
-      
+      setLoading(true);
       // Assuming formData is available in the scope
       const getFormData = window.localStorage.getItem("UserFormDetails");
       
@@ -78,6 +78,8 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
         setOpen(false)
       } catch (error) {
         console.log("Error submitting form:", error);
+      }finally {
+        setLoading(false); // Reset loading to false when submission is complete
       }
     };
     
@@ -107,7 +109,6 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
       <Toaster
           position="bottom-right"
           toastOptions={{
-            duration:'50000',
             style: {
               fontSize: "14px",
               fontWeight: "600",
@@ -256,14 +257,14 @@ const NewsletterPopup = ({ contentType, contentTitle, contentCategory }) => {
   
 
       <div>
-        <Form.Submit asChild>
-          <button type="submit" className="text-[#fff] text-[14px] font-semibold w-full text-center py-2 rounded-[6px] bg-[#000000] mt-[5px]">
-            SUBSCRIBE
-          </button>
-        </Form.Submit>
-      </div>
-    </Form.Root>
-    </div>
+                        <Form.Submit asChild>
+                          <button type="submit" className="text-[#fff] text-[14px] font-semibold w-full text-center py-2 rounded-[6px] bg-[#000000] mt-[5px]">
+                            {loading ? "Subscribing..." : "SUBSCRIBE"} {/* Conditional text */}
+                          </button>
+                        </Form.Submit>
+                      </div>
+                    </Form.Root>
+                  </div>
             </div>
           </div>
         </div>

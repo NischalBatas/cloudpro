@@ -28,6 +28,7 @@ const Partners = () => {
           height={item.height} src={item.image} alt="sliderImage" />;
         })}
       </Marquee>
+      
         {/* <PartnerSlider /> */}
       </div>
     </div>

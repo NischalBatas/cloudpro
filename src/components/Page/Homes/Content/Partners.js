@@ -1,9 +1,11 @@
 
 
 import PartnerSlider from "@/components/SplideSlider/PartnerSlider";
-
+import Marquee from "react-fast-marquee";
 import React from "react";
 import '../slider.css'
+import { partners } from "@/db/home/partners";
+import Image from "next/image";
 const Partners = () => {
   return (
     <div className="main-container partners-main flex  flex-wrap items-center justify-between  pt-5 pb-20 px-2 gap-4 md:gap-2 ">
@@ -20,7 +22,13 @@ const Partners = () => {
    
 
       <div className="partners-home">
-        <PartnerSlider />
+      <Marquee  className="">
+        {partners.map((item, index) => {
+          return <Image className="mx-4 hover:scale-110 transition-all" key={index}  width={item.width}
+          height={item.height} src={item.image} alt="sliderImage" />;
+        })}
+      </Marquee>
+        {/* <PartnerSlider /> */}
       </div>
     </div>
   );

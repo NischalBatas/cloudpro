@@ -20,7 +20,6 @@ const Partners = () => {
         companies:
       </p>
    
-
       <div className="partners-home">
       <Marquee  className="">
         {partners.map((item, index) => {
@@ -28,7 +27,7 @@ const Partners = () => {
           height={item.height} src={item.image} alt="sliderImage" />;
         })}
       </Marquee>
-      
+
         {/* <PartnerSlider /> */}
       </div>
     </div>
